@@ -1,0 +1,197 @@
+﻿{
+	"destination": "detailScreen",
+	"rightMargin": 19,
+	"bottomMargin": 20,
+	"markerBody": 772,
+	"markerBreak": 777,
+	"markerFooter": 781,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onPrintingDetail",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke",
+		"onSelectionChange"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "DIN A4",
+		"paperWidth": "595pt",
+		"paperHeight": "842pt"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"Variable1": {
+					"type": "input",
+					"top": 36,
+					"left": 38,
+					"width": 234,
+					"height": 726,
+					"dataSource": "vtGA1",
+					"fontFamily": "Monaco",
+					"fontSize": 8,
+					"focusable": false,
+					"borderStyle": "solid",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Schaltfläche1": {
+					"type": "button",
+					"top": 795,
+					"left": 229,
+					"width": 155,
+					"height": 24,
+					"dataSource": "Schaltfläche1",
+					"action": "cancel",
+					"text": "Ende",
+					"class": "Standard",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable6": {
+					"type": "input",
+					"top": 10,
+					"left": 39,
+					"width": 485,
+					"height": 12,
+					"dataSource": "vUmfrDat",
+					"class": "Standard",
+					"textAlign": "center",
+					"fontWeight": "bold",
+					"fontStyle": "italic",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "raised",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Variable2": {
+					"type": "input",
+					"top": 36,
+					"left": 288,
+					"width": 234,
+					"height": 726,
+					"dataSource": "vtGA2",
+					"fontFamily": "Monaco",
+					"fontSize": 8,
+					"focusable": false,
+					"borderStyle": "solid",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Schaltfläche2": {
+					"type": "button",
+					"top": 796,
+					"left": 33,
+					"width": 77,
+					"height": 24,
+					"dataSource": "Schaltfläche1",
+					"text": "<",
+					"class": "Standard",
+					"method": "ObjectMethods/Schaltfläche2.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Schaltfläche3": {
+					"type": "button",
+					"top": 796,
+					"left": 130,
+					"width": 77,
+					"height": 24,
+					"dataSource": "Schaltfläche1",
+					"text": ">",
+					"class": "Standard",
+					"method": "ObjectMethods/Schaltfläche3.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Schaltfläche4": {
+					"type": "button",
+					"top": 831,
+					"left": 30,
+					"width": 178,
+					"height": 24,
+					"dataSource": "Schaltfläche1",
+					"text": "Drucken",
+					"class": "Standard",
+					"method": "ObjectMethods/Schaltfläche4.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				}
+			}
+		}
+	]
+}

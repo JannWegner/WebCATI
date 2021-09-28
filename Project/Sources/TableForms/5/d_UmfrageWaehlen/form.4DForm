@@ -1,0 +1,518 @@
+﻿{
+	"destination": "detailScreen",
+	"rightMargin": 19,
+	"bottomMargin": 20,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onPrintingDetail",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke",
+		"onSelectionChange"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "DIN A4",
+		"paperWidth": "595pt",
+		"paperHeight": "842pt"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"Rollbarer Bereich1": {
+					"type": "listbox",
+					"top": 115,
+					"left": 59,
+					"width": 118,
+					"height": 322,
+					"resizingMode": "legacy",
+					"focusable": false,
+					"movableRows": false,
+					"rowHeightAutoMin": "20px",
+					"rowHeightAutoMax": "20px",
+					"showHeaders": false,
+					"selectionMode": "single",
+					"scrollbarHorizontal": "hidden",
+					"scrollbarVertical": "hidden",
+					"horizontalLineStroke": "transparent",
+					"verticalLineStroke": "transparent",
+					"fill": "transparent",
+					"fontSize": 12,
+					"borderStyle": "none",
+					"events": [
+						"onClick",
+						"onDisplayDetail",
+						"onDataChange"
+					],
+					"columns": [
+						{
+							"name": "Rollbarer Bereich1_Column1",
+							"dataSource": "taUmfragenAnzeige",
+							"width": 118,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"fontSize": 12,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Kopf1",
+								"text": "Kopf1",
+								"fontSize": 12
+							},
+							"footer": {
+								"name": "Fußteil1",
+								"timeFormat": "hh_mm_ss",
+								"fontSize": 12
+							}
+						}
+					]
+				},
+				"Rollbarer Bereich6": {
+					"type": "listbox",
+					"top": 115,
+					"left": 181,
+					"width": 75,
+					"height": 322,
+					"resizingMode": "legacy",
+					"focusable": false,
+					"movableRows": false,
+					"rowHeightAutoMin": "20px",
+					"rowHeightAutoMax": "20px",
+					"showHeaders": false,
+					"selectionMode": "single",
+					"scrollbarHorizontal": "hidden",
+					"scrollbarVertical": "hidden",
+					"horizontalLineStroke": "transparent",
+					"verticalLineStroke": "transparent",
+					"fill": "transparent",
+					"fontSize": 12,
+					"borderStyle": "none",
+					"events": [
+						"onClick",
+						"onDisplayDetail",
+						"onDataChange"
+					],
+					"columns": [
+						{
+							"name": "Rollbarer Bereich6_Column1",
+							"dataSource": "tdEingerichtet",
+							"width": 75,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"textFormat": "Intern Kurz",
+							"numberFormat": "Intern Kurz",
+							"dateFormat": "short",
+							"timeFormat": "MM_SS",
+							"fontSize": 12,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Kopf2",
+								"text": "Kopf2",
+								"fontSize": 12
+							},
+							"footer": {
+								"name": "Fußteil2",
+								"timeFormat": "hh_mm_ss",
+								"fontSize": 12
+							}
+						}
+					]
+				},
+				"Rollbarer Bereich2": {
+					"type": "listbox",
+					"top": 115,
+					"left": 262,
+					"width": 75,
+					"height": 322,
+					"resizingMode": "legacy",
+					"focusable": false,
+					"movableRows": false,
+					"rowHeightAutoMin": "20px",
+					"rowHeightAutoMax": "20px",
+					"showHeaders": false,
+					"selectionMode": "single",
+					"scrollbarHorizontal": "hidden",
+					"scrollbarVertical": "hidden",
+					"horizontalLineStroke": "transparent",
+					"verticalLineStroke": "transparent",
+					"fill": "transparent",
+					"fontSize": 12,
+					"borderStyle": "none",
+					"events": [
+						"onClick",
+						"onDisplayDetail",
+						"onDataChange"
+					],
+					"columns": [
+						{
+							"name": "Rollbarer Bereich2_Column1",
+							"dataSource": "tiAnzahlAdr",
+							"width": 75,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"textAlign": "left",
+							"fontSize": 12,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Kopf3",
+								"text": "Kopf3",
+								"fontSize": 12
+							},
+							"footer": {
+								"name": "Fußteil3",
+								"timeFormat": "hh_mm_ss",
+								"fontSize": 12
+							}
+						}
+					]
+				},
+				"Rollbarer Bereich3": {
+					"type": "listbox",
+					"top": 115,
+					"left": 343,
+					"width": 77,
+					"height": 322,
+					"resizingMode": "legacy",
+					"focusable": false,
+					"movableRows": false,
+					"rowHeightAutoMin": "20px",
+					"rowHeightAutoMax": "20px",
+					"showHeaders": false,
+					"selectionMode": "single",
+					"scrollbarHorizontal": "hidden",
+					"scrollbarVertical": "hidden",
+					"horizontalLineStroke": "transparent",
+					"verticalLineStroke": "transparent",
+					"fill": "transparent",
+					"fontSize": 12,
+					"borderStyle": "none",
+					"events": [
+						"onClick",
+						"onDisplayDetail",
+						"onDataChange"
+					],
+					"columns": [
+						{
+							"name": "Rollbarer Bereich3_Column1",
+							"dataSource": "tiAnzahlKomplett",
+							"width": 77,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"textAlign": "left",
+							"fontSize": 12,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Kopf4",
+								"text": "Kopf4",
+								"fontSize": 12
+							},
+							"footer": {
+								"name": "Fußteil4",
+								"timeFormat": "hh_mm_ss",
+								"fontSize": 12
+							}
+						}
+					]
+				},
+				"Rollbarer Bereich4": {
+					"type": "listbox",
+					"top": 115,
+					"left": 424,
+					"width": 103,
+					"height": 322,
+					"resizingMode": "legacy",
+					"focusable": false,
+					"movableRows": false,
+					"rowHeightAutoMin": "20px",
+					"rowHeightAutoMax": "20px",
+					"showHeaders": false,
+					"selectionMode": "single",
+					"scrollbarHorizontal": "hidden",
+					"scrollbarVertical": "hidden",
+					"horizontalLineStroke": "transparent",
+					"verticalLineStroke": "transparent",
+					"fill": "transparent",
+					"fontSize": 12,
+					"borderStyle": "none",
+					"events": [
+						"onClick",
+						"onDisplayDetail",
+						"onDataChange"
+					],
+					"columns": [
+						{
+							"name": "Rollbarer Bereich4_Column1",
+							"dataSource": "taAnonymDurch",
+							"width": 103,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"fontSize": 12,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Kopf5",
+								"text": "Kopf5",
+								"fontSize": 12
+							},
+							"footer": {
+								"name": "Fußteil5",
+								"timeFormat": "hh_mm_ss",
+								"fontSize": 12
+							}
+						}
+					]
+				},
+				"Rollbarer Bereich5": {
+					"type": "listbox",
+					"top": 115,
+					"left": 532,
+					"width": 93,
+					"height": 322,
+					"resizingMode": "legacy",
+					"focusable": false,
+					"movableRows": false,
+					"rowHeightAutoMin": "20px",
+					"rowHeightAutoMax": "20px",
+					"showHeaders": false,
+					"selectionMode": "single",
+					"scrollbarHorizontal": "hidden",
+					"horizontalLineStroke": "transparent",
+					"verticalLineStroke": "transparent",
+					"fill": "transparent",
+					"fontSize": 12,
+					"borderStyle": "none",
+					"events": [
+						"onClick",
+						"onDisplayDetail",
+						"onDataChange"
+					],
+					"columns": [
+						{
+							"name": "Rollbarer Bereich5_Column1",
+							"dataSource": "tdAnonymAm",
+							"width": 78,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"textFormat": "Intern Kurz",
+							"numberFormat": "Intern Kurz",
+							"dateFormat": "short",
+							"timeFormat": "MM_SS",
+							"fontSize": 12,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Kopf6",
+								"text": "Kopf6",
+								"fontSize": 12
+							},
+							"footer": {
+								"name": "Fußteil6",
+								"timeFormat": "hh_mm_ss",
+								"fontSize": 12
+							}
+						}
+					]
+				},
+				"Schaltfläche1": {
+					"type": "button",
+					"top": 457,
+					"left": 165,
+					"width": 303,
+					"height": 35,
+					"dataSource": "Schaltfläche1",
+					"text": "Umfrage wählen",
+					"fontFamily": "Geneva",
+					"fontSize": 9,
+					"defaultButton": true,
+					"method": "ObjectMethods/Schaltfläche1.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Schaltfläche2": {
+					"type": "button",
+					"top": 504,
+					"left": 240,
+					"width": 143,
+					"height": 23,
+					"dataSource": "Schaltfläche1",
+					"shortcutKey": "[Esc]",
+					"text": "Abbrechen",
+					"fontFamily": "Geneva",
+					"fontSize": 9,
+					"method": "ObjectMethods/Schaltfläche2.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Text1": {
+					"type": "text",
+					"top": 80,
+					"left": 60,
+					"width": 102,
+					"height": 15,
+					"fontSize": 12,
+					"fontWeight": "bold",
+					"text": " Umfrage"
+				},
+				"Text2": {
+					"type": "text",
+					"top": 80,
+					"left": 268,
+					"width": 81,
+					"height": 15,
+					"fontSize": 12,
+					"fontWeight": "bold",
+					"text": "Adressen"
+				},
+				"Text3": {
+					"type": "text",
+					"top": 80,
+					"left": 351,
+					"width": 57,
+					"height": 15,
+					"fontSize": 12,
+					"fontWeight": "bold",
+					"text": "Interviews"
+				},
+				"Text4": {
+					"type": "text",
+					"top": 65,
+					"left": 435,
+					"width": 92,
+					"height": 30,
+					"fontSize": 12,
+					"fontWeight": "bold",
+					"text": "Anonymisiert\rdurch"
+				},
+				"Text5": {
+					"type": "text",
+					"top": 80,
+					"left": 546,
+					"width": 77,
+					"height": 15,
+					"fontSize": 12,
+					"fontWeight": "bold",
+					"text": "am"
+				},
+				"Text6": {
+					"type": "text",
+					"top": 65,
+					"left": 184,
+					"width": 73,
+					"height": 30,
+					"fontSize": 12,
+					"fontWeight": "bold",
+					"text": "Eingerichet\ram"
+				},
+				"Text7": {
+					"type": "text",
+					"top": 12,
+					"left": 61,
+					"width": 546,
+					"height": 40,
+					"textAlign": "center",
+					"fontSize": 16,
+					"fontWeight": "bold",
+					"text": "Bitte\rUmfrage wählen"
+				},
+				"Unsichtbare Schaltfläche1": {
+					"type": "button",
+					"top": 66,
+					"left": 60,
+					"width": 64,
+					"height": 27,
+					"dataSource": "Unsichtbare Schaltfläche1",
+					"display": false,
+					"method": "ObjectMethods/Unsichtbare Schaltfläche1.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Unsichtbare Schaltfläche2": {
+					"type": "button",
+					"top": 66,
+					"left": 176,
+					"width": 74,
+					"height": 27,
+					"dataSource": "Unsichtbare Schaltfläche1",
+					"display": false,
+					"method": "ObjectMethods/Unsichtbare Schaltfläche2.4dm",
+					"events": [
+						"onClick"
+					]
+				}
+			}
+		}
+	],
+	"editor": {
+		"groups": {
+			"Gruppe10": [
+				"Rollbarer Bereich1",
+				"Rollbarer Bereich6",
+				"Rollbarer Bereich2",
+				"Rollbarer Bereich3",
+				"Rollbarer Bereich4",
+				"Rollbarer Bereich5"
+			],
+			"Gruppe6": [
+				"Text1",
+				"Text2",
+				"Text3",
+				"Text4",
+				"Text5",
+				"Text6"
+			]
+		}
+	}
+}

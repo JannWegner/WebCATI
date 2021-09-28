@@ -1,0 +1,162 @@
+﻿{
+	"destination": "detailScreen",
+	"windowTitle": "Fernsteuern",
+	"rightMargin": 19,
+	"bottomMargin": 20,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onBeforeKeystroke",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onPrintingDetail",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke",
+		"onSelectionChange"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "DIN A4",
+		"paperWidth": "595pt",
+		"paperHeight": "842pt"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"Variable1": {
+					"type": "input",
+					"top": 11,
+					"left": 29,
+					"width": 79,
+					"height": 876,
+					"dataSource": "vt_SendText",
+					"class": "Standard",
+					"borderStyle": "solid",
+					"contextMenu": "none",
+					"scrollbarVertical": "visible",
+					"dragging": "none",
+					"dropping": "none",
+					"method": "ObjectMethods/Variable1.4dm",
+					"events": [
+						"onLosingFocus"
+					]
+				},
+				"Schaltfläche1": {
+					"type": "button",
+					"top": 889,
+					"left": 27,
+					"width": 88,
+					"height": 20,
+					"dataSource": "v_Ende",
+					"action": "cancel",
+					"text": "Ende",
+					"class": "Standard",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Schaltfläche2": {
+					"type": "button",
+					"top": 911,
+					"left": 27,
+					"width": 88,
+					"height": 20,
+					"dataSource": "b_Senden",
+					"text": "Senden",
+					"class": "Standard",
+					"defaultButton": true,
+					"method": "ObjectMethods/Schaltfläche2.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Schaltfläche3": {
+					"type": "button",
+					"top": 935,
+					"left": 26,
+					"width": 43,
+					"height": 21,
+					"dataSource": "Schaltfläche3",
+					"text": "Aus CB",
+					"fontFamily": "Geneva",
+					"fontSize": 8,
+					"method": "ObjectMethods/Schaltfläche3.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Schaltfläche4": {
+					"type": "button",
+					"top": 958,
+					"left": 26,
+					"width": 89,
+					"height": 20,
+					"dataSource": "Schaltfläche3",
+					"text": "Löschen",
+					"class": "Standard",
+					"method": "ObjectMethods/Schaltfläche4.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Schaltfläche5": {
+					"type": "button",
+					"top": 935,
+					"left": 72,
+					"width": 43,
+					"height": 21,
+					"dataSource": "Schaltfläche3",
+					"text": "Ins CB",
+					"fontFamily": "Geneva",
+					"fontSize": 8,
+					"method": "ObjectMethods/Schaltfläche5.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				}
+			}
+		}
+	]
+}

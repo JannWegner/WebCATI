@@ -1,0 +1,36 @@
+//%attributes = {}
+$AdrFeldNr:=$1
+Case of 
+	: (Num:C11($AdrFeldNr)=1)
+		$0:=[TelefonNummer:4]AdrFeld01:14
+	: (Num:C11($AdrFeldNr)=2)
+		$0:=[TelefonNummer:4]AdrFeld02:16
+	: (Num:C11($AdrFeldNr)=3)
+		$0:=[TelefonNummer:4]AdrFeld03:13
+	: (Num:C11($AdrFeldNr)=4)
+		$0:=[TelefonNummer:4]AdrFeld04:15
+	: (Num:C11($AdrFeldNr)=5)
+		$0:=[TelefonNummer:4]AdrFeld05:18
+	: (Num:C11($AdrFeldNr)=6)
+		$0:=[TelefonNummer:4]AdrFeld06:34
+	: (Num:C11($AdrFeldNr)=7)
+		$0:=[TelefonNummer:4]AdrFeld07:35
+	: (Num:C11($AdrFeldNr)=8)
+		$0:=[TelefonNummer:4]AdrFeld08:33
+	: (Num:C11($AdrFeldNr)=9)
+		$0:=[TelefonNummer:4]AdrFeld09:17
+	: (Num:C11($AdrFeldNr)=10)
+		$0:=[TelefonNummer:4]AdrFeld10:21
+	: (Num:C11($AdrFeldNr)=11)
+		$0:=[TelefonNummer:4]AdrFeld11:27
+	: (Num:C11($AdrFeldNr)=12)
+		$0:=[TelefonNummer:4]AdrFeld12:28
+	: (Num:C11($AdrFeldNr)=13)
+		$0:=[TelefonNummer:4]AdrFeld13:31
+	: (Num:C11($AdrFeldNr)=14)
+		$0:=[TelefonNummer:4]AdrFeld14:42
+	: (Num:C11($AdrFeldNr)=15)
+		$0:=[TelefonNummer:4]AdrFeld15:43
+	: (Num:C11($AdrFeldNr)=16)
+		$0:=[TelefonNummer:4]AdrFeld16:44
+End case 

@@ -1,0 +1,456 @@
+﻿{
+	"destination": "detailScreen",
+	"rightMargin": 19,
+	"bottomMargin": 20,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onPrintingDetail",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke",
+		"onSelectionChange"
+	],
+	"pageFormat": {
+		"paperName": "DIN A4",
+		"paperWidth": "595pt",
+		"paperHeight": "842pt"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"Text5": {
+					"type": "text",
+					"top": 88,
+					"left": 437,
+					"width": 111,
+					"height": 21,
+					"fontSize": 18,
+					"text": "Ihre Eingabe"
+				},
+				"Text3": {
+					"type": "text",
+					"top": 79,
+					"left": 37,
+					"width": 391,
+					"height": 154,
+					"fontSize": 14,
+					"text": "\"Darf ich fragen, wann Sie Zeit hätten bzw. wann ich da jemanden erreichen kann, wann ich noch einmal anrufen darf?\r\rWiederanruf Uhrzeit?  ...........................................................\r\r\r\rWiederanruf Datum ..............................................................."
+				},
+				"Feld6": {
+					"type": "input",
+					"top": 124,
+					"left": 436,
+					"width": 64,
+					"height": 16,
+					"dataSource": "[TelefonNummer:4]WiederUm:3",
+					"dataSourceTypeHint": "time",
+					"fontFamily": "Geneva",
+					"fontSize": 12,
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"method": "ObjectMethods/Feld6.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Feld3": {
+					"type": "input",
+					"top": 191,
+					"left": 436,
+					"width": 64,
+					"height": 16,
+					"dataSource": "[TelefonNummer:4]WiederAm:2",
+					"dataSourceTypeHint": "date",
+					"fontFamily": "Geneva",
+					"fontSize": 12,
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Feld5": {
+					"type": "checkbox",
+					"top": 264,
+					"left": 469,
+					"width": 22,
+					"height": 16,
+					"dataSource": "[TelefonNummer:4]FixTermin:36",
+					"text": "  ",
+					"fontFamily": "Geneva",
+					"fontSize": 12,
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"OK": {
+					"type": "button",
+					"top": 463,
+					"left": 471,
+					"width": 121,
+					"height": 28,
+					"dataSource": "b_OK",
+					"action": "accept",
+					"text": "Weiter",
+					"class": "Standard",
+					"defaultButton": true,
+					"method": "ObjectMethods/OK.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Splitter1": {
+					"type": "splitter",
+					"top": 65,
+					"left": 42,
+					"width": 552,
+					"height": 4,
+					"dataSource": "Splitter1",
+					"borderStyle": "sunken",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Splitter3": {
+					"type": "splitter",
+					"top": 161,
+					"left": 42,
+					"width": 552,
+					"height": 4,
+					"dataSource": "Splitter1",
+					"borderStyle": "sunken",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Splitter5": {
+					"type": "splitter",
+					"top": 161,
+					"left": 42,
+					"width": 552,
+					"height": 4,
+					"dataSource": "Splitter1",
+					"borderStyle": "sunken",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Splitter4": {
+					"type": "splitter",
+					"top": 241,
+					"left": 42,
+					"width": 552,
+					"height": 4,
+					"dataSource": "Splitter1",
+					"borderStyle": "sunken",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Splitter2": {
+					"type": "splitter",
+					"top": 440,
+					"left": 41,
+					"width": 552,
+					"height": 4,
+					"dataSource": "Splitter1",
+					"borderStyle": "sunken",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Text2": {
+					"type": "text",
+					"top": 166,
+					"left": 437,
+					"width": 111,
+					"height": 21,
+					"fontSize": 18,
+					"text": "Ihre Eingabe"
+				},
+				"Feld2": {
+					"type": "input",
+					"top": 319,
+					"left": 41,
+					"width": 540,
+					"height": 98,
+					"dataSource": "[TelefonNummer:4]Historie:4",
+					"fontSize": 12,
+					"focusable": false,
+					"borderStyle": "sunken",
+					"enterable": false,
+					"contextMenu": "none",
+					"scrollbarVertical": "visible",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Abbrechen": {
+					"type": "button",
+					"top": 472,
+					"left": 193,
+					"width": 100,
+					"height": 19,
+					"dataSource": "b_Abbruch",
+					"action": "cancel",
+					"text": "Abbrechen",
+					"class": "Standard",
+					"method": "ObjectMethods/Abbrechen.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Feld4": {
+					"type": "input",
+					"top": 65,
+					"left": 617,
+					"width": 360,
+					"height": 378,
+					"dataSource": "[TelefonNummer:4]Kommentar:6",
+					"fontSize": 12,
+					"focusable": false,
+					"borderStyle": "sunken",
+					"enterable": false,
+					"contextMenu": "none",
+					"scrollbarVertical": "visible",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Abbrechen2": {
+					"type": "button",
+					"top": 465,
+					"left": 755,
+					"width": 125,
+					"height": 19,
+					"dataSource": "b_Kommentar",
+					"text": "Kommentar zufügen",
+					"class": "Standard",
+					"method": "ObjectMethods/Abbrechen2.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable2": {
+					"type": "input",
+					"top": 38,
+					"left": 619,
+					"width": 374,
+					"height": 14,
+					"dataSource": "vPerson",
+					"textAlign": "left",
+					"fontSize": 12,
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "sunken",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Abbrechen3": {
+					"type": "button",
+					"top": 470,
+					"left": 64,
+					"width": 100,
+					"height": 19,
+					"dataSource": "b_EinsZurueck",
+					"action": "cancel",
+					"text": "Eine zurück",
+					"class": "Standard",
+					"method": "ObjectMethods/Abbrechen3.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"b_AnderesTelefon": {
+					"type": "button",
+					"top": 248,
+					"left": 51,
+					"width": 259,
+					"height": 53,
+					"dataSource": "b_AnderesTelefon",
+					"text": "Telefon-Nummer ändern",
+					"fontFamily": "Geneva",
+					"fontSize": 12,
+					"method": "ObjectMethods/b_AnderesTelefon.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Text4": {
+					"type": "text",
+					"top": 262,
+					"left": 348,
+					"width": 111,
+					"height": 21,
+					"textAlign": "right",
+					"fontSize": 18,
+					"text": "Fix-Termin:"
+				},
+				"Text1": {
+					"type": "text",
+					"top": 6,
+					"left": 120,
+					"width": 226,
+					"height": 53,
+					"fontSize": 36,
+					"text": "Fragebogen"
+				},
+				"Feld1": {
+					"type": "input",
+					"top": 6,
+					"left": 368,
+					"width": 160,
+					"height": 53,
+					"dataSource": "[TelefonNummer:4]AdrFBNr:20",
+					"dataSourceTypeHint": "integer",
+					"fontSize": 36,
+					"focusable": false,
+					"borderStyle": "sunken",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				}
+			}
+		}
+	],
+	"editor": {
+		"groups": {
+			"Gruppe2": [
+				"Text1",
+				"Feld1"
+			]
+		}
+	}
+}

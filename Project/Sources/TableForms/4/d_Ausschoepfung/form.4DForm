@@ -1,0 +1,85 @@
+﻿{
+	"destination": "detailScreen",
+	"rightMargin": 19,
+	"bottomMargin": 20,
+	"markerHeader": 4,
+	"markerBody": 763,
+	"markerBreak": 770,
+	"markerFooter": 780,
+	"events": [
+		"onClick",
+		"onDragOver",
+		"onSelectionChange"
+	],
+	"pageFormat": {
+		"paperName": "DIN A4",
+		"paperWidth": "595pt",
+		"paperHeight": "842pt"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"Schaltfläche1": {
+					"type": "button",
+					"top": 792,
+					"left": 51,
+					"width": 154,
+					"height": 29,
+					"dataSource": "Schaltfläche1",
+					"text": "Drucken",
+					"class": "Standard",
+					"method": "ObjectMethods/Schaltfläche1.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Variable1": {
+					"type": "input",
+					"top": 15,
+					"left": 11,
+					"width": 511,
+					"height": 720,
+					"dataSource": "vtAusschoepfung",
+					"fontFamily": "Monaco",
+					"fontSize": 12,
+					"focusable": false,
+					"borderStyle": "sunken",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Schaltfläche2": {
+					"type": "button",
+					"top": 790,
+					"left": 239,
+					"width": 217,
+					"height": 31,
+					"dataSource": "Schaltfläche1",
+					"action": "cancel",
+					"text": "Ende",
+					"class": "Standard",
+					"defaultButton": true,
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				}
+			}
+		}
+	]
+}

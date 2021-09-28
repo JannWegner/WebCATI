@@ -1,0 +1,2092 @@
+﻿{
+	"destination": "detailScreen",
+	"rightMargin": 19,
+	"bottomMargin": 20,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onPrintingDetail",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke",
+		"onSelectionChange"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "DIN A4",
+		"paperWidth": "595pt",
+		"paperHeight": "842pt"
+	},
+	"pages": [
+		{
+			"objects": {
+				"Text11": {
+					"type": "text",
+					"top": 193,
+					"left": 54,
+					"width": 101,
+					"height": 16,
+					"stroke": "#000000",
+					"textAlign": "right",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 13,
+					"text": "ID : "
+				},
+				"Text12": {
+					"type": "text",
+					"top": 219,
+					"left": 54,
+					"width": 101,
+					"height": 16,
+					"stroke": "#000000",
+					"textAlign": "right",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 13,
+					"text": "Fragenummer : "
+				},
+				"Text13": {
+					"type": "text",
+					"top": 323,
+					"left": 54,
+					"width": 101,
+					"height": 16,
+					"stroke": "#000000",
+					"textAlign": "right",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 13,
+					"text": "FText : "
+				},
+				"Text15": {
+					"type": "text",
+					"top": 349,
+					"left": 54,
+					"width": 101,
+					"height": 16,
+					"stroke": "#000000",
+					"textAlign": "right",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 13,
+					"text": "AvgText : "
+				},
+				"Text16": {
+					"type": "text",
+					"top": 245,
+					"left": 54,
+					"width": 101,
+					"height": 16,
+					"stroke": "#000000",
+					"textAlign": "right",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 13,
+					"text": "nextID : "
+				},
+				"Text1": {
+					"type": "text",
+					"top": 271,
+					"left": 36,
+					"width": 119,
+					"height": 16,
+					"stroke": "#000000",
+					"textAlign": "right",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 13,
+					"text": "Formular-Name:"
+				},
+				"Text2": {
+					"type": "text",
+					"top": 297,
+					"left": 62,
+					"width": 93,
+					"height": 16,
+					"stroke": "#000000",
+					"textAlign": "right",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 13,
+					"text": "Wertebereich:"
+				},
+				"Text17": {
+					"type": "text",
+					"top": 271,
+					"left": 445,
+					"width": 101,
+					"height": 16,
+					"stroke": "#000000",
+					"textAlign": "right",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 13,
+					"text": "FormTyp :"
+				},
+				"Text4": {
+					"type": "text",
+					"top": 219,
+					"left": 417,
+					"width": 129,
+					"height": 16,
+					"stroke": "#000000",
+					"textAlign": "right",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 13,
+					"text": "(Letzte) Zielspalte :"
+				},
+				"Text5": {
+					"type": "text",
+					"top": 245,
+					"left": 415,
+					"width": 131,
+					"height": 16,
+					"stroke": "#000000",
+					"textAlign": "right",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 13,
+					"text": "Max mögl. Eingaben:"
+				},
+				"THalboffen": {
+					"type": "text",
+					"top": 193,
+					"left": 466,
+					"width": 80,
+					"height": 16,
+					"stroke": "#000000",
+					"textAlign": "right",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 13,
+					"text": "Halboffen :"
+				},
+				"Text3": {
+					"type": "text",
+					"top": 374,
+					"left": 54,
+					"width": 101,
+					"height": 18,
+					"stroke": "#000000",
+					"textAlign": "right",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 13,
+					"text": "Bedingung:"
+				},
+				"PopUp/Drop-down Liste1": {
+					"type": "dropdown",
+					"top": 29,
+					"left": 285,
+					"width": 198,
+					"height": 28,
+					"dataSource": "as_Formulare",
+					"fontFamily": "System Font Regular",
+					"fontSize": 12,
+					"fontWeight": "bold"
+				},
+				"Schaltfläche2": {
+					"type": "button",
+					"top": 417,
+					"left": 298,
+					"width": 150,
+					"height": 29,
+					"dataSource": "Schaltfläche1",
+					"action": "accept",
+					"text": "Ende",
+					"class": "Standard",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				}
+			}
+		},
+		{
+			"objects": {
+				"Text6": {
+					"type": "text",
+					"top": 70,
+					"left": 57,
+					"width": 698,
+					"height": 112,
+					"fontFamily": "System Font Regular",
+					"fontSize": 12,
+					"borderStyle": "solid",
+					"text": "Frage - Antwort\r9 Zeilen Frage, 10 Zeilen Antworten\r\rAntworten 0-10 kommen auf die erste Spalte (Nie 0 und 10 gleichzeitig verwenden!), 11-20 auf die zweite Spalte usw.."
+				},
+				"Text14": {
+					"type": "text",
+					"top": 194,
+					"left": 175,
+					"width": 214,
+					"height": 15,
+					"fontFamily": "System Font Regular",
+					"fontSize": 13,
+					"text": "Interne Nummer"
+				},
+				"Text18": {
+					"type": "text",
+					"top": 219,
+					"left": 175,
+					"width": 214,
+					"height": 15,
+					"fontFamily": "System Font Regular",
+					"fontSize": 13,
+					"text": "Fragenummer lt. Fragebogen"
+				},
+				"Text19": {
+					"type": "text",
+					"top": 245,
+					"left": 175,
+					"width": 214,
+					"height": 15,
+					"fontFamily": "System Font Regular",
+					"fontSize": 13,
+					"text": "Folge-ID (interne Nummer)"
+				},
+				"Text20": {
+					"type": "text",
+					"top": 271,
+					"left": 175,
+					"width": 214,
+					"height": 15,
+					"fontFamily": "System Font Regular",
+					"fontSize": 13,
+					"text": "gen_FA"
+				},
+				"Text21": {
+					"type": "text",
+					"top": 297,
+					"left": 175,
+					"width": 214,
+					"height": 15,
+					"fontFamily": "System Font Regular",
+					"fontSize": 13,
+					"text": "1-5;8;9 S=8,9 (S für Solowerte)"
+				},
+				"Text22": {
+					"type": "text",
+					"top": 323,
+					"left": 175,
+					"width": 214,
+					"height": 15,
+					"fontFamily": "System Font Regular",
+					"fontSize": 13,
+					"text": "Fragetext"
+				},
+				"Text23": {
+					"type": "text",
+					"top": 349,
+					"left": 175,
+					"width": 214,
+					"height": 15,
+					"fontFamily": "System Font Regular",
+					"fontSize": 13,
+					"text": "Feste Antwortvorgaben"
+				},
+				"Text25": {
+					"type": "text",
+					"top": 220,
+					"left": 559,
+					"width": 222,
+					"height": 15,
+					"fontFamily": "System Font Regular",
+					"fontSize": 13,
+					"text": "DG-Notation (z.B. C07 bzw CA07)"
+				},
+				"Text26": {
+					"type": "text",
+					"top": 246,
+					"left": 559,
+					"width": 214,
+					"height": 15,
+					"fontFamily": "System Font Regular",
+					"fontSize": 13,
+					"text": "1 bei nicht mehrfach, sonst Anzahl"
+				},
+				"Text27": {
+					"type": "text",
+					"top": 272,
+					"left": 559,
+					"width": 214,
+					"height": 15,
+					"fontFamily": "System Font Regular",
+					"fontSize": 13,
+					"text": "\"gen\""
+				}
+			}
+		},
+		{
+			"objects": {
+				"Text7": {
+					"type": "text",
+					"top": 70,
+					"left": 57,
+					"width": 698,
+					"height": 112,
+					"fontFamily": "System Font Regular",
+					"fontSize": 12,
+					"borderStyle": "solid",
+					"text": "Große Frage - kleine Antwort\r12 Zeilen Frage, 6 Zeilen Antworten, sonst wie \"gen_FA\"\r\rAntworten 0-10 kommen auf die erste Spalte (Nie 0 und 10 gleichzeitig verwenden!), 11-20 auf die zweite Spalte usw.."
+				},
+				"Text29": {
+					"type": "text",
+					"top": 194,
+					"left": 175,
+					"width": 214,
+					"height": 15,
+					"fontFamily": "System Font Regular",
+					"fontSize": 13,
+					"text": "Interne Nummer"
+				},
+				"Text30": {
+					"type": "text",
+					"top": 219,
+					"left": 175,
+					"width": 214,
+					"height": 15,
+					"fontFamily": "System Font Regular",
+					"fontSize": 13,
+					"text": "Fragenummer lt. Fragebogen"
+				},
+				"Text31": {
+					"type": "text",
+					"top": 245,
+					"left": 175,
+					"width": 214,
+					"height": 15,
+					"fontFamily": "System Font Regular",
+					"fontSize": 13,
+					"text": "Folge-ID (interne Nummer)"
+				},
+				"Text32": {
+					"type": "text",
+					"top": 271,
+					"left": 175,
+					"width": 214,
+					"height": 15,
+					"fontFamily": "System Font Regular",
+					"fontSize": 13,
+					"text": "gen_gFkA"
+				},
+				"Text33": {
+					"type": "text",
+					"top": 297,
+					"left": 175,
+					"width": 214,
+					"height": 15,
+					"fontFamily": "System Font Regular",
+					"fontSize": 13,
+					"text": "1-5;8;9 S=8,9 (S für Solowerte)"
+				},
+				"Text34": {
+					"type": "text",
+					"top": 323,
+					"left": 175,
+					"width": 214,
+					"height": 15,
+					"fontFamily": "System Font Regular",
+					"fontSize": 13,
+					"text": "Fragetext"
+				},
+				"Text35": {
+					"type": "text",
+					"top": 349,
+					"left": 175,
+					"width": 214,
+					"height": 15,
+					"fontFamily": "System Font Regular",
+					"fontSize": 13,
+					"text": "Feste Antwortvorgaben"
+				},
+				"Text38": {
+					"type": "text",
+					"top": 220,
+					"left": 559,
+					"width": 222,
+					"height": 15,
+					"fontFamily": "System Font Regular",
+					"fontSize": 13,
+					"text": "DG-Notation (z.B. C07 bzw CA07)"
+				},
+				"Text39": {
+					"type": "text",
+					"top": 246,
+					"left": 559,
+					"width": 214,
+					"height": 15,
+					"fontFamily": "System Font Regular",
+					"fontSize": 13,
+					"text": "1 bei nicht mehrfach, sonst Anzahl"
+				},
+				"Text40": {
+					"type": "text",
+					"top": 272,
+					"left": 559,
+					"width": 214,
+					"height": 15,
+					"fontFamily": "System Font Regular",
+					"fontSize": 13,
+					"text": "\"gen\""
+				}
+			}
+		},
+		{
+			"objects": {
+				"Text8": {
+					"type": "text",
+					"top": 70,
+					"left": 57,
+					"width": 698,
+					"height": 112,
+					"fontFamily": "System Font Regular",
+					"fontSize": 12,
+					"borderStyle": "solid",
+					"text": "Kleine Frage - große Antwort\r4 Zeilen Frage, 15 Zeilen Antworten, sonst wie \"gen_FA\"\r\rAntworten 0-10 kommen auf die erste Spalte (Nie 0 und 10 gleichzeitig verwenden!), 11-20 auf die zweite Spalte usw.."
+				},
+				"Text10": {
+					"type": "text",
+					"top": 194,
+					"left": 175,
+					"width": 214,
+					"height": 15,
+					"fontFamily": "System Font Regular",
+					"fontSize": 13,
+					"text": "Interne Nummer"
+				},
+				"Text24": {
+					"type": "text",
+					"top": 219,
+					"left": 175,
+					"width": 214,
+					"height": 15,
+					"fontFamily": "System Font Regular",
+					"fontSize": 13,
+					"text": "Fragenummer lt. Fragebogen"
+				},
+				"Text41": {
+					"type": "text",
+					"top": 245,
+					"left": 175,
+					"width": 214,
+					"height": 15,
+					"fontFamily": "System Font Regular",
+					"fontSize": 13,
+					"text": "Folge-ID (interne Nummer)"
+				},
+				"Text42": {
+					"type": "text",
+					"top": 271,
+					"left": 175,
+					"width": 214,
+					"height": 15,
+					"fontFamily": "System Font Regular",
+					"fontSize": 13,
+					"text": "gen_kFgA"
+				},
+				"Text43": {
+					"type": "text",
+					"top": 297,
+					"left": 175,
+					"width": 214,
+					"height": 15,
+					"fontFamily": "System Font Regular",
+					"fontSize": 13,
+					"text": "1-5;8;9 S=8,9 (S für Solowerte)"
+				},
+				"Text44": {
+					"type": "text",
+					"top": 323,
+					"left": 175,
+					"width": 214,
+					"height": 15,
+					"fontFamily": "System Font Regular",
+					"fontSize": 13,
+					"text": "Fragetext"
+				},
+				"Text45": {
+					"type": "text",
+					"top": 349,
+					"left": 175,
+					"width": 214,
+					"height": 15,
+					"fontFamily": "System Font Regular",
+					"fontSize": 13,
+					"text": "Feste Antwortvorgaben"
+				},
+				"Text48": {
+					"type": "text",
+					"top": 220,
+					"left": 559,
+					"width": 222,
+					"height": 15,
+					"fontFamily": "System Font Regular",
+					"fontSize": 13,
+					"text": "DG-Notation (z.B. C07 bzw CA07)"
+				},
+				"Text49": {
+					"type": "text",
+					"top": 246,
+					"left": 559,
+					"width": 214,
+					"height": 15,
+					"fontFamily": "System Font Regular",
+					"fontSize": 13,
+					"text": "1 bei nicht mehrfach, sonst Anzahl"
+				},
+				"Text50": {
+					"type": "text",
+					"top": 272,
+					"left": 559,
+					"width": 214,
+					"height": 15,
+					"fontFamily": "System Font Regular",
+					"fontSize": 13,
+					"text": "\"gen\""
+				}
+			}
+		},
+		{
+			"objects": {
+				"Text51": {
+					"type": "text",
+					"top": 70,
+					"left": 57,
+					"width": 698,
+					"height": 112,
+					"fontFamily": "System Font Regular",
+					"fontSize": 12,
+					"borderStyle": "solid",
+					"text": "Geschlossene Frage mit einer offenen Antwortmöglichkeit\r\rWie gen_FA, nur wird im Feld \"Halboffen\" zusätzlich die Codierung für \"andere Anwort, und zwar\" hinterlegt."
+				},
+				"Text53": {
+					"type": "text",
+					"top": 194,
+					"left": 175,
+					"width": 214,
+					"height": 15,
+					"fontFamily": "System Font Regular",
+					"fontSize": 13,
+					"text": "Interne Nummer"
+				},
+				"Text54": {
+					"type": "text",
+					"top": 219,
+					"left": 175,
+					"width": 214,
+					"height": 15,
+					"fontFamily": "System Font Regular",
+					"fontSize": 13,
+					"text": "Fragenummer lt. Fragebogen"
+				},
+				"Text55": {
+					"type": "text",
+					"top": 245,
+					"left": 175,
+					"width": 214,
+					"height": 15,
+					"fontFamily": "System Font Regular",
+					"fontSize": 13,
+					"text": "Folge-ID (interne Nummer)"
+				},
+				"Text56": {
+					"type": "text",
+					"top": 271,
+					"left": 175,
+					"width": 214,
+					"height": 15,
+					"fontFamily": "System Font Regular",
+					"fontSize": 13,
+					"text": "gen_Halboffen"
+				},
+				"Text57": {
+					"type": "text",
+					"top": 297,
+					"left": 175,
+					"width": 214,
+					"height": 15,
+					"fontFamily": "System Font Regular",
+					"fontSize": 13,
+					"text": "1-5;8;9 S=8,9 (S für Solowerte)"
+				},
+				"Text58": {
+					"type": "text",
+					"top": 323,
+					"left": 175,
+					"width": 214,
+					"height": 15,
+					"fontFamily": "System Font Regular",
+					"fontSize": 13,
+					"text": "Fragetext"
+				},
+				"Text59": {
+					"type": "text",
+					"top": 349,
+					"left": 175,
+					"width": 214,
+					"height": 15,
+					"fontFamily": "System Font Regular",
+					"fontSize": 13,
+					"text": "Vorgaben, inkl. \"andere Antwort\""
+				},
+				"Text61": {
+					"type": "text",
+					"top": 194,
+					"left": 559,
+					"width": 214,
+					"height": 15,
+					"fontFamily": "System Font Regular",
+					"fontSize": 13,
+					"text": "Codierung für \"anderes Antwort\""
+				},
+				"Text62": {
+					"type": "text",
+					"top": 220,
+					"left": 559,
+					"width": 222,
+					"height": 15,
+					"fontFamily": "System Font Regular",
+					"fontSize": 13,
+					"text": "DG-Notation (z.B. C07 bzw CA07)"
+				},
+				"Text63": {
+					"type": "text",
+					"top": 246,
+					"left": 559,
+					"width": 214,
+					"height": 15,
+					"fontFamily": "System Font Regular",
+					"fontSize": 13,
+					"text": "1 bei nicht mehrfach, sonst Anzahl"
+				},
+				"Text64": {
+					"type": "text",
+					"top": 272,
+					"left": 559,
+					"width": 214,
+					"height": 15,
+					"fontFamily": "System Font Regular",
+					"fontSize": 13,
+					"text": "\"gen\""
+				}
+			}
+		},
+		{
+			"objects": {
+				"Text65": {
+					"type": "text",
+					"top": 70,
+					"left": 57,
+					"width": 698,
+					"height": 112,
+					"fontFamily": "System Font Regular",
+					"fontSize": 12,
+					"borderStyle": "solid",
+					"text": "Eingabe einer (ganzen) Zahl\r\rWertebereich ist ein Zahlenbereich, ggf. mit durch Semikolon getrennter kkA-Angabe\r(kkA darf nicht innerhalb des Zahlenbereiches liegen!)\rkkA gibt \"Y\" auf der ersten Spalte, Rest leer!"
+				},
+				"Text67": {
+					"type": "text",
+					"top": 184,
+					"left": 175,
+					"width": 214,
+					"height": 15,
+					"fontFamily": "System Font Regular",
+					"fontSize": 13,
+					"text": "Interne Nummer"
+				},
+				"Text68": {
+					"type": "text",
+					"top": 219,
+					"left": 175,
+					"width": 214,
+					"height": 15,
+					"fontFamily": "System Font Regular",
+					"fontSize": 13,
+					"text": "Fragenummer lt. Fragebogen"
+				},
+				"Text69": {
+					"type": "text",
+					"top": 245,
+					"left": 175,
+					"width": 214,
+					"height": 15,
+					"fontFamily": "System Font Regular",
+					"fontSize": 13,
+					"text": "Folge-ID (interne Nummer)"
+				},
+				"Text70": {
+					"type": "text",
+					"top": 271,
+					"left": 175,
+					"width": 214,
+					"height": 15,
+					"fontFamily": "System Font Regular",
+					"fontSize": 13,
+					"text": "gen_Zahl"
+				},
+				"Text71": {
+					"type": "text",
+					"top": 297,
+					"left": 175,
+					"width": 214,
+					"height": 15,
+					"fontFamily": "System Font Regular",
+					"fontSize": 13,
+					"text": "1-100;999"
+				},
+				"Text72": {
+					"type": "text",
+					"top": 323,
+					"left": 175,
+					"width": 214,
+					"height": 15,
+					"fontFamily": "System Font Regular",
+					"fontSize": 13,
+					"text": "Fragetext"
+				},
+				"Text73": {
+					"type": "text",
+					"top": 349,
+					"left": 175,
+					"width": 214,
+					"height": 15,
+					"fontFamily": "System Font Regular",
+					"fontSize": 13,
+					"text": "leer - Wird beim Int. automatisch gefüllt"
+				},
+				"Text76": {
+					"type": "text",
+					"top": 220,
+					"left": 559,
+					"width": 222,
+					"height": 15,
+					"fontFamily": "System Font Regular",
+					"fontSize": 13,
+					"text": "DG-Notation (z.B. C07 bzw CA07)"
+				},
+				"Text78": {
+					"type": "text",
+					"top": 272,
+					"left": 559,
+					"width": 214,
+					"height": 15,
+					"fontFamily": "System Font Regular",
+					"fontSize": 13,
+					"text": "\"gen\""
+				}
+			}
+		},
+		{
+			"objects": {
+				"Text79": {
+					"type": "text",
+					"top": 70,
+					"left": 57,
+					"width": 698,
+					"height": 112,
+					"fontFamily": "System Font Regular",
+					"fontSize": 12,
+					"borderStyle": "solid",
+					"text": "Eingabe einer Dezimalzahl\rWertebereich ist ein Zahlenbereich, ggf. mit durch Semikolon getrennter kkA-Angabe\rDaran anschließendes F=v.n definiert die Anzahl Vor- und Nachkommastellen.\rPlatzbedarf ist Summe aus Vor- und Nachkommastellen (ohne Dezimaltrenner!)\rkkA gibt \"Y\" auf der ersten Spalte, Rest leer!"
+				},
+				"Text81": {
+					"type": "text",
+					"top": 194,
+					"left": 175,
+					"width": 214,
+					"height": 15,
+					"fontFamily": "System Font Regular",
+					"fontSize": 13,
+					"text": "Interne Nummer"
+				},
+				"Text82": {
+					"type": "text",
+					"top": 219,
+					"left": 175,
+					"width": 214,
+					"height": 15,
+					"fontFamily": "System Font Regular",
+					"fontSize": 13,
+					"text": "Fragenummer lt. Fragebogen"
+				},
+				"Text83": {
+					"type": "text",
+					"top": 245,
+					"left": 175,
+					"width": 214,
+					"height": 15,
+					"fontFamily": "System Font Regular",
+					"fontSize": 13,
+					"text": "Folge-ID (interne Nummer)"
+				},
+				"Text84": {
+					"type": "text",
+					"top": 271,
+					"left": 175,
+					"width": 214,
+					"height": 15,
+					"fontFamily": "System Font Regular",
+					"fontSize": 13,
+					"text": "gen_Dezimal"
+				},
+				"Text85": {
+					"type": "text",
+					"top": 297,
+					"left": 175,
+					"width": 214,
+					"height": 15,
+					"fontFamily": "System Font Regular",
+					"fontSize": 13,
+					"text": "1-1000;9999 F=4.2"
+				},
+				"Text86": {
+					"type": "text",
+					"top": 323,
+					"left": 175,
+					"width": 214,
+					"height": 15,
+					"fontFamily": "System Font Regular",
+					"fontSize": 13,
+					"text": "Fragetext"
+				},
+				"Text87": {
+					"type": "text",
+					"top": 349,
+					"left": 175,
+					"width": 214,
+					"height": 15,
+					"fontFamily": "System Font Regular",
+					"fontSize": 13,
+					"text": "leer - Wird beim Int. automatisch gefüllt"
+				},
+				"Text90": {
+					"type": "text",
+					"top": 220,
+					"left": 559,
+					"width": 222,
+					"height": 15,
+					"fontFamily": "System Font Regular",
+					"fontSize": 13,
+					"text": "DG-Notation (z.B. C07 bzw CA07)"
+				},
+				"Text92": {
+					"type": "text",
+					"top": 272,
+					"left": 559,
+					"width": 214,
+					"height": 15,
+					"fontFamily": "System Font Regular",
+					"fontSize": 13,
+					"text": "\"gen\""
+				}
+			}
+		},
+		{
+			"objects": {
+				"Text93": {
+					"type": "text",
+					"top": 70,
+					"left": 57,
+					"width": 698,
+					"height": 112,
+					"fontFamily": "System Font Regular",
+					"fontSize": 12,
+					"borderStyle": "solid",
+					"text": "Offene Frage\r\rOffene Frage, mit 1 oder mehreren fixen Antworten (nicht mehrfach möglich)\rCodespalten werden bei Spezial-Eingabe festgelegt"
+				},
+				"Text95": {
+					"type": "text",
+					"top": 194,
+					"left": 175,
+					"width": 214,
+					"height": 15,
+					"fontFamily": "System Font Regular",
+					"fontSize": 13,
+					"text": "Interne Nummer"
+				},
+				"Text96": {
+					"type": "text",
+					"top": 219,
+					"left": 175,
+					"width": 214,
+					"height": 15,
+					"fontFamily": "System Font Regular",
+					"fontSize": 13,
+					"text": "Fragenummer lt. Fragebogen"
+				},
+				"Text97": {
+					"type": "text",
+					"top": 245,
+					"left": 175,
+					"width": 214,
+					"height": 15,
+					"fontFamily": "System Font Regular",
+					"fontSize": 13,
+					"text": "Folge-ID (interne Nummer)"
+				},
+				"Text98": {
+					"type": "text",
+					"top": 271,
+					"left": 175,
+					"width": 214,
+					"height": 15,
+					"fontFamily": "System Font Regular",
+					"fontSize": 13,
+					"text": "gen_Offen"
+				},
+				"Text99": {
+					"type": "text",
+					"top": 297,
+					"left": 175,
+					"width": 214,
+					"height": 15,
+					"fontFamily": "System Font Regular",
+					"fontSize": 13,
+					"text": "9 oder 8;9 oder ..."
+				},
+				"Text100": {
+					"type": "text",
+					"top": 323,
+					"left": 175,
+					"width": 214,
+					"height": 15,
+					"fontFamily": "System Font Regular",
+					"fontSize": 13,
+					"text": "Fragetext"
+				},
+				"Text101": {
+					"type": "text",
+					"top": 349,
+					"left": 175,
+					"width": 214,
+					"height": 15,
+					"fontFamily": "System Font Regular",
+					"fontSize": 13,
+					"text": "Erklärung der fixen Antwortvorgaben"
+				},
+				"Text106": {
+					"type": "text",
+					"top": 272,
+					"left": 559,
+					"width": 214,
+					"height": 15,
+					"fontFamily": "System Font Regular",
+					"fontSize": 13,
+					"text": "\"gen\""
+				}
+			}
+		},
+		{
+			"objects": {
+				"Text107": {
+					"type": "text",
+					"top": 70,
+					"left": 57,
+					"width": 698,
+					"height": 112,
+					"fontFamily": "System Font Regular",
+					"fontSize": 12,
+					"borderStyle": "solid",
+					"text": "Multi-Antwort\rMax. 6 Antwortkategorien in einer Frage (z.B. Wochen/Monate/Jahre, Minuten/Stunden ...)\rFormat in AvgText: Label;Min;Max;kkA;\rAbschließendes Semikolon nicht vergessen! kkA nur bei max. einer der sechs Zeilen\rAntwort wird immer als ww,xx,yyy,zzzz abgelegt (mit entsprechender Teillänge). kkA gibt \"Y\" auf der ersten Spalte, Rest leer!"
+				},
+				"Text109": {
+					"type": "text",
+					"top": 194,
+					"left": 175,
+					"width": 214,
+					"height": 15,
+					"fontFamily": "System Font Regular",
+					"fontSize": 13,
+					"text": "Interne Nummer"
+				},
+				"Text110": {
+					"type": "text",
+					"top": 219,
+					"left": 175,
+					"width": 214,
+					"height": 15,
+					"fontFamily": "System Font Regular",
+					"fontSize": 13,
+					"text": "Fragenummer lt. Fragebogen"
+				},
+				"Text111": {
+					"type": "text",
+					"top": 245,
+					"left": 175,
+					"width": 214,
+					"height": 15,
+					"fontFamily": "System Font Regular",
+					"fontSize": 13,
+					"text": "Folge-ID (intern Nummer)"
+				},
+				"Text112": {
+					"type": "text",
+					"top": 271,
+					"left": 175,
+					"width": 214,
+					"height": 15,
+					"fontFamily": "System Font Regular",
+					"fontSize": 13,
+					"text": "gen_Multi"
+				},
+				"Text114": {
+					"type": "text",
+					"top": 323,
+					"left": 175,
+					"width": 214,
+					"height": 15,
+					"fontFamily": "System Font Regular",
+					"fontSize": 13,
+					"text": "Fragetext"
+				},
+				"Text115": {
+					"type": "text",
+					"top": 349,
+					"left": 175,
+					"width": 214,
+					"height": 15,
+					"fontFamily": "System Font Regular",
+					"fontSize": 13,
+					"text": "Label;Min;Max;kkA; (max. 4 Zeilen)"
+				},
+				"Text118": {
+					"type": "text",
+					"top": 220,
+					"left": 559,
+					"width": 222,
+					"height": 15,
+					"fontFamily": "System Font Regular",
+					"fontSize": 13,
+					"text": "DG-Notation (z.B. C07 bzw CA07)"
+				},
+				"Text120": {
+					"type": "text",
+					"top": 272,
+					"left": 559,
+					"width": 214,
+					"height": 15,
+					"fontFamily": "System Font Regular",
+					"fontSize": 13,
+					"text": "\"gen\""
+				}
+			}
+		},
+		{
+			"objects": {
+				"Text121": {
+					"type": "text",
+					"top": 70,
+					"left": 57,
+					"width": 698,
+					"height": 112,
+					"fontFamily": "System Font Regular",
+					"fontSize": 12,
+					"borderStyle": "solid",
+					"text": "Bedingungen\r\rDie nextID wird durch eine Formel in \"Bedingung\" ausgerechnet. Es können beliebige 4D-Formeln benutzt werden.\rEs wird automatisch das Gerüst \"ex_res:=sswenn()\" eingeblendet."
+				},
+				"Text123": {
+					"type": "text",
+					"top": 194,
+					"left": 175,
+					"width": 214,
+					"height": 15,
+					"fontFamily": "System Font Regular",
+					"fontSize": 13,
+					"text": "Interne Nummer"
+				},
+				"Text130": {
+					"type": "text",
+					"top": 375,
+					"left": 175,
+					"width": 214,
+					"height": 15,
+					"fontFamily": "System Font Regular",
+					"fontSize": 13,
+					"text": "Formel zur Berechnung der nextID"
+				},
+				"Text134": {
+					"type": "text",
+					"top": 272,
+					"left": 559,
+					"width": 214,
+					"height": 15,
+					"fontFamily": "System Font Regular",
+					"fontSize": 13,
+					"text": "bed"
+				}
+			}
+		},
+		{
+			"objects": {
+				"Text9": {
+					"type": "text",
+					"top": 70,
+					"left": 57,
+					"width": 698,
+					"height": 112,
+					"fontFamily": "System Font Regular",
+					"fontSize": 12,
+					"borderStyle": "solid",
+					"text": "do:Dauer\r\rBerechnet aus Start- und aktueller Zeit die Interviewdauer (max 99 Minuten) und schreibt sie zweistellig auf Zielspalte"
+				},
+				"Text36": {
+					"type": "text",
+					"top": 194,
+					"left": 175,
+					"width": 214,
+					"height": 15,
+					"fontFamily": "System Font Regular",
+					"fontSize": 13,
+					"text": "Interne Nummer"
+				},
+				"Text46": {
+					"type": "text",
+					"top": 245,
+					"left": 175,
+					"width": 214,
+					"height": 15,
+					"fontFamily": "System Font Regular",
+					"fontSize": 13,
+					"text": "Folge-ID (intern Nummer)"
+				},
+				"Text74": {
+					"type": "text",
+					"top": 375,
+					"left": 175,
+					"width": 214,
+					"height": 15,
+					"fontFamily": "System Font Regular",
+					"fontSize": 13,
+					"text": "Dauer"
+				},
+				"Text77": {
+					"type": "text",
+					"top": 220,
+					"left": 559,
+					"width": 222,
+					"height": 15,
+					"fontFamily": "System Font Regular",
+					"fontSize": 13,
+					"text": "DG-Notation (z.B. C07 bzw CA07)"
+				},
+				"Text88": {
+					"type": "text",
+					"top": 272,
+					"left": 559,
+					"width": 214,
+					"height": 15,
+					"fontFamily": "System Font Regular",
+					"fontSize": 13,
+					"text": "do"
+				}
+			}
+		},
+		{
+			"objects": {
+				"Text28": {
+					"type": "text",
+					"top": 70,
+					"left": 57,
+					"width": 698,
+					"height": 112,
+					"fontFamily": "System Font Regular",
+					"fontSize": 12,
+					"borderStyle": "solid",
+					"text": "do: wochentag\r\rSchreibt die Nummer des Wochentages auf Zielspalte\rMontag = 1 bis Sonntag = 7"
+				},
+				"Text37": {
+					"type": "text",
+					"top": 194,
+					"left": 175,
+					"width": 214,
+					"height": 15,
+					"fontFamily": "System Font Regular",
+					"fontSize": 13,
+					"text": "Interne Nummer"
+				},
+				"Text47": {
+					"type": "text",
+					"top": 245,
+					"left": 175,
+					"width": 214,
+					"height": 15,
+					"fontFamily": "System Font Regular",
+					"fontSize": 13,
+					"text": "Folge-ID (intern Nummer)"
+				},
+				"Text52": {
+					"type": "text",
+					"top": 375,
+					"left": 175,
+					"width": 214,
+					"height": 15,
+					"fontFamily": "System Font Regular",
+					"fontSize": 13,
+					"text": "Wochentag"
+				},
+				"Text60": {
+					"type": "text",
+					"top": 220,
+					"left": 559,
+					"width": 222,
+					"height": 15,
+					"fontFamily": "System Font Regular",
+					"fontSize": 13,
+					"text": "DG-Notation (z.B. C07 bzw CA07)"
+				},
+				"Text66": {
+					"type": "text",
+					"top": 272,
+					"left": 559,
+					"width": 214,
+					"height": 15,
+					"fontFamily": "System Font Regular",
+					"fontSize": 13,
+					"text": "do"
+				}
+			}
+		},
+		{
+			"objects": {
+				"Text75": {
+					"type": "text",
+					"top": 70,
+					"left": 57,
+					"width": 698,
+					"height": 112,
+					"fontFamily": "System Font Regular",
+					"fontSize": 12,
+					"borderStyle": "solid",
+					"text": "do:Datum\r\rSchreibt das aktuelle Datum im Format \"ttmm\" auf Zielspalte"
+				},
+				"Text80": {
+					"type": "text",
+					"top": 194,
+					"left": 175,
+					"width": 214,
+					"height": 15,
+					"fontFamily": "System Font Regular",
+					"fontSize": 13,
+					"text": "Interne Nummer"
+				},
+				"Text89": {
+					"type": "text",
+					"top": 245,
+					"left": 175,
+					"width": 214,
+					"height": 15,
+					"fontFamily": "System Font Regular",
+					"fontSize": 13,
+					"text": "Folge-ID (intern Nummer)"
+				},
+				"Text91": {
+					"type": "text",
+					"top": 375,
+					"left": 175,
+					"width": 214,
+					"height": 15,
+					"fontFamily": "System Font Regular",
+					"fontSize": 13,
+					"text": "Datum"
+				},
+				"Text94": {
+					"type": "text",
+					"top": 220,
+					"left": 559,
+					"width": 222,
+					"height": 15,
+					"fontFamily": "System Font Regular",
+					"fontSize": 13,
+					"text": "DG-Notation (z.B. C07 bzw CA07)"
+				},
+				"Text102": {
+					"type": "text",
+					"top": 272,
+					"left": 559,
+					"width": 214,
+					"height": 15,
+					"fontFamily": "System Font Regular",
+					"fontSize": 13,
+					"text": "do"
+				}
+			}
+		},
+		{
+			"objects": {
+				"Text158": {
+					"type": "text",
+					"top": 323,
+					"left": 175,
+					"width": 214,
+					"height": 15,
+					"fontFamily": "System Font Regular",
+					"fontSize": 13,
+					"text": "Meldungstext (max. 255 Zeichen)"
+				},
+				"Text103": {
+					"type": "text",
+					"top": 70,
+					"left": 57,
+					"width": 698,
+					"height": 112,
+					"fontFamily": "System Font Regular",
+					"fontSize": 12,
+					"borderStyle": "solid",
+					"text": "do:Alert\r\rVariante 1: Gibt die ersten 255 Zeichen des Feldes FText als Meldung aus.  Feld \"Bedingung\" ist nur 'Alert'\rVariante 2: Wie 1, läst sich jedoch eine vorige Antwort mit Hilfe einer Liste bestätigen. FText enthält $$(\"ID\";\"Listenname\").\r                   Feld \"Bedingung\" ist 'Alert(\"Korrektur-Frage-ID\")'. Bei Bestätigung geht es ganz normal mit 'nextID' weiter"
+				},
+				"Text104": {
+					"type": "text",
+					"top": 194,
+					"left": 175,
+					"width": 214,
+					"height": 15,
+					"fontFamily": "System Font Regular",
+					"fontSize": 13,
+					"text": "Interne Nummer"
+				},
+				"Text105": {
+					"type": "text",
+					"top": 245,
+					"left": 175,
+					"width": 214,
+					"height": 15,
+					"fontFamily": "System Font Regular",
+					"fontSize": 13,
+					"text": "Folge-ID (intern Nummer)"
+				},
+				"Text108": {
+					"type": "text",
+					"top": 375,
+					"left": 175,
+					"width": 214,
+					"height": 15,
+					"fontFamily": "System Font Regular",
+					"fontSize": 13,
+					"text": "Alert bzw. Alert(\"Korr-ID\")"
+				},
+				"Text116": {
+					"type": "text",
+					"top": 272,
+					"left": 559,
+					"width": 214,
+					"height": 15,
+					"fontFamily": "System Font Regular",
+					"fontSize": 13,
+					"text": "do"
+				}
+			}
+		},
+		{
+			"objects": {
+				"Text174": {
+					"type": "text",
+					"top": 375,
+					"left": 175,
+					"width": 214,
+					"height": 15,
+					"fontFamily": "System Font Regular",
+					"fontSize": 13,
+					"text": "Infofeld"
+				},
+				"Text113": {
+					"type": "text",
+					"top": 70,
+					"left": 57,
+					"width": 698,
+					"height": 112,
+					"fontFamily": "System Font Regular",
+					"fontSize": 12,
+					"borderStyle": "solid",
+					"text": "do:Infofeld\r\rAktualisiert das Infofeld und die Topfzugehörigkeit der Adresse"
+				},
+				"Text117": {
+					"type": "text",
+					"top": 194,
+					"left": 175,
+					"width": 214,
+					"height": 15,
+					"fontFamily": "System Font Regular",
+					"fontSize": 13,
+					"text": "Interne Nummer"
+				},
+				"Text119": {
+					"type": "text",
+					"top": 245,
+					"left": 175,
+					"width": 214,
+					"height": 15,
+					"fontFamily": "System Font Regular",
+					"fontSize": 13,
+					"text": "Folge-ID (intern Nummer)"
+				},
+				"Text124": {
+					"type": "text",
+					"top": 272,
+					"left": 559,
+					"width": 214,
+					"height": 15,
+					"fontFamily": "System Font Regular",
+					"fontSize": 13,
+					"text": "do"
+				}
+			}
+		},
+		{
+			"objects": {
+				"Text122": {
+					"type": "text",
+					"top": 70,
+					"left": 57,
+					"width": 698,
+					"height": 112,
+					"fontFamily": "System Font Regular",
+					"fontSize": 12,
+					"borderStyle": "solid",
+					"text": "do: write\rSchreibt einen Wert auf die gewünschte Zielspalte\rVariante 1: write(\"AdrFeld\"): Der Wert aus Adressfeld ##, das in \"FText\" angegeben wurde, wird geschrieben\r              Achtung: Das Adressfeld darf nur Zahlen beinhalten und kleine Werte müssen ggf. vorne mit Nullen aufgefüllt werden\rwrite(\"xxx\"): Der konkrete Wert xxx wird auf die Zielspalte geschrieben"
+				},
+				"Text125": {
+					"type": "text",
+					"top": 194,
+					"left": 175,
+					"width": 214,
+					"height": 15,
+					"fontFamily": "System Font Regular",
+					"fontSize": 13,
+					"text": "Interne Nummer"
+				},
+				"Text126": {
+					"type": "text",
+					"top": 245,
+					"left": 175,
+					"width": 214,
+					"height": 15,
+					"fontFamily": "System Font Regular",
+					"fontSize": 13,
+					"text": "Folge-ID (intern Nummer)"
+				},
+				"Text127": {
+					"type": "text",
+					"top": 375,
+					"left": 175,
+					"width": 214,
+					"height": 15,
+					"fontFamily": "System Font Regular",
+					"fontSize": 13,
+					"text": "write(\"AdrFeld\") oder write(\"xxx\")"
+				},
+				"Text128": {
+					"type": "text",
+					"top": 220,
+					"left": 559,
+					"width": 222,
+					"height": 15,
+					"fontFamily": "System Font Regular",
+					"fontSize": 13,
+					"text": "DG-Notation (z.B. C07 bzw CA07)"
+				},
+				"Text129": {
+					"type": "text",
+					"top": 272,
+					"left": 559,
+					"width": 214,
+					"height": 15,
+					"fontFamily": "System Font Regular",
+					"fontSize": 13,
+					"text": "do"
+				},
+				"Text131": {
+					"type": "text",
+					"top": 323,
+					"left": 175,
+					"width": 214,
+					"height": 15,
+					"fontFamily": "System Font Regular",
+					"fontSize": 13,
+					"text": "ggf. Nr. des Adressfeldes (2-stellig!)"
+				}
+			}
+		},
+		{
+			"objects": {
+				"Text132": {
+					"type": "text",
+					"top": 70,
+					"left": 57,
+					"width": 698,
+					"height": 112,
+					"fontFamily": "System Font Regular",
+					"fontSize": 12,
+					"borderStyle": "solid",
+					"text": "do: do_command\rVariante 1:Führt ein beliebiges 4D-Kommando aus, das in FText steht (z.B. auch  [Telefonnummer]AdrFeld15:=\"3\")\rVariante 2a): Beliebig viele 4D-Bedingungszeilen mit folgenden 4D-Kommandozeilen,  zwischen \"case\" und \"endcase\"\r                        Bricht nach dem ersten Treffer ab\rVariante 2b): \"case alle\" statt \"case\" - Wie 2a), führt aber alle Befehle zu allen zutreffenden Bedingungen aus \rcase (alle) «cr» Bed1 «cr» Command1 «cr» Bed2 «cr» Command2 «cr» ... «cr» endcase\rVariante 3) : Zwischen \"Routine\" und \"end\" stehen beliebige Zeilen mit (einzeiligen) 4D-Befehlen"
+				},
+				"Text133": {
+					"type": "text",
+					"top": 194,
+					"left": 175,
+					"width": 214,
+					"height": 15,
+					"fontFamily": "System Font Regular",
+					"fontSize": 13,
+					"text": "Interne Nummer"
+				},
+				"Text135": {
+					"type": "text",
+					"top": 245,
+					"left": 175,
+					"width": 214,
+					"height": 15,
+					"fontFamily": "System Font Regular",
+					"fontSize": 13,
+					"text": "Folge-ID (intern Nummer)"
+				},
+				"Text136": {
+					"type": "text",
+					"top": 375,
+					"left": 175,
+					"width": 214,
+					"height": 15,
+					"fontFamily": "System Font Regular",
+					"fontSize": 13,
+					"text": "do_command"
+				},
+				"Text138": {
+					"type": "text",
+					"top": 272,
+					"left": 559,
+					"width": 214,
+					"height": 15,
+					"fontFamily": "System Font Regular",
+					"fontSize": 13,
+					"text": "do"
+				},
+				"Text139": {
+					"type": "text",
+					"top": 323,
+					"left": 175,
+					"width": 214,
+					"height": 15,
+					"fontFamily": "System Font Regular",
+					"fontSize": 13,
+					"text": "4D-Kommandos (s.o.)"
+				}
+			}
+		},
+		{
+			"objects": {
+				"Text137": {
+					"type": "text",
+					"top": 70,
+					"left": 57,
+					"width": 698,
+					"height": 112,
+					"fontFamily": "System Font Regular",
+					"fontSize": 12,
+					"borderStyle": "solid",
+					"text": "do: copy\r\rKopiert die Antwort aus Quell-ID auf das (Anwort-) Label Ziel-ID und schreibt es dann auf Zielspalte"
+				},
+				"Text140": {
+					"type": "text",
+					"top": 194,
+					"left": 175,
+					"width": 214,
+					"height": 15,
+					"fontFamily": "System Font Regular",
+					"fontSize": 13,
+					"text": "Interne Nummer"
+				},
+				"Text141": {
+					"type": "text",
+					"top": 245,
+					"left": 175,
+					"width": 214,
+					"height": 15,
+					"fontFamily": "System Font Regular",
+					"fontSize": 13,
+					"text": "Folge-ID (intern Nummer)"
+				},
+				"Text142": {
+					"type": "text",
+					"top": 375,
+					"left": 175,
+					"width": 214,
+					"height": 15,
+					"fontFamily": "System Font Regular",
+					"fontSize": 13,
+					"text": "copy(\"Quell-ID\";\"Ziel-ID\")"
+				},
+				"Text143": {
+					"type": "text",
+					"top": 220,
+					"left": 559,
+					"width": 222,
+					"height": 15,
+					"fontFamily": "System Font Regular",
+					"fontSize": 13,
+					"text": "DG-Notation (z.B. C07 bzw CA07)"
+				},
+				"Text144": {
+					"type": "text",
+					"top": 272,
+					"left": 559,
+					"width": 214,
+					"height": 15,
+					"fontFamily": "System Font Regular",
+					"fontSize": 13,
+					"text": "do"
+				}
+			}
+		},
+		{
+			"objects": {
+				"Text145": {
+					"type": "text",
+					"top": 70,
+					"left": 57,
+					"width": 698,
+					"height": 112,
+					"fontFamily": "System Font Regular",
+					"fontSize": 12,
+					"borderStyle": "solid",
+					"text": "do: Fassung\r\rZählt aus den fertigen und In-Arbeit-Interviews das Verhältnis der Fassungen aus und setzt die aktuelle Fassung entsprechend zum Ausgleich"
+				},
+				"Text146": {
+					"type": "text",
+					"top": 194,
+					"left": 175,
+					"width": 214,
+					"height": 15,
+					"fontFamily": "System Font Regular",
+					"fontSize": 13,
+					"text": "Interne Nummer"
+				},
+				"Text147": {
+					"type": "text",
+					"top": 245,
+					"left": 175,
+					"width": 214,
+					"height": 15,
+					"fontFamily": "System Font Regular",
+					"fontSize": 13,
+					"text": "Folge-ID (intern Nummer)"
+				},
+				"Text148": {
+					"type": "text",
+					"top": 375,
+					"left": 175,
+					"width": 214,
+					"height": 15,
+					"fontFamily": "System Font Regular",
+					"fontSize": 13,
+					"text": "Fassung"
+				},
+				"Text149": {
+					"type": "text",
+					"top": 220,
+					"left": 559,
+					"width": 222,
+					"height": 15,
+					"fontFamily": "System Font Regular",
+					"fontSize": 13,
+					"text": "DG-Notation (z.B. C07 bzw CA07)"
+				},
+				"Text150": {
+					"type": "text",
+					"top": 272,
+					"left": 559,
+					"width": 214,
+					"height": 15,
+					"fontFamily": "System Font Regular",
+					"fontSize": 13,
+					"text": "do"
+				}
+			}
+		},
+		{
+			"objects": {
+				"Text151": {
+					"type": "text",
+					"top": 70,
+					"left": 57,
+					"width": 698,
+					"height": 112,
+					"fontFamily": "System Font Regular",
+					"fontSize": 12,
+					"borderStyle": "solid",
+					"text": "Spezial-Eingabe\r\rWertebereich: Parameter K=9,17: 9=Bogen-kkA  ==> 17=Spezialschlüssel-kkA\rFText: Hier kann optional die ID einer zusätzlich anzudruckenden Frage angegeben werden (hilfreich zum Schlüsseln, z.B. Vorfilter)"
+				},
+				"Text152": {
+					"type": "text",
+					"top": 194,
+					"left": 175,
+					"width": 214,
+					"height": 15,
+					"fontFamily": "System Font Regular",
+					"fontSize": 13,
+					"text": "Interne Nummer"
+				},
+				"Text154": {
+					"type": "text",
+					"top": 245,
+					"left": 175,
+					"width": 214,
+					"height": 15,
+					"fontFamily": "System Font Regular",
+					"fontSize": 13,
+					"text": "Folge-ID (interne Nummer)"
+				},
+				"Text155": {
+					"type": "text",
+					"top": 271,
+					"left": 175,
+					"width": 214,
+					"height": 15,
+					"fontFamily": "System Font Regular",
+					"fontSize": 13,
+					"text": "gen_Spez"
+				},
+				"Text156": {
+					"type": "text",
+					"top": 297,
+					"left": 175,
+					"width": 214,
+					"height": 15,
+					"fontFamily": "System Font Regular",
+					"fontSize": 13,
+					"text": "1-5;8;9 S=8,9 K=9,17"
+				},
+				"Text157": {
+					"type": "text",
+					"top": 323,
+					"left": 175,
+					"width": 214,
+					"height": 15,
+					"fontFamily": "System Font Regular",
+					"fontSize": 13,
+					"text": "ID einer zusätzlich anzudruckenden Frage"
+				},
+				"Text159": {
+					"type": "text",
+					"top": 349,
+					"left": 175,
+					"width": 214,
+					"height": 15,
+					"fontFamily": "System Font Regular",
+					"fontSize": 13,
+					"text": "ID der Originalfrage"
+				},
+				"Text160": {
+					"type": "text",
+					"top": 220,
+					"left": 559,
+					"width": 222,
+					"height": 15,
+					"fontFamily": "System Font Regular",
+					"fontSize": 13,
+					"text": "DG-Notation (z.B. C07 bzw CA07)"
+				},
+				"Text161": {
+					"type": "text",
+					"top": 246,
+					"left": 559,
+					"width": 214,
+					"height": 15,
+					"fontFamily": "System Font Regular",
+					"fontSize": 13,
+					"text": "1 bei nicht mehrfach, sonst Anzahl"
+				},
+				"Text162": {
+					"type": "text",
+					"top": 272,
+					"left": 559,
+					"width": 214,
+					"height": 15,
+					"fontFamily": "System Font Regular",
+					"fontSize": 13,
+					"text": "Spez"
+				}
+			}
+		},
+		{
+			"objects": {
+				"Text249": {
+					"type": "text",
+					"top": 70,
+					"left": 57,
+					"width": 698,
+					"height": 112,
+					"fontFamily": "System Font Regular",
+					"fontSize": 12,
+					"borderStyle": "solid",
+					"text": "Große Frage, kleine Antwort: 12 Zeilen Frage, 6 Zeilen Antworten, sonst wie \"gen_FA\"\r\rAntworten 0-10 kommen auf die erste Spalte (Nie 0 und 10 gleichzeitig verwenden!), 11-20 auf die zweite Spalte usw.."
+				},
+				"Text251": {
+					"type": "text",
+					"top": 194,
+					"left": 175,
+					"width": 214,
+					"height": 15,
+					"fontFamily": "System Font Regular",
+					"fontSize": 13,
+					"text": "Interne Nummer"
+				},
+				"Text252": {
+					"type": "text",
+					"top": 219,
+					"left": 175,
+					"width": 214,
+					"height": 15,
+					"fontFamily": "System Font Regular",
+					"fontSize": 13,
+					"text": "Fragenummer lt. Fragebogen"
+				},
+				"Text253": {
+					"type": "text",
+					"top": 245,
+					"left": 175,
+					"width": 214,
+					"height": 15,
+					"fontFamily": "System Font Regular",
+					"fontSize": 13,
+					"text": "Folge-ID (intern Nummer)"
+				},
+				"Text254": {
+					"type": "text",
+					"top": 271,
+					"left": 175,
+					"width": 214,
+					"height": 15,
+					"fontFamily": "System Font Regular",
+					"fontSize": 13,
+					"text": "Formular-Name"
+				},
+				"Text255": {
+					"type": "text",
+					"top": 297,
+					"left": 175,
+					"width": 214,
+					"height": 15,
+					"fontFamily": "System Font Regular",
+					"fontSize": 13,
+					"text": "1-5;8;9 S=8,9 (S für Solowerte)"
+				},
+				"Text256": {
+					"type": "text",
+					"top": 323,
+					"left": 175,
+					"width": 214,
+					"height": 15,
+					"fontFamily": "System Font Regular",
+					"fontSize": 13,
+					"text": "Fragetext"
+				},
+				"Text257": {
+					"type": "text",
+					"top": 349,
+					"left": 175,
+					"width": 214,
+					"height": 15,
+					"fontFamily": "System Font Regular",
+					"fontSize": 13,
+					"text": "Feste Antwortvorgaben"
+				},
+				"Text258": {
+					"type": "text",
+					"top": 375,
+					"left": 175,
+					"width": 214,
+					"height": 15,
+					"fontFamily": "System Font Regular",
+					"fontSize": 13,
+					"text": "--"
+				},
+				"Text259": {
+					"type": "text",
+					"top": 194,
+					"left": 559,
+					"width": 214,
+					"height": 15,
+					"fontFamily": "System Font Regular",
+					"fontSize": 13,
+					"text": "Interne Nummer"
+				},
+				"Text260": {
+					"type": "text",
+					"top": 220,
+					"left": 559,
+					"width": 222,
+					"height": 15,
+					"fontFamily": "System Font Regular",
+					"fontSize": 13,
+					"text": "DG-Notation (z.B. C07 bzw CA07)"
+				},
+				"Text261": {
+					"type": "text",
+					"top": 246,
+					"left": 559,
+					"width": 214,
+					"height": 15,
+					"fontFamily": "System Font Regular",
+					"fontSize": 13,
+					"text": "1 bei nicht mehrfach, sonst Anzahl"
+				},
+				"Text262": {
+					"type": "text",
+					"top": 272,
+					"left": 559,
+					"width": 214,
+					"height": 15,
+					"fontFamily": "System Font Regular",
+					"fontSize": 13,
+					"text": "automatisch vergeben, meist \"gen\""
+				}
+			}
+		},
+		{
+			"objects": {
+				"Text263": {
+					"type": "text",
+					"top": 70,
+					"left": 57,
+					"width": 698,
+					"height": 112,
+					"fontFamily": "System Font Regular",
+					"fontSize": 12,
+					"borderStyle": "solid",
+					"text": "Große Frage, kleine Antwort: 12 Zeilen Frage, 6 Zeilen Antworten, sonst wie \"gen_FA\"\r\rAntworten 0-10 kommen auf die erste Spalte (Nie 0 und 10 gleichzeitig verwenden!), 11-20 auf die zweite Spalte usw.."
+				},
+				"Text265": {
+					"type": "text",
+					"top": 194,
+					"left": 175,
+					"width": 214,
+					"height": 15,
+					"fontFamily": "System Font Regular",
+					"fontSize": 13,
+					"text": "Interne Nummer"
+				},
+				"Text266": {
+					"type": "text",
+					"top": 219,
+					"left": 175,
+					"width": 214,
+					"height": 15,
+					"fontFamily": "System Font Regular",
+					"fontSize": 13,
+					"text": "Fragenummer lt. Fragebogen"
+				},
+				"Text267": {
+					"type": "text",
+					"top": 245,
+					"left": 175,
+					"width": 214,
+					"height": 15,
+					"fontFamily": "System Font Regular",
+					"fontSize": 13,
+					"text": "Folge-ID (intern Nummer)"
+				},
+				"Text268": {
+					"type": "text",
+					"top": 271,
+					"left": 175,
+					"width": 214,
+					"height": 15,
+					"fontFamily": "System Font Regular",
+					"fontSize": 13,
+					"text": "Formular-Name"
+				},
+				"Text269": {
+					"type": "text",
+					"top": 297,
+					"left": 175,
+					"width": 214,
+					"height": 15,
+					"fontFamily": "System Font Regular",
+					"fontSize": 13,
+					"text": "1-5;8;9 S=8,9 (S für Solowerte)"
+				},
+				"Text270": {
+					"type": "text",
+					"top": 323,
+					"left": 175,
+					"width": 214,
+					"height": 15,
+					"fontFamily": "System Font Regular",
+					"fontSize": 13,
+					"text": "Fragetext"
+				},
+				"Text271": {
+					"type": "text",
+					"top": 349,
+					"left": 175,
+					"width": 214,
+					"height": 15,
+					"fontFamily": "System Font Regular",
+					"fontSize": 13,
+					"text": "Feste Antwortvorgaben"
+				},
+				"Text272": {
+					"type": "text",
+					"top": 375,
+					"left": 175,
+					"width": 214,
+					"height": 15,
+					"fontFamily": "System Font Regular",
+					"fontSize": 13,
+					"text": "--"
+				},
+				"Text273": {
+					"type": "text",
+					"top": 194,
+					"left": 559,
+					"width": 214,
+					"height": 15,
+					"fontFamily": "System Font Regular",
+					"fontSize": 13,
+					"text": "Interne Nummer"
+				},
+				"Text274": {
+					"type": "text",
+					"top": 220,
+					"left": 559,
+					"width": 222,
+					"height": 15,
+					"fontFamily": "System Font Regular",
+					"fontSize": 13,
+					"text": "DG-Notation (z.B. C07 bzw CA07)"
+				},
+				"Text275": {
+					"type": "text",
+					"top": 246,
+					"left": 559,
+					"width": 214,
+					"height": 15,
+					"fontFamily": "System Font Regular",
+					"fontSize": 13,
+					"text": "1 bei nicht mehrfach, sonst Anzahl"
+				},
+				"Text276": {
+					"type": "text",
+					"top": 272,
+					"left": 559,
+					"width": 214,
+					"height": 15,
+					"fontFamily": "System Font Regular",
+					"fontSize": 13,
+					"text": "automatisch vergeben, meist \"gen\""
+				}
+			}
+		}
+	]
+}

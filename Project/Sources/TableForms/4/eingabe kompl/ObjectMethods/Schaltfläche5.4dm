@@ -1,0 +1,5 @@
+C_TEXT:C284(vt_AntwASCII)
+Open window:C153(860;160;1450;1000;-1999;"AntwortASCII")
+vt_AntwASCII:=Replace string:C233([TelefonNummer:4]AntwASCII:41;Char:C90(13);"*****")
+vt_AntwASCII:=Replace string:C233(vt_AntwASCII;"|";Char:C90(13))
+DIALOG:C40([TelefonNummer:4];"d_NurAntwASCII")

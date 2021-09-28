@@ -1,0 +1,1 @@
+vText:=Current user:C182+Char:C90(13)+Char:C90(13)+String:C10(Current date:C33)+Char:C90(13)+Char:C90(13)+String:C10(Current time:C178)

@@ -1,0 +1,660 @@
+﻿{
+	"destination": "detailScreen",
+	"rightMargin": 19,
+	"bottomMargin": 20,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onPrintingDetail",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke",
+		"onSelectionChange"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "DIN A4",
+		"paperWidth": "595pt",
+		"paperHeight": "842pt"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"Text4": {
+					"type": "text",
+					"top": 375,
+					"left": 484,
+					"width": 111,
+					"height": 21,
+					"fontSize": 18,
+					"text": "Ihre Eingabe"
+				},
+				"Text7": {
+					"type": "text",
+					"top": 77,
+					"left": 315,
+					"width": 105,
+					"height": 15,
+					"fontSize": 13,
+					"text": "bP    aP"
+				},
+				"Linie1": {
+					"type": "line",
+					"top": 131,
+					"left": 378,
+					"height": 297
+				},
+				"Text2": {
+					"type": "text",
+					"top": 139,
+					"left": 392,
+					"width": 105,
+					"height": 16,
+					"fontSize": 14,
+					"text": "Sonstiges"
+				},
+				"Feld2": {
+					"type": "input",
+					"top": 160,
+					"left": 622,
+					"width": 355,
+					"height": 280,
+					"dataSource": "[TelefonNummer:4]Kommentar:6",
+					"fontSize": 12,
+					"focusable": false,
+					"borderStyle": "sunken",
+					"enterable": false,
+					"contextMenu": "none",
+					"scrollbarVertical": "visible",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Variable2": {
+					"type": "input",
+					"top": 4,
+					"left": 622,
+					"width": 371,
+					"height": 128,
+					"dataSource": "vPerson",
+					"textAlign": "left",
+					"fontSize": 14,
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "sunken",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Variable4": {
+					"type": "input",
+					"top": 137,
+					"left": 621,
+					"width": 373,
+					"height": 16,
+					"dataSource": "vakt_AP",
+					"fontSize": 14,
+					"focusable": false,
+					"borderStyle": "sunken",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Text10": {
+					"type": "text",
+					"top": 61,
+					"left": 48,
+					"width": 541,
+					"height": 16,
+					"fontSize": 14,
+					"text": "Ausfall: (bP = zu befr. Person, aP = andere Person)"
+				},
+				"vantw": {
+					"type": "input",
+					"top": 402,
+					"left": 485,
+					"width": 64,
+					"height": 20,
+					"dataSource": "vantw",
+					"fontFamily": "Geneva",
+					"fontSize": 12,
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"entryFilter": "&\"1-9\"##",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"OK": {
+					"type": "button",
+					"top": 463,
+					"left": 471,
+					"width": 121,
+					"height": 28,
+					"dataSource": "b_OK",
+					"text": "Weiter",
+					"class": "Standard",
+					"defaultButton": true,
+					"method": "ObjectMethods/OK.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"vantw1": {
+					"type": "input",
+					"top": 160,
+					"left": 395,
+					"width": 213,
+					"height": 208,
+					"dataSource": "vantw_Offen",
+					"fontFamily": "Geneva",
+					"fontSize": 12,
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Abbrechen2": {
+					"type": "button",
+					"top": 465,
+					"left": 755,
+					"width": 125,
+					"height": 19,
+					"dataSource": "b_Kommentar",
+					"text": "Kommentar zufügen",
+					"class": "Standard",
+					"method": "ObjectMethods/Abbrechen2.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Abbrechen3": {
+					"type": "button",
+					"top": 471,
+					"left": 64,
+					"width": 100,
+					"height": 19,
+					"dataSource": "b_EinsZurueck",
+					"action": "cancel",
+					"text": "Eine zurück",
+					"class": "Standard",
+					"method": "ObjectMethods/Abbrechen3.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Splitter1": {
+					"type": "splitter",
+					"top": 56,
+					"left": 42,
+					"width": 552,
+					"height": 4,
+					"dataSource": "Splitter1",
+					"borderStyle": "sunken",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Splitter2": {
+					"type": "splitter",
+					"top": 440,
+					"left": 41,
+					"width": 552,
+					"height": 4,
+					"dataSource": "Splitter1",
+					"borderStyle": "sunken",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Text5": {
+					"type": "text",
+					"top": 61,
+					"left": 49,
+					"width": 264,
+					"height": 375,
+					"fontFamily": ".SF NS Text",
+					"fontSize": 12,
+					"text": "\r  Verweigerung durch \r • geben generell keine Interviews ...........\r • kein Interesse .......................................\r • Nicht telefonisch, nur schriftlich ...........\r • keine Zeit ..............................................\r • ohne Information / kkA / lea ..................\r • ADM .....................................................\r • Sonstiges (bitte angeben) .....................\r\rbP in Feldzeit nicht zu erreichen:\r • Urlaub ......................................................\r • Geschäftsreise .........................................\r • Krankenhaus / Kur ...................................\r • Sonstiges (bitte angeben) ........................\r\rSonstige Ausfallgründe:\r • Sprachprobleme .......................................\r • bP geistig-körperlich nicht der Lage .......\r • Quote erfüllt .......................................\r • Adresse falsch/unbrauchbar ...................\r • Passt nicht (mehr) in GG (bitte angeben) ...\r • Doublette ..........................................\r • ZP verstorben ....................................\r • Sonstiges (bitte angeben) ................."
+				},
+				"Text3": {
+					"type": "text",
+					"top": 94,
+					"left": 317,
+					"width": 13,
+					"height": 112,
+					"fontSize": 12,
+					"text": "1\r2\r3\r4\r5\r6\r9"
+				},
+				"Text6": {
+					"type": "text",
+					"top": 224,
+					"left": 320,
+					"width": 18,
+					"height": 57,
+					"fontSize": 12,
+					"text": "21\r22\r23\r29"
+				},
+				"Text8": {
+					"type": "text",
+					"top": 94,
+					"left": 350,
+					"width": 23,
+					"height": 112,
+					"fontSize": 12,
+					"text": "11\r12\r13\r14\r15\r16\r19"
+				},
+				"Text9": {
+					"type": "text",
+					"top": 319,
+					"left": 320,
+					"width": 20,
+					"height": 128,
+					"fontSize": 12,
+					"text": "31\r32\r33\r34\r35\r36\r37\r39"
+				},
+				"Text1": {
+					"type": "text",
+					"top": 6,
+					"left": 120,
+					"width": 224,
+					"height": 43,
+					"fontSize": 36,
+					"text": "Fragebogen"
+				},
+				"Feld1": {
+					"type": "input",
+					"top": 6,
+					"left": 366,
+					"width": 159,
+					"height": 43,
+					"dataSource": "[TelefonNummer:4]AdrFBNr:20",
+					"dataSourceTypeHint": "integer",
+					"fontSize": 36,
+					"focusable": false,
+					"borderStyle": "sunken",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				}
+			}
+		},
+		{
+			"objects": {
+				"Text11": {
+					"type": "text",
+					"top": 10,
+					"left": 154,
+					"width": 201,
+					"height": 42,
+					"fontSize": 36,
+					"text": "Fragebogen"
+				},
+				"Feld3": {
+					"type": "input",
+					"top": 10,
+					"left": 374,
+					"width": 149,
+					"height": 42,
+					"dataSource": "[TelefonNummer:4]AdrFBNr:20",
+					"dataSourceTypeHint": "integer",
+					"fontSize": 36,
+					"focusable": false,
+					"borderStyle": "sunken",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Text12": {
+					"type": "text",
+					"top": 375,
+					"left": 484,
+					"width": 111,
+					"height": 21,
+					"fontSize": 18,
+					"text": "Ihre Eingabe"
+				},
+				"OK1": {
+					"type": "button",
+					"top": 463,
+					"left": 471,
+					"width": 121,
+					"height": 28,
+					"dataSource": "b_OK",
+					"text": "Weiter",
+					"class": "Standard",
+					"defaultButton": true,
+					"method": "ObjectMethods/OK1.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Splitter3": {
+					"type": "splitter",
+					"top": 65,
+					"left": 42,
+					"width": 552,
+					"height": 4,
+					"dataSource": "Splitter1",
+					"borderStyle": "sunken",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Splitter4": {
+					"type": "splitter",
+					"top": 440,
+					"left": 41,
+					"width": 552,
+					"height": 4,
+					"dataSource": "Splitter1",
+					"borderStyle": "sunken",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Text13": {
+					"type": "text",
+					"top": 151,
+					"left": 45,
+					"width": 244,
+					"height": 144,
+					"fontSize": 14,
+					"text": "Nie Abnahme / Nie AB .....................\r\rDauer-AB .........................................\r\rBesetztzeichen, normal ....................\r\rPause besetzt ...................................\r\rgemischt, zwischendrin Kontakt ........"
+				},
+				"Text14": {
+					"type": "text",
+					"top": 151,
+					"left": 285,
+					"width": 31,
+					"height": 144,
+					"fontSize": 14,
+					"text": "92\r\r93\r\r94\r\r95\r\r96"
+				},
+				"Abbrechen1": {
+					"type": "button",
+					"top": 465,
+					"left": 755,
+					"width": 125,
+					"height": 19,
+					"dataSource": "b_Kommentar",
+					"text": "Kommentar zufügen",
+					"class": "Standard",
+					"method": "ObjectMethods/Abbrechen1.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Abbrechen4": {
+					"type": "button",
+					"top": 471,
+					"left": 64,
+					"width": 100,
+					"height": 19,
+					"dataSource": "b_EinsZurueck",
+					"action": "cancel",
+					"text": "Eine zurück",
+					"class": "Standard",
+					"method": "ObjectMethods/Abbrechen4.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Feld4": {
+					"type": "input",
+					"top": 160,
+					"left": 622,
+					"width": 355,
+					"height": 280,
+					"dataSource": "[TelefonNummer:4]Kommentar:6",
+					"fontSize": 12,
+					"focusable": false,
+					"borderStyle": "sunken",
+					"enterable": false,
+					"contextMenu": "none",
+					"scrollbarVertical": "visible",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Variable1": {
+					"type": "input",
+					"top": 4,
+					"left": 622,
+					"width": 371,
+					"height": 128,
+					"dataSource": "vPerson",
+					"textAlign": "left",
+					"fontSize": 14,
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "sunken",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Variable3": {
+					"type": "input",
+					"top": 137,
+					"left": 621,
+					"width": 373,
+					"height": 16,
+					"dataSource": "vakt_AP",
+					"fontSize": 14,
+					"focusable": false,
+					"borderStyle": "sunken",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"vantw2": {
+					"type": "input",
+					"top": 402,
+					"left": 485,
+					"width": 64,
+					"height": 20,
+					"dataSource": "vantw",
+					"fontFamily": "Geneva",
+					"fontSize": 12,
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"entryFilter": "&\"2-6;9\"##",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				}
+			}
+		}
+	],
+	"editor": {
+		"groups": {
+			"Gruppe2": [
+				"Text1",
+				"Feld1"
+			]
+		}
+	}
+}

@@ -1,0 +1,202 @@
+﻿{
+	"destination": "detailScreen",
+	"rightMargin": 19,
+	"bottomMargin": 20,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onPrintingDetail",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke",
+		"onSelectionChange"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "DIN A4",
+		"paperWidth": "595pt",
+		"paperHeight": "842pt"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"Variable1": {
+					"type": "input",
+					"top": 33,
+					"left": 100,
+					"width": 210,
+					"height": 14,
+					"dataSource": "vs_Empfaenger",
+					"fontFamily": "System Font Regular",
+					"fontSize": 12,
+					"fill": "transparent",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDrop",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Variable2": {
+					"type": "input",
+					"top": 55,
+					"left": 100,
+					"width": 210,
+					"height": 14,
+					"dataSource": "vs_Text",
+					"fontFamily": "System Font Regular",
+					"fontSize": 12,
+					"fill": "transparent",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Text1": {
+					"type": "text",
+					"top": 34,
+					"left": 15,
+					"width": 70,
+					"height": 16,
+					"textAlign": "right",
+					"fontFamily": "System Font Regular",
+					"fontSize": 12,
+					"text": "Empfänger"
+				},
+				"Text2": {
+					"type": "text",
+					"top": 56,
+					"left": 15,
+					"width": 70,
+					"height": 16,
+					"textAlign": "right",
+					"fontFamily": "System Font Regular",
+					"fontSize": 12,
+					"text": "Meldung"
+				},
+				"Schaltfläche1": {
+					"type": "button",
+					"top": 133,
+					"left": 95,
+					"width": 193,
+					"height": 27,
+					"dataSource": "b_Senden",
+					"text": "Senden",
+					"class": "Standard",
+					"defaultButton": true,
+					"method": "ObjectMethods/Schaltfläche1.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Schaltfläche2": {
+					"type": "button",
+					"top": 172,
+					"left": 96,
+					"width": 194,
+					"height": 20,
+					"dataSource": "b_Cancel",
+					"action": "cancel",
+					"text": "Abbrechen",
+					"class": "Standard",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Rollbarer Bereich1": {
+					"type": "listbox",
+					"top": 31,
+					"left": 333,
+					"width": 189,
+					"height": 156,
+					"resizingMode": "legacy",
+					"focusable": false,
+					"movableRows": false,
+					"dragging": "custom",
+					"showHeaders": false,
+					"selectionMode": "single",
+					"scrollbarHorizontal": "hidden",
+					"horizontalLineStroke": "transparent",
+					"verticalLineStroke": "transparent",
+					"fill": "transparent",
+					"fontFamily": "System Font Regular",
+					"fontSize": 11,
+					"borderStyle": "solid",
+					"events": [
+						"onClick",
+						"onDisplayDetail",
+						"onDataChange"
+					],
+					"columns": [
+						{
+							"name": "Rollbarer Bereich1_Column1",
+							"dataSource": "as_ClientList",
+							"width": 10,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"fontFamily": "System Font Regular",
+							"fontSize": 11,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Kopf1",
+								"text": "Kopf1",
+								"fontFamily": "System Font Regular",
+								"fontSize": 11
+							},
+							"footer": {
+								"name": "Fußteil1",
+								"timeFormat": "hh_mm_ss",
+								"fontFamily": "System Font Regular",
+								"fontSize": 11
+							}
+						}
+					]
+				}
+			}
+		}
+	]
+}

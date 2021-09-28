@@ -1,0 +1,349 @@
+﻿{
+	"bars": [
+		{
+			"id": 1,
+			"name": "Menüleiste Nr. 1",
+			"picture": "pictlib:2",
+			"items": [
+				{
+					"link": 31042
+				},
+				{
+					"link": 33000
+				},
+				{
+					"link": 20237
+				},
+				{
+					"link": 11290
+				},
+				{
+					"link": 12300
+				},
+				{
+					"link": 1404
+				},
+				{
+					"link": 20217
+				},
+				{
+					"link": 14078
+				}
+			]
+		}
+	],
+	"menus": [
+		{
+			"link": 31042,
+			"title": ":79,1",
+			"items": [
+				{
+					"title": "Kennwort ändern",
+					"method": "m_passwd"
+				},
+				{
+					"title": ":79,2",
+					"method": "m_beenden",
+					"shortcutAccel": true,
+					"shortcutKey": "Q"
+				}
+			]
+		},
+		{
+			"link": 20237,
+			"title": "Interviews",
+			"items": [
+				{
+					"title": "Interviewen",
+					"method": "m_interviewen"
+				},
+				{
+					"title": "AdrNr anfordern",
+					"method": "m_HoleAdrNr"
+				},
+				{
+					"title": "(-",
+					"isSeparator": true,
+					"enabled": false
+				},
+				{
+					"title": "Ansehen",
+					"method": "m_ansehen"
+				}
+			]
+		},
+		{
+			"link": 11290,
+			"title": "Adressen",
+			"items": [
+				{
+					"title": "Zeigen",
+					"method": "m_NummernZeigen"
+				},
+				{
+					"title": "(-",
+					"isSeparator": true,
+					"enabled": false
+				},
+				{
+					"title": "ADM-Abgleich",
+					"method": "mm_ADMAbgleich_manuell"
+				},
+				{
+					"title": "ADM-Log",
+					"method": "mm_ADM_Log"
+				}
+			]
+		},
+		{
+			"link": 12300,
+			"title": "Statistik",
+			"items": [
+				{
+					"title": "Quote",
+					"method": "m_QuotenAnzeigen"
+				},
+				{
+					"title": "Alter x Geschlecht",
+					"method": "m_Alter_x_Sex"
+				},
+				{
+					"title": "Ausschöpfung",
+					"method": "m_Ausschoepfung"
+				},
+				{
+					"title": "Fassung",
+					"method": "m_FassungStatistik"
+				},
+				{
+					"title": "(-",
+					"isSeparator": true,
+					"enabled": false
+				},
+				{
+					"title": "Interviewer-Status",
+					"method": "m_StatusZeigen"
+				},
+				{
+					"title": "Interviewer-Statistik",
+					"method": "m_statistik"
+				},
+				{
+					"title": "Interviewer-Protokoll",
+					"method": "m_IntProtokoll"
+				},
+				{
+					"title": "(-",
+					"isSeparator": true,
+					"enabled": false
+				},
+				{
+					"title": "Angemeldete Clients",
+					"method": "m_ListeAngemeldeterClients"
+				}
+			]
+		},
+		{
+			"link": 1404,
+			"title": "Spezial",
+			"items": [
+				{
+					"title": "Spezial eingeben",
+					"method": "m_SpezialEingabe"
+				},
+				{
+					"title": "(-",
+					"isSeparator": true,
+					"enabled": false
+				},
+				{
+					"title": "Spezial mit Schlüsseln",
+					"method": "m_SpezialMitSchlüssel"
+				}
+			]
+		},
+		{
+			"link": 20217,
+			"title": "Fragebogen",
+			"items": [
+				{
+					"title": "Bearbeiten",
+					"method": "mm_FB_Liste"
+				},
+				{
+					"title": "(-",
+					"isSeparator": true,
+					"enabled": false
+				},
+				{
+					"title": "Export-Belegung",
+					"enabled": false,
+					"method": "m_Zeige_ExportArray"
+				}
+			]
+		},
+		{
+			"link": 14078,
+			"title": "Verwaltung",
+			"items": [
+				{
+					"title": "Meldung senden",
+					"method": "m_MeldungSendenDialog"
+				},
+				{
+					"title": "(-",
+					"isSeparator": true,
+					"enabled": false
+				},
+				{
+					"title": "Neue Umfrage anlegen",
+					"method": "m_NeueUmfrage"
+				},
+				{
+					"title": "Umfrage wählen",
+					"method": "p_UmfrageWählen"
+				},
+				{
+					"title": "Variablen bearbeiten",
+					"method": "m_ModVariables"
+				},
+				{
+					"title": "Quoten Grundeinstellungen",
+					"method": "m_QuoteGrundDefs"
+				},
+				{
+					"title": "Töpfe in Adressen bestücken",
+					"method": "m_QuotenToepfeInAdrSetzen"
+				},
+				{
+					"title": "Kommentar aus Vorwelle",
+					"method": "m_KommentarVorwelle"
+				},
+				{
+					"title": "Formel anwenden",
+					"method": "m_FormelAufAdressen"
+				},
+				{
+					"title": "(-",
+					"isSeparator": true,
+					"enabled": false
+				},
+				{
+					"title": "Import-Export",
+					"method": "m_Import_Export_allgemein"
+				},
+				{
+					"title": "Import neue Adressen",
+					"method": "m_ImportNeueAdressen"
+				},
+				{
+					"title": "Import Hilfs-Listen",
+					"method": "m_Import_Hilfslisten"
+				},
+				{
+					"title": "(-",
+					"isSeparator": true,
+					"enabled": false
+				},
+				{
+					"title": "Interview retten",
+					"method": "m_InterviewRetten"
+				},
+				{
+					"title": "Interview ändern",
+					"method": "m_InterviewAendern"
+				},
+				{
+					"title": "Zeit pro Frage",
+					"method": "m_ZeitProFrage"
+				},
+				{
+					"title": "(-",
+					"isSeparator": true,
+					"enabled": false
+				},
+				{
+					"title": "Datensätze löschen",
+					"method": "m_DatenLoeschen"
+				},
+				{
+					"title": "Datensätze rücksetzen",
+					"method": "m_AdressenRuecksetzen"
+				},
+				{
+					"title": "Daten anonymisieren",
+					"method": "m_Anonymisieren"
+				},
+				{
+					"title": "Umfrage kopieren",
+					"method": "m_UmfrageKopieren"
+				},
+				{
+					"title": "(-",
+					"isSeparator": true,
+					"enabled": false
+				},
+				{
+					"title": "Mapping",
+					"method": "p_Map_Bearbeiten"
+				},
+				{
+					"title": "Mapping temp. löschen",
+					"method": "p_Map_TempReset"
+				}
+			]
+		},
+		{
+			"link": 33000,
+			"title": ":xliff:CommonMenuEdit",
+			"items": [
+				{
+					"title": ":xliff:CommonMenuItemUndo",
+					"shortcutAccel": true,
+					"shortcutKey": "Z",
+					"action": "undo"
+				},
+				{
+					"title": "(-",
+					"isSeparator": true
+				},
+				{
+					"title": ":xliff:CommonMenuItemCut",
+					"shortcutAccel": true,
+					"shortcutKey": "X",
+					"action": "cut"
+				},
+				{
+					"title": ":xliff:CommonMenuItemCopy",
+					"shortcutAccel": true,
+					"shortcutKey": "C",
+					"action": "copy"
+				},
+				{
+					"title": ":xliff:CommonMenuItemPaste",
+					"shortcutAccel": true,
+					"shortcutKey": "V",
+					"action": "paste"
+				},
+				{
+					"title": ":xliff:CommonMenuItemClear",
+					"action": "clear"
+				},
+				{
+					"title": ":xliff:CommonMenuItemSelectAll",
+					"shortcutAccel": true,
+					"shortcutKey": "A",
+					"action": "selectAll"
+				},
+				{
+					"title": "(-",
+					"isSeparator": true
+				},
+				{
+					"title": ":xliff:CommonMenuItemShowClipboard",
+					"action": "showClipboard"
+				}
+			]
+		}
+	]
+}

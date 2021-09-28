@@ -1,0 +1,1 @@
+vt_SendText:=Get text from pasteboard:C524

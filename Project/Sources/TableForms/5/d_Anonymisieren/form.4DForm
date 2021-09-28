@@ -1,0 +1,1303 @@
+﻿{
+	"destination": "detailScreen",
+	"rightMargin": 19,
+	"bottomMargin": 20,
+	"markerHeader": 16,
+	"markerBody": 704,
+	"markerBreak": 710,
+	"markerFooter": 716,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onPrintingDetail",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke",
+		"onSelectionChange"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "DIN A4",
+		"paperWidth": "595pt",
+		"paperHeight": "842pt"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"Viereck3": {
+					"type": "rectangle",
+					"top": 21,
+					"left": 37,
+					"width": 493,
+					"height": 78,
+					"fill": "transparent"
+				},
+				"Viereck2": {
+					"type": "rectangle",
+					"top": 579,
+					"left": 37,
+					"width": 492,
+					"height": 116,
+					"fill": "transparent"
+				},
+				"Rundes Viereck1": {
+					"type": "rectangle",
+					"top": 591,
+					"left": 47,
+					"width": 465,
+					"height": 54,
+					"fill": "#EE0000",
+					"borderRadius": 5
+				},
+				"Schaltfläche1": {
+					"type": "button",
+					"top": 600,
+					"left": 67,
+					"width": 425,
+					"height": 37,
+					"dataSource": "Schaltfläche1",
+					"text": "Anonymisieren",
+					"fontFamily": "Geneva",
+					"fontSize": 15,
+					"method": "ObjectMethods/Schaltfläche1.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Schaltfläche2": {
+					"type": "button",
+					"top": 654,
+					"left": 337,
+					"width": 157,
+					"height": 28,
+					"dataSource": "Schaltfläche2",
+					"action": "cancel",
+					"shortcutKey": "[Esc]",
+					"text": "Ende",
+					"class": "Standard",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Schaltfläche3": {
+					"type": "button",
+					"top": 655,
+					"left": 67,
+					"width": 157,
+					"height": 28,
+					"dataSource": "Schaltfläche2",
+					"text": "Formular drucken",
+					"class": "Standard",
+					"method": "ObjectMethods/Schaltfläche3.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Viereck1": {
+					"type": "rectangle",
+					"top": 106,
+					"left": 38,
+					"width": 492,
+					"height": 465,
+					"fill": "transparent"
+				},
+				"Text14": {
+					"type": "text",
+					"top": 116,
+					"left": 59,
+					"width": 118,
+					"height": 15,
+					"fontSize": 13,
+					"text": "Telefonnummer 1"
+				},
+				"Text15": {
+					"type": "text",
+					"top": 116,
+					"left": 312,
+					"width": 103,
+					"height": 15,
+					"fontSize": 13,
+					"text": "verkürzen"
+				},
+				"Ankreuzfeld12": {
+					"type": "checkbox",
+					"top": 110,
+					"left": 422,
+					"width": 22,
+					"height": 24,
+					"dataSource": "vbTel1",
+					"text": "Ankreuzfeld",
+					"class": "Standard",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Text16": {
+					"type": "text",
+					"top": 139,
+					"left": 59,
+					"width": 118,
+					"height": 16,
+					"fontSize": 13,
+					"text": "Telefonnummer 2"
+				},
+				"Text17": {
+					"type": "text",
+					"top": 139,
+					"left": 312,
+					"width": 103,
+					"height": 16,
+					"fontSize": 13,
+					"text": "verkürzen"
+				},
+				"Ankreuzfeld13": {
+					"type": "checkbox",
+					"top": 131,
+					"left": 422,
+					"width": 22,
+					"height": 26,
+					"dataSource": "vbTel2",
+					"text": "Ankreuzfeld",
+					"class": "Standard",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Feld10": {
+					"type": "input",
+					"top": 210,
+					"left": 90,
+					"width": 180,
+					"height": 18,
+					"dataSource": "[Variablen:5]AdrFeld01:6",
+					"fontSize": 13,
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Text19": {
+					"type": "text",
+					"top": 210,
+					"left": 59,
+					"width": 31,
+					"height": 15,
+					"fontSize": 13,
+					"text": "A01:"
+				},
+				"Text20": {
+					"type": "text",
+					"top": 210,
+					"left": 312,
+					"width": 103,
+					"height": 16,
+					"fontSize": 13,
+					"text": "Anonymisieren"
+				},
+				"Ankreuzfeld14": {
+					"type": "checkbox",
+					"top": 202,
+					"left": 422,
+					"width": 22,
+					"height": 26,
+					"dataSource": "vbA01",
+					"text": "Ankreuzfeld",
+					"class": "Standard",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Feld11": {
+					"type": "input",
+					"top": 232,
+					"left": 90,
+					"width": 180,
+					"height": 18,
+					"dataSource": "[Variablen:5]AdrFeld02:7",
+					"fontSize": 13,
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Text21": {
+					"type": "text",
+					"top": 232,
+					"left": 59,
+					"width": 31,
+					"height": 15,
+					"fontSize": 13,
+					"text": "A02:"
+				},
+				"Text22": {
+					"type": "text",
+					"top": 232,
+					"left": 312,
+					"width": 103,
+					"height": 16,
+					"fontSize": 13,
+					"text": "Anonymisieren"
+				},
+				"Ankreuzfeld15": {
+					"type": "checkbox",
+					"top": 224,
+					"left": 422,
+					"width": 22,
+					"height": 26,
+					"dataSource": "vbA02",
+					"text": "Ankreuzfeld",
+					"class": "Standard",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Feld12": {
+					"type": "input",
+					"top": 253,
+					"left": 90,
+					"width": 180,
+					"height": 18,
+					"dataSource": "[Variablen:5]AdrFeld03:8",
+					"fontSize": 13,
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Text23": {
+					"type": "text",
+					"top": 253,
+					"left": 59,
+					"width": 31,
+					"height": 15,
+					"fontSize": 13,
+					"text": "A03:"
+				},
+				"Text24": {
+					"type": "text",
+					"top": 253,
+					"left": 312,
+					"width": 103,
+					"height": 16,
+					"fontSize": 13,
+					"text": "Anonymisieren"
+				},
+				"Ankreuzfeld16": {
+					"type": "checkbox",
+					"top": 245,
+					"left": 422,
+					"width": 22,
+					"height": 26,
+					"dataSource": "vbA03",
+					"text": "Ankreuzfeld",
+					"class": "Standard",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Feld13": {
+					"type": "input",
+					"top": 275,
+					"left": 90,
+					"width": 180,
+					"height": 18,
+					"dataSource": "[Variablen:5]AdrFeld04:9",
+					"fontSize": 13,
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Text25": {
+					"type": "text",
+					"top": 275,
+					"left": 59,
+					"width": 31,
+					"height": 15,
+					"fontSize": 13,
+					"text": "A04:"
+				},
+				"Text26": {
+					"type": "text",
+					"top": 275,
+					"left": 312,
+					"width": 103,
+					"height": 16,
+					"fontSize": 13,
+					"text": "Anonymisieren"
+				},
+				"Ankreuzfeld17": {
+					"type": "checkbox",
+					"top": 267,
+					"left": 422,
+					"width": 22,
+					"height": 26,
+					"dataSource": "vbA04",
+					"text": "Ankreuzfeld",
+					"class": "Standard",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Feld14": {
+					"type": "input",
+					"top": 297,
+					"left": 90,
+					"width": 180,
+					"height": 18,
+					"dataSource": "[Variablen:5]AdrFeld05:10",
+					"fontSize": 13,
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Text27": {
+					"type": "text",
+					"top": 297,
+					"left": 59,
+					"width": 31,
+					"height": 15,
+					"fontSize": 13,
+					"text": "A05:"
+				},
+				"Text28": {
+					"type": "text",
+					"top": 297,
+					"left": 312,
+					"width": 103,
+					"height": 16,
+					"fontSize": 13,
+					"text": "Anonymisieren"
+				},
+				"Ankreuzfeld18": {
+					"type": "checkbox",
+					"top": 289,
+					"left": 422,
+					"width": 22,
+					"height": 26,
+					"dataSource": "vbA05",
+					"text": "Ankreuzfeld",
+					"class": "Standard",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Feld15": {
+					"type": "input",
+					"top": 319,
+					"left": 90,
+					"width": 180,
+					"height": 18,
+					"dataSource": "[Variablen:5]AdrFeld06:11",
+					"fontSize": 13,
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Text29": {
+					"type": "text",
+					"top": 319,
+					"left": 59,
+					"width": 31,
+					"height": 15,
+					"fontSize": 13,
+					"text": "A06:"
+				},
+				"Text30": {
+					"type": "text",
+					"top": 319,
+					"left": 312,
+					"width": 103,
+					"height": 16,
+					"fontSize": 13,
+					"text": "Anonymisieren"
+				},
+				"Ankreuzfeld19": {
+					"type": "checkbox",
+					"top": 311,
+					"left": 422,
+					"width": 22,
+					"height": 26,
+					"dataSource": "vbA06",
+					"text": "Ankreuzfeld",
+					"class": "Standard",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Feld16": {
+					"type": "input",
+					"top": 341,
+					"left": 90,
+					"width": 180,
+					"height": 18,
+					"dataSource": "[Variablen:5]AdrFeld07:12",
+					"fontSize": 13,
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Text31": {
+					"type": "text",
+					"top": 341,
+					"left": 59,
+					"width": 31,
+					"height": 15,
+					"fontSize": 13,
+					"text": "A07:"
+				},
+				"Text32": {
+					"type": "text",
+					"top": 341,
+					"left": 312,
+					"width": 103,
+					"height": 16,
+					"fontSize": 13,
+					"text": "Anonymisieren"
+				},
+				"Ankreuzfeld20": {
+					"type": "checkbox",
+					"top": 333,
+					"left": 422,
+					"width": 22,
+					"height": 26,
+					"dataSource": "vbA07",
+					"text": "Ankreuzfeld",
+					"class": "Standard",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Feld17": {
+					"type": "input",
+					"top": 363,
+					"left": 90,
+					"width": 180,
+					"height": 18,
+					"dataSource": "[Variablen:5]AdrFeld08:13",
+					"fontSize": 13,
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Text33": {
+					"type": "text",
+					"top": 363,
+					"left": 59,
+					"width": 31,
+					"height": 15,
+					"fontSize": 13,
+					"text": "A08:"
+				},
+				"Text34": {
+					"type": "text",
+					"top": 363,
+					"left": 312,
+					"width": 103,
+					"height": 16,
+					"fontSize": 13,
+					"text": "Anonymisieren"
+				},
+				"Ankreuzfeld21": {
+					"type": "checkbox",
+					"top": 355,
+					"left": 422,
+					"width": 22,
+					"height": 26,
+					"dataSource": "vbA08",
+					"text": "Ankreuzfeld",
+					"class": "Standard",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Feld1": {
+					"type": "input",
+					"top": 385,
+					"left": 91,
+					"width": 180,
+					"height": 18,
+					"dataSource": "[Variablen:5]AdrFeld09:14",
+					"fontSize": 13,
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Text3": {
+					"type": "text",
+					"top": 385,
+					"left": 59,
+					"width": 31,
+					"height": 15,
+					"fontSize": 13,
+					"text": "A09:"
+				},
+				"Text4": {
+					"type": "text",
+					"top": 385,
+					"left": 312,
+					"width": 103,
+					"height": 16,
+					"fontSize": 13,
+					"text": "Anonymisieren"
+				},
+				"Ankreuzfeld2": {
+					"type": "checkbox",
+					"top": 377,
+					"left": 422,
+					"width": 22,
+					"height": 26,
+					"dataSource": "vbA09",
+					"text": "Ankreuzfeld",
+					"class": "Standard",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Feld2": {
+					"type": "input",
+					"top": 407,
+					"left": 91,
+					"width": 180,
+					"height": 18,
+					"dataSource": "[Variablen:5]AdrFeld10:15",
+					"fontSize": 13,
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Text35": {
+					"type": "text",
+					"top": 407,
+					"left": 59,
+					"width": 31,
+					"height": 15,
+					"fontSize": 13,
+					"text": "A10:"
+				},
+				"Text2": {
+					"type": "text",
+					"top": 407,
+					"left": 312,
+					"width": 103,
+					"height": 16,
+					"fontSize": 13,
+					"text": "Anonymisieren"
+				},
+				"Ankreuzfeld3": {
+					"type": "checkbox",
+					"top": 399,
+					"left": 422,
+					"width": 22,
+					"height": 26,
+					"dataSource": "vbA10",
+					"text": "Ankreuzfeld",
+					"class": "Standard",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Feld3": {
+					"type": "input",
+					"top": 429,
+					"left": 91,
+					"width": 180,
+					"height": 18,
+					"dataSource": "[Variablen:5]AdrFeld11:16",
+					"fontSize": 13,
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Text36": {
+					"type": "text",
+					"top": 429,
+					"left": 59,
+					"width": 31,
+					"height": 15,
+					"fontSize": 13,
+					"text": "A11:"
+				},
+				"Text7": {
+					"type": "text",
+					"top": 429,
+					"left": 312,
+					"width": 103,
+					"height": 16,
+					"fontSize": 13,
+					"text": "Anonymisieren"
+				},
+				"Ankreuzfeld6": {
+					"type": "checkbox",
+					"top": 421,
+					"left": 422,
+					"width": 22,
+					"height": 26,
+					"dataSource": "vbA11",
+					"text": "Ankreuzfeld",
+					"class": "Standard",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Feld4": {
+					"type": "input",
+					"top": 451,
+					"left": 91,
+					"width": 180,
+					"height": 18,
+					"dataSource": "[Variablen:5]AdrFeld12:17",
+					"fontSize": 13,
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Text37": {
+					"type": "text",
+					"top": 451,
+					"left": 59,
+					"width": 31,
+					"height": 15,
+					"fontSize": 13,
+					"text": "A12:"
+				},
+				"Text8": {
+					"type": "text",
+					"top": 451,
+					"left": 312,
+					"width": 103,
+					"height": 16,
+					"fontSize": 13,
+					"text": "Anonymisieren"
+				},
+				"Ankreuzfeld7": {
+					"type": "checkbox",
+					"top": 443,
+					"left": 422,
+					"width": 22,
+					"height": 26,
+					"dataSource": "vbA12",
+					"text": "Ankreuzfeld",
+					"class": "Standard",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Feld5": {
+					"type": "input",
+					"top": 473,
+					"left": 91,
+					"width": 180,
+					"height": 18,
+					"dataSource": "[Variablen:5]AdrFeld13:18",
+					"fontSize": 13,
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Text38": {
+					"type": "text",
+					"top": 473,
+					"left": 59,
+					"width": 31,
+					"height": 15,
+					"fontSize": 13,
+					"text": "A13:"
+				},
+				"Text9": {
+					"type": "text",
+					"top": 473,
+					"left": 312,
+					"width": 103,
+					"height": 16,
+					"fontSize": 13,
+					"text": "Anonymisieren"
+				},
+				"Ankreuzfeld8": {
+					"type": "checkbox",
+					"top": 465,
+					"left": 422,
+					"width": 22,
+					"height": 26,
+					"dataSource": "vbA13",
+					"text": "Ankreuzfeld",
+					"class": "Standard",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Feld6": {
+					"type": "input",
+					"top": 495,
+					"left": 91,
+					"width": 180,
+					"height": 18,
+					"dataSource": "[Variablen:5]AdrFeld14:19",
+					"fontSize": 13,
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Text39": {
+					"type": "text",
+					"top": 495,
+					"left": 59,
+					"width": 31,
+					"height": 15,
+					"fontSize": 13,
+					"text": "A14:"
+				},
+				"Text10": {
+					"type": "text",
+					"top": 495,
+					"left": 312,
+					"width": 103,
+					"height": 16,
+					"fontSize": 13,
+					"text": "Anonymisieren"
+				},
+				"Ankreuzfeld9": {
+					"type": "checkbox",
+					"top": 487,
+					"left": 422,
+					"width": 22,
+					"height": 26,
+					"dataSource": "vbA14",
+					"text": "Ankreuzfeld",
+					"class": "Standard",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Feld7": {
+					"type": "input",
+					"top": 517,
+					"left": 91,
+					"width": 180,
+					"height": 18,
+					"dataSource": "[Variablen:5]AdrFeld15:20",
+					"fontSize": 13,
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Text40": {
+					"type": "text",
+					"top": 517,
+					"left": 59,
+					"width": 31,
+					"height": 15,
+					"fontSize": 13,
+					"text": "A15:"
+				},
+				"Text11": {
+					"type": "text",
+					"top": 517,
+					"left": 312,
+					"width": 103,
+					"height": 16,
+					"fontSize": 13,
+					"text": "Anonymisieren"
+				},
+				"Ankreuzfeld10": {
+					"type": "checkbox",
+					"top": 509,
+					"left": 422,
+					"width": 22,
+					"height": 26,
+					"dataSource": "vbA15",
+					"text": "Ankreuzfeld",
+					"class": "Standard",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Feld8": {
+					"type": "input",
+					"top": 539,
+					"left": 91,
+					"width": 180,
+					"height": 18,
+					"dataSource": "[Variablen:5]AdrFeld16:21",
+					"fontSize": 13,
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Text41": {
+					"type": "text",
+					"top": 539,
+					"left": 59,
+					"width": 31,
+					"height": 15,
+					"fontSize": 13,
+					"text": "A16:"
+				},
+				"Text12": {
+					"type": "text",
+					"top": 539,
+					"left": 312,
+					"width": 103,
+					"height": 16,
+					"fontSize": 13,
+					"text": "Anonymisieren"
+				},
+				"Ankreuzfeld11": {
+					"type": "checkbox",
+					"top": 531,
+					"left": 422,
+					"width": 22,
+					"height": 26,
+					"dataSource": "vbA16",
+					"text": "Ankreuzfeld",
+					"class": "Standard",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Text5": {
+					"type": "text",
+					"top": 160,
+					"left": 59,
+					"width": 118,
+					"height": 15,
+					"fontSize": 13,
+					"text": "Ansprechpartner"
+				},
+				"Text6": {
+					"type": "text",
+					"top": 160,
+					"left": 312,
+					"width": 104,
+					"height": 15,
+					"fontSize": 13,
+					"text": "anonymisieren"
+				},
+				"Ankreuzfeld5": {
+					"type": "checkbox",
+					"top": 152,
+					"left": 422,
+					"width": 22,
+					"height": 26,
+					"dataSource": "vbAP",
+					"text": "Ankreuzfeld",
+					"class": "Standard",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Text18": {
+					"type": "text",
+					"top": 183,
+					"left": 59,
+					"width": 118,
+					"height": 16,
+					"fontSize": 13,
+					"text": "Kommentar"
+				},
+				"Text1": {
+					"type": "text",
+					"top": 183,
+					"left": 312,
+					"width": 104,
+					"height": 16,
+					"fontSize": 13,
+					"text": "löschen"
+				},
+				"Ankreuzfeld1": {
+					"type": "checkbox",
+					"top": 175,
+					"left": 422,
+					"width": 22,
+					"height": 26,
+					"dataSource": "vbKommentar",
+					"text": "Ankreuzfeld",
+					"class": "Standard",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable1": {
+					"type": "input",
+					"top": 36,
+					"left": 61,
+					"width": 449,
+					"height": 56,
+					"dataSource": "vTitelText",
+					"textAlign": "center",
+					"fontSize": 24,
+					"fontWeight": "bold",
+					"fill": "transparent",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				}
+			}
+		}
+	]
+}

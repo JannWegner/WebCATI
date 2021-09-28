@@ -1,0 +1,39 @@
+{
+	"editors": [
+		{
+			"type": "explorer"
+		},
+		{
+			"type": "method",
+			"id": 2147483440,
+			"codeDescriptor": {
+				"type": 5,
+				"databaseMethod": 1
+			}
+		},
+		{
+			"type": "method",
+			"id": 2147483441,
+			"codeDescriptor": {
+				"type": 5,
+				"databaseMethod": 6
+			}
+		},
+		{
+			"type": "method",
+			"id": 2147483474,
+			"codeDescriptor": {
+				"type": 1,
+				"methodName": "p_CheckSession"
+			}
+		},
+		{
+			"type": "method",
+			"id": 2147483439,
+			"codeDescriptor": {
+				"type": 5,
+				"databaseMethod": 8
+			}
+		}
+	]
+}

@@ -1,0 +1,129 @@
+﻿{
+	"destination": "detailScreen",
+	"rightMargin": 19,
+	"bottomMargin": 20,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onPrintingDetail",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke",
+		"onSelectionChange"
+	],
+	"pageFormat": {
+		"paperName": "DIN A4",
+		"paperWidth": "595pt",
+		"paperHeight": "842pt"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"Splitter1": {
+					"type": "splitter",
+					"top": 65,
+					"left": 42,
+					"width": 552,
+					"height": 4,
+					"dataSource": "Splitter1",
+					"borderStyle": "sunken",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Splitter2": {
+					"type": "splitter",
+					"top": 170,
+					"left": 41,
+					"width": 552,
+					"height": 4,
+					"dataSource": "Splitter1",
+					"borderStyle": "sunken",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"OK1": {
+					"type": "button",
+					"top": 213,
+					"left": 331,
+					"width": 121,
+					"height": 28,
+					"dataSource": "b_OK",
+					"action": "accept",
+					"text": "Ja",
+					"class": "Standard",
+					"defaultButton": true,
+					"method": "ObjectMethods/OK1.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Text2": {
+					"type": "text",
+					"top": 115,
+					"left": 43,
+					"width": 549,
+					"height": 16,
+					"textAlign": "center",
+					"fontFamily": "System Font Regular",
+					"fontSize": 14,
+					"text": "Weiter?"
+				},
+				"Abbrechen2": {
+					"type": "button",
+					"top": 222,
+					"left": 127,
+					"width": 100,
+					"height": 19,
+					"dataSource": "b_EinsZurueck",
+					"action": "cancel",
+					"text": "Eine zurück",
+					"class": "Standard",
+					"method": "ObjectMethods/Abbrechen2.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				}
+			}
+		}
+	]
+}

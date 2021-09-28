@@ -1,0 +1,7 @@
+//%attributes = {}
+SET WINDOW RECT:C444(100;100;1000;900)
+
+ALL RECORDS:C47([ADM_Log:9])
+ORDER BY:C49([ADM_Log:9]Datum:1;<;[ADM_Log:9]Zeit:2;[ADM_Log:9]Umfrage:4;[ADM_Log:9]AdrNr:5)
+FORM SET OUTPUT:C54([ADM_Log:9];"ListenAnsicht")
+DISPLAY SELECTION:C59([ADM_Log:9];*)

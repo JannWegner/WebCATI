@@ -1,0 +1,2193 @@
+﻿{
+	"destination": "detailScreen",
+	"rightMargin": 19,
+	"bottomMargin": 20,
+	"markerBody": 721,
+	"markerBreak": 721,
+	"markerFooter": 731,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onPrintingDetail",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke",
+		"onLoadRecord",
+		"onAfterEdit",
+		"onBeginDragOver",
+		"onBoundVariableChange",
+		"onPageChange"
+	],
+	"pageFormat": {
+		"paperName": "DIN A4",
+		"paperWidth": "595pt",
+		"paperHeight": "842pt"
+	},
+	"pages": [
+		{
+			"objects": {
+				"vRecNum": {
+					"type": "input",
+					"top": 113,
+					"left": 661,
+					"width": 100,
+					"height": 12,
+					"stroke": "#000000",
+					"fontFamily": ".SF NS Text",
+					"fontSize": 9,
+					"focusable": false,
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/Datensatznummer"
+					},
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"method": "ObjectMethods/vRecNum.4dm",
+					"events": [
+						"onLoad",
+						"onHeader",
+						"onPrintingBreak"
+					]
+				},
+				"Text121": {
+					"type": "text",
+					"top": 110,
+					"left": 24,
+					"width": 622,
+					"height": 17,
+					"sizingX": "grow",
+					"stroke": "#000000",
+					"text": "TelefonNummer"
+				},
+				"Linie122": {
+					"type": "line",
+					"top": 94,
+					"left": 19,
+					"width": 751,
+					"sizingX": "grow"
+				},
+				"bFirst": {
+					"type": "pictureButton",
+					"top": 16,
+					"left": 21,
+					"width": 48,
+					"height": 48,
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/Erster Datensat"
+					},
+					"action": "firstRecord",
+					"rowCount": 4,
+					"picture": "/RESOURCES/Images/Buttons/LightGrey/FirstRecord.png",
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"events": [
+						"onClick"
+					]
+				},
+				"bFirstlabel": {
+					"type": "text",
+					"top": 64,
+					"left": 9,
+					"width": 72,
+					"height": 17,
+					"stroke": "#000000",
+					"textAlign": "center",
+					"text": "Erster"
+				},
+				"bPrevious": {
+					"type": "pictureButton",
+					"top": 16,
+					"left": 93,
+					"width": 48,
+					"height": 48,
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/Vorheriger Date"
+					},
+					"action": "previousRecord",
+					"rowCount": 4,
+					"picture": "/RESOURCES/Images/Buttons/LightGrey/PreviousRecord.png",
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"events": [
+						"onClick"
+					]
+				},
+				"bPreviouslabel": {
+					"type": "text",
+					"top": 64,
+					"left": 81,
+					"width": 72,
+					"height": 17,
+					"stroke": "#000000",
+					"textAlign": "center",
+					"text": "Vorheriger"
+				},
+				"bNext": {
+					"type": "pictureButton",
+					"top": 16,
+					"left": 165,
+					"width": 48,
+					"height": 48,
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/Nächster Datens"
+					},
+					"action": "nextRecord",
+					"rowCount": 4,
+					"picture": "/RESOURCES/Images/Buttons/LightGrey/NextRecord.png",
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"events": [
+						"onClick"
+					]
+				},
+				"bNextlabel": {
+					"type": "text",
+					"top": 64,
+					"left": 153,
+					"width": 72,
+					"height": 17,
+					"stroke": "#000000",
+					"textAlign": "center",
+					"text": "Nächster"
+				},
+				"bLast": {
+					"type": "pictureButton",
+					"top": 16,
+					"left": 237,
+					"width": 48,
+					"height": 48,
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/Letzter Datensa"
+					},
+					"action": "lastRecord",
+					"rowCount": 4,
+					"picture": "/RESOURCES/Images/Buttons/LightGrey/LastRecord.png",
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"events": [
+						"onClick"
+					]
+				},
+				"bLastlabel": {
+					"type": "text",
+					"top": 64,
+					"left": 225,
+					"width": 72,
+					"height": 17,
+					"stroke": "#000000",
+					"textAlign": "center",
+					"text": "Letzter"
+				},
+				"bPreviousPage": {
+					"type": "pictureButton",
+					"top": 16,
+					"left": 309,
+					"width": 48,
+					"height": 48,
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/Vorherige Seite"
+					},
+					"action": "previousPage",
+					"rowCount": 4,
+					"picture": "/RESOURCES/Images/Buttons/LightGrey/PreviousPage.png",
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"events": [
+						"onClick"
+					]
+				},
+				"bPreviousPagelabel": {
+					"type": "text",
+					"top": 64,
+					"left": 297,
+					"width": 72,
+					"height": 17,
+					"stroke": "#000000",
+					"textAlign": "center",
+					"text": "Vorherige Seite"
+				},
+				"bNextPage": {
+					"type": "pictureButton",
+					"top": 16,
+					"left": 381,
+					"width": 48,
+					"height": 48,
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/Nächste Seite"
+					},
+					"action": "nextPage",
+					"rowCount": 4,
+					"picture": "/RESOURCES/Images/Buttons/LightGrey/NextPage.png",
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"events": [
+						"onClick"
+					]
+				},
+				"bNextPagelabel": {
+					"type": "text",
+					"top": 64,
+					"left": 369,
+					"width": 72,
+					"height": 17,
+					"stroke": "#000000",
+					"textAlign": "center",
+					"text": "Nächste Seite"
+				},
+				"bDelete": {
+					"type": "pictureButton",
+					"top": 16,
+					"left": 453,
+					"width": 48,
+					"height": 48,
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/Datensatz lösch"
+					},
+					"action": "deleteRecord",
+					"rowCount": 4,
+					"picture": "/RESOURCES/Images/Buttons/LightGrey/DeleteRecord.png",
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"events": [
+						"onClick"
+					]
+				},
+				"bDeletelabel": {
+					"type": "text",
+					"top": 64,
+					"left": 441,
+					"width": 72,
+					"height": 17,
+					"stroke": "#000000",
+					"textAlign": "center",
+					"text": "Löschen"
+				},
+				"bCancel": {
+					"type": "pictureButton",
+					"top": 16,
+					"left": 525,
+					"width": 48,
+					"height": 48,
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/Abbrechen"
+					},
+					"action": "cancel",
+					"rowCount": 4,
+					"picture": "/RESOURCES/Images/Buttons/LightGrey/Cancel.png",
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"events": [
+						"onClick"
+					]
+				},
+				"bCancellabel": {
+					"type": "text",
+					"top": 64,
+					"left": 513,
+					"width": 72,
+					"height": 17,
+					"stroke": "#000000",
+					"textAlign": "center",
+					"text": "Abbrechen"
+				},
+				"bValidate": {
+					"type": "pictureButton",
+					"top": 16,
+					"left": 597,
+					"width": 48,
+					"height": 48,
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/OK"
+					},
+					"action": "accept",
+					"rowCount": 4,
+					"picture": "/RESOURCES/Images/Buttons/LightGrey/Validate.png",
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"events": [
+						"onClick"
+					]
+				},
+				"bValidatelabel": {
+					"type": "text",
+					"top": 64,
+					"left": 585,
+					"width": 72,
+					"height": 17,
+					"stroke": "#000000",
+					"textAlign": "center",
+					"text": "Bestätigen"
+				}
+			}
+		},
+		{
+			"objects": {
+				"Text123": {
+					"type": "text",
+					"top": 143,
+					"left": 246,
+					"width": 137,
+					"height": 17,
+					"textAlign": "right",
+					"text": "AdrBehalten : "
+				},
+				"Text124": {
+					"type": "text",
+					"top": 170,
+					"left": 246,
+					"width": 137,
+					"height": 17,
+					"textAlign": "right",
+					"text": "AdrFBNr : "
+				},
+				"Text125": {
+					"type": "text",
+					"top": 197,
+					"left": 246,
+					"width": 137,
+					"height": 17,
+					"textAlign": "right",
+					"text": "AdrFeld01 : "
+				},
+				"Text126": {
+					"type": "text",
+					"top": 224,
+					"left": 246,
+					"width": 137,
+					"height": 17,
+					"textAlign": "right",
+					"text": "AdrFeld02 : "
+				},
+				"Text127": {
+					"type": "text",
+					"top": 251,
+					"left": 246,
+					"width": 137,
+					"height": 17,
+					"textAlign": "right",
+					"text": "AdrFeld03 : "
+				},
+				"Text128": {
+					"type": "text",
+					"top": 278,
+					"left": 246,
+					"width": 137,
+					"height": 17,
+					"textAlign": "right",
+					"text": "AdrFeld04 : "
+				},
+				"Text129": {
+					"type": "text",
+					"top": 305,
+					"left": 246,
+					"width": 137,
+					"height": 17,
+					"textAlign": "right",
+					"text": "AdrFeld05 : "
+				},
+				"Text130": {
+					"type": "text",
+					"top": 332,
+					"left": 246,
+					"width": 137,
+					"height": 17,
+					"textAlign": "right",
+					"text": "AdrFeld06 : "
+				},
+				"Text131": {
+					"type": "text",
+					"top": 359,
+					"left": 246,
+					"width": 137,
+					"height": 17,
+					"textAlign": "right",
+					"text": "AdrFeld07 : "
+				},
+				"Text132": {
+					"type": "text",
+					"top": 386,
+					"left": 246,
+					"width": 137,
+					"height": 17,
+					"textAlign": "right",
+					"text": "AdrFeld08 : "
+				},
+				"Text133": {
+					"type": "text",
+					"top": 413,
+					"left": 246,
+					"width": 137,
+					"height": 17,
+					"textAlign": "right",
+					"text": "AdrFeld09 : "
+				},
+				"Text134": {
+					"type": "text",
+					"top": 440,
+					"left": 246,
+					"width": 137,
+					"height": 17,
+					"textAlign": "right",
+					"text": "AdrFeld10 : "
+				},
+				"Text135": {
+					"type": "text",
+					"top": 467,
+					"left": 246,
+					"width": 137,
+					"height": 17,
+					"textAlign": "right",
+					"text": "AdrFeld11 : "
+				},
+				"Text136": {
+					"type": "text",
+					"top": 494,
+					"left": 246,
+					"width": 137,
+					"height": 17,
+					"textAlign": "right",
+					"text": "AdrFeld12 : "
+				},
+				"Text137": {
+					"type": "text",
+					"top": 521,
+					"left": 246,
+					"width": 137,
+					"height": 17,
+					"textAlign": "right",
+					"text": "AdrFeld13 : "
+				},
+				"Text138": {
+					"type": "text",
+					"top": 548,
+					"left": 246,
+					"width": 137,
+					"height": 17,
+					"textAlign": "right",
+					"text": "AdrFeld14 : "
+				},
+				"Text139": {
+					"type": "text",
+					"top": 575,
+					"left": 246,
+					"width": 137,
+					"height": 17,
+					"textAlign": "right",
+					"text": "AdrFeld15 : "
+				},
+				"Text140": {
+					"type": "text",
+					"top": 602,
+					"left": 246,
+					"width": 137,
+					"height": 17,
+					"textAlign": "right",
+					"text": "AdrFeld16 : "
+				},
+				"Text141": {
+					"type": "text",
+					"top": 629,
+					"left": 246,
+					"width": 137,
+					"height": 17,
+					"textAlign": "right",
+					"text": "aktAnsprechp : "
+				},
+				"Text142": {
+					"type": "text",
+					"top": 656,
+					"left": 246,
+					"width": 137,
+					"height": 17,
+					"textAlign": "right",
+					"text": "AntwASCII : "
+				},
+				"AdrBehalten": {
+					"type": "checkbox",
+					"top": 143,
+					"left": 388,
+					"width": 54,
+					"height": 15,
+					"dataSource": "[TelefonNummer:4]AdrBehalten:47",
+					"text": "Ja",
+					"stroke": "#000000",
+					"textAlign": "left",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"AdrFBNr": {
+					"type": "input",
+					"top": 170,
+					"left": 388,
+					"width": 64,
+					"height": 17,
+					"dataSource": "[TelefonNummer:4]AdrFBNr:20",
+					"dataSourceTypeHint": "integer",
+					"textAlign": "left",
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"AdrFeld01": {
+					"type": "input",
+					"top": 197,
+					"left": 388,
+					"width": 358,
+					"height": 17,
+					"dataSource": "[TelefonNummer:4]AdrFeld01:14",
+					"textAlign": "left",
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"AdrFeld02": {
+					"type": "input",
+					"top": 224,
+					"left": 388,
+					"width": 358,
+					"height": 17,
+					"dataSource": "[TelefonNummer:4]AdrFeld02:16",
+					"textAlign": "left",
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"AdrFeld03": {
+					"type": "input",
+					"top": 251,
+					"left": 388,
+					"width": 358,
+					"height": 17,
+					"dataSource": "[TelefonNummer:4]AdrFeld03:13",
+					"textAlign": "left",
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"AdrFeld04": {
+					"type": "input",
+					"top": 278,
+					"left": 388,
+					"width": 358,
+					"height": 17,
+					"dataSource": "[TelefonNummer:4]AdrFeld04:15",
+					"textAlign": "left",
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"AdrFeld05": {
+					"type": "input",
+					"top": 305,
+					"left": 388,
+					"width": 358,
+					"height": 17,
+					"dataSource": "[TelefonNummer:4]AdrFeld05:18",
+					"textAlign": "left",
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"AdrFeld06": {
+					"type": "input",
+					"top": 332,
+					"left": 388,
+					"width": 358,
+					"height": 17,
+					"dataSource": "[TelefonNummer:4]AdrFeld06:34",
+					"textAlign": "left",
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"AdrFeld07": {
+					"type": "input",
+					"top": 359,
+					"left": 388,
+					"width": 358,
+					"height": 17,
+					"dataSource": "[TelefonNummer:4]AdrFeld07:35",
+					"textAlign": "left",
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"AdrFeld08": {
+					"type": "input",
+					"top": 386,
+					"left": 388,
+					"width": 358,
+					"height": 17,
+					"dataSource": "[TelefonNummer:4]AdrFeld08:33",
+					"textAlign": "left",
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"AdrFeld09": {
+					"type": "input",
+					"top": 413,
+					"left": 388,
+					"width": 358,
+					"height": 17,
+					"dataSource": "[TelefonNummer:4]AdrFeld09:17",
+					"textAlign": "left",
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"AdrFeld10": {
+					"type": "input",
+					"top": 440,
+					"left": 388,
+					"width": 358,
+					"height": 17,
+					"dataSource": "[TelefonNummer:4]AdrFeld10:21",
+					"textAlign": "left",
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"AdrFeld11": {
+					"type": "input",
+					"top": 467,
+					"left": 388,
+					"width": 358,
+					"height": 17,
+					"dataSource": "[TelefonNummer:4]AdrFeld11:27",
+					"textAlign": "left",
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"AdrFeld12": {
+					"type": "input",
+					"top": 494,
+					"left": 388,
+					"width": 358,
+					"height": 17,
+					"dataSource": "[TelefonNummer:4]AdrFeld12:28",
+					"textAlign": "left",
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"AdrFeld13": {
+					"type": "input",
+					"top": 521,
+					"left": 388,
+					"width": 358,
+					"height": 17,
+					"dataSource": "[TelefonNummer:4]AdrFeld13:31",
+					"textAlign": "left",
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"AdrFeld14": {
+					"type": "input",
+					"top": 548,
+					"left": 388,
+					"width": 358,
+					"height": 17,
+					"dataSource": "[TelefonNummer:4]AdrFeld14:42",
+					"textAlign": "left",
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"AdrFeld15": {
+					"type": "input",
+					"top": 575,
+					"left": 388,
+					"width": 358,
+					"height": 17,
+					"dataSource": "[TelefonNummer:4]AdrFeld15:43",
+					"textAlign": "left",
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"AdrFeld16": {
+					"type": "input",
+					"top": 602,
+					"left": 388,
+					"width": 358,
+					"height": 17,
+					"dataSource": "[TelefonNummer:4]AdrFeld16:44",
+					"textAlign": "left",
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"aktAnsprechp": {
+					"type": "input",
+					"top": 629,
+					"left": 388,
+					"width": 358,
+					"height": 17,
+					"dataSource": "[TelefonNummer:4]aktAnsprechp:38",
+					"textAlign": "left",
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"AntwASCII": {
+					"type": "input",
+					"top": 656,
+					"left": 388,
+					"width": 234,
+					"height": 65,
+					"dataSource": "[TelefonNummer:4]AntwASCII:41",
+					"textAlign": "left",
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"scrollbarVertical": "visible",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				}
+			}
+		},
+		{
+			"objects": {
+				"Text145": {
+					"type": "text",
+					"top": 143,
+					"left": 246,
+					"width": 137,
+					"height": 17,
+					"textAlign": "right",
+					"text": "AntwUeberlauf : "
+				},
+				"Text146": {
+					"type": "text",
+					"top": 218,
+					"left": 246,
+					"width": 137,
+					"height": 17,
+					"textAlign": "right",
+					"text": "BinaerText : "
+				},
+				"Text147": {
+					"type": "text",
+					"top": 293,
+					"left": 246,
+					"width": 137,
+					"height": 17,
+					"textAlign": "right",
+					"text": "Dauer : "
+				},
+				"Text148": {
+					"type": "text",
+					"top": 320,
+					"left": 246,
+					"width": 137,
+					"height": 17,
+					"textAlign": "right",
+					"text": "EingetragenTB : "
+				},
+				"Text149": {
+					"type": "text",
+					"top": 347,
+					"left": 246,
+					"width": 137,
+					"height": 17,
+					"textAlign": "right",
+					"text": "Ende am : "
+				},
+				"Text150": {
+					"type": "text",
+					"top": 374,
+					"left": 246,
+					"width": 137,
+					"height": 17,
+					"textAlign": "right",
+					"text": "Ende um : "
+				},
+				"Text151": {
+					"type": "text",
+					"top": 401,
+					"left": 246,
+					"width": 137,
+					"height": 17,
+					"textAlign": "right",
+					"text": "Fassung : "
+				},
+				"Text152": {
+					"type": "text",
+					"top": 428,
+					"left": 246,
+					"width": 137,
+					"height": 17,
+					"textAlign": "right",
+					"text": "FixTermin : "
+				},
+				"Text153": {
+					"type": "text",
+					"top": 455,
+					"left": 246,
+					"width": 137,
+					"height": 17,
+					"textAlign": "right",
+					"text": "Historie : "
+				},
+				"Text154": {
+					"type": "text",
+					"top": 530,
+					"left": 246,
+					"width": 137,
+					"height": 17,
+					"textAlign": "right",
+					"text": "HistZeilen : "
+				},
+				"Text155": {
+					"type": "text",
+					"top": 557,
+					"left": 246,
+					"width": 137,
+					"height": 17,
+					"textAlign": "right",
+					"text": "Interviewer : "
+				},
+				"Text156": {
+					"type": "text",
+					"top": 584,
+					"left": 246,
+					"width": 137,
+					"height": 17,
+					"textAlign": "right",
+					"text": "Kommentar : "
+				},
+				"Text157": {
+					"type": "text",
+					"top": 659,
+					"left": 246,
+					"width": 137,
+					"height": 17,
+					"textAlign": "right",
+					"text": "Kontakte : "
+				},
+				"Text158": {
+					"type": "text",
+					"top": 686,
+					"left": 246,
+					"width": 137,
+					"height": 17,
+					"textAlign": "right",
+					"text": "PKID : "
+				},
+				"Text159": {
+					"type": "text",
+					"top": 713,
+					"left": 246,
+					"width": 137,
+					"height": 17,
+					"textAlign": "right",
+					"text": "QuotenTopf : "
+				},
+				"AntwUeberlauf": {
+					"type": "input",
+					"top": 143,
+					"left": 388,
+					"width": 234,
+					"height": 65,
+					"dataSource": "[TelefonNummer:4]AntwUeberlauf:40",
+					"textAlign": "left",
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"scrollbarVertical": "visible",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"BinaerText": {
+					"type": "input",
+					"top": 218,
+					"left": 388,
+					"width": 234,
+					"height": 65,
+					"dataSource": "[TelefonNummer:4]BinaerText:32",
+					"textAlign": "left",
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"scrollbarVertical": "visible",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Dauer": {
+					"type": "input",
+					"top": 293,
+					"left": 388,
+					"width": 56,
+					"height": 17,
+					"dataSource": "[TelefonNummer:4]Dauer:51",
+					"textAlign": "left",
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"EingetragenTB": {
+					"type": "checkbox",
+					"top": 320,
+					"left": 388,
+					"width": 54,
+					"height": 15,
+					"dataSource": "[TelefonNummer:4]EingetragenTB:12",
+					"text": "Ja",
+					"stroke": "#000000",
+					"textAlign": "left",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Ende am": {
+					"type": "input",
+					"top": 347,
+					"left": 388,
+					"width": 78,
+					"height": 17,
+					"dataSource": "[TelefonNummer:4]Ende am:25",
+					"dataSourceTypeHint": "date",
+					"textAlign": "left",
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Ende um": {
+					"type": "input",
+					"top": 374,
+					"left": 388,
+					"width": 63,
+					"height": 17,
+					"dataSource": "[TelefonNummer:4]Ende um:26",
+					"dataSourceTypeHint": "time",
+					"textAlign": "left",
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Fassung": {
+					"type": "input",
+					"top": 401,
+					"left": 388,
+					"width": 80,
+					"height": 17,
+					"dataSource": "[TelefonNummer:4]Fassung:39",
+					"textAlign": "left",
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"FixTermin": {
+					"type": "checkbox",
+					"top": 428,
+					"left": 388,
+					"width": 54,
+					"height": 15,
+					"dataSource": "[TelefonNummer:4]FixTermin:36",
+					"text": "Ja",
+					"stroke": "#000000",
+					"textAlign": "left",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Historie": {
+					"type": "input",
+					"top": 455,
+					"left": 388,
+					"width": 234,
+					"height": 65,
+					"dataSource": "[TelefonNummer:4]Historie:4",
+					"textAlign": "left",
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"scrollbarVertical": "visible",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"HistZeilen": {
+					"type": "input",
+					"top": 530,
+					"left": 388,
+					"width": 56,
+					"height": 17,
+					"dataSource": "[TelefonNummer:4]HistZeilen:29",
+					"textAlign": "left",
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Interviewer": {
+					"type": "input",
+					"top": 557,
+					"left": 388,
+					"width": 320,
+					"height": 17,
+					"dataSource": "[TelefonNummer:4]Interviewer:10",
+					"textAlign": "left",
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Kommentar": {
+					"type": "input",
+					"top": 584,
+					"left": 388,
+					"width": 234,
+					"height": 65,
+					"dataSource": "[TelefonNummer:4]Kommentar:6",
+					"textAlign": "left",
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"scrollbarVertical": "visible",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Kontakte": {
+					"type": "input",
+					"top": 659,
+					"left": 388,
+					"width": 56,
+					"height": 17,
+					"dataSource": "[TelefonNummer:4]Kontakte:52",
+					"textAlign": "left",
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"PKID": {
+					"type": "input",
+					"top": 686,
+					"left": 388,
+					"width": 250,
+					"height": 17,
+					"dataSource": "[TelefonNummer:4]PKID:53",
+					"textAlign": "left",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "sunken",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"QuotenTopf": {
+					"type": "input",
+					"top": 713,
+					"left": 388,
+					"width": 56,
+					"height": 17,
+					"dataSource": "[TelefonNummer:4]QuotenTopf:46",
+					"textAlign": "left",
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				}
+			}
+		},
+		{
+			"objects": {
+				"Text161": {
+					"type": "text",
+					"top": 143,
+					"left": 246,
+					"width": 137,
+					"height": 17,
+					"textAlign": "right",
+					"text": "RandomReihenfolge : "
+				},
+				"Text162": {
+					"type": "text",
+					"top": 218,
+					"left": 246,
+					"width": 137,
+					"height": 17,
+					"textAlign": "right",
+					"text": "RefDatum : "
+				},
+				"Text163": {
+					"type": "text",
+					"top": 245,
+					"left": 246,
+					"width": 137,
+					"height": 17,
+					"textAlign": "right",
+					"text": "RefZeit : "
+				},
+				"Text164": {
+					"type": "text",
+					"top": 272,
+					"left": 246,
+					"width": 137,
+					"height": 17,
+					"textAlign": "right",
+					"text": "SpezialDruck : "
+				},
+				"Text165": {
+					"type": "text",
+					"top": 299,
+					"left": 246,
+					"width": 137,
+					"height": 17,
+					"textAlign": "right",
+					"text": "Start Am : "
+				},
+				"Text166": {
+					"type": "text",
+					"top": 326,
+					"left": 246,
+					"width": 137,
+					"height": 17,
+					"textAlign": "right",
+					"text": "Start um : "
+				},
+				"Text167": {
+					"type": "text",
+					"top": 353,
+					"left": 246,
+					"width": 137,
+					"height": 17,
+					"textAlign": "right",
+					"text": "Status : "
+				},
+				"Text168": {
+					"type": "text",
+					"top": 380,
+					"left": 246,
+					"width": 137,
+					"height": 17,
+					"textAlign": "right",
+					"text": "StatusErklärung : "
+				},
+				"Text169": {
+					"type": "text",
+					"top": 407,
+					"left": 246,
+					"width": 137,
+					"height": 17,
+					"textAlign": "right",
+					"text": "Telefon1 : "
+				},
+				"Text170": {
+					"type": "text",
+					"top": 434,
+					"left": 246,
+					"width": 137,
+					"height": 17,
+					"textAlign": "right",
+					"text": "Telefon2 : "
+				},
+				"Text171": {
+					"type": "text",
+					"top": 461,
+					"left": 246,
+					"width": 137,
+					"height": 17,
+					"textAlign": "right",
+					"text": "Umfrage : "
+				},
+				"Text172": {
+					"type": "text",
+					"top": 488,
+					"left": 246,
+					"width": 137,
+					"height": 17,
+					"textAlign": "right",
+					"text": "Variablenspeicher : "
+				},
+				"Text173": {
+					"type": "text",
+					"top": 563,
+					"left": 246,
+					"width": 137,
+					"height": 17,
+					"textAlign": "right",
+					"text": "Wegspeicher : "
+				},
+				"Text174": {
+					"type": "text",
+					"top": 638,
+					"left": 246,
+					"width": 137,
+					"height": 17,
+					"textAlign": "right",
+					"text": "WeiterMitFrage : "
+				},
+				"Text175": {
+					"type": "text",
+					"top": 665,
+					"left": 246,
+					"width": 137,
+					"height": 17,
+					"textAlign": "right",
+					"text": "WiederAm : "
+				},
+				"Text176": {
+					"type": "text",
+					"top": 692,
+					"left": 246,
+					"width": 137,
+					"height": 17,
+					"textAlign": "right",
+					"text": "WiederUm : "
+				},
+				"RandomReihenfolge": {
+					"type": "input",
+					"top": 143,
+					"left": 388,
+					"width": 234,
+					"height": 65,
+					"dataSource": "[TelefonNummer:4]RandomReihenfolge:54",
+					"textAlign": "left",
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"scrollbarVertical": "visible",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"RefDatum": {
+					"type": "input",
+					"top": 218,
+					"left": 388,
+					"width": 78,
+					"height": 17,
+					"dataSource": "[TelefonNummer:4]RefDatum:8",
+					"dataSourceTypeHint": "date",
+					"textAlign": "left",
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"RefZeit": {
+					"type": "input",
+					"top": 245,
+					"left": 388,
+					"width": 63,
+					"height": 17,
+					"dataSource": "[TelefonNummer:4]RefZeit:9",
+					"dataSourceTypeHint": "time",
+					"textAlign": "left",
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"SpezialDruck": {
+					"type": "input",
+					"top": 272,
+					"left": 388,
+					"width": 78,
+					"height": 17,
+					"dataSource": "[TelefonNummer:4]SpezialDruck:45",
+					"dataSourceTypeHint": "date",
+					"textAlign": "left",
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Start Am": {
+					"type": "input",
+					"top": 299,
+					"left": 388,
+					"width": 78,
+					"height": 17,
+					"dataSource": "[TelefonNummer:4]Start Am:23",
+					"dataSourceTypeHint": "date",
+					"textAlign": "left",
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Start um": {
+					"type": "input",
+					"top": 326,
+					"left": 388,
+					"width": 63,
+					"height": 17,
+					"dataSource": "[TelefonNummer:4]Start um:24",
+					"dataSourceTypeHint": "time",
+					"textAlign": "left",
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Status": {
+					"type": "input",
+					"top": 353,
+					"left": 388,
+					"width": 240,
+					"height": 17,
+					"dataSource": "[TelefonNummer:4]Status:5",
+					"textAlign": "left",
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"choiceList": {
+						"$ref": "/SOURCES/lists.json#/Status"
+					},
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"StatusErklärung": {
+					"type": "input",
+					"top": 380,
+					"left": 388,
+					"width": 358,
+					"height": 17,
+					"dataSource": "[TelefonNummer:4]StatusErklärung:11",
+					"textAlign": "left",
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"choiceList": {
+						"$ref": "/SOURCES/lists.json#/StatusErklärung"
+					},
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Telefon1": {
+					"type": "input",
+					"top": 407,
+					"left": 388,
+					"width": 240,
+					"height": 17,
+					"dataSource": "[TelefonNummer:4]Telefon1:19",
+					"textAlign": "left",
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Telefon2": {
+					"type": "input",
+					"top": 434,
+					"left": 388,
+					"width": 358,
+					"height": 17,
+					"dataSource": "[TelefonNummer:4]Telefon2:1",
+					"textAlign": "left",
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Umfrage": {
+					"type": "input",
+					"top": 461,
+					"left": 388,
+					"width": 112,
+					"height": 17,
+					"dataSource": "[TelefonNummer:4]Umfrage:30",
+					"textAlign": "left",
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Variablenspeicher": {
+					"type": "input",
+					"top": 488,
+					"left": 388,
+					"width": 234,
+					"height": 65,
+					"dataSource": "[TelefonNummer:4]Variablenspeicher:49",
+					"textAlign": "left",
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"scrollbarVertical": "visible",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Wegspeicher": {
+					"type": "input",
+					"top": 563,
+					"left": 388,
+					"width": 234,
+					"height": 65,
+					"dataSource": "[TelefonNummer:4]Wegspeicher:48",
+					"textAlign": "left",
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"scrollbarVertical": "visible",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"WeiterMitFrage": {
+					"type": "input",
+					"top": 638,
+					"left": 388,
+					"width": 160,
+					"height": 17,
+					"dataSource": "[TelefonNummer:4]WeiterMitFrage:7",
+					"textAlign": "left",
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"WiederAm": {
+					"type": "input",
+					"top": 665,
+					"left": 388,
+					"width": 78,
+					"height": 17,
+					"dataSource": "[TelefonNummer:4]WiederAm:2",
+					"dataSourceTypeHint": "date",
+					"textAlign": "left",
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"WiederUm": {
+					"type": "input",
+					"top": 692,
+					"left": 388,
+					"width": 63,
+					"height": 17,
+					"dataSource": "[TelefonNummer:4]WiederUm:3",
+					"dataSourceTypeHint": "time",
+					"textAlign": "left",
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				}
+			}
+		},
+		{
+			"objects": {
+				"Text179": {
+					"type": "text",
+					"top": 143,
+					"left": 246,
+					"width": 137,
+					"height": 17,
+					"textAlign": "right",
+					"text": "wmProto : "
+				},
+				"wmProto": {
+					"type": "input",
+					"top": 143,
+					"left": 388,
+					"width": 234,
+					"height": 65,
+					"dataSource": "[TelefonNummer:4]wmProto:37",
+					"textAlign": "left",
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"scrollbarVertical": "visible",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				}
+			}
+		}
+	],
+	"editor": {
+		"activeView": "View 1",
+		"defaultView": "View 1",
+		"views": {
+			"View 1": {},
+			"View 2": {
+				"objects": [
+					"vRecNum",
+					"Text121",
+					"Linie122"
+				]
+			},
+			"View 3": {
+				"objects": [
+					"bFirst",
+					"bFirstlabel",
+					"bPrevious",
+					"bPreviouslabel",
+					"bNext",
+					"bNextlabel",
+					"bLast",
+					"bLastlabel",
+					"bPreviousPage",
+					"bPreviousPagelabel",
+					"bNextPage",
+					"bNextPagelabel",
+					"bDelete",
+					"bDeletelabel",
+					"bCancel",
+					"bCancellabel",
+					"bValidate",
+					"bValidatelabel"
+				]
+			},
+			"View 4": {},
+			"View 5": {},
+			"View 6": {},
+			"View 7": {},
+			"View 8": {},
+			"View 9": {}
+		}
+	}
+}

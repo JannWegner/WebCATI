@@ -1,0 +1,289 @@
+﻿{
+	"destination": "detailScreen",
+	"rightMargin": 19,
+	"bottomMargin": 20,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onPrintingDetail",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke",
+		"onSelectionChange"
+	],
+	"pageFormat": {
+		"paperName": "DIN A4",
+		"paperWidth": "595pt",
+		"paperHeight": "842pt"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"Schaltfläche1": {
+					"type": "button",
+					"top": 666,
+					"left": 230,
+					"width": 173,
+					"height": 31,
+					"dataSource": "Schaltfläche1",
+					"action": "cancel",
+					"text": "Ende",
+					"class": "Standard",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Rollbarer Bereich1": {
+					"type": "listbox",
+					"top": 51,
+					"left": 66,
+					"width": 235,
+					"height": 569,
+					"resizingMode": "legacy",
+					"focusable": false,
+					"movableRows": false,
+					"showHeaders": false,
+					"selectionMode": "single",
+					"scrollbarHorizontal": "hidden",
+					"scrollbarVertical": "hidden",
+					"horizontalLineStroke": "transparent",
+					"verticalLineStroke": "transparent",
+					"fill": "transparent",
+					"fontSize": 10,
+					"borderStyle": "none",
+					"events": [
+						"onClick",
+						"onDisplayDetail",
+						"onDataChange"
+					],
+					"columns": [
+						{
+							"name": "Rollbarer Bereich1_Column1",
+							"dataSource": "tInterviewer",
+							"width": 235,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"fontSize": 10,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Kopf1",
+								"text": "Kopf1",
+								"fontSize": 10
+							},
+							"footer": {
+								"name": "Fußteil1",
+								"timeFormat": "hh_mm_ss",
+								"fontSize": 10
+							}
+						}
+					]
+				},
+				"Rollbarer Bereich2": {
+					"type": "listbox",
+					"top": 51,
+					"left": 304,
+					"width": 48,
+					"height": 569,
+					"resizingMode": "legacy",
+					"focusable": false,
+					"movableRows": false,
+					"showHeaders": false,
+					"selectionMode": "single",
+					"scrollbarHorizontal": "hidden",
+					"scrollbarVertical": "hidden",
+					"horizontalLineStroke": "transparent",
+					"verticalLineStroke": "transparent",
+					"fill": "transparent",
+					"fontSize": 10,
+					"borderStyle": "none",
+					"events": [
+						"onClick",
+						"onDisplayDetail",
+						"onDataChange"
+					],
+					"columns": [
+						{
+							"name": "Rollbarer Bereich2_Column1",
+							"dataSource": "tIN",
+							"width": 48,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"fontSize": 10,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Kopf2",
+								"text": "Kopf2",
+								"fontSize": 10
+							},
+							"footer": {
+								"name": "Fußteil2",
+								"timeFormat": "hh_mm_ss",
+								"fontSize": 10
+							}
+						}
+					]
+				},
+				"Rollbarer Bereich3": {
+					"type": "listbox",
+					"top": 51,
+					"left": 357,
+					"width": 48,
+					"height": 569,
+					"resizingMode": "legacy",
+					"focusable": false,
+					"movableRows": false,
+					"showHeaders": false,
+					"selectionMode": "single",
+					"scrollbarHorizontal": "hidden",
+					"horizontalLineStroke": "transparent",
+					"verticalLineStroke": "transparent",
+					"fill": "transparent",
+					"fontSize": 10,
+					"borderStyle": "none",
+					"events": [
+						"onClick",
+						"onDisplayDetail",
+						"onDataChange"
+					],
+					"columns": [
+						{
+							"name": "Rollbarer Bereich3_Column1",
+							"dataSource": "tSC",
+							"width": 33,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"fontSize": 10,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Kopf3",
+								"text": "Kopf3",
+								"fontSize": 10
+							},
+							"footer": {
+								"name": "Fußteil3",
+								"timeFormat": "hh_mm_ss",
+								"fontSize": 10
+							}
+						}
+					]
+				},
+				"Text1": {
+					"type": "text",
+					"top": 18,
+					"left": 63,
+					"width": 341,
+					"height": 23,
+					"fontSize": 18,
+					"fontWeight": "bold",
+					"text": "Name                                        Int       SC"
+				},
+				"Variable5": {
+					"type": "input",
+					"top": 637,
+					"left": 299,
+					"width": 40,
+					"height": 18,
+					"dataSource": "vIN",
+					"stroke": "#EE0000",
+					"fontSize": 14,
+					"fontWeight": "bold",
+					"fill": "transparent",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Variable6": {
+					"type": "input",
+					"top": 637,
+					"left": 349,
+					"width": 40,
+					"height": 18,
+					"dataSource": "vSC",
+					"stroke": "#EE0000",
+					"fontSize": 14,
+					"fontWeight": "bold",
+					"fill": "transparent",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Text4": {
+					"type": "text",
+					"top": 638,
+					"left": 157,
+					"width": 126,
+					"height": 16,
+					"stroke": "#EE0000",
+					"textAlign": "right",
+					"fontSize": 14,
+					"fontWeight": "bold",
+					"text": "Gesamt"
+				}
+			}
+		}
+	],
+	"editor": {
+		"groups": {
+			"Gruppe1": [
+				"Rollbarer Bereich1",
+				"Rollbarer Bereich2",
+				"Rollbarer Bereich3"
+			]
+		}
+	}
+}

@@ -1,0 +1,488 @@
+{
+	"users": {
+		"designer": {
+			"password": "ICvApeDloggRB+r+PCypOQ==",
+			"alias": "Designer"
+		},
+		"administrator": {
+			"password": "8Xu3h8OwdqsIRt8obJkBUA==",
+			"alias": "Administrator"
+		},
+		"Bauer Marco": {
+			"password": "B9j0Sy/r2ymUjjmFt/Nizg=="
+		},
+		"Mellinghaus Vera": {
+			"password": "xpRi/kCm8SF3I4NMNpPXDA=="
+		},
+		"Schmidt Christa-Maria": {
+			"password": "Gyw+zEBINWPkCr9LkKzA+g=="
+		},
+		"Wilde Katharina": {
+			"password": "e8+/cjBClYN4+Y/z1QVxaA=="
+		},
+		"Endlich Ursula": {
+			"password": "JL9SceX59Sgma8pUHZBI4g=="
+		},
+		"Mintzlaff Tanja": {
+			"password": "hDnkKgFQL/++rNAZsRCLiQ=="
+		},
+		"Meyer Wolfgang": {
+			"password": "YNRtfFaMKvx8RKsUr3aNnQ=="
+		},
+		"Klein Uta": {
+			"password": "nzb2ZW2z+9Q7n7kMG+hx5A=="
+		},
+		"Sulger Barbara": {
+			"password": "rlQzLZft8zmq1V+5VOBnSg=="
+		},
+		"Döring Till": {
+			"password": "pT+l0XC6m0/i66d3yuBrkQ=="
+		},
+		"Hessler Anja": {
+			"password": "luSGN6hz/44l4bMCajDW2g=="
+		},
+		"Besl Dominik": {
+			"password": "tATFxCoyO0rHnM7Az8Vy5Q=="
+		},
+		"Scheuvens Catharina": {
+			"password": "sOXF+NnNk/oog7PYnjizXg=="
+		},
+		"Wegner Jann": {
+			"password": "96jdaDdR13beCcrpKKRHIw=="
+		},
+		"Oebel Claudia": {
+			"password": "wVWO8GPq+JPzcNJGUEwP9g=="
+		},
+		"May Kerstin": {
+			"password": "pSKrOCBtNj5bmjY0GIeJbg=="
+		},
+		"Scherer Brigitte": {
+			"password": "5FGPcrtoif9YB1egSwUQQQ=="
+		},
+		"Junker Thomas": {
+			"password": "tru4cWdR7smdM6+MBB2yNA=="
+		},
+		"Watschounek Miriam": {
+			"password": "GSXIqQJu7mQvI5T9CGBgXg=="
+		},
+		"Frings Lena": {
+			"password": "0ipb5ABtkH3gApvpvripug=="
+		},
+		"Pauli Birgit": {
+			"password": "u4Mia2U/VhH1mFJms/Ngag=="
+		},
+		"Schulz Elisabeth": {
+			"password": "y68ipVn+EznD2PSPnrTYbQ=="
+		},
+		"Sendzik Angela": {
+			"password": "LJi81SuHqUAdMjGvC4I/gQ=="
+		},
+		"Bloemer Ralph": {
+			"password": "jcr2qEI1HXxk46/KAqElsA=="
+		},
+		"Weidt Stephan": {
+			"password": "udlqDCvsFXjdLp4BdNcYDw=="
+		},
+		"Elsner": {
+			"password": "lkQ8aMDx5aH0egEAHMzLDw=="
+		},
+		"Schlipper Michael": {
+			"password": "fEtOrKlbhd9F3/IDZFuvEA=="
+		},
+		"Thyssen Bärbel": {
+			"password": "SVpXv5NyhDlLTfNLIpJ4BA=="
+		},
+		"Preuß Gabriele": {
+			"password": "x++JzkzT0BKunyDVRdhn3Q=="
+		},
+		"Burbach Tina": {
+			"password": "o6N5Nm+lfXkEhF3+fDzuBw=="
+		},
+		"Heuser Michael": {
+			"password": "wRRfO2TuVw9tU2oSucC1cg=="
+		},
+		"Hofmann Johanna": {
+			"password": "JQXhXj1ELleFknQ55rlk+g=="
+		},
+		"Siekiera Eva": {
+			"password": "/uQ94VZ1/MUJF0nLlF3NnA=="
+		},
+		" Spezial-Eingabe": {
+			"password": "sINjFo0Us++MtLM01dfk+g=="
+		},
+		"Ludwig Andreas": {
+			"password": "xMldyD0yXoV53DxAx9NMig=="
+		},
+		"Koller Kornelia": {
+			"password": "PaBpfwfeG3IGRvwU9Mt0cw=="
+		},
+		"Gerhard Steve": {
+			"password": "o85AWepRipjVPWKBPBiT2w=="
+		},
+		"Zamai Bella": {
+			"password": "zriHTQop7tnLAY4jwGDmSA=="
+		},
+		"Reimers Rita": {
+			"password": "3jAV79UqymhM+bCjAbVYkQ=="
+		},
+		"Behme": {
+			"password": "Uw7q2uuyZTtIo9k+sSW6Ew=="
+		},
+		"Sucker Kirsten": {
+			"password": "Ku3flK0Ys8gYNH4Q7IDVug=="
+		},
+		"Hund Ulrike": {
+			"password": "uR3kNsiaNhqUMYMh0SSFww=="
+		},
+		"Heydegger Katja": {
+			"password": "zXxAwuEAHpHeFDmN3omBjQ=="
+		},
+		"Göbbels Ivonne": {
+			"password": "91uY79MZR5sIg1edS2kQMg=="
+		},
+		"Besl Nico": {
+			"password": "Bq1M4vTtbdMoih0t0/KXbQ=="
+		},
+		"Harter Babsi": {
+			"password": "0b3Xedo5gi2q3XPt+QrJ1A=="
+		},
+		"Schulte Linus": {
+			"password": "oxXbANOf0M1X/1V/mIaAJg=="
+		},
+		"Koo": {
+			"password": "Jax2SNKH3xhoQ51ITqy0rg=="
+		},
+		"Gerhardts Ushi": {
+			"password": "XhDTV+EEbzsXMOtpOJ5hLA=="
+		},
+		"Ickenroth Bernd": {
+			"password": "q0SQsqTxp6e8+JpoNJm8Ig=="
+		},
+		"Kraus Dietmar": {
+			"password": "VDGh4rP6cbCCmi1QmAeeAw=="
+		},
+		"Wiesner Anke": {
+			"password": "OoOWUUC8iV4VZuf6I8wUvQ=="
+		},
+		"Kansy Achim": {
+			"password": "6iig7Q1KyDbVt1yzmHVa6g=="
+		},
+		"Marschollek Nicole": {
+			"password": "rgeg/TQdwSYGy0GRYbW/jQ=="
+		},
+		"Martin Raphael": {
+			"password": "E9DbyyUOM/bI9dICQVpv2g=="
+		},
+		"Rendenbach Patrick": {
+			"password": "icTmkA455povoVRhdJuQlQ=="
+		},
+		"Christ Florian": {
+			"password": "I8jexTlAvDiiS2KfhApBUw=="
+		},
+		"Rauch Thomas": {
+			"password": "7q5bvhFwaPRNOIJkP59p2w=="
+		},
+		"Mainzer Marius": {
+			"password": "v0CPbmYtjt7lK74B5u4uUg=="
+		},
+		"Schulenburg Andrea": {
+			"password": "gnpg+ADPWNSRb0d5Z4O36w=="
+		},
+		"Klein Elisabeth": {
+			"password": "DBNu4hQ2JGlM9fv2izo4pg=="
+		},
+		"Reinke Jörg": {
+			"password": "VvHaVbhoxi4J3JFA2HBkqA=="
+		},
+		"Sobotka Hanna": {
+			"password": "BStPePcd7xvnGyxj4fxjWA=="
+		},
+		"Bohler": {
+			"password": "cU5Wv1dwFOVVbcna9a4rig=="
+		},
+		"Schüller Corinna": {
+			"password": "pFcaJyLhBWJQe5zR4Miprw=="
+		},
+		" test": {
+			"password": "GGmJUJObhvzr8bxNRqu4Cg=="
+		},
+		"Klein Sarah": {
+			"password": "Tbq5quEP9OOEzRIDJoi9KQ=="
+		},
+		"Friemert Georg": {
+			"password": "H7NLqAe73XCNe4ohmJe+xA=="
+		},
+		"Hauer Karin": {
+			"password": "+rQISfaZ2qEaPLxGu3udeg=="
+		},
+		"Schönenberg Kirsten": {
+			"password": "qPbAZqFsSOTlNmOK2869zg=="
+		},
+		"Herrmann Julia": {
+			"password": "JBpSS7oEWvD4W/5Mr3nIpA=="
+		},
+		"Sommer Britta": {
+			"password": "3pLNvVsm1uHtlyMyfpa8XA=="
+		},
+		"Zimmer Helga": {
+			"password": "bY4RyQcuIPyWk0ycWr13gA=="
+		},
+		"Alex Christine": {
+			"password": "2BzQL7yc5tp+Cj/LaGL+vQ=="
+		},
+		"Schmelter Julia": {
+			"password": "+etwSV1TGt1++eXICeP9jQ=="
+		},
+		"Krischler Jutta": {
+			"password": "w85U3fgPmR1UWZONp2YKyg=="
+		}
+	},
+	"groups": {
+		"Entwickler": {
+			"users": [
+				"Designer",
+				"Administrator",
+				"Mellinghaus Vera",
+				"Wegner Jann",
+				"Elsner",
+				"Harter Babsi",
+				"Martin Raphael"
+			]
+		},
+		"Spezial": {
+			"users": [
+				"Administrator",
+				"Wilde Katharina",
+				"Sulger Barbara",
+				"Thyssen Bärbel",
+				" Spezial-Eingabe",
+				"Zamai Bella",
+				"Harter Babsi",
+				"Hauer Karin",
+				"Alex Christine"
+			],
+			"groups": [
+				"Fragebogen",
+				"Chef",
+				"UmfrAVO"
+			]
+		},
+		"TopSupervisor": {
+			"users": [
+				"Administrator"
+			],
+			"groups": [
+				"UmfrAVO"
+			]
+		},
+		"Fragebogen": {
+			"users": [
+				"Administrator"
+			],
+			"groups": [
+				"Entwickler",
+				"Chef",
+				"UmfrAVO"
+			]
+		},
+		"Supervisor": {
+			"users": [
+				"Administrator",
+				"Schmidt Christa-Maria",
+				"Preuß Gabriele",
+				"Behme",
+				"Koo",
+				"Bohler"
+			],
+			"groups": [
+				"Entwickler",
+				"UmfrAVO"
+			]
+		},
+		"MappingBearb": {
+			"users": [
+				"Wegner Jann"
+			]
+		},
+		"AdrVorlage": {
+			"users": [
+				"Administrator",
+				"Bauer Marco",
+				"Döring Till",
+				"Scheuvens Catharina",
+				"Junker Thomas",
+				"Frings Lena",
+				"Sendzik Angela",
+				"Bloemer Ralph",
+				"Weidt Stephan",
+				"Burbach Tina",
+				"Ludwig Andreas",
+				"Hund Ulrike",
+				"Besl Nico",
+				"Schulte Linus",
+				"Kansy Achim",
+				"Rauch Thomas",
+				"Sobotka Hanna",
+				"Sommer Britta",
+				"Schmelter Julia"
+			],
+			"groups": [
+				"Spezial",
+				"Supervisor",
+				"Interviewer"
+			]
+		},
+		"Chef": {
+			"users": [
+				"Designer",
+				"Administrator",
+				"Mellinghaus Vera",
+				"Wegner Jann",
+				"Elsner",
+				"Martin Raphael"
+			]
+		},
+		"MappingTmpLoeschen": {
+			"users": [
+				"Designer",
+				"Administrator",
+				"Behme",
+				"Bohler"
+			],
+			"groups": [
+				"Entwickler"
+			]
+		},
+		"UmfrAVO": {
+			"users": [
+				"Administrator",
+				"Mellinghaus Vera"
+			],
+			"groups": [
+				"Entwickler"
+			]
+		},
+		"Interviewer": {
+			"users": [
+				"Administrator",
+				"Bauer Marco",
+				"Schmidt Christa-Maria",
+				"Endlich Ursula",
+				"Mintzlaff Tanja",
+				"Meyer Wolfgang",
+				"Klein Uta",
+				"Sulger Barbara",
+				"Döring Till",
+				"Hessler Anja",
+				"Besl Dominik",
+				"Scheuvens Catharina",
+				"Oebel Claudia",
+				"May Kerstin",
+				"Scherer Brigitte",
+				"Junker Thomas",
+				"Watschounek Miriam",
+				"Frings Lena",
+				"Pauli Birgit",
+				"Schulz Elisabeth",
+				"Sendzik Angela",
+				"Bloemer Ralph",
+				"Weidt Stephan",
+				"Schlipper Michael",
+				"Preuß Gabriele",
+				"Burbach Tina",
+				"Heuser Michael",
+				"Hofmann Johanna",
+				"Siekiera Eva",
+				"Ludwig Andreas",
+				"Koller Kornelia",
+				"Gerhard Steve",
+				"Reimers Rita",
+				"Sucker Kirsten",
+				"Hund Ulrike",
+				"Heydegger Katja",
+				"Göbbels Ivonne",
+				"Besl Nico",
+				"Schulte Linus",
+				"Koo",
+				"Gerhardts Ushi",
+				"Ickenroth Bernd",
+				"Kraus Dietmar",
+				"Wiesner Anke",
+				"Kansy Achim",
+				"Marschollek Nicole",
+				"Rendenbach Patrick",
+				"Christ Florian",
+				"Rauch Thomas",
+				"Mainzer Marius",
+				"Schulenburg Andrea",
+				"Klein Elisabeth",
+				"Reinke Jörg",
+				"Sobotka Hanna",
+				"Schüller Corinna",
+				" test",
+				"Klein Sarah",
+				"Friemert Georg",
+				"Schönenberg Kirsten",
+				"Herrmann Julia",
+				"Sommer Britta",
+				"Zimmer Helga",
+				"Schmelter Julia",
+				"Krischler Jutta"
+			],
+			"groups": [
+				"Entwickler",
+				"Fragebogen",
+				"UmfrAVO"
+			]
+		},
+		"Benutzermodus": {
+			"users": [
+				"Administrator",
+				"Behme"
+			],
+			"groups": [
+				"Entwickler",
+				"Chef",
+				"UmfrAVO"
+			]
+		},
+		"AlleUmfragen": {
+			"users": [
+				"Administrator"
+			],
+			"groups": [
+				"Entwickler",
+				"UmfrAVO"
+			]
+		},
+		"WebUser": {
+			"users": [
+				"Administrator",
+				"Wegner Jann"
+			]
+		}
+	},
+	"sqlSchemaGranters": {
+		"DEFAULT_SCHEMA": {
+			"readOnlyAccessGroup": "*",
+			"readWriteAccessGroup": "*",
+			"allAccessGroup": ""
+		}
+	},
+	"remoteGranters": {
+		"web": "*",
+		"soap": "*",
+		"oci": "*",
+		"write": "*",
+		"view": "*",
+		"odbcPro": "*"
+	},
+	"settings": {
+		"localGenericWebUser": "Wegner Jann",
+		"designAccessGroup": "*",
+		"localMobileAccessGroupRW": "*",
+		"remoteMobileAccessGroupRW": "*",
+		"remoteGenericWebUser": "Designer",
+		"remoteDefaultUser": ""
+	}
+}

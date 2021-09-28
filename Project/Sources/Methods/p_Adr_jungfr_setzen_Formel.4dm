@@ -1,0 +1,24 @@
+//%attributes = {}
+[TelefonNummer:4]FixTermin:36:=False:C215
+[TelefonNummer:4]Ende am:25:=!00-00-00!
+[TelefonNummer:4]Ende um:26:=?00:00:00?
+[TelefonNummer:4]Interviewer:10:=""
+[TelefonNummer:4]RefDatum:8:=!00-00-00!
+[TelefonNummer:4]RefZeit:9:=?00:00:00?
+[TelefonNummer:4]Start Am:23:=!00-00-00!
+[TelefonNummer:4]Start um:24:=?00:00:00?
+[TelefonNummer:4]WiederAm:2:=!00-00-00!
+[TelefonNummer:4]WiederUm:3:=?00:00:00?
+[TelefonNummer:4]Fassung:39:=""
+[TelefonNummer:4]WeiterMitFrage:7:=""
+[TelefonNummer:4]Status:5:="Neu"
+[TelefonNummer:4]StatusErklärung:11:=""
+[TelefonNummer:4]AntwASCII:41:=""
+[TelefonNummer:4]AntwUeberlauf:40:=""
+[TelefonNummer:4]Wegspeicher:48:=""
+[TelefonNummer:4]wmProto:37:=""
+[TelefonNummer:4]Dauer:51:=0
+[TelefonNummer:4]Kontakte:52:=0
+[TelefonNummer:4]Kommentar:6:=vs_KommentarNeu
+[TelefonNummer:4]Historie:4:=vs_HistNeu
+

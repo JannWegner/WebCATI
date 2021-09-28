@@ -1,0 +1,232 @@
+﻿{
+	"destination": "detailScreen",
+	"rightMargin": 19,
+	"bottomMargin": 20,
+	"markerHeader": 38,
+	"markerBody": 60,
+	"markerBreak": 60,
+	"markerFooter": 60,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onPrintingDetail",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke",
+		"onSelectionChange"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "DIN A4",
+		"paperWidth": "595pt",
+		"paperHeight": "842pt"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"Feld1": {
+					"type": "input",
+					"top": 10,
+					"left": 179,
+					"width": 89,
+					"height": 24,
+					"dataSource": "[TelefonNummer:4]AdrFBNr:20",
+					"dataSourceTypeHint": "integer",
+					"textAlign": "right",
+					"fontSize": 18,
+					"fontWeight": "bold",
+					"fill": "transparent",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"vSpezial": {
+					"type": "input",
+					"top": 42,
+					"left": 20,
+					"width": 392,
+					"height": 13,
+					"dataSource": "vSpezial",
+					"fontFamily": "Arial",
+					"fontSize": 10,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Text2": {
+					"type": "text",
+					"top": 21,
+					"left": 383,
+					"width": 79,
+					"height": 11,
+					"textAlign": "right",
+					"fontFamily": "Geneva",
+					"fontSize": 8,
+					"text": "Druck-Datum"
+				},
+				"Variable1": {
+					"type": "input",
+					"top": 14,
+					"left": 21,
+					"width": 133,
+					"height": 11,
+					"dataSource": "vUmfrage",
+					"fontFamily": "Geneva",
+					"fontSize": 8,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Variable2": {
+					"type": "input",
+					"top": 21,
+					"left": 469,
+					"width": 133,
+					"height": 11,
+					"dataSource": "vDruck",
+					"fontFamily": "Geneva",
+					"fontSize": 8,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Text3": {
+					"type": "text",
+					"top": 6,
+					"left": 383,
+					"width": 79,
+					"height": 11,
+					"textAlign": "right",
+					"fontFamily": "Geneva",
+					"fontSize": 8,
+					"text": "Interview-Datum"
+				},
+				"Variable3": {
+					"type": "input",
+					"top": 6,
+					"left": 468,
+					"width": 133,
+					"height": 11,
+					"dataSource": "vEnde",
+					"fontFamily": "Geneva",
+					"fontSize": 8,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Variable4": {
+					"type": "input",
+					"top": 18,
+					"left": 279,
+					"width": 45,
+					"height": 11,
+					"dataSource": "vSeite",
+					"textAlign": "left",
+					"fontFamily": "Geneva",
+					"fontSize": 8,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Text1": {
+					"type": "text",
+					"top": 18,
+					"left": 271,
+					"width": 6,
+					"height": 11,
+					"textAlign": "right",
+					"fontFamily": "Geneva",
+					"fontSize": 8,
+					"text": "/"
+				},
+				"Linie1": {
+					"type": "line",
+					"top": 35,
+					"left": 4,
+					"width": 602
+				}
+			}
+		}
+	]
+}

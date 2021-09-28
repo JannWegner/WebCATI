@@ -1,0 +1,713 @@
+﻿{
+	"destination": "listScreen",
+	"windowSizingX": "fixed",
+	"windowSizingY": "fixed",
+	"rightMargin": 0,
+	"bottomMargin": 0,
+	"markerHeader": 97,
+	"markerBody": 124,
+	"markerBreak": 126,
+	"markerFooter": 209,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onPrintingDetail",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke",
+		"onSelectionChange"
+	],
+	"pageFormat": {
+		"paperName": "DIN A4",
+		"paperWidth": "595pt",
+		"paperHeight": "842pt"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"S1_Text": {
+					"type": "text",
+					"top": 79,
+					"left": 24,
+					"width": 28,
+					"height": 16,
+					"stroke": "#000000",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 13,
+					"text": "Typ : "
+				},
+				"S2_Text": {
+					"type": "text",
+					"top": 79,
+					"left": 84,
+					"width": 56,
+					"height": 16,
+					"stroke": "#000000",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 13,
+					"text": "TabNr : "
+				},
+				"S3_Text": {
+					"type": "text",
+					"top": 79,
+					"left": 172,
+					"width": 56,
+					"height": 16,
+					"stroke": "#000000",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 13,
+					"text": "NeueNr : "
+				},
+				"S4_Text": {
+					"type": "text",
+					"top": 79,
+					"left": 260,
+					"width": 126,
+					"height": 16,
+					"stroke": "#000000",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 13,
+					"text": "NameInStrukt : "
+				},
+				"S5_Text": {
+					"type": "text",
+					"top": 79,
+					"left": 418,
+					"width": 126,
+					"height": 16,
+					"stroke": "#000000",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 13,
+					"text": "NeuerName : "
+				},
+				"Viereck8": {
+					"type": "rectangle",
+					"top": 97,
+					"left": 0,
+					"width": 560,
+					"height": 24,
+					"sizingX": "grow",
+					"stroke": "#FFFFFF"
+				},
+				"S1_Feld": {
+					"type": "input",
+					"top": 101,
+					"left": 24,
+					"width": 28,
+					"height": 16,
+					"dataSource": "[Mapping:10]Typ:2",
+					"stroke": "#000000",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 13,
+					"fill": "#FFFFFF",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"S2_Feld": {
+					"type": "input",
+					"top": 101,
+					"left": 84,
+					"width": 56,
+					"height": 16,
+					"dataSource": "[Mapping:10]TabNr:7",
+					"stroke": "#000000",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 13,
+					"fill": "#FFFFFF",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"S3_Feld": {
+					"type": "input",
+					"top": 101,
+					"left": 172,
+					"width": 56,
+					"height": 16,
+					"dataSource": "[Mapping:10]NeueNr:4",
+					"stroke": "#000000",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 13,
+					"fill": "#FFFFFF",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"S4_Feld": {
+					"type": "input",
+					"top": 101,
+					"left": 260,
+					"width": 126,
+					"height": 16,
+					"dataSource": "[Mapping:10]NameInStrukt:6",
+					"stroke": "#000000",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 13,
+					"fill": "#FFFFFF",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"S5_Feld": {
+					"type": "input",
+					"top": 101,
+					"left": 418,
+					"width": 126,
+					"height": 16,
+					"dataSource": "[Mapping:10]NeuerName:5",
+					"stroke": "#000000",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 13,
+					"fill": "#FFFFFF",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Linie9": {
+					"type": "line",
+					"top": 74,
+					"left": 0,
+					"height": 47,
+					"stroke": "#A8A8A8"
+				},
+				"Linie10": {
+					"type": "line",
+					"top": 74,
+					"left": 560,
+					"height": 47,
+					"stroke": "#A8A8A8"
+				},
+				"Linie11": {
+					"type": "line",
+					"top": 74,
+					"left": 402,
+					"height": 47,
+					"stroke": "#A8A8A8"
+				},
+				"Splitter2": {
+					"type": "button",
+					"top": 74,
+					"left": 401,
+					"width": 3,
+					"height": 47,
+					"dataSource": "Splitter2",
+					"action": "automaticSplitter",
+					"display": false,
+					"events": [
+						"onClick"
+					]
+				},
+				"Linie12": {
+					"type": "line",
+					"top": 74,
+					"left": 244,
+					"height": 47,
+					"stroke": "#A8A8A8"
+				},
+				"Splitter3": {
+					"type": "button",
+					"top": 74,
+					"left": 243,
+					"width": 3,
+					"height": 47,
+					"dataSource": "Splitter3",
+					"action": "automaticSplitter",
+					"display": false,
+					"events": [
+						"onClick"
+					]
+				},
+				"Linie13": {
+					"type": "line",
+					"top": 74,
+					"left": 156,
+					"height": 47,
+					"stroke": "#A8A8A8"
+				},
+				"Splitter4": {
+					"type": "button",
+					"top": 74,
+					"left": 155,
+					"width": 3,
+					"height": 47,
+					"dataSource": "Splitter4",
+					"action": "automaticSplitter",
+					"display": false,
+					"events": [
+						"onClick"
+					]
+				},
+				"Linie14": {
+					"type": "line",
+					"top": 74,
+					"left": 68,
+					"height": 47,
+					"stroke": "#A8A8A8"
+				},
+				"Splitter5": {
+					"type": "button",
+					"top": 74,
+					"left": 67,
+					"width": 3,
+					"height": 47,
+					"dataSource": "Splitter5",
+					"action": "automaticSplitter",
+					"display": false,
+					"events": [
+						"onClick"
+					]
+				},
+				"Schaltfläche1": {
+					"type": "button",
+					"top": 165,
+					"left": 164,
+					"width": 136,
+					"height": 22,
+					"dataSource": "b_MarkRaus",
+					"text": "Markierte rausnehmen",
+					"class": "Standard",
+					"method": "ObjectMethods/Schaltfläche1.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Schaltfläche2": {
+					"type": "button",
+					"top": 130,
+					"left": 164,
+					"width": 136,
+					"height": 31,
+					"dataSource": "Schaltfläche1",
+					"text": "Markierte Originaltext übernehmen",
+					"class": "Standard",
+					"method": "ObjectMethods/Schaltfläche2.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Schaltfläche3": {
+					"type": "button",
+					"top": 129,
+					"left": 327,
+					"width": 118,
+					"height": 20,
+					"dataSource": "b_Pruefen",
+					"text": "Prüfen",
+					"class": "Standard",
+					"method": "ObjectMethods/Schaltfläche3.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Schaltfläche4": {
+					"type": "button",
+					"top": 154,
+					"left": 327,
+					"width": 118,
+					"height": 21,
+					"dataSource": "b_numerieren",
+					"text": "Tab. xxx numerieren",
+					"class": "Standard",
+					"method": "ObjectMethods/Schaltfläche4.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Schaltfläche5": {
+					"type": "button",
+					"top": 131,
+					"left": 8,
+					"width": 135,
+					"height": 21,
+					"dataSource": "b_MapAnlegen",
+					"text": "Mapping anlegen",
+					"class": "Standard",
+					"method": "ObjectMethods/Schaltfläche5.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Schaltfläche6": {
+					"type": "button",
+					"top": 129,
+					"left": 463,
+					"width": 107,
+					"height": 20,
+					"dataSource": "b_Eingeblendet",
+					"text": "Nur Eingeblendete",
+					"class": "Standard",
+					"method": "ObjectMethods/Schaltfläche6.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Schaltfläche7": {
+					"type": "button",
+					"top": 155,
+					"left": 463,
+					"width": 107,
+					"height": 20,
+					"dataSource": "b_Ausgeblendet",
+					"text": "Nur Ausgeblendete",
+					"class": "Standard",
+					"method": "ObjectMethods/Schaltfläche7.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Schaltfläche8": {
+					"type": "button",
+					"top": 179,
+					"left": 325,
+					"width": 136,
+					"height": 22,
+					"dataSource": "b_ZeigTab",
+					"text": "Zeige Tabelle Nr....",
+					"class": "Standard",
+					"method": "ObjectMethods/Schaltfläche8.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Schaltfläche9": {
+					"type": "button",
+					"top": 157,
+					"left": 8,
+					"width": 135,
+					"height": 21,
+					"dataSource": "b_MapAnwend",
+					"text": "Mapping anwenden",
+					"class": "Standard",
+					"method": "ObjectMethods/Schaltfläche9.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Schaltfläche10": {
+					"type": "button",
+					"top": 183,
+					"left": 8,
+					"width": 135,
+					"height": 21,
+					"dataSource": "b_MapTmpREset",
+					"text": "Mapping temp. Reset",
+					"class": "Standard",
+					"method": "ObjectMethods/Schaltfläche10.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Text1": {
+					"type": "text",
+					"top": 0,
+					"left": 379,
+					"width": 186,
+					"height": 64,
+					"stroke": "#FF005E",
+					"textAlign": "center",
+					"fontFamily": "Geneva",
+					"fontSize": 12,
+					"text": "ACHTUNG\rMapping gilt für alle Umfragen!\rPos. 1-17 sind für AdrNr und\rAdrFelder 1-16 reserviert!!"
+				},
+				"bShowAll": {
+					"type": "pictureButton",
+					"top": 6,
+					"left": 20,
+					"width": 48,
+					"height": 48,
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/Alle"
+					},
+					"rowCount": 4,
+					"picture": "/RESOURCES/Images/Buttons/OSX/ShowAll.png",
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"method": "ObjectMethods/bShowAll.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"bShowAlllabel": {
+					"type": "text",
+					"top": 54,
+					"left": 8,
+					"width": 72,
+					"height": 17,
+					"stroke": "#000000",
+					"textAlign": "center",
+					"text": "Alle anzeigen"
+				},
+				"bShowSubSet": {
+					"type": "pictureButton",
+					"top": 6,
+					"left": 92,
+					"width": 48,
+					"height": 48,
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/Auswahl"
+					},
+					"rowCount": 4,
+					"picture": "/RESOURCES/Images/Buttons/OSX/ShowSubset.png",
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"method": "ObjectMethods/bShowSubSet.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"bShowSubSetlabel": {
+					"type": "text",
+					"top": 54,
+					"left": 80,
+					"width": 72,
+					"height": 17,
+					"stroke": "#000000",
+					"textAlign": "center",
+					"text": "Auswahl anzeigen"
+				},
+				"bQuery": {
+					"type": "pictureButton",
+					"top": 6,
+					"left": 164,
+					"width": 48,
+					"height": 48,
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/Suchen"
+					},
+					"rowCount": 4,
+					"picture": "/RESOURCES/Images/Buttons/OSX/Query.png",
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"method": "ObjectMethods/bQuery.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"bQuerylabel": {
+					"type": "text",
+					"top": 54,
+					"left": 152,
+					"width": 72,
+					"height": 17,
+					"stroke": "#000000",
+					"textAlign": "center",
+					"text": "Suchen"
+				},
+				"bOrderBy": {
+					"type": "pictureButton",
+					"top": 6,
+					"left": 236,
+					"width": 48,
+					"height": 48,
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/Sortieren"
+					},
+					"rowCount": 4,
+					"picture": "/RESOURCES/Images/Buttons/OSX/OrderBy.png",
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"method": "ObjectMethods/bOrderBy.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"bOrderBylabel": {
+					"type": "text",
+					"top": 54,
+					"left": 224,
+					"width": 72,
+					"height": 17,
+					"stroke": "#000000",
+					"textAlign": "center",
+					"text": "Sortieren"
+				},
+				"bDone": {
+					"type": "pictureButton",
+					"top": 8,
+					"left": 318,
+					"width": 48,
+					"height": 48,
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/Fertig1"
+					},
+					"action": "cancel",
+					"rowCount": 4,
+					"picture": "/RESOURCES/Images/Buttons/OSX/Done.png",
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"events": [
+						"onClick"
+					]
+				},
+				"bDonelabel": {
+					"type": "text",
+					"top": 56,
+					"left": 306,
+					"width": 72,
+					"height": 17,
+					"stroke": "#000000",
+					"textAlign": "center",
+					"text": "Fertig"
+				}
+			}
+		}
+	],
+	"editor": {
+		"activeView": "View 1",
+		"defaultView": "View 1",
+		"views": {
+			"View 1": {},
+			"View 2": {},
+			"View 3": {
+				"objects": [
+					"bShowAll",
+					"bShowAlllabel",
+					"bShowSubSet",
+					"bShowSubSetlabel",
+					"bQuery",
+					"bQuerylabel",
+					"bOrderBy",
+					"bOrderBylabel",
+					"bDone",
+					"bDonelabel"
+				]
+			},
+			"View 4": {},
+			"View 5": {},
+			"View 6": {},
+			"View 7": {},
+			"View 8": {},
+			"View 9": {}
+		}
+	}
+}

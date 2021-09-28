@@ -1,0 +1,126 @@
+﻿{
+	"destination": "detailScreen",
+	"rightMargin": 19,
+	"bottomMargin": 10,
+	"markerHeader": 24,
+	"markerBody": 45,
+	"markerBreak": 48,
+	"markerFooter": 66,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onPrintingDetail",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke",
+		"onSelectionChange"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "DIN A4",
+		"paperWidth": "595pt",
+		"paperHeight": "842pt"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"Viereck1": {
+					"type": "rectangle",
+					"top": 27,
+					"left": 6,
+					"width": 552,
+					"height": 17,
+					"fill": "transparent"
+				},
+				"Variable6": {
+					"type": "input",
+					"top": 5,
+					"left": 9,
+					"width": 546,
+					"height": 17,
+					"dataSource": "vUmfrDat",
+					"textAlign": "center",
+					"fontFamily": "Geneva",
+					"fontSize": 13,
+					"fontWeight": "bold",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "raised",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Variable2": {
+					"type": "input",
+					"top": 51,
+					"left": 9,
+					"width": 546,
+					"height": 12,
+					"dataSource": "vi_Seite",
+					"class": "Standard",
+					"textAlign": "center",
+					"fill": "transparent",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"method": "ObjectMethods/Variable2.4dm",
+					"events": [
+						"onPrintingFooter"
+					]
+				},
+				"Variable3": {
+					"type": "input",
+					"top": 31,
+					"left": 9,
+					"width": 546,
+					"height": 9,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"dataSource": "vt_Text",
+					"fontFamily": "Courier New",
+					"fontSize": 8,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"printFrame": "variable",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				}
+			}
+		}
+	]
+}

@@ -1,0 +1,167 @@
+﻿{
+	"destination": "detailScreen",
+	"rightMargin": 19,
+	"bottomMargin": 20,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onPrintingDetail",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke",
+		"onSelectionChange"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "DIN A4",
+		"paperWidth": "595pt",
+		"paperHeight": "842pt"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"Schaltfläche1": {
+					"type": "button",
+					"top": 25,
+					"left": 84,
+					"width": 232,
+					"height": 40,
+					"dataSource": "bAdressen",
+					"text": "Adressen löschen",
+					"class": "Standard",
+					"method": "ObjectMethods/Schaltfläche1.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Schaltfläche2": {
+					"type": "button",
+					"top": 121,
+					"left": 84,
+					"width": 232,
+					"height": 40,
+					"dataSource": "bBogen",
+					"text": "Bogen löschen",
+					"class": "Standard",
+					"method": "ObjectMethods/Schaltfläche2.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Schaltfläche3": {
+					"type": "button",
+					"top": 170,
+					"left": 84,
+					"width": 232,
+					"height": 40,
+					"dataSource": "bVariablen",
+					"text": "Variablen löschen",
+					"class": "Standard",
+					"method": "ObjectMethods/Schaltfläche3.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Schaltfläche4": {
+					"type": "button",
+					"top": 219,
+					"left": 84,
+					"width": 232,
+					"height": 40,
+					"dataSource": "bQuoten",
+					"text": "Quoten löschen",
+					"class": "Standard",
+					"method": "ObjectMethods/Schaltfläche4.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Schaltfläche5": {
+					"type": "button",
+					"top": 421,
+					"left": 84,
+					"width": 232,
+					"height": 49,
+					"dataSource": "bEnde",
+					"action": "cancel",
+					"text": "Ende",
+					"class": "Standard",
+					"defaultButton": true,
+					"events": [
+						"onClick"
+					]
+				},
+				"Schaltfläche6": {
+					"type": "button",
+					"top": 270,
+					"left": 84,
+					"width": 232,
+					"height": 40,
+					"dataSource": "bListen",
+					"text": "Hilfs-Listen löschen",
+					"class": "Standard",
+					"method": "ObjectMethods/Schaltfläche6.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Schaltfläche7": {
+					"type": "button",
+					"top": 72,
+					"left": 84,
+					"width": 232,
+					"height": 40,
+					"dataSource": "bIntProt",
+					"text": "Int.-Protokolle löschen",
+					"class": "Standard",
+					"method": "ObjectMethods/Schaltfläche7.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Viereck": {
+					"type": "rectangle",
+					"top": 334,
+					"left": 78,
+					"width": 244,
+					"height": 51,
+					"fill": "#FF1EB0"
+				},
+				"Schaltfläche8": {
+					"type": "button",
+					"top": 340,
+					"left": 84,
+					"width": 232,
+					"height": 40,
+					"dataSource": "bListen",
+					"text": "Komplette Umfrage löschen",
+					"fontFamily": "Geneva",
+					"fontSize": 12,
+					"fontWeight": "bold",
+					"method": "ObjectMethods/Schaltfläche8.4dm",
+					"events": [
+						"onClick"
+					]
+				}
+			}
+		}
+	]
+}

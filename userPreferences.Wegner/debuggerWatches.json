@@ -1,0 +1,35 @@
+[
+	{
+		"type": 66,
+		"formula": "Session:C1714.isGuest()"
+	},
+	{
+		"type": 66,
+		"formula": "$info"
+	},
+	{
+		"type": 66,
+		"formula": "web_requestHeaderNames_at"
+	},
+	{
+		"type": 66,
+		"formula": "web_requestHeaderValues_at"
+	},
+	{
+		"type": 66,
+		"formula": "at_FormVarValues"
+	},
+	{
+		"type": 66,
+		"formula": "$1"
+	},
+	{
+		"type": 66,
+		"formula": "WEB Get current session ID:C1162"
+	},
+	{
+		"type": 66,
+		"formula": "Session:C1714",
+		"expanded": true
+	}
+]

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?><preferences stamp="71">
+	<com.4d>
+		<database>
+			<data_storage data_path="Data/WebCATI.4DD"/>
+		</database>
+		<general last_opening_mode="0"/>
+		<server>
+			<misc open_admin_window_at_startup="true"/>
+		</server>
+	</com.4d>
+	<internal_prefs_4d>
+		<windows>
+			<window name="main" left="186" top="560" width="1112" height="807"/>
+		</windows>
+		<explorer default_page="3"/>
+	</internal_prefs_4d>
+</preferences>

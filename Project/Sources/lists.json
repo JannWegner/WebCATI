@@ -1,0 +1,392 @@
+﻿{
+	"Status": {
+		"lineHeight": 18,
+		"editable": false,
+		"items": [
+			{
+				"text": "Abbruch",
+				"ref": 0,
+				"editable": true,
+				"collapsed": true
+			},
+			{
+				"text": "Abgebrochen",
+				"ref": 0,
+				"editable": true,
+				"collapsed": true
+			},
+			{
+				"text": "Ausfall",
+				"ref": 0,
+				"editable": true,
+				"collapsed": true
+			},
+			{
+				"text": "In Arbeit",
+				"ref": 0,
+				"editable": true,
+				"collapsed": true
+			},
+			{
+				"text": "Komplett",
+				"ref": 0,
+				"editable": true,
+				"collapsed": true
+			},
+			{
+				"text": "Neu",
+				"ref": 0,
+				"editable": true,
+				"collapsed": true
+			},
+			{
+				"text": "Wiedervorlage",
+				"ref": 0,
+				"editable": true,
+				"collapsed": true
+			}
+		]
+	},
+	"Formulartypen": {
+		"lineHeight": 18,
+		"editable": true,
+		"items": [
+			{
+				"text": "gen",
+				"ref": 0,
+				"editable": true,
+				"collapsed": true
+			},
+			{
+				"text": "bed",
+				"ref": 0,
+				"editable": true,
+				"collapsed": true
+			},
+			{
+				"text": "do",
+				"ref": 0,
+				"editable": true,
+				"collapsed": true
+			},
+			{
+				"text": "spez",
+				"ref": 0,
+				"editable": true,
+				"collapsed": true
+			},
+			{
+				"text": "einmal",
+				"ref": 0,
+				"editable": true,
+				"collapsed": true
+			}
+		]
+	},
+	"StatusErklärung": {
+		"lineHeight": 18,
+		"editable": true,
+		"items": [
+			{
+				"text": "",
+				"ref": 0,
+				"editable": true,
+				"collapsed": true
+			},
+			{
+				"text": "Anrufbeantworter",
+				"ref": 0,
+				"editable": true,
+				"collapsed": true
+			},
+			{
+				"text": "Ausfallgrund: x",
+				"ref": 0,
+				"editable": true,
+				"collapsed": true
+			},
+			{
+				"text": "Belegt",
+				"ref": 0,
+				"editable": true,
+				"collapsed": true
+			},
+			{
+				"text": "Bogen-Abbruch",
+				"ref": 0,
+				"editable": true,
+				"collapsed": true
+			},
+			{
+				"text": "Einfach aufgelegt",
+				"ref": 0,
+				"editable": true,
+				"collapsed": true
+			},
+			{
+				"text": "Fax/Modem",
+				"ref": 0,
+				"editable": true,
+				"collapsed": true
+			},
+			{
+				"text": "Fortsetzung",
+				"ref": 0,
+				"editable": true,
+				"collapsed": true
+			},
+			{
+				"text": "Interview",
+				"ref": 0,
+				"editable": true,
+				"collapsed": true
+			},
+			{
+				"text": "Kein Anschluß",
+				"ref": 0,
+				"editable": true,
+				"collapsed": true
+			},
+			{
+				"text": "Komplett-Verweigerung",
+				"ref": 0,
+				"editable": true,
+				"collapsed": true
+			},
+			{
+				"text": "Nicht daheim",
+				"ref": 0,
+				"editable": true,
+				"collapsed": true
+			},
+			{
+				"text": "Quote",
+				"ref": 0,
+				"editable": true,
+				"collapsed": true
+			},
+			{
+				"text": "Termin",
+				"ref": 0,
+				"editable": true,
+				"collapsed": true
+			},
+			{
+				"text": "Themen-Verweigerung",
+				"ref": 0,
+				"editable": true,
+				"collapsed": true
+			},
+			{
+				"text": "ZP Nicht-Kunde",
+				"ref": 0,
+				"editable": true,
+				"collapsed": true
+			}
+		]
+	},
+	"Formulare": {
+		"lineHeight": 18,
+		"editable": true,
+		"items": [
+			{
+				"text": "gen_FA",
+				"ref": 0,
+				"editable": true,
+				"collapsed": true
+			},
+			{
+				"text": "gen_gFkA",
+				"ref": 0,
+				"editable": true,
+				"collapsed": true
+			},
+			{
+				"text": "gen_kFgA",
+				"ref": 0,
+				"editable": true,
+				"collapsed": true
+			},
+			{
+				"text": "gen_Halboffen",
+				"ref": 0,
+				"editable": true,
+				"collapsed": true
+			},
+			{
+				"text": "gen_Zahl",
+				"ref": 0,
+				"editable": true,
+				"collapsed": true
+			},
+			{
+				"text": "gen_Dezimal",
+				"ref": 0,
+				"editable": true,
+				"collapsed": true
+			},
+			{
+				"text": "gen_OffenText",
+				"ref": 0,
+				"editable": true,
+				"collapsed": true
+			},
+			{
+				"text": "gen_Multi",
+				"ref": 0,
+				"editable": true,
+				"collapsed": true
+			}
+		]
+	},
+	"UmfrageAuswahl": {
+		"lineHeight": 18,
+		"editable": true,
+		"items": [
+			{
+				"text": "2463-MAZ-Ex",
+				"ref": 1,
+				"editable": true,
+				"collapsed": true
+			},
+			{
+				"text": "2464_MAZ_Repr",
+				"ref": 2,
+				"editable": true,
+				"collapsed": true
+			},
+			{
+				"text": "2473_EVF",
+				"ref": 3,
+				"editable": true,
+				"collapsed": true
+			},
+			{
+				"text": "2726-Sportwett",
+				"ref": 4,
+				"editable": true,
+				"collapsed": true
+			},
+			{
+				"text": "4289_VDA",
+				"ref": 5,
+				"editable": true,
+				"collapsed": true
+			},
+			{
+				"text": "4291_VDA",
+				"ref": 6,
+				"editable": true,
+				"collapsed": true
+			},
+			{
+				"text": "4292_MPG",
+				"ref": 7,
+				"editable": true,
+				"collapsed": true
+			},
+			{
+				"text": "4298-VDA-BTW",
+				"ref": 8,
+				"editable": true,
+				"collapsed": true
+			},
+			{
+				"text": "5185-Landshut",
+				"ref": 9,
+				"editable": true,
+				"collapsed": true
+			},
+			{
+				"text": "5191-Duell",
+				"ref": 10,
+				"editable": true,
+				"collapsed": true
+			},
+			{
+				"text": "5202-VDA-Hyb",
+				"ref": 11,
+				"editable": true,
+				"collapsed": true
+			},
+			{
+				"text": "8692-Mecklenb.",
+				"ref": 12,
+				"editable": true,
+				"collapsed": true
+			},
+			{
+				"text": "8695-Welzheim",
+				"ref": 13,
+				"editable": true,
+				"collapsed": true
+			},
+			{
+				"text": "8699_VRImmo",
+				"ref": 14,
+				"editable": true,
+				"collapsed": true
+			},
+			{
+				"text": "9600_Dresdner",
+				"ref": 15,
+				"editable": true,
+				"collapsed": true
+			},
+			{
+				"text": "9605_VHR",
+				"ref": 16,
+				"editable": true,
+				"collapsed": true
+			},
+			{
+				"text": "9606_AVK",
+				"ref": 17,
+				"editable": true,
+				"collapsed": true
+			},
+			{
+				"text": "9608_DPA",
+				"ref": 18,
+				"editable": true,
+				"collapsed": true
+			},
+			{
+				"text": "9611_VrImmo",
+				"ref": 19,
+				"editable": true,
+				"collapsed": true
+			},
+			{
+				"text": "9613_BOSCH_HW",
+				"ref": 20,
+				"editable": true,
+				"collapsed": true
+			},
+			{
+				"text": "9613_BOSCH_WG",
+				"ref": 21,
+				"editable": true,
+				"collapsed": true
+			},
+			{
+				"text": "9614_Dresdner",
+				"ref": 22,
+				"editable": true,
+				"collapsed": true
+			},
+			{
+				"text": "9616_PKD",
+				"ref": 23,
+				"editable": true,
+				"collapsed": true
+			},
+			{
+				"text": "9621_Dresdner",
+				"ref": 24,
+				"editable": true,
+				"collapsed": true
+			}
+		]
+	}
+}

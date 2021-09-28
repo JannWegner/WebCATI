@@ -1,0 +1,984 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE base SYSTEM "http://www.4d.com/dtd/2007/base.dtd" >
+<base name="V19R2_WebCATI" uuid="DA0ED94B7EF74975B7C931841D7BA282" collation_locale="de">
+	<schema name="DEFAULT_SCHEMA"/>
+	<table name="LogDaten" uuid="6883E2456BC64D19AF2394A2DF6A0E61" id="1">
+		<field name="DBNutzer" uuid="379045C3CFCF41FC81F8344978CECC29" type="10" limiting_length="30" never_null="true" id="1">
+			<field_extra mandatory="true"/>
+		</field>
+		<field name="Start Datum" uuid="8B3B9E72845041F095CD89614C0F136E" type="8" never_null="true" id="2">
+			<field_extra mandatory="true"/>
+		</field>
+		<field name="Start Zeit" uuid="2537D80DD83140AB9E1EDB1190DD7D34" type="9" never_null="true" id="3"/>
+		<field name="Stop Datum" uuid="735B14BF2AC244ED956207E72E1F3FDB" type="8" never_null="true" id="4"/>
+		<field name="Stop Zeit" uuid="543099FFBBF9482AB2EFCB4E21E63C7F" type="9" never_null="true" id="5"/>
+		<field name="PCNutzer" uuid="14B3A92896C548D783EB2E9450B48538" type="10" limiting_length="30" never_null="true" id="6"/>
+		<field name="Station" uuid="8B5B8F31EBF846DC976F5345E924D6A8" type="10" limiting_length="30" never_null="true" id="7"/>
+		<field name="Modul" uuid="E479E305A79E4539BE8DD55A99CDECD8" type="10" limiting_length="25" never_null="true" id="8"/>
+		<field name="FbNr" uuid="74988B1875354EE58B5F353EE3CA2FD4" type="4" never_null="true" id="9"/>
+		<field name="Frage" uuid="F5FA1F4B5DF44E27BCFDEBA370FB0C7B" type="10" limiting_length="20" never_null="true" id="10"/>
+		<field name="Umfrage" uuid="AFCBC0566D3E4F0AB280E868E1B6E2FC" type="10" limiting_length="14" never_null="true" id="11"/>
+		<field name="AktDatum" uuid="73BEF312F52E4835BB27CCBBBEAEA7FB" type="8" never_null="true" id="12"/>
+		<field name="AktZeit" uuid="692DF590F0C0434C91323CF5138475EB" type="9" never_null="true" id="13"/>
+		<field name="Gestorben" uuid="0F89E3ECC0C04DD3907522BAF9427106" type="1" never_null="true" id="14"/>
+		<field name="PKID" uuid="FB5A10C1D1154199948AE5FD4751EB07" type="10" unique="true" autogenerate="true" store_as_UUID="true" id="15"/>
+		<primary_key field_name="PKID" field_uuid="FB5A10C1D1154199948AE5FD4751EB07"/>
+		<table_extra input_form="Eingabe_Komplett" output_form="Ausgabe_Komplett">
+			<editor_table_info displayable_fields_count="15">
+				<color red="0" green="0" blue="0" alpha="0"/>
+				<coordinates left="30" top="20" width="119" height="377"/>
+			</editor_table_info>
+		</table_extra>
+	</table>
+	<table name="Interviewer" uuid="911D964B535544F8A3030D0BC11D9B77" id="2">
+		<field name="Nachname" uuid="A2E4B5727BD54F0F9B2D79D26118A979" type="10" limiting_length="30" never_null="true" id="1">
+			<field_extra mandatory="true"/>
+		</field>
+		<field name="Vorname" uuid="AA6E5A2672CF49FDBEBDA6E178C2AA69" type="10" limiting_length="30" never_null="true" id="2">
+			<field_extra mandatory="true"/>
+		</field>
+		<field name="IntNr" uuid="5C75EC24F29444F281327A2F037A9342" type="3" never_null="true" id="3"/>
+		<field name="Kuerzel" uuid="7CF40F855D1C458C95DB3D73B6A8832A" type="10" limiting_length="3" never_null="true" id="4"/>
+		<field name="Datenfeld5" uuid="ABBDDCA9DF3C4FA5B88C68E25CF74BA4" type="10" limiting_length="20" never_null="true" id="5"/>
+		<field name="PKID" uuid="A2B4B12F71B2421D89EA805C795BD231" type="10" unique="true" autogenerate="true" store_as_UUID="true" id="6"/>
+		<primary_key field_name="PKID" field_uuid="A2B4B12F71B2421D89EA805C795BD231"/>
+		<table_extra input_form="Eingabe_Komplett" output_form="Ausgabe_Komplett">
+			<editor_table_info displayable_fields_count="6">
+				<color red="0" green="0" blue="0" alpha="0"/>
+				<coordinates left="25" top="444" width="101" height="170"/>
+			</editor_table_info>
+		</table_extra>
+	</table>
+	<table name="Hilfslisten" uuid="AEC77ECB872040178A1CC9BA1D39CBB8" id="3">
+		<field name="Umfrage" uuid="123AA0289386447C852999288587BBF0" type="10" limiting_length="14" never_null="true" id="1">
+			<field_extra mandatory="true"/>
+		</field>
+		<field name="ListenID" uuid="24351B59AAB346618FDDDC83B7F44019" type="10" limiting_length="30" never_null="true" id="2">
+			<field_extra mandatory="true"/>
+		</field>
+		<field name="LabelID" uuid="0BBEAD0BF7804FF89B9025A1514472A4" type="4" never_null="true" id="3"/>
+		<field name="Label" uuid="2A9EB261DD704FA596443157EE33A73D" type="10" limiting_length="80" never_null="true" id="4"/>
+		<field name="Textfeld_1" uuid="90CAA89001094EC9801AB8A785BE2D4E" type="10" never_null="true" id="5"/>
+		<field name="Textfeld_2" uuid="1B4880A8C92E4BDFADDC45F340590832" type="10" never_null="true" id="6"/>
+		<field name="Textfeld_3" uuid="4F66F79EBE9D481DA703ECCDC3860B7C" type="10" never_null="true" id="7"/>
+		<field name="Textfeld_4" uuid="59BDA70801A3457EA18CA010B3E27A3C" type="10" never_null="true" id="8"/>
+		<field name="weg" uuid="BEFCD765901A450199E18391179EBB21" type="10" limiting_length="3" never_null="true" id="9"/>
+		<field name="weg" uuid="21E08E526CC648A68D0B2EF97739498C" type="10" limiting_length="3" never_null="true" id="10"/>
+		<field name="mv06" uuid="71E428EACEB342978E56A5F4052D6827" type="10" limiting_length="2" never_null="true" id="11"/>
+		<field name="mv06z" uuid="3941FAC3604944E99029D23562E07284" type="10" limiting_length="5" never_null="true" id="12"/>
+		<field name="mv07a" uuid="4F5472B3BDF24B638D863849D7806885" type="10" limiting_length="2" never_null="true" id="13"/>
+		<field name="mv07b" uuid="94CB008E19CD45D788042961F7691C1B" type="10" limiting_length="2" never_null="true" id="14"/>
+		<field name="mv07c" uuid="D7E9028E0F3847F7BB89C5CC961EAF6B" type="10" limiting_length="2" never_null="true" id="15"/>
+		<field name="mv07d" uuid="6C7C824B8ABD44C4A9CC6F3D826F1A2A" type="10" limiting_length="2" never_null="true" id="16"/>
+		<field name="mv07e" uuid="BF83D660546A4D8C8ED4D4CA1D4B8598" type="10" limiting_length="2" never_null="true" id="17"/>
+		<field name="mv07f" uuid="A035B42C1B434B8C812FDAB7889681CB" type="10" limiting_length="2" never_null="true" id="18"/>
+		<field name="mv07g" uuid="B49C467F93D64C7EB8C156A06B3A7BDF" type="10" limiting_length="2" never_null="true" id="19"/>
+		<field name="mv07h" uuid="7741E47BBF9B4A5EBBAA08EE7B2CC638" type="10" limiting_length="2" never_null="true" id="20"/>
+		<field name="mv08" uuid="368A0E4229454F378FE7CA5B1B378ED0" type="10" limiting_length="2" never_null="true" id="21"/>
+		<field name="mv09" uuid="0B80A24CA94943709D330F2ABE387D9A" type="10" limiting_length="3" never_null="true" id="22"/>
+		<field name="mv10" uuid="FE2B7B8930AB4D998DB0081B091A2F93" type="10" limiting_length="7" never_null="true" id="23"/>
+		<field name="mv11" uuid="AF6D5AE265984696B9F6E8B351996260" type="10" limiting_length="2" never_null="true" id="24"/>
+		<field name="mv12" uuid="842EAD34A42A4296997FF756F1320BB2" type="10" limiting_length="2" never_null="true" id="25"/>
+		<field name="mv13" uuid="C1550BAA3E7740118DDC39C4FF03F99E" type="10" limiting_length="2" never_null="true" id="26"/>
+		<field name="mv14" uuid="E80CFF14F8FC4385B3D25B9A1653EA57" type="10" limiting_length="2" never_null="true" id="27"/>
+		<field name="mv14za" uuid="97A3CA83B55F449B8AE9058D5869FF47" type="10" limiting_length="2" never_null="true" id="28"/>
+		<field name="mv14zb" uuid="4852CE3A76704D60811EFA6B0FD2161F" type="10" limiting_length="2" never_null="true" id="29"/>
+		<field name="mv14zbzoffen" uuid="B92EF7A984094D30B9DB459A143977CF" type="10" never_null="true" id="30"/>
+		<field name="mv14zc" uuid="5E407D58A8D744D5A59E614A47D98673" type="10" limiting_length="2" never_null="true" id="31"/>
+		<field name="mv14zzza" uuid="243FACE8F32C434C9ED487C77E7EB92D" type="10" limiting_length="2" never_null="true" id="32"/>
+		<field name="mv14zzzb" uuid="F86570A11A55487DAB03C458953F9719" type="10" limiting_length="2" never_null="true" id="33"/>
+		<field name="mv14zzzbzoffen" uuid="1B854DA29B4F42259838590125B3C609" type="10" never_null="true" id="34"/>
+		<field name="mv14zzzc" uuid="001CEF5FDD4148F08895FBDF060DDBA5" type="10" limiting_length="3" never_null="true" id="35"/>
+		<field name="mv15a" uuid="3DA3BBCFA00E4312A06740E150D5F9AC" type="10" limiting_length="2" never_null="true" id="36"/>
+		<field name="mv15b" uuid="8B51F2809B364C6FACDAA5C2C5D1B2B5" type="10" limiting_length="2" never_null="true" id="37"/>
+		<field name="mv15bzoffen" uuid="5B2D566C755D417B905A097D7F0038F9" type="10" never_null="true" id="38"/>
+		<field name="mv15c" uuid="91590EC48A4B48A0AB07E82D522FAE6D" type="10" limiting_length="2" never_null="true" id="39"/>
+		<field name="mv15d" uuid="9465EDB561114721AD60986F5323E418" type="10" limiting_length="2" never_null="true" id="40"/>
+		<field name="mv15e" uuid="4CD8B0FE901B4E4DA0A15CA9F8890570" type="10" limiting_length="2" never_null="true" id="41"/>
+		<field name="mv15ezoffen" uuid="3620561FB2294807AA20EF12CCDAB964" type="10" never_null="true" id="42"/>
+		<field name="mv15f" uuid="E54EEAE668E040E788AD4876355009FE" type="10" limiting_length="2" never_null="true" id="43"/>
+		<field name="mv15g" uuid="F04E61A8B7DE420CAF26336B7ADDEE90" type="10" limiting_length="2" never_null="true" id="44"/>
+		<field name="mv15h" uuid="420DD87F5026452B866DC60CCA43473C" type="10" limiting_length="30" never_null="true" id="45"/>
+		<field name="mv15hzoffen" uuid="FDFC8327AE164F669E15E8B15ED7AF72" type="10" never_null="true" id="46"/>
+		<field name="mv15i" uuid="B463F50D1FC043B78ACC85B05F514F20" type="10" limiting_length="2" never_null="true" id="47"/>
+		<field name="mv15j" uuid="20807B37366C48B5A40A4A064544CAF0" type="10" limiting_length="2" never_null="true" id="48"/>
+		<field name="mv15k" uuid="ADAE50AE99694F239DA0580FF09AD1C4" type="10" limiting_length="2" never_null="true" id="49"/>
+		<field name="mv15kzoffen" uuid="0ADF3BBB800F433CA9D6E39B76804C8F" type="10" never_null="true" id="50"/>
+		<field name="mv15l" uuid="3792FC7862374A10AA6D68587BF99E2C" type="10" limiting_length="2" never_null="true" id="51"/>
+		<field name="mv16" uuid="C03ABEDA952E4813A2564C554791ADF1" type="10" limiting_length="2" never_null="true" id="52"/>
+		<field name="mv16z" uuid="90275C60C3624258B36AAAD8B7435F48" type="10" limiting_length="2" never_null="true" id="53"/>
+		<field name="mv16zz" uuid="2702E64BF2914FFC8BDDB32B62A58231" type="10" limiting_length="11" never_null="true" id="54"/>
+		<field name="mv16zzz" uuid="19D62A0701BE4CD4BC64827357DE26DE" type="10" limiting_length="2" never_null="true" id="55"/>
+		<field name="mv16zzzz" uuid="1B3DA7ABBD7942528DBE1B81B7B7C206" type="10" limiting_length="11" never_null="true" id="56"/>
+		<field name="mv17" uuid="FF0DC7E1A2B847E78624E2BE411D135E" type="10" limiting_length="2" never_null="true" id="57"/>
+		<field name="mv18offen" uuid="63C5EBB665E347E0A70E878CB5ADBA5E" type="10" never_null="true" id="58"/>
+		<field name="mv19" uuid="636103B0D1E94A4AB0460A133B253545" type="10" limiting_length="7" never_null="true" id="59"/>
+		<field name="mv19offen" uuid="E07046A237EB4C39BAD20AA710BA558E" type="10" never_null="true" id="60"/>
+		<field name="mv20" uuid="08030122819D498FAF435E8670D6E6A5" type="10" limiting_length="2" never_null="true" id="61"/>
+		<field name="mv21" uuid="00D23BB163834934917C78ACA3970A18" type="10" limiting_length="2" never_null="true" id="62"/>
+		<field name="mv22" uuid="F59EF0D8104143DE923841416AB60AD3" type="10" limiting_length="11" never_null="true" id="63"/>
+		<field name="mv23" uuid="6F593CE138414CF1956B5A1EADCB7338" type="10" limiting_length="2" never_null="true" id="64"/>
+		<field name="mv23z" uuid="5643354FB0AF46B68517A3BAAC2F0018" type="10" limiting_length="2" never_null="true" id="65"/>
+		<field name="mv24" uuid="FF33B8BF74B64FA18E6214F3FBBCADD2" type="10" limiting_length="2" never_null="true" id="66"/>
+		<field name="mv25" uuid="2AC8141E8A974DA98DBCFDCEB8250C88" type="10" limiting_length="2" never_null="true" id="67"/>
+		<field name="mv25z" uuid="A9537CF7526F44568234A0AC10DCB825" type="10" limiting_length="2" never_null="true" id="68"/>
+		<field name="mv26" uuid="2DCEB15B99324113B0341260C10D12DD" type="10" limiting_length="2" never_null="true" id="69"/>
+		<field name="mv26z" uuid="60189AC6D9DC416AB5FD94D06B16B199" type="10" limiting_length="2" never_null="true" id="70"/>
+		<field name="mv26zzz" uuid="9C8692D1B4334DF78DDB198401D93D0F" type="10" limiting_length="2" never_null="true" id="71"/>
+		<field name="mv27a" uuid="0BE4DB2E571C4434954EF65D516CE949" type="10" limiting_length="2" never_null="true" id="72"/>
+		<field name="mv27b" uuid="12700230050143759179E8AB7522A477" type="10" limiting_length="2" never_null="true" id="73"/>
+		<field name="mv28" uuid="80DF54EAA10241A185D43AF46F70DE92" type="10" limiting_length="2" never_null="true" id="74"/>
+		<field name="mv29" uuid="045D1F0CEDFA4BACA692244098ECEE04" type="10" limiting_length="2" never_null="true" id="75"/>
+		<field name="mv29z" uuid="04F4D5198B504692A3D24D9699EAE57E" type="10" limiting_length="2" never_null="true" id="76"/>
+		<field name="mv30" uuid="6C5BD74D60CF46248762EABA51173E9E" type="10" limiting_length="2" never_null="true" id="77"/>
+		<field name="mv30z" uuid="06BF280E24DA4BF09CC2E36819F4758A" type="10" limiting_length="2" never_null="true" id="78"/>
+		<field name="mv31offen" uuid="A6D38661DB974E839FAB8E99CEE6C4A8" type="10" never_null="true" id="79"/>
+		<field name="mvs01" uuid="2D249592F08445338A4AA7551DF80FCC" type="10" limiting_length="2" never_null="true" id="80"/>
+		<field name="mvs02" uuid="A795E7BAFFC74AD78E3F1030EE42E6E8" type="10" limiting_length="2" never_null="true" id="81"/>
+		<field name="mvs03" uuid="AE4D5119FC4A4155942679F86251EB49" type="10" limiting_length="2" never_null="true" id="82"/>
+		<field name="mvs04" uuid="C151BEDE6F1B43E9B4DDE6E0732E0EC0" type="10" limiting_length="2" never_null="true" id="83"/>
+		<field name="mvs05a" uuid="75CFCAB468C84A56BEDC95C54D9F9E28" type="10" limiting_length="2" never_null="true" id="84"/>
+		<field name="mvs05b" uuid="AA9A0456F5D240DCB51B60A348F9C2F1" type="10" limiting_length="2" never_null="true" id="85"/>
+		<field name="mvs06a" uuid="42EB99F0EE9A4366804A36D58A49D5B5" type="10" limiting_length="2" never_null="true" id="86"/>
+		<field name="mvs06b" uuid="03814B92785A498188AEA7FDD621EDA0" type="10" limiting_length="2" never_null="true" id="87"/>
+		<field name="mvs07" uuid="8C70EDAB90D5463B892CC9FF360D4B54" type="10" limiting_length="2" never_null="true" id="88"/>
+		<field name="mv22offen" uuid="1CD50DC891F94F1D9AE7E58CC0921EE4" type="10" never_null="true" id="89"/>
+		<field name="mv02-do" uuid="A522C50C0BC447E0B4494984DD22F0F1" type="10" limiting_length="2" never_null="true" id="90"/>
+		<field name="mv14zbzoffen_Spez" uuid="B669C13166D54D63890E1B04C48C9E3D" type="10" limiting_length="30" never_null="true" id="91"/>
+		<field name="mv14zzzBzoffen_Spez" uuid="00EED0B3C7E9419180D5EFABA52DF3AC" type="10" limiting_length="30" never_null="true" id="92"/>
+		<field name="Wiedervorlage" uuid="33A8FE9DCFC64EA3A49DF03429A3E5BF" type="10" limiting_length="2" never_null="true" id="93"/>
+		<field name="mv15bzoffen_Spez" uuid="50D2022BBAA64373897851906F035347" type="10" limiting_length="30" never_null="true" id="94"/>
+		<field name="mv15ezoffen_Spez" uuid="27083B058ABA43FCA5C90143991FE4C2" type="10" limiting_length="30" never_null="true" id="95"/>
+		<field name="mv15hzoffen_Spez" uuid="4728C73B4E4E448CB311FF110F067665" type="10" limiting_length="30" never_null="true" id="96"/>
+		<field name="mv15kzoffen_Spez" uuid="9264995360404557BBD233D821F68CB4" type="10" limiting_length="30" never_null="true" id="97"/>
+		<field name="mv18offen_Spez" uuid="73512D39424A400F900D9A00A63B85BF" type="10" limiting_length="30" never_null="true" id="98"/>
+		<field name="mv19_Spez" uuid="CE1E7B0878C44CDA9A5F43AC9C727EEB" type="10" limiting_length="30" never_null="true" id="99"/>
+		<field name="Fassung" uuid="36E06B11AED144F0B6801F9D9D96026D" type="10" limiting_length="2" never_null="true" id="100"/>
+		<field name="mv22_Spez" uuid="52DFEEA1ADBF42A9896572ABE3F77B2C" type="10" limiting_length="30" never_null="true" id="101"/>
+		<field name="mv31offen_Spez" uuid="0764172CE2BA493BB44D8DC43897C9E9" type="10" limiting_length="30" never_null="true" id="102"/>
+		<field name="fp28g" uuid="3941436D8CBF4220BAF24EA5441363C7" type="10" limiting_length="2" never_null="true" id="103"/>
+		<field name="fp28h" uuid="210C78B5CE6D4CB88523592B34FACAB2" type="10" limiting_length="2" never_null="true" id="104"/>
+		<field name="fp28i" uuid="B06B99BD15F8411EADEC63865CF7500E" type="10" limiting_length="2" never_null="true" id="105"/>
+		<field name="fp28k" uuid="E4BD234282214A8294C47AAC0921D1F8" type="10" limiting_length="2" never_null="true" id="106"/>
+		<field name="fp29" uuid="91868CA3B09E41CA992C8666D1C66F07" type="10" limiting_length="2" never_null="true" id="107"/>
+		<field name="fp29z" uuid="BD7CC8FA3A2344659CA32F5C3D840CDC" type="10" limiting_length="2" never_null="true" id="108"/>
+		<field name="fp30" uuid="0EAEB61E28D24AD0A76BDDF2CF57A9EC" type="10" limiting_length="2" never_null="true" id="109"/>
+		<field name="fp31" uuid="0D24CCF6E4534C5D81A1F7752285D875" type="10" limiting_length="2" never_null="true" id="110"/>
+		<field name="Ausfall_offen" uuid="63A4E101AB4B45B391740206A34352B0" type="10" never_null="true" id="111"/>
+		<field name="fp32" uuid="E981029CD905418598DF9D7241196C8D" type="10" limiting_length="2" never_null="true" id="112"/>
+		<field name="fp33" uuid="E41C18D15E534F4883C446BA97AAE491" type="10" limiting_length="2" never_null="true" id="113"/>
+		<field name="fp34" uuid="B46BE8DC20C349DC8DDEEB795DD8CE9D" type="10" limiting_length="2" never_null="true" id="114"/>
+		<field name="fp35b" uuid="099FFC965FC34B71A06F8EFC786AAD46" type="10" limiting_length="2" never_null="true" id="115"/>
+		<field name="später" uuid="4C092BF6051446C9B8F292CA510618AC" type="10" limiting_length="2" never_null="true" id="116"/>
+		<field name="fp35bz" uuid="2CEDACC820A74D10B98AA0130BF26CB6" type="10" limiting_length="2" never_null="true" id="117"/>
+		<field name="fp36offen" uuid="8FCBA4E989774016BDC83B8E87B3C6DE" type="10" never_null="true" id="118"/>
+		<field name="fp37" uuid="D8382E8EF7544095A70C4A2A60E151C1" type="10" limiting_length="2" never_null="true" id="119"/>
+		<field name="fp38" uuid="8FF45CCBEEAD496EB71DBC848DF7F769" type="10" limiting_length="2" never_null="true" id="120"/>
+		<field name="fp39offen" uuid="7676D7BD045D4248A6B1BD6670618009" type="10" never_null="true" id="121"/>
+		<field name="fps01" uuid="3C00469D66EC4EF7BEDCCDE855C1E9FE" type="10" limiting_length="2" never_null="true" id="122"/>
+		<field name="fps02" uuid="52DF0351CF594D0CB0A8361F54990D6C" type="10" limiting_length="2" never_null="true" id="123"/>
+		<field name="fps03" uuid="FD4F7383E22D457A896A43AEFB100D6E" type="10" limiting_length="2" never_null="true" id="124"/>
+		<field name="fps04" uuid="CD8079DB7B364C39B00B7F41D456008A" type="10" limiting_length="2" never_null="true" id="125"/>
+		<field name="fps05" uuid="FB269A9D14EA4EDC957642E15013F5E4" type="10" limiting_length="2" never_null="true" id="126"/>
+		<field name="fps06" uuid="00907E8BC6394A2EB01AF76BBCE2F643" type="10" limiting_length="2" never_null="true" id="127"/>
+		<field name="fps07" uuid="4232AC36D155449C8404452B632FEBB5" type="10" limiting_length="2" never_null="true" id="128"/>
+		<field name="fps08" uuid="C0ADFF30CC0443529C41CAB309F3D5D0" type="10" limiting_length="2" never_null="true" id="129"/>
+		<field name="fp02offen" uuid="CC19811D3E4043B9BA35A334346AAE92" type="10" never_null="true" id="130"/>
+		<field name="fp03offen" uuid="A769ACF9831648D4988137560AEDEE00" type="10" never_null="true" id="131"/>
+		<field name="fp18offen" uuid="B08200BFE444451D872553D518F224E7" type="10" never_null="true" id="132"/>
+		<field name="fp25" uuid="A4A20A8CCCCA45DBB76D944C86DD38D3" type="10" limiting_length="2" never_null="true" id="133"/>
+		<field name="fe29" uuid="980711CBCEF94CE382D61D0BEC0AD26E" type="10" limiting_length="2" never_null="true" id="134"/>
+		<field name="fe29zoffen" uuid="3B1587EF37E64245AC78DE2EED343945" type="10" never_null="true" id="135"/>
+		<field name="fe30" uuid="FAF0236992EB4DE2B3FC3779602A544B" type="10" limiting_length="3" never_null="true" id="136"/>
+		<field name="fe30zoffen" uuid="A46B4184E8EC481E8151677895BB6792" type="10" never_null="true" id="137"/>
+		<field name="fe31" uuid="1B17195F71B44D0284C758255B9CC3FF" type="10" limiting_length="2" never_null="true" id="138"/>
+		<field name="fe31z" uuid="AFAE0B9E60F14B7591264AA4B961DEE9" type="10" limiting_length="2" never_null="true" id="139"/>
+		<field name="fe32" uuid="D698513160454C1884167504818FF778" type="10" limiting_length="2" never_null="true" id="140"/>
+		<field name="fe33b" uuid="77B124FA1EA6443087E6D52153E8E884" type="10" limiting_length="2" never_null="true" id="141"/>
+		<field name="fe34" uuid="F4A55DD004FC4262BCD12741F059B850" type="10" limiting_length="2" never_null="true" id="142"/>
+		<field name="fe35" uuid="66BAA5DCFB864666AF75C7FC6E9F72F3" type="10" limiting_length="2" never_null="true" id="143"/>
+		<field name="fe36" uuid="05BFE558EDF3453F981BBD3A650BDB3A" type="10" limiting_length="2" never_null="true" id="144"/>
+		<field name="fe37a" uuid="448BD984125447C89AD13F9A733C5494" type="10" limiting_length="3" never_null="true" id="145"/>
+		<field name="fe37boffen" uuid="7094CA6E1B6A44F5A18365B18240652A" type="10" never_null="true" id="146"/>
+		<field name="fe37c" uuid="D0919C09900F4A038C3F17A705C0C540" type="10" limiting_length="2" never_null="true" id="147"/>
+		<field name="fe38offen" uuid="063740C1B64C43DF92965CBFC1CF1E23" type="10" never_null="true" id="148"/>
+		<field name="fe40offen" uuid="D2E9B8FA6FCE48D9B45A9C4B68124F6D" type="10" never_null="true" id="149"/>
+		<field name="fes01" uuid="695E5B1AE5BC4C82A08BFC49AB512BCC" type="10" limiting_length="2" never_null="true" id="150"/>
+		<field name="fes02" uuid="1F897A7FB0834916832C3316C95252D0" type="10" limiting_length="2" never_null="true" id="151"/>
+		<field name="fes03" uuid="AE04354E178E45258189BB96C70E1925" type="10" limiting_length="2" never_null="true" id="152"/>
+		<field name="fes04" uuid="B26BF8BC23F5422EB26D7C1C43CB50E3" type="10" limiting_length="2" never_null="true" id="153"/>
+		<field name="fes05" uuid="D1B9C49EA56D49CDB93724F6D7CB2127" type="10" limiting_length="2" never_null="true" id="154"/>
+		<field name="fes06" uuid="4C5952B3AFFC4D3D8B47401070B33D85" type="10" limiting_length="2" never_null="true" id="155"/>
+		<field name="fes07" uuid="9A1AE732A78340C39040D1485640A507" type="10" limiting_length="2" never_null="true" id="156"/>
+		<field name="fes08" uuid="7562F4FB51BE419E9F4204D3AE76C5EF" type="10" limiting_length="2" never_null="true" id="157"/>
+		<field name="fe02offen" uuid="6265C4D334B54B4FAFC9135DE36C0D55" type="10" never_null="true" id="158"/>
+		<field name="fe03offen" uuid="FE3E93F7E87D4F59BD4386B32F848166" type="10" never_null="true" id="159"/>
+		<field name="fe20aoffen" uuid="8566EA7A563E4441A04EF33B9603598A" type="10" never_null="true" id="160"/>
+		<field name="weg" uuid="5BF526D9C87C4D85886BCF4A232CB74D" type="10" limiting_length="14" never_null="true" id="161"/>
+		<field name="fe21a" uuid="2F1371584E0E4019BE56238E3348002A" type="10" limiting_length="2" never_null="true" id="162"/>
+		<field name="fe27" uuid="4F01C830691547DE89FD1C68FAA5D130" type="10" limiting_length="2" never_null="true" id="163"/>
+		<field name="fe39" uuid="04319FCB074D439A9224BDBDF1F480AF" type="10" limiting_length="2" never_null="true" id="164"/>
+		<field name="fe39zoffen" uuid="9D77308E6E8442BEA23CACE4BB2A8493" type="10" never_null="true" id="165"/>
+		<field name="fp04zoffen_Spez" uuid="D7FA5F3AC3584B73A11DA5AD20A5A1E8" type="10" limiting_length="19" never_null="true" id="166"/>
+		<field name="fp08offen_Spez" uuid="F9B71175196043339BE7930B0E4C5444" type="10" limiting_length="19" never_null="true" id="167"/>
+		<field name="fp09offen_Spez" uuid="79E35062ED4F48E78D0473DD8DA329D4" type="10" limiting_length="19" never_null="true" id="168"/>
+		<field name="fp11offen_Spez" uuid="9B10D5C0BBA04E9D925E13B4B556E07D" type="10" limiting_length="19" never_null="true" id="169"/>
+		<field name="fp19offen_Spez" uuid="4C9EE53466554ED09F2122C5E902CB4F" type="10" limiting_length="7" never_null="true" id="170"/>
+		<field name="fp22azoffen_Spez" uuid="4FB9B06F3666411BA7812B2D1EE9E2C1" type="10" limiting_length="19" never_null="true" id="171"/>
+		<field name="fp22Azzzoffen_Spez" uuid="B62BCAE15CA0489E853C210295C938AF" type="10" limiting_length="19" never_null="true" id="172"/>
+		<field name="fp24zoffen_Spez" uuid="3FAAE0BD76ED44E69FD58454B86A4A2B" type="10" limiting_length="3" never_null="true" id="173"/>
+		<field name="fp26zoffen_Spez" uuid="6F7FC1E5AE9546DFB043C274B145AC35" type="10" limiting_length="19" never_null="true" id="174"/>
+		<field name="fp36offen_Spez" uuid="48F4BB143B99472C856BD34A0C13305F" type="10" limiting_length="19" never_null="true" id="175"/>
+		<field name="fp39offen_Spez" uuid="93FA3BE58DEB48F1A39403BF64D04BDE" type="10" limiting_length="25" never_null="true" id="176"/>
+		<field name="fp23offen_Spez" uuid="CD6B69C9A2704624A018B336E4F0431A" type="10" limiting_length="19" never_null="true" id="177"/>
+		<field name="wb22zoffen" uuid="F3FFD882F81147B98073CAD2AD0C403B" type="10" never_null="true" id="178"/>
+		<field name="wb23" uuid="B4ED46DC34EA416C9E1607506D49138A" type="10" limiting_length="2" never_null="true" id="179"/>
+		<field name="wb23z" uuid="37E4C8789E364F78ABF594248C0657CF" type="10" limiting_length="2" never_null="true" id="180"/>
+		<field name="wb24a" uuid="B1E555691CB947AC9386EA55E3D4D392" type="10" limiting_length="2" never_null="true" id="181"/>
+		<field name="wb24azoffen" uuid="70A5A4DA7E154539AB06E4D8A72C3D0A" type="10" never_null="true" id="182"/>
+		<field name="wb24b" uuid="B7FA9DB8568A48C98D442F3964A7410E" type="10" limiting_length="2" never_null="true" id="183"/>
+		<field name="wb24bzoffen" uuid="03323ACE2B0E4A388FD8CDDFE41D7659" type="10" never_null="true" id="184"/>
+		<field name="wb25" uuid="F7B0050655E94DBEAE8BCE380AC7C22B" type="10" limiting_length="2" never_null="true" id="185"/>
+		<field name="wb26a" uuid="5024B92BCE574985B63471E9D69BC671" type="10" limiting_length="2" never_null="true" id="186"/>
+		<field name="wb26b" uuid="FACD6150AFF3490D8F34342FBE746A62" type="10" limiting_length="2" never_null="true" id="187"/>
+		<field name="wb26c" uuid="05080B08241A49E28596AC8F0931CE5C" type="10" limiting_length="2" never_null="true" id="188"/>
+		<field name="wb27" uuid="F11022095BDE41FAAC7053A9BDC08726" type="10" limiting_length="2" never_null="true" id="189"/>
+		<field name="wb28" uuid="9A409FEEFE464FED8309A7046FB84CAD" type="10" limiting_length="2" never_null="true" id="190"/>
+		<field name="wb29" uuid="0FF33E6EEB56419EAD90FAD094504FE6" type="10" limiting_length="2" never_null="true" id="191"/>
+		<field name="wb30" uuid="AEF8C70E10B84971BF3ADFA3F5AAFDC7" type="10" limiting_length="2" never_null="true" id="192"/>
+		<field name="rp01" uuid="728F5483543A4496BD637956AD054644" type="10" limiting_length="2" never_null="true" id="193"/>
+		<field name="rp02offen" uuid="7461D2F60618420C973DD9AC22F2B8FB" type="10" never_null="true" id="194"/>
+		<field name="rp03" uuid="DA360FAC34A44BCE8B9BB33AF974E3A7" type="10" limiting_length="2" never_null="true" id="195"/>
+		<field name="rp04" uuid="A37BC317974B44CA8BFBE8643475E29D" type="10" limiting_length="2" never_null="true" id="196"/>
+		<field name="rp05A" uuid="63A9CFCE60904145A33E8221D877EF62" type="10" limiting_length="2" never_null="true" id="197"/>
+		<field name="rp05B" uuid="12A16965E05D4321A36BF61A9275E8B5" type="10" limiting_length="2" never_null="true" id="198"/>
+		<field name="rp06" uuid="5DCF2E4F0D8B41DFB5D011B8AB4A6B98" type="10" limiting_length="2" never_null="true" id="199"/>
+		<field name="rp07" uuid="A61395805E194BF6BFEBDFCE28F1FCC2" type="10" limiting_length="2" never_null="true" id="200"/>
+		<field name="rp08" uuid="64460718433A495B82253834085FB30B" type="10" limiting_length="2" never_null="true" id="201"/>
+		<field name="rp09" uuid="218887FD6233481B9E396E512CEF8DC9" type="10" limiting_length="2" never_null="true" id="202"/>
+		<field name="rp10" uuid="69FF27E53780497CA55C52036C6F8C77" type="10" limiting_length="2" never_null="true" id="203"/>
+		<field name="rp11" uuid="44F329237F7E4080BEF814B01997387B" type="10" limiting_length="2" never_null="true" id="204"/>
+		<field name="rp12" uuid="09EE11559ED5409B9860EFB3A64D42D9" type="10" limiting_length="40" never_null="true" id="205"/>
+		<field name="rp13a" uuid="C69FD1259D6D4DD8964613DFE9FC8C45" type="10" limiting_length="2" never_null="true" id="206"/>
+		<field name="rp13b" uuid="4BAB8FB78DFF4E61A2D972012ECE69F9" type="10" limiting_length="2" never_null="true" id="207"/>
+		<field name="rp14a" uuid="6F90152FFA5840C2BB9894D005381E97" type="10" limiting_length="2" never_null="true" id="208"/>
+		<field name="rp14b" uuid="1A39DED2749D4C5281D1C4E03997CB9A" type="10" limiting_length="2" never_null="true" id="209"/>
+		<field name="rp15" uuid="A42BDF549F8E4B2BA466FDA3845CD2A0" type="10" limiting_length="2" never_null="true" id="210"/>
+		<field name="rp16" uuid="22DA25ABAAA94CE5B3888C224F9CB8E7" type="10" limiting_length="2" never_null="true" id="211"/>
+		<field name="rp17a" uuid="5EEE03E4C1A1430C8E20A511F7DFBE8F" type="10" limiting_length="2" never_null="true" id="212"/>
+		<field name="rp17b" uuid="18E120D44141471CBBACB50066730FC7" type="10" limiting_length="2" never_null="true" id="213"/>
+		<field name="rp18" uuid="81F4775185B644BDAF887AD1853649C3" type="10" limiting_length="2" never_null="true" id="214"/>
+		<field name="rp19" uuid="FA445C7F5D714842A5EE296C2E874EFE" type="10" limiting_length="2" never_null="true" id="215"/>
+		<field name="rp20a" uuid="A3AD845747BF4DB3A8BECFF4D4F63CBA" type="10" limiting_length="2" never_null="true" id="216"/>
+		<field name="rp20b" uuid="906FB365FC6A45019AFA0084A42E1177" type="10" limiting_length="2" never_null="true" id="217"/>
+		<field name="rp20c" uuid="347583258EBC43EBBA14ED76BE59BABA" type="10" limiting_length="2" never_null="true" id="218"/>
+		<field name="rp20d" uuid="34F8328C36DC4B209DF51954600AD7E5" type="10" limiting_length="2" never_null="true" id="219"/>
+		<field name="rp21" uuid="3CABE16DC86D4D0D8A044D111E0201EB" type="10" limiting_length="2" never_null="true" id="220"/>
+		<field name="rp22" uuid="BADD2830129B4F1196350FAE7B8401C6" type="10" limiting_length="2" never_null="true" id="221"/>
+		<field name="rp23A" uuid="93F30EBAF6004DCCBE9963EE6FBBF378" type="10" limiting_length="2" never_null="true" id="222"/>
+		<field name="rp24A" uuid="667CE9B6C6674D1E84F2CC93092E4621" type="10" limiting_length="2" never_null="true" id="223"/>
+		<field name="rp23B" uuid="00D1491AA5484B159EADA3540E801C2E" type="10" limiting_length="2" never_null="true" id="224"/>
+		<field name="rp24B" uuid="B600ABE114064B8B842E1D031B55AE35" type="10" limiting_length="2" never_null="true" id="225"/>
+		<field name="rp25" uuid="DFF31BD22EEA4A679BB97EAB02BE31E0" type="10" limiting_length="2" never_null="true" id="226"/>
+		<field name="rp26aA" uuid="B52B7495862A48BC842F63525B83FB7B" type="10" limiting_length="2" never_null="true" id="227"/>
+		<field name="rp26bA" uuid="9ED9A7CCBD6A4662B0C871930798AAC0" type="10" limiting_length="2" never_null="true" id="228"/>
+		<field name="rp26cA" uuid="764911D2D9324BD1B4838BA371A8865E" type="10" limiting_length="2" never_null="true" id="229"/>
+		<field name="rp26dA" uuid="8895EC7D16D045D2991E8C6162D14E1E" type="10" limiting_length="2" never_null="true" id="230"/>
+		<field name="rp26eA" uuid="8A37BE4057CC41E88B0D4785E62A6ED5" type="10" limiting_length="2" never_null="true" id="231"/>
+		<field name="rp26fA" uuid="A9FE84AAEE46434B81B31790F40922C0" type="10" limiting_length="2" never_null="true" id="232"/>
+		<field name="rp26gA" uuid="14A3C3DAB5C84C73BE4CBA7CABA6B587" type="10" limiting_length="2" never_null="true" id="233"/>
+		<field name="rp26hA" uuid="D395EC6F66424869B937154138EE8164" type="10" limiting_length="2" never_null="true" id="234"/>
+		<field name="rp26iA" uuid="7EFC8DB857FD452CA009AE07181D08A9" type="10" limiting_length="2" never_null="true" id="235"/>
+		<field name="rp26jA" uuid="D498902CC9B04423BF76C207910BC903" type="10" limiting_length="2" never_null="true" id="236"/>
+		<field name="rp26kA" uuid="6E8942F3D7744D9D960BAC7F8BB467E9" type="10" limiting_length="2" never_null="true" id="237"/>
+		<field name="rp26aB" uuid="71CD31C1FE144C88819BC00C043FA5DF" type="10" limiting_length="2" never_null="true" id="238"/>
+		<field name="rp26bB" uuid="38974238305D4F65BDC2100EA45BF832" type="10" limiting_length="2" never_null="true" id="239"/>
+		<field name="rp26cB" uuid="15B21015C8394761BBC609FC3C3B1DD6" type="10" limiting_length="2" never_null="true" id="240"/>
+		<field name="rp26dB" uuid="C6CE344A47914CDA9523B00C9B4776CC" type="10" limiting_length="2" never_null="true" id="241"/>
+		<field name="rp26eB" uuid="4E822F07E77246A1A1407B27650D58EA" type="10" limiting_length="2" never_null="true" id="242"/>
+		<field name="rp26fB" uuid="F2A3D99CE35A4C5F8C513616E2D9014B" type="10" limiting_length="2" never_null="true" id="243"/>
+		<field name="rp26gB" uuid="69F774D23DB84C84A6F10B79E7CBC2FD" type="10" limiting_length="2" never_null="true" id="244"/>
+		<field name="rp26hB" uuid="0891CF5FEED04EE98D54FC34CA5531CE" type="10" limiting_length="2" never_null="true" id="245"/>
+		<field name="rp26iB" uuid="0475F7CE503C46909AB66EE781AA7F26" type="10" limiting_length="2" never_null="true" id="246"/>
+		<field name="rp26jB" uuid="B64D5FB3DAB64A6785026CD5BDB507A6" type="10" limiting_length="2" never_null="true" id="247"/>
+		<field name="rp26kB" uuid="0396129781CA4564A7A7882D4CEEAEE3" type="10" limiting_length="2" never_null="true" id="248"/>
+		<field name="rp27a" uuid="F7011D808F2643F5ADCC5513C869EED8" type="10" limiting_length="20" never_null="true" id="249"/>
+		<field name="rp27b" uuid="BE86A8812D214D81A62E49B8882A892E" type="10" limiting_length="20" never_null="true" id="250"/>
+		<field name="rp27c" uuid="A6064772123C4E22AD41C1015A5FE79A" type="10" limiting_length="20" never_null="true" id="251"/>
+		<field name="rp27d" uuid="8EB84F1921234E50B6BFB2EE26B82643" type="10" limiting_length="20" never_null="true" id="252"/>
+		<field name="rp27e" uuid="624D5E550F694F05842D6B1DE3E6D19B" type="10" limiting_length="20" never_null="true" id="253"/>
+		<field name="rp27f" uuid="D90ED6F553C54A7794E9928CF8493745" type="10" limiting_length="20" never_null="true" id="254"/>
+		<field name="rp27g" uuid="8DBCB48966824460840C94E5CDEA6D17" type="10" limiting_length="20" never_null="true" id="255"/>
+		<field name="rp28" uuid="B8AE42D4B3C74502B081EB24753BABEC" type="10" limiting_length="2" never_null="true" id="256"/>
+		<field name="rp29a" uuid="B987961A449A4D3686BEF724ACDF8E87" type="10" limiting_length="2" never_null="true" id="257"/>
+		<field name="rp29b" uuid="72831869AA57430185BBEC86B7A6C80A" type="10" limiting_length="2" never_null="true" id="258"/>
+		<field name="rp29c" uuid="7371B237B6FA495A805416D7476FAAF4" type="10" limiting_length="2" never_null="true" id="259"/>
+		<field name="rp30" uuid="4D279E734A134C47B3E7BA54A742853F" type="10" limiting_length="2" never_null="true" id="260"/>
+		<field name="rp31" uuid="6AD96E207084400AAB6150B1E37825C1" type="10" limiting_length="2" never_null="true" id="261"/>
+		<field name="rp32" uuid="C747C5EA10124586A520427E8111F923" type="10" limiting_length="2" never_null="true" id="262"/>
+		<field name="rp33" uuid="737F6A51CF854A61885C973FE9BF0980" type="10" limiting_length="2" never_null="true" id="263"/>
+		<field name="rp34a" uuid="6AC9F4E93CF649F7BD2B1DCEDEC8E295" type="10" limiting_length="2" never_null="true" id="264"/>
+		<field name="rp34b" uuid="81EB06483C7143DDA25743DACEB30FAD" type="10" limiting_length="2" never_null="true" id="265"/>
+		<field name="rp35A" uuid="6DFB14F4EE3F42EA947334A8EB166FA6" type="10" limiting_length="2" never_null="true" id="266"/>
+		<field name="rps01" uuid="9AD08864516D464EAEB863C0212410F9" type="10" limiting_length="2" never_null="true" id="267"/>
+		<field name="rps02" uuid="EE14D9F7425243C88F8D30C020FE1943" type="10" limiting_length="2" never_null="true" id="268"/>
+		<field name="rps03" uuid="4C2ABBBBD7934E599318D1F0B4014AD5" type="10" limiting_length="2" never_null="true" id="269"/>
+		<field name="rps04" uuid="65EC70F2447E441591C976276CAF26F0" type="10" limiting_length="2" never_null="true" id="270"/>
+		<field name="rps05" uuid="30770B5AA34843E9A090369DA77CAE97" type="10" limiting_length="2" never_null="true" id="271"/>
+		<field name="rps06a" uuid="228B0C39DFA5466296436D0143D9E294" type="10" limiting_length="2" never_null="true" id="272"/>
+		<field name="rps06b" uuid="73A920A0C64E40CC92D78C92E3312681" type="10" limiting_length="2" never_null="true" id="273"/>
+		<field name="rps07" uuid="403F716256614A26978CF30B4A1152B7" type="10" limiting_length="2" never_null="true" id="274"/>
+		<field name="rps08" uuid="A47FBA25E95E47FA822AA2622A05DA8A" type="10" limiting_length="2" never_null="true" id="275"/>
+		<field name="rps09" uuid="BCBBA473921C4065BC8E934417C7F523" type="10" limiting_length="2" never_null="true" id="276"/>
+		<field name="rps10" uuid="77B63AD513EC46E29E4E39DB7958DE49" type="10" limiting_length="2" never_null="true" id="277"/>
+		<field name="rps11" uuid="B5C95D0B7E434BE5B1056896F241B34D" type="10" limiting_length="2" never_null="true" id="278"/>
+		<field name="rps11az" uuid="59BC9A58592A447194CB239400BFA6A6" type="10" limiting_length="2" never_null="true" id="279"/>
+		<field name="rps11bz" uuid="BA59D24257D744B09287F3BEA853D472" type="10" limiting_length="2" never_null="true" id="280"/>
+		<field name="rps11Azzz" uuid="BF3F30DC8ED54079B9A6F0F25516FFBA" type="10" limiting_length="2" never_null="true" id="281"/>
+		<field name="rps11Bzzz" uuid="26A03B01AEA348CFAC1FCA9A24172243" type="10" limiting_length="2" never_null="true" id="282"/>
+		<field name="rps12" uuid="A876B5CE007941C6A9273E80203A1DD8" type="10" limiting_length="2" never_null="true" id="283"/>
+		<field name="rps13" uuid="D0881092C63946C2B1FD64BEDC92C600" type="10" limiting_length="2" never_null="true" id="284"/>
+		<field name="rps14" uuid="8D0DD71542FB4E04977CD4847575CB88" type="10" limiting_length="2" never_null="true" id="285"/>
+		<field name="rpsPLZ" uuid="12983E584E7A4C83B23600E80F9C6365" type="10" limiting_length="5" never_null="true" id="286"/>
+		<field name="rps11anz" uuid="DB8DE0DD4FED48A88149ADC65118E750" type="10" limiting_length="2" never_null="true" id="287"/>
+		<field name="rp35B" uuid="B38A60D16E694660B83E0325002ABEAA" type="10" limiting_length="2" never_null="true" id="288"/>
+		<field name="rp02offen_Spez" uuid="601448263850469AACD7EA30957D0EDF" type="10" limiting_length="40" never_null="true" id="289"/>
+		<field name="Datenfeld290" uuid="8C7F26AC30124E788AD754880EB5EBE7" type="10" limiting_length="20" never_null="true" id="290"/>
+		<field name="Datenfeld291" uuid="88D416EE06D74D158DFF38E293C5B693" type="10" limiting_length="20" never_null="true" id="291"/>
+		<field name="Datenfeld292" uuid="B4140DC955E64539825F6A279530A9C5" type="10" limiting_length="20" never_null="true" id="292"/>
+		<field name="Datenfeld293" uuid="960DADBBD78E412787CEBE0F7E2F1D26" type="10" limiting_length="20" never_null="true" id="293"/>
+		<field name="Datenfeld294" uuid="E7FA81C300764C36B20C6DF62C218234" type="10" limiting_length="20" never_null="true" id="294"/>
+		<field name="Datenfeld295" uuid="FCFC03AE526F4BFC9CACFBD61E20C1D2" type="10" limiting_length="20" never_null="true" id="295"/>
+		<field name="Datenfeld296" uuid="0B214606D82C48B0B1895338428C0E55" type="10" limiting_length="20" never_null="true" id="296"/>
+		<field name="Datenfeld297" uuid="8CC72641685D4DAA915B149C05E4F8ED" type="10" limiting_length="20" never_null="true" id="297"/>
+		<field name="Datenfeld298" uuid="B05387C22C33466493A89A36B249C968" type="10" limiting_length="20" never_null="true" id="298"/>
+		<field name="Datenfeld299" uuid="C81BB9083FEE475CAA488D71B078AE2E" type="10" limiting_length="20" never_null="true" id="299"/>
+		<field name="Datenfeld300" uuid="B0378167CFFE48E089625C0FC4A89D3E" type="10" limiting_length="20" never_null="true" id="300"/>
+		<field name="Datenfeld301" uuid="EED1414E45A243F08B3A83EF597822C7" type="10" limiting_length="20" never_null="true" id="301"/>
+		<field name="Datenfeld302" uuid="D84A8749EE6749EBA331F5CA99FE441C" type="10" limiting_length="20" never_null="true" id="302"/>
+		<field name="Datenfeld303" uuid="7DED0AF4D7CA4BCF9053DC51193F064B" type="10" limiting_length="20" never_null="true" id="303"/>
+		<field name="Datenfeld304" uuid="4CED6B5BAD7D4C1A83CBC18EA6B315CD" type="10" limiting_length="20" never_null="true" id="304"/>
+		<field name="Datenfeld305" uuid="22CD5ADFB24547E6AFBEAB64C67E89C9" type="10" limiting_length="20" never_null="true" id="305"/>
+		<field name="Datenfeld306" uuid="CDC2F63A95CA4A5BA245ED8C6E339DCF" type="10" limiting_length="20" never_null="true" id="306"/>
+		<field name="Datenfeld307" uuid="0DC7E494064D41098830A26ED83B624F" type="10" limiting_length="20" never_null="true" id="307"/>
+		<field name="Datenfeld308" uuid="086493CFA3A141AF8E38FC58AF3BD687" type="10" limiting_length="20" never_null="true" id="308"/>
+		<field name="Datenfeld309" uuid="D48B6AB1E42947A9AB2E0FC9C2CF7944" type="10" limiting_length="20" never_null="true" id="309"/>
+		<field name="Datenfeld310" uuid="6602FE47A10149618981E92096F084B7" type="10" limiting_length="20" never_null="true" id="310"/>
+		<field name="Datenfeld311" uuid="4F992774763444CA8F8ADD927D14112B" type="10" limiting_length="20" never_null="true" id="311"/>
+		<field name="Datenfeld312" uuid="84C8E237784741518F8C9F8EC9EFB98F" type="10" limiting_length="20" never_null="true" id="312"/>
+		<field name="Datenfeld313" uuid="F03544F19E24445294FD3DBF86712F99" type="10" limiting_length="20" never_null="true" id="313"/>
+		<field name="Datenfeld314" uuid="D5911F4A225D4FDD8C649C741B4CFB2A" type="10" limiting_length="20" never_null="true" id="314"/>
+		<field name="Datenfeld315" uuid="0710DDBE1EE84D09923620FC2255C56D" type="10" limiting_length="20" never_null="true" id="315"/>
+		<field name="Datenfeld316" uuid="72DF5901D6F54FFD82106430A85B12F6" type="10" limiting_length="20" never_null="true" id="316"/>
+		<field name="Datenfeld317" uuid="5529F28825994F8CA1FFCDEA16943F3A" type="10" limiting_length="20" never_null="true" id="317"/>
+		<field name="Datenfeld318" uuid="6A4027DE132B423793491BB7BB2BCFF0" type="10" limiting_length="20" never_null="true" id="318"/>
+		<field name="Datenfeld319" uuid="BA8341CAF9A34856BD8776A08CC2B849" type="10" limiting_length="20" never_null="true" id="319"/>
+		<field name="Datenfeld320" uuid="CA1D0D66FB7746DEB2E94054736EC193" type="10" limiting_length="20" never_null="true" id="320"/>
+		<field name="Datenfeld321" uuid="3894E26CA0544835B1A3FB9B2AF73B11" type="10" limiting_length="20" never_null="true" id="321"/>
+		<field name="Datenfeld322" uuid="074DF84CA3F5436083458F7651F61518" type="10" limiting_length="20" never_null="true" id="322"/>
+		<field name="Datenfeld323" uuid="6CA1203C02744DF2A39BA0E92E809D97" type="10" limiting_length="20" never_null="true" id="323"/>
+		<field name="Datenfeld324" uuid="9110259CFD2A4A02A85DB9278B9BC172" type="10" limiting_length="20" never_null="true" id="324"/>
+		<field name="Datenfeld325" uuid="2A10B277EA8A4231A61CE406D4ADB0AF" type="10" limiting_length="20" never_null="true" id="325"/>
+		<field name="Datenfeld326" uuid="7D08E52788234D88A6587EEA9F802C4B" type="10" limiting_length="20" never_null="true" id="326"/>
+		<field name="Datenfeld327" uuid="D517D0F33DAB459F88A208E41BDA7DAF" type="10" limiting_length="20" never_null="true" id="327"/>
+		<field name="Datenfeld328" uuid="97DF23EAAE9B40CB874C7D134478C4C5" type="10" limiting_length="20" never_null="true" id="328"/>
+		<field name="Datenfeld329" uuid="3A99FC75EFA645A0AACDDFE392555342" type="10" limiting_length="20" never_null="true" id="329"/>
+		<field name="Datenfeld330" uuid="5B051098D28C4EE78A503D3B01ABF52A" type="10" limiting_length="20" never_null="true" id="330"/>
+		<field name="Datenfeld331" uuid="7BA484F0C272447FB98D7FB9FD8E07FA" type="10" limiting_length="20" never_null="true" id="331"/>
+		<field name="Datenfeld332" uuid="5251F5B2F6AE42EA9D2916E32E88BFE8" type="10" limiting_length="20" never_null="true" id="332"/>
+		<field name="Datenfeld333" uuid="8CE2B2433B674E18AF8859D97DDBF99C" type="10" limiting_length="20" never_null="true" id="333"/>
+		<field name="Datenfeld334" uuid="ECAFEEFA8C474156BA1083EF1A638D81" type="10" limiting_length="20" never_null="true" id="334"/>
+		<field name="Datenfeld335" uuid="9A225881275B4CC18F050EF00A31BD7B" type="10" limiting_length="20" never_null="true" id="335"/>
+		<field name="Datenfeld336" uuid="2BAFEE9FFBD444DD944C8697466582A7" type="10" limiting_length="20" never_null="true" id="336"/>
+		<field name="Datenfeld337" uuid="4E8289EFA456484191238785EE0EED3D" type="10" limiting_length="20" never_null="true" id="337"/>
+		<field name="Datenfeld338" uuid="EBD2B87DC649426994F4F7F9D6F5F281" type="10" limiting_length="20" never_null="true" id="338"/>
+		<field name="Datenfeld339" uuid="C13755C80F784605BDF54D521E767F61" type="10" limiting_length="20" never_null="true" id="339"/>
+		<field name="Datenfeld340" uuid="88FFEC661A20415AB9ECA3C07FA98D59" type="10" limiting_length="20" never_null="true" id="340"/>
+		<field name="Datenfeld341" uuid="E61DB234DA844C8FB115AA4C7A7E449C" type="10" limiting_length="20" never_null="true" id="341"/>
+		<field name="Datenfeld342" uuid="8434319C4A60495C847006C4E13CB229" type="10" limiting_length="20" never_null="true" id="342"/>
+		<field name="Datenfeld343" uuid="1EB04ED021F84915B0C1782488043559" type="10" limiting_length="20" never_null="true" id="343"/>
+		<field name="Datenfeld344" uuid="0E4CDFC6491E47BDA59474F91D9C0CBF" type="10" limiting_length="20" never_null="true" id="344"/>
+		<field name="Datenfeld345" uuid="6E6D37AE0C9F4496BF1AAD689C18625E" type="10" limiting_length="20" never_null="true" id="345"/>
+		<field name="Datenfeld346" uuid="FCDDACDAF3E04BB19C87B6F2C50C00A6" type="10" limiting_length="20" never_null="true" id="346"/>
+		<field name="Datenfeld347" uuid="F79DB9F90D51407B8C88F0C4092CBCC0" type="10" limiting_length="20" never_null="true" id="347"/>
+		<field name="Datenfeld348" uuid="44CE3ECDC3DD4A96B1406B9CCCC11D78" type="10" limiting_length="20" never_null="true" id="348"/>
+		<field name="Datenfeld349" uuid="46B98E7D84824650A83D70C7875F3896" type="10" limiting_length="20" never_null="true" id="349"/>
+		<field name="Datenfeld350" uuid="8B411356F5F2446DAB0F864D85ECA1D5" type="10" limiting_length="20" never_null="true" id="350"/>
+		<field name="Datenfeld351" uuid="D431371DC0B94B83938799850FA45989" type="10" limiting_length="20" never_null="true" id="351"/>
+		<field name="Datenfeld352" uuid="F5E7BDF70B3241BF9B34B876BC234F9D" type="10" limiting_length="20" never_null="true" id="352"/>
+		<field name="Datenfeld353" uuid="596F48984CCC4831BA2EB5CAEE70A229" type="10" limiting_length="20" never_null="true" id="353"/>
+		<field name="Datenfeld354" uuid="053DB2B92DC345488F357677C4EE6832" type="10" limiting_length="20" never_null="true" id="354"/>
+		<field name="Datenfeld355" uuid="8FE3C8ADBAF34CE1B03C425F078E9404" type="10" limiting_length="20" never_null="true" id="355"/>
+		<field name="Datenfeld356" uuid="FCCE9DDE3B2749588B84E4AFA556FFDF" type="10" limiting_length="20" never_null="true" id="356"/>
+		<field name="Datenfeld357" uuid="A93E4FE214644AEC8E0825B1E9D762F9" type="10" limiting_length="20" never_null="true" id="357"/>
+		<field name="Datenfeld358" uuid="47F7211D94E84A5DA41230F4BCB43CDC" type="10" limiting_length="20" never_null="true" id="358"/>
+		<field name="Datenfeld359" uuid="94F023511F6040D5BFE0DAEE79704213" type="10" limiting_length="20" never_null="true" id="359"/>
+		<field name="Datenfeld360" uuid="5FFB4EA4DE6D469A8E72C291C0FFA491" type="10" limiting_length="20" never_null="true" id="360"/>
+		<field name="Datenfeld361" uuid="DB584312F18242E89C4704B4383CA381" type="10" limiting_length="20" never_null="true" id="361"/>
+		<field name="Datenfeld362" uuid="F1A4833F54F7420C80C522147953964D" type="10" limiting_length="20" never_null="true" id="362"/>
+		<field name="Datenfeld363" uuid="63A7AD4DE1F2490EB0AA7A73C47C46CD" type="10" limiting_length="20" never_null="true" id="363"/>
+		<field name="Datenfeld364" uuid="09B8A17B6DE940C6A81B9851239F5D6C" type="10" limiting_length="20" never_null="true" id="364"/>
+		<field name="Datenfeld365" uuid="DF141061D1ED4CB29AA97370FFDA38EC" type="10" limiting_length="20" never_null="true" id="365"/>
+		<field name="Datenfeld366" uuid="BA670F72DF714B9FA3950160014DE3DE" type="10" limiting_length="20" never_null="true" id="366"/>
+		<field name="Datenfeld367" uuid="F803D86489574A44B583D4266FA5C532" type="10" limiting_length="20" never_null="true" id="367"/>
+		<field name="Datenfeld368" uuid="1A6AFCA219864FA580E90FEA948C6DC9" type="10" limiting_length="20" never_null="true" id="368"/>
+		<field name="Datenfeld369" uuid="9AF2256CFC0F4CD3B9D17156CB016BB7" type="10" limiting_length="20" never_null="true" id="369"/>
+		<field name="Datenfeld370" uuid="55653950A0124DA6821B2E9666917AB2" type="10" limiting_length="20" never_null="true" id="370"/>
+		<field name="Datenfeld371" uuid="2C2DEBB4342649EBBCAF0EC2FE4E356A" type="10" limiting_length="20" never_null="true" id="371"/>
+		<field name="Datenfeld372" uuid="7564C5A51C4D4F0CA19380E45FE1ECF8" type="10" limiting_length="20" never_null="true" id="372"/>
+		<field name="Datenfeld373" uuid="356FFA8E2F534585A19E407E49C27B74" type="10" limiting_length="20" never_null="true" id="373"/>
+		<field name="Datenfeld374" uuid="86811B0B75B64992BE8DFB4270626823" type="10" limiting_length="20" never_null="true" id="374"/>
+		<field name="Datenfeld375" uuid="F891D671AF3F45C4A95399B9A675D0F0" type="10" limiting_length="20" never_null="true" id="375"/>
+		<field name="Datenfeld376" uuid="C57005DF06B04D048D23AF90DEBB81E3" type="10" limiting_length="20" never_null="true" id="376"/>
+		<field name="Datenfeld377" uuid="1FD1A638294E45CC95009A8E08D2FE99" type="10" limiting_length="20" never_null="true" id="377"/>
+		<field name="Datenfeld378" uuid="DD6FCFB403484D01ACEE99701BE66E07" type="10" limiting_length="20" never_null="true" id="378"/>
+		<field name="Datenfeld379" uuid="DA81563C3D474899A9B8F7644BED312D" type="10" limiting_length="20" never_null="true" id="379"/>
+		<field name="Datenfeld380" uuid="6CFC61F7E01F41F4A8949BB83F7BC2DF" type="10" limiting_length="20" never_null="true" id="380"/>
+		<field name="Datenfeld381" uuid="2520CE4130634C33AA9508FF14034826" type="10" limiting_length="20" never_null="true" id="381"/>
+		<field name="Datenfeld382" uuid="F19BDF7D774E408EB62471C72D3EF24B" type="10" limiting_length="20" never_null="true" id="382"/>
+		<field name="Datenfeld383" uuid="26BEF7A5702E4993848DC7223CCA9DDA" type="10" limiting_length="20" never_null="true" id="383"/>
+		<field name="Datenfeld384" uuid="C92211E4E5E840FFB9A23EBD6C9C378C" type="10" limiting_length="20" never_null="true" id="384"/>
+		<field name="Datenfeld385" uuid="1668D51293AB43468D5364938A150012" type="10" limiting_length="20" never_null="true" id="385"/>
+		<field name="Datenfeld386" uuid="CF30070FB0704CDBB2F181D0FFC5539D" type="10" limiting_length="20" never_null="true" id="386"/>
+		<field name="Datenfeld387" uuid="FE3F1EA43AEC46CD8F92913741B7274D" type="10" limiting_length="20" never_null="true" id="387"/>
+		<field name="Datenfeld388" uuid="833A6197F5ED466B9E0D90D55544A102" type="10" limiting_length="20" never_null="true" id="388"/>
+		<field name="Datenfeld389" uuid="BA6533E185C4459E99E56DFD10E52119" type="10" limiting_length="20" never_null="true" id="389"/>
+		<field name="Datenfeld390" uuid="E2E96DB2429043BBA3EC00B640D69A40" type="10" limiting_length="20" never_null="true" id="390"/>
+		<field name="Datenfeld391" uuid="CBC7395519AE45A3A4ECD6F5BEAAA3FE" type="10" limiting_length="20" never_null="true" id="391"/>
+		<field name="Datenfeld392" uuid="18A4AF12A29249AA84CE0D4073C7C7E2" type="10" limiting_length="20" never_null="true" id="392"/>
+		<field name="Datenfeld393" uuid="6B6996CBF1254171AF5B0308374DDE96" type="10" limiting_length="20" never_null="true" id="393"/>
+		<field name="Datenfeld394" uuid="5BE4CFF53573446DA4950AA1C07690F1" type="10" limiting_length="20" never_null="true" id="394"/>
+		<field name="Datenfeld395" uuid="F05D7D231F554F2FB7563A2334664E7A" type="10" limiting_length="20" never_null="true" id="395"/>
+		<field name="Datenfeld396" uuid="5F90B58D0E394E1390261F18CD80DF0F" type="10" limiting_length="20" never_null="true" id="396"/>
+		<field name="Datenfeld397" uuid="3447E053D0E341019662F1CED5238B2B" type="10" limiting_length="20" never_null="true" id="397"/>
+		<field name="Datenfeld398" uuid="8AF4D154936C4551AEA04B83E3A9CAAD" type="10" limiting_length="20" never_null="true" id="398"/>
+		<field name="Datenfeld399" uuid="42709FB759F546CDB042F589B3F18BC4" type="10" limiting_length="20" never_null="true" id="399"/>
+		<field name="Datenfeld400" uuid="5ACC89FD994B41CD85BDEB5E453AA0E6" type="10" limiting_length="20" never_null="true" id="400"/>
+		<field name="Datenfeld401" uuid="5C2581B8E2374D02A3E9D137CEB5D6A0" type="10" limiting_length="20" never_null="true" id="401"/>
+		<field name="Datenfeld402" uuid="2BB6FCD179B849C686C18F69936389C9" type="10" limiting_length="20" never_null="true" id="402"/>
+		<field name="Datenfeld403" uuid="1451C585E65E4883A865F23709516DD6" type="10" limiting_length="20" never_null="true" id="403"/>
+		<field name="Datenfeld404" uuid="221453B687924C5394D9B4F529A8CC23" type="10" limiting_length="20" never_null="true" id="404"/>
+		<field name="Datenfeld405" uuid="81DC028345384AA6BB117FDB1AC09AED" type="10" limiting_length="20" never_null="true" id="405"/>
+		<field name="Datenfeld406" uuid="8E8DA95359504A179DFC2773653C41AA" type="10" limiting_length="20" never_null="true" id="406"/>
+		<field name="Datenfeld407" uuid="0EA696EC557247E3A6ACA185EBD2605E" type="10" limiting_length="20" never_null="true" id="407"/>
+		<field name="Datenfeld408" uuid="28C0A738592E4EAAAAC42A6E4921032F" type="10" limiting_length="20" never_null="true" id="408"/>
+		<field name="Datenfeld409" uuid="EE4C8B16C7244456A6DF73B4D9D02CBE" type="10" limiting_length="20" never_null="true" id="409"/>
+		<field name="Datenfeld410" uuid="21DB33737622456D8D1E2390438EB044" type="10" limiting_length="20" never_null="true" id="410"/>
+		<field name="Datenfeld411" uuid="17F059B5C737438E88381D95F9F965F3" type="10" limiting_length="20" never_null="true" id="411"/>
+		<field name="Datenfeld412" uuid="EFE23C5C882C4BB5ADFBD6D7C8B581A7" type="10" limiting_length="20" never_null="true" id="412"/>
+		<field name="Datenfeld413" uuid="07E5057E7F1A4F41BA54BC7A8C8E162C" type="10" limiting_length="20" never_null="true" id="413"/>
+		<field name="Datenfeld414" uuid="03D101AB4D31469ABE019F3815A1E3D9" type="10" limiting_length="20" never_null="true" id="414"/>
+		<field name="Datenfeld415" uuid="F881F0689A124A03996C09702B54F035" type="10" limiting_length="20" never_null="true" id="415"/>
+		<field name="Datenfeld416" uuid="4B63AA84F59043A78F7DF758F59F77B8" type="10" limiting_length="20" never_null="true" id="416"/>
+		<field name="Datenfeld417" uuid="048EE245FA954F1FB467952C2B55560C" type="10" limiting_length="20" never_null="true" id="417"/>
+		<field name="Datenfeld418" uuid="98CD4146EAEA4CA5AD0DC576CD866677" type="10" limiting_length="20" never_null="true" id="418"/>
+		<field name="Datenfeld419" uuid="314F5C150BBF407CAE11446A5E4F4098" type="10" limiting_length="20" never_null="true" id="419"/>
+		<field name="Datenfeld420" uuid="01B4422ED3C843528CF1A267A6FC470B" type="10" limiting_length="20" never_null="true" id="420"/>
+		<field name="Datenfeld421" uuid="B2CD846709394F7EB671F1184A6F96C9" type="10" limiting_length="20" never_null="true" id="421"/>
+		<field name="Datenfeld422" uuid="D00A9F57ED764E35A4858C61651C4058" type="10" limiting_length="20" never_null="true" id="422"/>
+		<field name="Datenfeld423" uuid="E81CA2B909394025BE772CDEB69B4401" type="10" limiting_length="20" never_null="true" id="423"/>
+		<field name="Datenfeld424" uuid="32ADA70CE56F4BF09026B60E4312C816" type="10" limiting_length="20" never_null="true" id="424"/>
+		<field name="Datenfeld425" uuid="9779C36206074A7C89A2B67B4F5AE15D" type="10" limiting_length="20" never_null="true" id="425"/>
+		<field name="Datenfeld426" uuid="19B2FE0A348F4F51A410E5937BB4DCAC" type="10" limiting_length="20" never_null="true" id="426"/>
+		<field name="Datenfeld427" uuid="58EEED4F2443455E9C02DD9B0CB7DBEB" type="10" limiting_length="20" never_null="true" id="427"/>
+		<field name="Datenfeld428" uuid="16363641D72B48149ED6A4EDB73547DE" type="10" limiting_length="20" never_null="true" id="428"/>
+		<field name="Datenfeld429" uuid="467532D3C3F44D139E307BE11A104759" type="10" limiting_length="20" never_null="true" id="429"/>
+		<field name="Datenfeld430" uuid="754807AB9CF84E94A7003B457DF7A976" type="10" limiting_length="20" never_null="true" id="430"/>
+		<field name="Datenfeld431" uuid="F2D2390D10BD47E1AEF2501D96B68415" type="10" limiting_length="20" never_null="true" id="431"/>
+		<field name="Datenfeld432" uuid="3B5C080FF1004AAABF831AAA4F8B483A" type="10" limiting_length="20" never_null="true" id="432"/>
+		<field name="Datenfeld433" uuid="EF879185C3E940E89F5EC630B8A97AB6" type="10" limiting_length="20" never_null="true" id="433"/>
+		<field name="Datenfeld434" uuid="A4A4A742E742424394061E4AB44333BA" type="10" limiting_length="20" never_null="true" id="434"/>
+		<field name="Datenfeld435" uuid="3FA6F565EA684FEE93B563584FC3DB48" type="10" limiting_length="20" never_null="true" id="435"/>
+		<field name="Datenfeld436" uuid="12D80C07289F48F9879664C2C62ADA2E" type="10" limiting_length="20" never_null="true" id="436"/>
+		<field name="Datenfeld437" uuid="C8C61847D4E74054A3872EE49AE9A49E" type="10" limiting_length="20" never_null="true" id="437"/>
+		<field name="Datenfeld438" uuid="DCCC5842D395405A954FBDD3A6D2D186" type="10" limiting_length="20" never_null="true" id="438"/>
+		<field name="Datenfeld439" uuid="E78769A43272445E9565025296E80CC1" type="10" limiting_length="20" never_null="true" id="439"/>
+		<field name="Datenfeld440" uuid="B6EC455CB7BC4CF3B2A48D5CAB5C3A36" type="10" limiting_length="20" never_null="true" id="440"/>
+		<field name="Datenfeld441" uuid="5EBC130A6CCC4066AF194934737321EB" type="10" limiting_length="20" never_null="true" id="441"/>
+		<field name="Datenfeld442" uuid="0FB3DC5F866E45A58F4B2EDB515A271B" type="10" limiting_length="20" never_null="true" id="442"/>
+		<field name="Datenfeld443" uuid="31FFB27A184A43F1B9F4E3F993C7D118" type="10" limiting_length="20" never_null="true" id="443"/>
+		<field name="Datenfeld444" uuid="F0BFAB124C9D4FA881DDFA30AEA20444" type="10" limiting_length="20" never_null="true" id="444"/>
+		<field name="Datenfeld445" uuid="28C69C315AA94FE5BA6F87F2A8B43BA8" type="10" limiting_length="20" never_null="true" id="445"/>
+		<field name="Datenfeld446" uuid="D3CA8240DBC44395B78F7BAEB22D4EA3" type="10" limiting_length="20" never_null="true" id="446"/>
+		<field name="Datenfeld447" uuid="76335C88C20D4E24B5B1070E35C2FCFC" type="10" limiting_length="20" never_null="true" id="447"/>
+		<field name="Datenfeld448" uuid="FA34FC7AB99B456F9E2F5689F6AA73CB" type="10" limiting_length="20" never_null="true" id="448"/>
+		<field name="Datenfeld449" uuid="3F118A4477EE484D820978FBFC42CC79" type="10" limiting_length="20" never_null="true" id="449"/>
+		<field name="Datenfeld450" uuid="7A984EA829524968AEA82E19B64C3A5F" type="10" limiting_length="20" never_null="true" id="450"/>
+		<field name="Datenfeld451" uuid="367A77AF8FC945459FFEC02281E1EE4C" type="10" limiting_length="20" never_null="true" id="451"/>
+		<field name="Datenfeld452" uuid="331FB08FAADB44A7BDBEF78506D1EDA4" type="10" limiting_length="20" never_null="true" id="452"/>
+		<field name="Datenfeld453" uuid="514BBA41428F4D03BE898868D3BCAEE2" type="10" limiting_length="20" never_null="true" id="453"/>
+		<field name="Datenfeld454" uuid="7193355174134742821BE0CE16AA8C99" type="10" limiting_length="20" never_null="true" id="454"/>
+		<field name="Datenfeld455" uuid="52111867E8F541459ADD1D34EA602CD8" type="10" limiting_length="20" never_null="true" id="455"/>
+		<field name="Datenfeld456" uuid="0ACACC5D424D4D89B5747B53B1D55E20" type="10" limiting_length="20" never_null="true" id="456"/>
+		<field name="Datenfeld457" uuid="7CEE9071EB394249AF1F3B4BD6ECCF99" type="10" limiting_length="20" never_null="true" id="457"/>
+		<field name="Datenfeld458" uuid="CF3F4F1D2E96450FAECC84230CEDDB7A" type="10" limiting_length="20" never_null="true" id="458"/>
+		<field name="Datenfeld459" uuid="72FD839AA3134D61B6C0EB9413F8893E" type="10" limiting_length="20" never_null="true" id="459"/>
+		<field name="Datenfeld460" uuid="B463F11A61E740BABA98C0334A4C8F3B" type="10" limiting_length="20" never_null="true" id="460"/>
+		<field name="Datenfeld461" uuid="E1D8284D3EB44CB098D39326837D19B6" type="10" limiting_length="20" never_null="true" id="461"/>
+		<field name="Datenfeld462" uuid="E54F2C8A1E3F43D880AD0056C5E56C89" type="10" limiting_length="20" never_null="true" id="462"/>
+		<field name="Datenfeld463" uuid="D8C1D6EDE0EB4A4E99BDB3509283EFA2" type="10" limiting_length="20" never_null="true" id="463"/>
+		<field name="Datenfeld464" uuid="92CB1906C9CE47CA8EF438ABE8F4C1C4" type="10" limiting_length="20" never_null="true" id="464"/>
+		<field name="Datenfeld465" uuid="7EED3B1F676A427DA28691DB44D24286" type="10" limiting_length="20" never_null="true" id="465"/>
+		<field name="Datenfeld466" uuid="DA815B7E373648B8BBE89E0ED24576E5" type="10" limiting_length="20" never_null="true" id="466"/>
+		<field name="Datenfeld467" uuid="A3EA2CCB44084C9B9CA7F08B8CE64581" type="10" limiting_length="20" never_null="true" id="467"/>
+		<field name="Datenfeld468" uuid="4B6332FA0BE7414098398BC53C81DF53" type="10" limiting_length="20" never_null="true" id="468"/>
+		<field name="Datenfeld469" uuid="E105F80578B3435CA566EC02A4F304D9" type="10" limiting_length="20" never_null="true" id="469"/>
+		<field name="Datenfeld470" uuid="BFA2E29DFF2C4536AF3EFF623B22EE01" type="10" limiting_length="20" never_null="true" id="470"/>
+		<field name="Datenfeld471" uuid="1DB1A3BC1D7549948012D9C464672B58" type="10" limiting_length="20" never_null="true" id="471"/>
+		<field name="Datenfeld472" uuid="A19DDE6F1C2B41A4BE280EA92BA27FFC" type="10" limiting_length="20" never_null="true" id="472"/>
+		<field name="Datenfeld473" uuid="590FF00F8E864DB68C89350C44E9574B" type="10" limiting_length="20" never_null="true" id="473"/>
+		<field name="Datenfeld474" uuid="3AC4EE7E6A3D45388E42674E0A978832" type="10" limiting_length="20" never_null="true" id="474"/>
+		<field name="Datenfeld475" uuid="02748BFC090B48D5BEF0B637539B3841" type="10" limiting_length="20" never_null="true" id="475"/>
+		<field name="Datenfeld476" uuid="9899806E3FC446358E5279D55FE600F7" type="10" limiting_length="20" never_null="true" id="476"/>
+		<field name="Datenfeld477" uuid="B20782936F61405FA6E7202B8E0010D2" type="10" limiting_length="20" never_null="true" id="477"/>
+		<field name="Datenfeld478" uuid="D3833EAAE84C48559337A6E28BDA5660" type="10" limiting_length="20" never_null="true" id="478"/>
+		<field name="Datenfeld479" uuid="474CFF6473754388A87009DA20219FEF" type="10" limiting_length="20" never_null="true" id="479"/>
+		<field name="Datenfeld480" uuid="92E3629B023648D0BCD7BE8631526B8F" type="10" limiting_length="20" never_null="true" id="480"/>
+		<field name="Datenfeld481" uuid="EF1C5A51B26943E1A0DB4E996CCFF58B" type="10" limiting_length="20" never_null="true" id="481"/>
+		<field name="Datenfeld482" uuid="DD7845731758412A9B5C68AADCA5AF80" type="10" limiting_length="20" never_null="true" id="482"/>
+		<field name="Datenfeld483" uuid="C97F2B6792E44BE094B901C60E94AAEC" type="10" limiting_length="20" never_null="true" id="483"/>
+		<field name="Datenfeld484" uuid="40AFFCF518E74516B063B64478BA67D4" type="10" limiting_length="20" never_null="true" id="484"/>
+		<field name="Datenfeld485" uuid="6359FD5FEB2B489D9B8F5E52102869BD" type="10" limiting_length="20" never_null="true" id="485"/>
+		<field name="Datenfeld486" uuid="72BBDF66994E436F9AC73AB8252A5E87" type="10" limiting_length="20" never_null="true" id="486"/>
+		<field name="Datenfeld487" uuid="2F6498E457314F66846882111AA00B99" type="10" limiting_length="20" never_null="true" id="487"/>
+		<field name="Datenfeld488" uuid="377E835847DF4472BA4F8EC6281E09A4" type="10" limiting_length="20" never_null="true" id="488"/>
+		<field name="Datenfeld489" uuid="FDA330FB86104A87BF93DD1C9B236EF6" type="10" limiting_length="20" never_null="true" id="489"/>
+		<field name="Datenfeld490" uuid="D543B8C4C9E645B5A4157535FC55392B" type="10" limiting_length="20" never_null="true" id="490"/>
+		<field name="Datenfeld491" uuid="8E8CD9A3A4EF45D38A675A32250A8353" type="10" limiting_length="20" never_null="true" id="491"/>
+		<field name="Datenfeld492" uuid="D9E2952917654778AF5E3B9F50842A89" type="10" limiting_length="20" never_null="true" id="492"/>
+		<field name="Datenfeld493" uuid="070791174D7141FF9583F14FF41F2E8F" type="10" limiting_length="20" never_null="true" id="493"/>
+		<field name="Datenfeld494" uuid="24908B0C9C444BB1903A2D3A4A784E3B" type="10" limiting_length="20" never_null="true" id="494"/>
+		<field name="Datenfeld495" uuid="D49525FBAB3942C4BFF307B121AA4B31" type="10" limiting_length="20" never_null="true" id="495"/>
+		<field name="Datenfeld496" uuid="421352CFA6D74170951D1D5BADC6B715" type="10" limiting_length="20" never_null="true" id="496"/>
+		<field name="Datenfeld497" uuid="A6268EAF53BD4892AF13714B55D1CD5E" type="10" limiting_length="20" never_null="true" id="497"/>
+		<field name="Datenfeld498" uuid="5CC6CB0F32264B94B6A72A0387ABCEC8" type="10" limiting_length="20" never_null="true" id="498"/>
+		<field name="Datenfeld499" uuid="D55FBC12DA724552809EE16125CC42DB" type="10" limiting_length="20" never_null="true" id="499"/>
+		<field name="PKID" uuid="C292AAD14C2D454F9859CC61C1206D82" type="10" unique="true" autogenerate="true" store_as_UUID="true" id="500"/>
+		<primary_key field_name="PKID" field_uuid="C292AAD14C2D454F9859CC61C1206D82"/>
+		<table_extra input_form="Eingabe_Komplett" output_form="Ausgabe_Komplett">
+			<editor_table_info displayable_fields_count="340">
+				<color red="0" green="0" blue="0" alpha="0"/>
+				<coordinates left="422" top="27" width="155" height="7185"/>
+			</editor_table_info>
+		</table_extra>
+	</table>
+	<table name="TelefonNummer" uuid="54F138200C2E40B8A58CE2BB6E40683A" id="4">
+		<field name="Telefon2" uuid="6907512BFB254DD8AF5BA91DFE1557E9" type="10" limiting_length="80" never_null="true" id="1"/>
+		<field name="WiederAm" uuid="0CDBE10C0BD544A6AF643F3E04C61C7E" type="8" never_null="true" id="2"/>
+		<field name="WiederUm" uuid="66E26E6E80024016A6A2B37D9B6BFDB6" type="9" never_null="true" id="3"/>
+		<field name="Historie" uuid="64C6168D53F4476A9B68DC7C4339FAA1" type="10" never_null="true" id="4"/>
+		<field name="Status" uuid="F471D0DDA57E4934B46ABC72528D9DA8" type="10" limiting_length="30" never_null="true" id="5">
+			<field_extra enumeration_id="2055"/>
+		</field>
+		<field name="Kommentar" uuid="7953A30BA495430DA16CC23C7590E981" type="10" never_null="true" id="6"/>
+		<field name="WeiterMitFrage" uuid="0E1EBD84352343B9BE218ABC099432D4" type="10" limiting_length="20" never_null="true" id="7"/>
+		<field name="RefDatum" uuid="397B2B0060B74EB6A39690550A2D8B2E" type="8" never_null="true" id="8"/>
+		<field name="RefZeit" uuid="6A6EA572B4944000B5F015C8876FAA42" type="9" never_null="true" id="9"/>
+		<field name="Interviewer" uuid="95953C7683DC4C7FB7721FE62922EDC2" type="10" limiting_length="40" never_null="true" id="10"/>
+		<field name="StatusErklärung" uuid="2DE1381F3A6241188F8303B5DD2074F5" type="10" limiting_length="80" never_null="true" id="11">
+			<field_extra enumeration_id="13363"/>
+		</field>
+		<field name="EingetragenTB" uuid="2D213ED6FFC943439E374EC6709FB79B" type="1" never_null="true" id="12"/>
+		<field name="AdrFeld03" uuid="8C4CC1E1CCA145E5AE9FE6CA3DD2DCD9" type="10" limiting_length="80" never_null="true" id="13"/>
+		<field name="AdrFeld01" uuid="349202BCF32042D58B0811489EBA7CF3" type="10" limiting_length="80" never_null="true" id="14"/>
+		<field name="AdrFeld04" uuid="79E8A19C2DF144D899407FCB8F94BF46" type="10" limiting_length="80" never_null="true" id="15"/>
+		<field name="AdrFeld02" uuid="93AD027BBB7A48CD9AABC30E608CBB4E" type="10" limiting_length="80" never_null="true" id="16"/>
+		<field name="AdrFeld09" uuid="34B6F923F0D9498BA01B23883F3A8465" type="10" limiting_length="80" never_null="true" id="17"/>
+		<field name="AdrFeld05" uuid="B96B63435B824156A7E99A7FA681BA69" type="10" limiting_length="80" never_null="true" id="18"/>
+		<field name="Telefon1" uuid="89531AF3A019492F9E57CF9D175F00BC" type="10" limiting_length="30" never_null="true" id="19"/>
+		<field name="AdrFBNr" uuid="B861F853D6E944AAA841EAF4BC9DC317" type="4" never_null="true" id="20">
+			<field_extra mandatory="true"/>
+		</field>
+		<field name="AdrFeld10" uuid="7BF7055EDA2E4CAEB1875248AB1B7E0C" type="10" limiting_length="80" never_null="true" id="21"/>
+		<field name="AntwortArrayBlob" uuid="7787B9F0DAC448D7A659ED742FA62694" type="18" never_null="true" id="22"/>
+		<field name="Start Am" uuid="4627B9191C6D4725BC85D24E448029F3" type="8" never_null="true" id="23"/>
+		<field name="Start um" uuid="E85DBB1753A54ADCBB26563C295A18F3" type="9" never_null="true" id="24"/>
+		<field name="Ende am" uuid="9C6F9E4A8F12400DA07297681BE5A4F5" type="8" never_null="true" id="25"/>
+		<field name="Ende um" uuid="E3FE4015EF91475AA7CDA438F383B781" type="9" never_null="true" id="26"/>
+		<field name="AdrFeld11" uuid="C215E862F46D40F8BFAA5B86E73F6AA6" type="10" limiting_length="80" never_null="true" id="27"/>
+		<field name="AdrFeld12" uuid="9986884B7B6F4877A05A00E0FA5EB1FC" type="10" limiting_length="80" never_null="true" id="28"/>
+		<field name="HistZeilen" uuid="057C4E108DFC41739F84F4D31474A2F8" type="3" never_null="true" id="29"/>
+		<field name="Umfrage" uuid="F106D73FC929468CBCC7D229336AC78E" type="10" limiting_length="14" never_null="true" id="30"/>
+		<field name="AdrFeld13" uuid="520899A37CD44E93A180198C5238B127" type="10" limiting_length="80" never_null="true" id="31"/>
+		<field name="BinaerText" uuid="62120C5F0BD740F29531E75A50BF9D7B" type="10" never_null="true" id="32"/>
+		<field name="AdrFeld08" uuid="C75EA2ED311A4CBE9C3A7C30EF72FDFA" type="10" limiting_length="80" never_null="true" id="33"/>
+		<field name="AdrFeld06" uuid="A5E044AB6BD445BD9F7803BA4E72ED16" type="10" limiting_length="80" never_null="true" id="34"/>
+		<field name="AdrFeld07" uuid="35D716A2BC4747AB909D3C18BCD99759" type="10" limiting_length="80" never_null="true" id="35"/>
+		<field name="FixTermin" uuid="72B5800ED2814C08BBECD61912DD2739" type="1" never_null="true" id="36"/>
+		<field name="wmProto" uuid="2E0C33509E4B43D3A40AC1E2CD388F6E" type="10" never_null="true" id="37"/>
+		<field name="aktAnsprechp" uuid="8A9F76F2A5F7435296AA22DBA93E5E5C" type="10" limiting_length="80" never_null="true" id="38"/>
+		<field name="Fassung" uuid="A911C164165D466EBECEDBD3763CC999" type="10" limiting_length="10" never_null="true" id="39"/>
+		<field name="AntwUeberlauf" uuid="0D4C1C94C6FA4795958010CAFA532CA0" type="10" never_null="true" id="40"/>
+		<field name="AntwASCII" uuid="246895F6154049518CC200F953E7837B" type="10" never_null="true" id="41"/>
+		<field name="AdrFeld14" uuid="271E967A9C6944DABF804BF5954B4BDD" type="10" limiting_length="80" never_null="true" id="42"/>
+		<field name="AdrFeld15" uuid="B6F238C4B0F74FD49E9266BF55556020" type="10" limiting_length="80" never_null="true" id="43"/>
+		<field name="AdrFeld16" uuid="B4BFDEE907B5477ABE99ACCC38ECF1F0" type="10" limiting_length="80" never_null="true" id="44"/>
+		<field name="SpezialDruck" uuid="013C45E5BD564C1C8820C0594AF86E73" type="8" never_null="true" id="45"/>
+		<field name="QuotenTopf" uuid="E5F50A25D6DC4A9ABCAA35CAFBF0A833" type="4" never_null="true" id="46"/>
+		<field name="AdrBehalten" uuid="0AA8226ED02944598E8B914D2F62909B" type="1" never_null="true" id="47"/>
+		<field name="Wegspeicher" uuid="897A8DC0C3DD4D238D2FCF30C02DE655" type="10" never_null="true" id="48"/>
+		<field name="Variablenspeicher" uuid="F8BC5AC3133C4F42A3A9EC54FA5868E0" type="10" never_null="true" id="49"/>
+		<field name="WegspeicherBLOB" uuid="9CD713221CA743598F066F611FA41AFB" type="18" never_null="true" id="50"/>
+		<field name="Dauer" uuid="41D050B83FDE40F9890183ED3EFE4D56" type="3" never_null="true" id="51"/>
+		<field name="Kontakte" uuid="6B0D6B834CF849B79F5BE009769BB59F" type="3" never_null="true" id="52"/>
+		<field name="PKID" uuid="F600814EFF6E457995F46CE15DF6CB41" type="10" unique="true" autogenerate="true" store_as_UUID="true" id="53"/>
+		<field name="RandomReihenfolge" uuid="5D7117F11CF748F28EE71DBDBC630BB6" type="10" never_null="true" id="54"/>
+		<primary_key field_name="PKID" field_uuid="F600814EFF6E457995F46CE15DF6CB41"/>
+		<table_extra input_form="eingabe kompl" output_form="Ausgabe_Komplett">
+			<editor_table_info displayable_fields_count="57">
+				<color red="0" green="0" blue="0" alpha="0"/>
+				<coordinates left="231" top="20" width="138" height="1251"/>
+			</editor_table_info>
+		</table_extra>
+	</table>
+	<table name="Variablen" uuid="DE6D97D0AC0A4DB3BC6A9E82FED2A462" id="5">
+		<field name="NurNochFesteTermine" uuid="DD21E1983FD94B19B3B772B2FA116D3C" type="3" never_null="true" id="1"/>
+		<field name="Vorschau" uuid="A6E1650EBA154C1D87B2A7A15B5727AD" type="3" never_null="true" id="2"/>
+		<field name="Umfrage" uuid="849AA1ACF8934CFE9471E1B91E61EB93" type="10" limiting_length="14" unique="true" never_null="true" id="3"/>
+		<field name="ZiehenTB" uuid="CE201550B8894DD79258F08069D1EEFC" type="3" never_null="true" id="4"/>
+		<field name="ZiehenGenerator" uuid="F4CA5B96C418436DAFEA53F27DA87D00" type="3" never_null="true" id="5"/>
+		<field name="AdrFeld01" uuid="35EDADF1CF024491AE3F6C81AE87BC7F" type="10" limiting_length="80" never_null="true" id="6"/>
+		<field name="AdrFeld02" uuid="61E6D075CF8542DCBE26BD062BBFE004" type="10" limiting_length="80" never_null="true" id="7"/>
+		<field name="AdrFeld03" uuid="A70A41431CEF4E3BA3651BF4A025389E" type="10" limiting_length="80" never_null="true" id="8"/>
+		<field name="AdrFeld04" uuid="9235264F8F334779B49F1E0C23F5320C" type="10" limiting_length="80" never_null="true" id="9"/>
+		<field name="AdrFeld05" uuid="9C677E76F8D645AEA9968E8F71C7F9DC" type="10" limiting_length="80" never_null="true" id="10"/>
+		<field name="AdrFeld06" uuid="CF65662945FA4BB8AF1013FFD348CCF6" type="10" limiting_length="80" never_null="true" id="11"/>
+		<field name="AdrFeld07" uuid="4DBCD29AF0254A78901561A8302DA66B" type="10" limiting_length="80" never_null="true" id="12"/>
+		<field name="AdrFeld08" uuid="4E07643FF3484B1EABCA6404A606828B" type="10" limiting_length="80" never_null="true" id="13"/>
+		<field name="AdrFeld09" uuid="7D1A345C5B31491EB6BE697DBF52709A" type="10" limiting_length="80" never_null="true" id="14"/>
+		<field name="AdrFeld10" uuid="62E7A7D6FD8F4CFEB7D305054ED1DE2F" type="10" limiting_length="80" never_null="true" id="15"/>
+		<field name="AdrFeld11" uuid="E952C1C284544EB3B622230477D7E4E9" type="10" limiting_length="80" never_null="true" id="16"/>
+		<field name="AdrFeld12" uuid="5A319B461A8743FE8EC652DF6BEB1010" type="10" limiting_length="80" never_null="true" id="17"/>
+		<field name="AdrFeld13" uuid="B7215E7DA95F4288AD7D3600AC450FA1" type="10" limiting_length="80" never_null="true" id="18"/>
+		<field name="AdrFeld14" uuid="78D594639EB842B99601860046C92098" type="10" limiting_length="80" never_null="true" id="19"/>
+		<field name="AdrFeld15" uuid="4558DD1CCED0400D89B1544B14CF8040" type="10" limiting_length="80" never_null="true" id="20"/>
+		<field name="AdrFeld16" uuid="1037787057B24B789E6508983A170E71" type="10" limiting_length="80" never_null="true" id="21"/>
+		<field name="ListenFelder" uuid="B7FD36F0CB1146BA9F4EB47BF4E3D5DD" type="10" limiting_length="8" never_null="true" id="22"/>
+		<field name="ErsteFrage" uuid="939D03C4AEAC4E98AAD3DE6BF34EAA10" type="10" limiting_length="20" never_null="true" id="23"/>
+		<field name="Fasssung" uuid="E996AF5C31AB4AA1A4B0472D1B5186B8" type="10" limiting_length="80" never_null="true" id="24"/>
+		<field name="LaengeFbNr" uuid="126F4518109C4709ADA3CEBABA31C351" type="3" never_null="true" id="25"/>
+		<field name="PosUmfrKZ" uuid="0708D37CF28C43D0BB0B614438FE697A" type="3" never_null="true" id="26"/>
+		<field name="PosKKZ" uuid="E6F7C2A5A5214DD29A92BACC952530BA" type="3" never_null="true" id="27"/>
+		<field name="AnzahlKarten" uuid="F35713C8F93040AE9A8D95C7D406829A" type="3" never_null="true" id="28"/>
+		<field name="UmfrKZ" uuid="F815D51A862F420B877C4797C82FFA68" type="3" never_null="true" id="29"/>
+		<field name="FuerAlleOffen" uuid="976F7BD331D84E47B4DFD9A6125DBC34" type="1" never_null="true" id="30"/>
+		<field name="SpalteTelefon" uuid="5B63ECA81F77494F8B165953F0A1D41A" type="10" limiting_length="4" never_null="true" id="31"/>
+		<field name="SpalteIntBereit" uuid="A155950DE1E8488D994A22E295142C71" type="10" limiting_length="4" never_null="true" id="32"/>
+		<field name="QuotenVersion" uuid="90CD0C55214947C1A55B4BDC5C5BA6BB" type="3" never_null="true" id="33"/>
+		<field name="QuotenIDBlob" uuid="6F6C7BFFAAD3449985DC6984BE926D36" type="18" never_null="true" id="34"/>
+		<field name="VariablenDefs" uuid="4A78A7E7B7674BC98758BEB0BD355E45" type="10" never_null="true" id="35"/>
+		<field name="InfoFeld" uuid="82AFFB5844A4460F9E592EA9719721CF" type="10" never_null="true" id="36"/>
+		<field name="Alter_x_Sex" uuid="0ED7C3EAB2FC414BBCAF43D7F35EC602" type="10" limiting_length="4" never_null="true" id="37"/>
+		<field name="UmfrageAnzeigeName" uuid="C5C01DEADC104C5E9CA22EBBCF39A9DF" type="10" limiting_length="30" never_null="true" id="38"/>
+		<field name="Altersgruppen" uuid="8E320FC8F7FF43958EEAEA1CDB4FFB80" type="10" limiting_length="80" never_null="true" id="39"/>
+		<field name="EingerichtetAm" uuid="767F6B1A47824C30A14E5222E1E8ACA0" type="8" never_null="true" id="40"/>
+		<field name="AnonymAm" uuid="0C8D67AB9A804626BB8325AE9F95555D" type="8" never_null="true" id="41"/>
+		<field name="AnonymDurch" uuid="C949B4CDCAEC4389B507A1D9D7912A61" type="10" limiting_length="40" never_null="true" id="42"/>
+		<field name="ADM_B2B_Frei" uuid="FF6026F9B8FE416880C1F726531F3095" type="1" never_null="true" id="43"/>
+		<field name="Kommentar" uuid="629743B8B438466EBF0CAFF098FE5F24" type="10" never_null="true" id="44"/>
+		<field name="PKID" uuid="7FDCE9746336448EA3F0401C0E37D59D" type="10" unique="true" autogenerate="true" store_as_UUID="true" id="45"/>
+		<field name="ErsteFrageWartung" uuid="71BB076AE41A47B9BC8ECBCEA16623BC" type="10" limiting_length="255" never_null="true" id="46"/>
+		<primary_key field_name="PKID" field_uuid="7FDCE9746336448EA3F0401C0E37D59D"/>
+		<table_extra input_form="Eingabe_Komplett" output_form="Ausgabe_Komplett">
+			<editor_table_info displayable_fields_count="48">
+				<color red="0" green="0" blue="0" alpha="0"/>
+				<coordinates left="654" top="36" width="151" height="1067"/>
+			</editor_table_info>
+		</table_extra>
+	</table>
+	<table name="Bogen" uuid="F49ABEEAAD484BCDBF27F6708BA96FEF" id="6">
+		<field name="ID" uuid="978D7D4A83154BA7A1089B819617FE4F" type="10" limiting_length="30" never_null="true" id="1"/>
+		<field name="Fragenummer" uuid="99FF310B519E4EB4B74FA2FF681564A5" type="10" limiting_length="38" never_null="true" id="2"/>
+		<field name="FText" uuid="C06C0D6187644753BD60BCF5C7C13DA8" type="10" never_null="true" id="3"/>
+		<field name="kurzText" uuid="87A5B9FF70364EA6A109AB8AB3428A6C" type="10" limiting_length="80" never_null="true" id="4"/>
+		<field name="AvgText" uuid="EC367C067B52402EB5D5CE7F666F537C" type="10" never_null="true" id="5"/>
+		<field name="nextID" uuid="73ABB366E9964A4091AFC9D4BFF4F095" type="10" limiting_length="30" never_null="true" id="6"/>
+		<field name="FormTyp" uuid="31817D7674464908A37BC333C2237BD4" type="10" limiting_length="6" never_null="true" id="7"/>
+		<field name="FormNam" uuid="9B34A1AB42634E129C9168950D0057F7" type="10" limiting_length="40" never_null="true" id="8"/>
+		<field name="Filter_Eingabe" uuid="3BD9AD2630F1429F9E3FF2636C5AF4A6" type="10" limiting_length="80" never_null="true" id="9"/>
+		<field name="Bedingung" uuid="1555CF211080492287D4A6ABF2583931" type="10" never_null="true" id="10"/>
+		<field name="Sprungziel" uuid="196D7CBD60564709A8F414BF88175862" type="1" never_null="true" id="11"/>
+		<field name="Spalte" uuid="B705355F910A46BA957DD19D72AE9928" type="10" limiting_length="4" never_null="true" id="12"/>
+		<field name="MaxAnzEingabe" uuid="DE7B4D836E074FD0971D932730169F61" type="3" never_null="true" id="13"/>
+		<field name="Filter_generiert" uuid="2629BBCCF3C74CDBB74E090AF02D382E" type="10" limiting_length="80" never_null="true" id="14"/>
+		<field name="ErlaubteWerte" uuid="CF5BED2C05434879ADA16772EE0D4B87" type="10" never_null="true" id="15"/>
+		<field name="MinWert" uuid="463FF09C0ADD4F63B202CF48E8681145" type="10" limiting_length="20" never_null="true" id="16"/>
+		<field name="MaxWert" uuid="63B633A78EE44E7C8D822C9DED22F734" type="10" limiting_length="20" never_null="true" id="17"/>
+		<field name="KKA" uuid="72BB18FDF3214BA9B7FD6495C808DD23" type="10" limiting_length="20" never_null="true" id="18"/>
+		<field name="Solo" uuid="9DAE13DC3B70439E981EA2ACAE070EC0" type="10" limiting_length="20" never_null="true" id="19"/>
+		<field name="Umfrage" uuid="495CBEEED3C842CC9A2DE399CCAF0FAF" type="10" limiting_length="14" never_null="true" id="20"/>
+		<field name="Spezial_Druck" uuid="33902691F3414F3FBE3E63D1DE23D9AB" type="1" never_null="true" id="21"/>
+		<field name="Spezial_Eingabe" uuid="5E624F1ACC824202B4F066A97CD3AE5D" type="1" never_null="true" id="22"/>
+		<field name="Zitate_Druck" uuid="8747D395366E426A87A0C12E74C0A520" type="1" never_null="true" id="23"/>
+		<field name="AnzahlSpalten" uuid="DF8300955D094EBABD5FBFFDC94681F5" type="3" never_null="true" id="24"/>
+		<field name="AvgSchrift" uuid="155C6C89D83B46919E76457D4AD6DDB9" type="3" never_null="true" id="25"/>
+		<field name="Halboffen" uuid="6357DDEB97E649EFAECD4D7ABBB0F486" type="10" limiting_length="2" never_null="true" id="26"/>
+		<field name="PKID" uuid="C75119205522483F8D3D60F976AADC9C" type="10" unique="true" autogenerate="true" store_as_UUID="true" id="27"/>
+		<field name="RandomGrp" uuid="B26C50BCB7DF424BB2F643BEBD3776B1" type="10" never_null="true" id="28"/>
+		<primary_key field_name="PKID" field_uuid="C75119205522483F8D3D60F976AADC9C"/>
+		<table_extra input_form="Eingabe" output_form="Ausgabe_Komplettx">
+			<editor_table_info displayable_fields_count="29">
+				<color red="0" green="0" blue="0" alpha="0"/>
+				<coordinates left="880" top="35" width="126" height="653"/>
+			</editor_table_info>
+		</table_extra>
+	</table>
+	<table name="Quoten" uuid="C0D85429B0A340FE90757EBCA7D9E958" id="7">
+		<field name="Umfrage" uuid="9AC36C589F18481E95A77E3347434C25" type="10" limiting_length="14" unique="true" never_null="true" id="1">
+			<field_extra mandatory="true"/>
+		</field>
+		<field name="AnzItemDim1" uuid="7080C7CB65B748B98DE1BC78F2C3A88E" type="3" never_null="true" id="2"/>
+		<field name="AnzItemDim2" uuid="12A57FCE3D8F4347862A196DA63ECFAD" type="3" never_null="true" id="3"/>
+		<field name="AnzItemDim3" uuid="4BB216E853544F2C8B69DA07544A2703" type="3" never_null="true" id="4"/>
+		<field name="AnzItemDim4" uuid="13746DCC01F943E9A9E06898B9BA1AFC" type="3" never_null="true" id="5"/>
+		<field name="TextDim1" uuid="E4BBAA3F16EE498B9C303450AB02715E" type="10" never_null="true" id="6"/>
+		<field name="TextDim2" uuid="A3E0D02CD0004F508D1AB5224F720228" type="10" never_null="true" id="7"/>
+		<field name="TextDim3" uuid="899F8A43A7524505A73BF0FF19029B4B" type="10" never_null="true" id="8"/>
+		<field name="TextDim4" uuid="545AD4315ABC4479A317770A7D86AB60" type="10" never_null="true" id="9"/>
+		<field name="SollString" uuid="8066901293C143AB86A3CAC68AA0BC43" type="10" never_null="true" id="10"/>
+		<field name="FreigabeString" uuid="6B25F8ED48A642DFB84252B28173E4F0" type="10" never_null="true" id="11"/>
+		<field name="FreigabeVersion" uuid="A9ECBCED17E243A98A1608D71AEA2B76" type="4" never_null="true" id="12"/>
+		<field name="SpaltenBreite" uuid="20440088939E43A98E296C797592E049" type="3" never_null="true" id="13"/>
+		<field name="AdrFeldDim1" uuid="63917870C94548FB8980A1679A3FBC2E" type="10" limiting_length="2" never_null="true" id="14"/>
+		<field name="AdrFeldDim2" uuid="18FB315AFD3E4E0EB1C6449947CD0C4D" type="10" limiting_length="2" never_null="true" id="15"/>
+		<field name="AdrFeldDim3" uuid="B80A5BAC9DCE49B2A7586BB5951B535F" type="10" limiting_length="2" never_null="true" id="16"/>
+		<field name="AdrFeldDim4" uuid="91BAEB083698438FA17D4D56429DDE31" type="10" limiting_length="2" never_null="true" id="17"/>
+		<field name="Formatstring" uuid="2BA530D72A95425B84F4DD44BE572EBE" type="10" limiting_length="10" never_null="true" id="18"/>
+		<field name="Dummy" uuid="BE97B622C8C245389C136487811E477C" type="10" never_null="true" id="19"/>
+		<field name="PKID" uuid="5EA5CE1988C040909534C95C084CBEC9" type="10" unique="true" autogenerate="true" store_as_UUID="true" id="20"/>
+		<primary_key field_name="PKID" field_uuid="5EA5CE1988C040909534C95C084CBEC9"/>
+		<table_extra input_form="Eingabe_Komplett" output_form="Ausgabe_Komplett">
+			<editor_table_info displayable_fields_count="21">
+				<color red="0" green="0" blue="0" alpha="0"/>
+				<coordinates left="881" top="719" width="125" height="492"/>
+			</editor_table_info>
+		</table_extra>
+	</table>
+	<table name="AktivLog" uuid="B092504037B54B47A65A357847636E40" id="8">
+		<field name="Umfrage" uuid="4FA353F53E764D10BC53601370BE9937" type="10" limiting_length="14" never_null="true" id="1"/>
+		<field name="Datum" uuid="13F79C7F99D44D5DB59F0DA16F9DC90A" type="8" never_null="true" id="2"/>
+		<field name="Zeit" uuid="C13996AE33624932ACDBA3D34579B068" type="9" never_null="true" id="3"/>
+		<field name="DBNutzer" uuid="87FDFC240FDC4700B3975AD9F82CE9A1" type="10" limiting_length="30" never_null="true" id="4"/>
+		<field name="AdrFbNr" uuid="FE066E6CA3CA4F79A2A45BBBA7835F79" type="4" never_null="true" id="5"/>
+		<field name="Status" uuid="6E7C19D54BEB4296AA52A87FAA83D979" type="10" limiting_length="30" never_null="true" id="6"/>
+		<field name="StatusErklärung" uuid="BD272A73A24C4C34A4307C36F7FFAB94" type="10" limiting_length="80" never_null="true" id="7"/>
+		<field name="PKID" uuid="83D942DC3D024E7A8F28526A278D2BB7" type="10" unique="true" autogenerate="true" store_as_UUID="true" id="8"/>
+		<primary_key field_name="PKID" field_uuid="83D942DC3D024E7A8F28526A278D2BB7"/>
+		<table_extra input_form="Eingabe" output_form="ImportExport">
+			<editor_table_info displayable_fields_count="26">
+				<color red="0" green="0" blue="0" alpha="0"/>
+				<coordinates left="1046" top="39" width="125" height="607"/>
+			</editor_table_info>
+		</table_extra>
+	</table>
+	<table name="ADM_Log" uuid="E63ABAE1B4294FA495D7EC9D66DEF3F1" id="9">
+		<field name="Datum" uuid="2D43AF6B4BF74E14BD0554C5739DCAB7" type="8" never_null="true" id="1"/>
+		<field name="Zeit" uuid="76E00501290E47D3ADDD22071502BFC2" type="9" never_null="true" id="2"/>
+		<field name="ADM_String" uuid="4F38D4D93CBA44AFAA5FC1407B591B4F" type="10" limiting_length="80" never_null="true" id="3"/>
+		<field name="Umfrage" uuid="EE4FC29752654144A9587B1A91B43C60" type="10" limiting_length="14" never_null="true" id="4"/>
+		<field name="AdrNr" uuid="035B4AC422E24370B78428200340A08E" type="4" never_null="true" id="5"/>
+		<field name="PKID" uuid="A7BE9D4CECA04FA1AA647CBD01FBB720" type="10" unique="true" autogenerate="true" store_as_UUID="true" id="6"/>
+		<primary_key field_name="PKID" field_uuid="A7BE9D4CECA04FA1AA647CBD01FBB720"/>
+		<table_extra input_form="Eing_Kompl" output_form="ListenAnsicht">
+			<editor_table_info displayable_fields_count="5">
+				<color red="0" green="0" blue="0" alpha="0"/>
+				<coordinates left="1049" top="720" width="108" height="147"/>
+			</editor_table_info>
+		</table_extra>
+	</table>
+	<table name="Mapping" uuid="0D9587CF91164F6BB79B0448E1796C0C" id="10">
+		<field name="UmfrageNr" uuid="9E07472826B8439781EC7CA63223A695" type="10" limiting_length="20" never_null="true" id="1"/>
+		<field name="Typ" uuid="12D9F1D5992E407E920076E17C520B8F" type="10" limiting_length="2" never_null="true" id="2"/>
+		<field name="NrInStrukt" uuid="8695462C592B494E91BC0D28E1B44774" type="3" never_null="true" id="3"/>
+		<field name="NeueNr" uuid="0F1A79553E8645DFB37B07DCC7FCCF23" type="3" never_null="true" id="4"/>
+		<field name="NeuerName" uuid="83F67752629C42CB86D03388F2BAE6FB" type="10" limiting_length="30" never_null="true" id="5"/>
+		<field name="NameInStrukt" uuid="3EB658268CD54A889203AB9B223A97B2" type="10" limiting_length="30" never_null="true" id="6"/>
+		<field name="TabNr" uuid="47B71380391446E3B2D2088C3653987D" type="3" never_null="true" id="7"/>
+		<field name="PKID" uuid="2B764DCEA4844AD899D38340345EB980" type="10" unique="true" autogenerate="true" store_as_UUID="true" id="8"/>
+		<primary_key field_name="PKID" field_uuid="2B764DCEA4844AD899D38340345EB980"/>
+		<table_extra input_form="Details" output_form="KomplettAusgabe">
+			<editor_table_info displayable_fields_count="7">
+				<color red="0" green="0" blue="0" alpha="0"/>
+				<coordinates left="1271" top="103" width="114" height="193"/>
+			</editor_table_info>
+		</table_extra>
+	</table>
+	<table name="TMP" uuid="ADD7D0F1DC3646948869993B6E6450A6" id="11">
+		<field name="Umfrage" uuid="10761322A81C4E72BA01E46F88FCBE82" type="10" limiting_length="14" never_null="true" id="1"/>
+		<field name="BL" uuid="27AD2CDD46474096AB7463C888B58262" type="10" limiting_length="40" never_null="true" id="2"/>
+		<field name="Code" uuid="1316BA7801ED48C8818AA5DEBDE01C9A" type="10" limiting_length="2" never_null="true" id="3"/>
+		<field name="FBNr" uuid="C8462A4F03ED4E3B854FE1D8B12833C7" type="4" never_null="true" id="4"/>
+		<field name="AllesGut" uuid="CCC06262CD0246DD86372CE256325101" type="1" never_null="true" id="5"/>
+		<field name="PKID" uuid="7BDBD8A577A64FD4844E3C37E5478A2E" type="10" unique="true" autogenerate="true" store_as_UUID="true" id="6"/>
+		<primary_key field_name="PKID" field_uuid="7BDBD8A577A64FD4844E3C37E5478A2E"/>
+		<table_extra input_form="Eingabe" output_form="Eingabe">
+			<editor_table_info displayable_fields_count="6">
+				<color red="0" green="0" blue="0" alpha="0"/>
+				<coordinates left="1566" top="303" width="91" height="170"/>
+			</editor_table_info>
+		</table_extra>
+	</table>
+	<table name="WebUser" uuid="A67741F9BEAB4D018163C8756579415D" id="12">
+		<field name="PKID" uuid="76AF8AF8F795413DB5C615514FBE7230" type="10" unique="true" autogenerate="true" store_as_UUID="true" not_null="true" id="1"/>
+		<field name="weg2" uuid="57CAC874204047F39B97E3D37FD27B97" type="10" limiting_length="255" never_null="true" id="2"/>
+		<field name="Name" uuid="1E561DACE53440B69D049024A96D67CC" type="10" limiting_length="255" never_null="true" id="3"/>
+		<field name="LetzteAnmeldung" uuid="42CA01F18CD9420A895F20D4E73E1F1E" type="10" limiting_length="255" never_null="true" id="4"/>
+		<field name="weg" uuid="C49182EF9EAD4FBB94DCEC8D063049C7" type="10" limiting_length="255" never_null="true" id="5"/>
+		<field name="HashedPW" uuid="FCB427900DC0463EA50BC42CC2FF5BCE" type="10" limiting_length="255" never_null="true" id="6"/>
+		<primary_key field_name="PKID" field_uuid="76AF8AF8F795413DB5C615514FBE7230"/>
+		<table_extra output_form="A_K" input_form="E_K">
+			<editor_table_info displayable_fields_count="6">
+				<color red="255" green="255" blue="255" alpha="0"/>
+				<coordinates left="21.48828125" top="650.96484375" width="151.375" height="172.30859375"/>
+			</editor_table_info>
+		</table_extra>
+	</table>
+	<index kind="regular" unique_keys="true" name="pk_index_6" uuid="11F67793F6E24568AAC763446D078E0C" type="7">
+		<field_ref uuid="C75119205522483F8D3D60F976AADC9C" name="PKID">
+			<table_ref uuid="F49ABEEAAD484BCDBF27F6708BA96FEF" name="Bogen"/>
+		</field_ref>
+	</index>
+	<index kind="regular" unique_keys="true" name="pk_index_10" uuid="353C46C5D441415CA8075FA32A6DB143" type="7">
+		<field_ref uuid="2B764DCEA4844AD899D38340345EB980" name="PKID">
+			<table_ref uuid="0D9587CF91164F6BB79B0448E1796C0C" name="Mapping"/>
+		</field_ref>
+	</index>
+	<index kind="regular" uuid="3A510EEC9001417880C1F1C2930273A4" type="7">
+		<field_ref uuid="A911C164165D466EBECEDBD3763CC999" name="Fassung">
+			<table_ref uuid="54F138200C2E40B8A58CE2BB6E40683A" name="TelefonNummer"/>
+		</field_ref>
+	</index>
+	<index kind="regular" unique_keys="true" name="pk_index_1" uuid="3EE1D8DDC3094E8EB3B814E900512A18" type="7">
+		<field_ref uuid="FB5A10C1D1154199948AE5FD4751EB07" name="PKID">
+			<table_ref uuid="6883E2456BC64D19AF2394A2DF6A0E61" name="LogDaten"/>
+		</field_ref>
+	</index>
+	<index kind="regular" uuid="41D26A9FE5FF42369018288E5201BFCA" type="7">
+		<field_ref uuid="E5F50A25D6DC4A9ABCAA35CAFBF0A833" name="QuotenTopf">
+			<table_ref uuid="54F138200C2E40B8A58CE2BB6E40683A" name="TelefonNummer"/>
+		</field_ref>
+	</index>
+	<index kind="regular" unique_keys="true" uuid="4C0B9932F9A64FB1AD7DE4FD9888A534" type="7">
+		<field_ref uuid="849AA1ACF8934CFE9471E1B91E61EB93" name="Umfrage">
+			<table_ref uuid="DE6D97D0AC0A4DB3BC6A9E82FED2A462" name="Variablen"/>
+		</field_ref>
+	</index>
+	<index kind="regular" uuid="5042CCD36FB848B79354390ADC6FE5E3" type="7">
+		<field_ref uuid="978D7D4A83154BA7A1089B819617FE4F" name="ID">
+			<table_ref uuid="F49ABEEAAD484BCDBF27F6708BA96FEF" name="Bogen"/>
+		</field_ref>
+	</index>
+	<index kind="regular" uuid="533F6DF855BA4664A3F2910350A359F7" type="7">
+		<field_ref uuid="4FA353F53E764D10BC53601370BE9937" name="Umfrage">
+			<table_ref uuid="B092504037B54B47A65A357847636E40" name="AktivLog"/>
+		</field_ref>
+	</index>
+	<index kind="regular" uuid="55EC57FAF7AD465F95C89A3B89D28EEE" type="7">
+		<field_ref uuid="379045C3CFCF41FC81F8344978CECC29" name="DBNutzer">
+			<table_ref uuid="6883E2456BC64D19AF2394A2DF6A0E61" name="LogDaten"/>
+		</field_ref>
+	</index>
+	<index kind="regular" uuid="5C4C5C4E857346E7B2A8DC2318C15ACB" type="7">
+		<field_ref uuid="24351B59AAB346618FDDDC83B7F44019" name="ListenID">
+			<table_ref uuid="AEC77ECB872040178A1CC9BA1D39CBB8" name="Hilfslisten"/>
+		</field_ref>
+	</index>
+	<index kind="regular" unique_keys="true" name="pk_index_5" uuid="601D00442D9E47B5B3A1792D36F0962C" type="7">
+		<field_ref uuid="7FDCE9746336448EA3F0401C0E37D59D" name="PKID">
+			<table_ref uuid="DE6D97D0AC0A4DB3BC6A9E82FED2A462" name="Variablen"/>
+		</field_ref>
+	</index>
+	<index kind="regular" unique_keys="true" name="pk_index_8" uuid="651F0C549056414EA7D0C2937F196482" type="7">
+		<field_ref uuid="83D942DC3D024E7A8F28526A278D2BB7" name="PKID">
+			<table_ref uuid="B092504037B54B47A65A357847636E40" name="AktivLog"/>
+		</field_ref>
+	</index>
+	<index kind="regular" uuid="6E1E5BDFEECE46AB917957C03FB6F2BE" type="7">
+		<field_ref uuid="B861F853D6E944AAA841EAF4BC9DC317" name="AdrFBNr">
+			<table_ref uuid="54F138200C2E40B8A58CE2BB6E40683A" name="TelefonNummer"/>
+		</field_ref>
+	</index>
+	<index kind="regular" unique_keys="true" name="pk_index_3" uuid="7148719384B0438C87BBCF6EC79A3EB1" type="7">
+		<field_ref uuid="C292AAD14C2D454F9859CC61C1206D82" name="PKID">
+			<table_ref uuid="AEC77ECB872040178A1CC9BA1D39CBB8" name="Hilfslisten"/>
+		</field_ref>
+	</index>
+	<index kind="regular" unique_keys="true" name="pk_index_11" uuid="72A62202E1364CA2BCF805EF6B45F9D3" type="7">
+		<field_ref uuid="7BDBD8A577A64FD4844E3C37E5478A2E" name="PKID">
+			<table_ref uuid="ADD7D0F1DC3646948869993B6E6450A6" name="TMP"/>
+		</field_ref>
+	</index>
+	<index kind="regular" uuid="83E6F0D1233B408DA7D73CA36ECDA87B" type="7">
+		<field_ref uuid="8B3B9E72845041F095CD89614C0F136E" name="Start Datum">
+			<table_ref uuid="6883E2456BC64D19AF2394A2DF6A0E61" name="LogDaten"/>
+		</field_ref>
+	</index>
+	<index kind="regular" uuid="9E69673245D14EAA8DAB4D35A0FCE957" type="7">
+		<field_ref uuid="F471D0DDA57E4934B46ABC72528D9DA8" name="Status">
+			<table_ref uuid="54F138200C2E40B8A58CE2BB6E40683A" name="TelefonNummer"/>
+		</field_ref>
+	</index>
+	<index kind="regular" uuid="A199FD12E97649FD91C867C4E2F75B35" type="7">
+		<field_ref uuid="123AA0289386447C852999288587BBF0" name="Umfrage">
+			<table_ref uuid="AEC77ECB872040178A1CC9BA1D39CBB8" name="Hilfslisten"/>
+		</field_ref>
+	</index>
+	<index kind="regular" uuid="A69185FD112E4E6CBC1BE74361D95498" type="7">
+		<field_ref uuid="495CBEEED3C842CC9A2DE399CCAF0FAF" name="Umfrage">
+			<table_ref uuid="F49ABEEAAD484BCDBF27F6708BA96FEF" name="Bogen"/>
+		</field_ref>
+	</index>
+	<index kind="regular" uuid="A85ECAD05DD5412CB0F4D7681339C0A2" type="7">
+		<field_ref uuid="13F79C7F99D44D5DB59F0DA16F9DC90A" name="Datum">
+			<table_ref uuid="B092504037B54B47A65A357847636E40" name="AktivLog"/>
+		</field_ref>
+	</index>
+	<index kind="regular" unique_keys="true" name="pk_index_4" uuid="AB6C49213A53483D8AF14A3B4E33D181" type="7">
+		<field_ref uuid="F600814EFF6E457995F46CE15DF6CB41" name="PKID">
+			<table_ref uuid="54F138200C2E40B8A58CE2BB6E40683A" name="TelefonNummer"/>
+		</field_ref>
+	</index>
+	<index kind="regular" unique_keys="true" name="pk_index_2" uuid="BDFABFB834EF4805ACAA79290A45032D" type="7">
+		<field_ref uuid="A2B4B12F71B2421D89EA805C795BD231" name="PKID">
+			<table_ref uuid="911D964B535544F8A3030D0BC11D9B77" name="Interviewer"/>
+		</field_ref>
+	</index>
+	<index kind="regular" unique_keys="true" uuid="BEBD64D081054DBDBE36466ACAB312F0" type="7">
+		<field_ref uuid="9AC36C589F18481E95A77E3347434C25" name="Umfrage">
+			<table_ref uuid="C0D85429B0A340FE90757EBCA7D9E958" name="Quoten"/>
+		</field_ref>
+	</index>
+	<index kind="regular" unique_keys="true" uuid="D6CC346EDF9A4946992A299EF2852279" type="7">
+		<field_ref uuid="76AF8AF8F795413DB5C615514FBE7230" name="PKID">
+			<table_ref uuid="A67741F9BEAB4D018163C8756579415D" name="WebUser"/>
+		</field_ref>
+	</index>
+	<index kind="regular" uuid="E120C45D724C463689411AC442700EF8" type="7">
+		<field_ref uuid="87FDFC240FDC4700B3975AD9F82CE9A1" name="DBNutzer">
+			<table_ref uuid="B092504037B54B47A65A357847636E40" name="AktivLog"/>
+		</field_ref>
+	</index>
+	<index kind="regular" uuid="EA77A49A502D426BA1BA8A901DBE318E" type="7">
+		<field_ref uuid="F106D73FC929468CBCC7D229336AC78E" name="Umfrage">
+			<table_ref uuid="54F138200C2E40B8A58CE2BB6E40683A" name="TelefonNummer"/>
+		</field_ref>
+	</index>
+	<index kind="regular" unique_keys="true" name="pk_index_9" uuid="EEDDA28220764EF3981CD7561F6A8C0D" type="7">
+		<field_ref uuid="A7BE9D4CECA04FA1AA647CBD01FBB720" name="PKID">
+			<table_ref uuid="E63ABAE1B4294FA495D7EC9D66DEF3F1" name="ADM_Log"/>
+		</field_ref>
+	</index>
+	<index kind="regular" uuid="F886E8E20E1744F38464D0760C0DC725" type="7">
+		<field_ref uuid="2D213ED6FFC943439E374EC6709FB79B" name="EingetragenTB">
+			<table_ref uuid="54F138200C2E40B8A58CE2BB6E40683A" name="TelefonNummer"/>
+		</field_ref>
+	</index>
+	<index kind="regular" unique_keys="true" name="pk_index_7" uuid="FCC1EBF0505E49FC9E66C4C0FB5946A3" type="7">
+		<field_ref uuid="5EA5CE1988C040909534C95C084CBEC9" name="PKID">
+			<table_ref uuid="C0D85429B0A340FE90757EBCA7D9E958" name="Quoten"/>
+		</field_ref>
+	</index>
+	<base_extra __stringCompHash="icu:68.1.0" __keywordBuildingHash="icu:68.1.0" data_file_path=":WebCATI.4DD">
+		<journal_file journal_file_enabled="false"/>
+	</base_extra>
+</base>

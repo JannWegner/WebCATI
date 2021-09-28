@@ -1,0 +1,596 @@
+﻿{
+	"destination": "detailScreen",
+	"rightMargin": 19,
+	"bottomMargin": 20,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onPrintingDetail",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke",
+		"onSelectionChange"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "DIN A4",
+		"paperWidth": "595pt",
+		"paperHeight": "842pt",
+		"scale": 60
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"Text1": {
+					"type": "text",
+					"top": 30,
+					"left": 256,
+					"width": 229,
+					"height": 23,
+					"fontFamily": "Arial Bold",
+					"fontSize": 20,
+					"fontWeight": "bold",
+					"text": "Interviewer-Protokoll"
+				},
+				"Variable2": {
+					"type": "input",
+					"top": 91,
+					"left": 548,
+					"width": 74,
+					"height": 11,
+					"dataSource": "vs_IA_Datum",
+					"dataSourceTypeHint": "date",
+					"fontFamily": "Arial",
+					"fontSize": 10,
+					"fill": "transparent",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"dateFormat": "short",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Text2": {
+					"type": "text",
+					"top": 70,
+					"left": 108,
+					"width": 84,
+					"height": 16,
+					"fontFamily": "Geneva",
+					"fontSize": 12,
+					"fontWeight": "bold",
+					"text": "Umfrage"
+				},
+				"Text3": {
+					"type": "text",
+					"top": 70,
+					"left": 325,
+					"width": 84,
+					"height": 16,
+					"fontFamily": "Geneva",
+					"fontSize": 12,
+					"fontWeight": "bold",
+					"text": "Interviewer"
+				},
+				"Text4": {
+					"type": "text",
+					"top": 70,
+					"left": 548,
+					"width": 84,
+					"height": 16,
+					"fontFamily": "Geneva",
+					"fontSize": 12,
+					"fontWeight": "bold",
+					"text": "Datum"
+				},
+				"Rollbarer Bereich1": {
+					"type": "listbox",
+					"top": 116,
+					"left": 79,
+					"width": 96,
+					"height": 432,
+					"sizingY": "grow",
+					"resizingMode": "legacy",
+					"focusable": false,
+					"movableRows": false,
+					"showHeaders": false,
+					"selectionMode": "single",
+					"scrollbarHorizontal": "hidden",
+					"scrollbarVertical": "hidden",
+					"horizontalLineStroke": "transparent",
+					"verticalLineStroke": "transparent",
+					"fill": "transparent",
+					"fontFamily": "Arial",
+					"fontSize": 10,
+					"borderStyle": "sunken",
+					"events": [
+						"onClick",
+						"onDisplayDetail",
+						"onDataChange"
+					],
+					"columns": [
+						{
+							"name": "Rollbarer Bereich1_Column1",
+							"dataSource": "vs_rbUmfrage",
+							"width": 96,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"fontFamily": "Arial",
+							"fontSize": 10,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Kopf1",
+								"text": "Kopf1",
+								"fontFamily": "Arial",
+								"fontSize": 10
+							},
+							"footer": {
+								"name": "Fußteil1",
+								"timeFormat": "hh_mm_ss",
+								"fontFamily": "Arial",
+								"fontSize": 10
+							}
+						}
+					]
+				},
+				"Rollbarer Bereich2": {
+					"type": "listbox",
+					"top": 116,
+					"left": 178,
+					"width": 96,
+					"height": 432,
+					"sizingY": "grow",
+					"resizingMode": "legacy",
+					"focusable": false,
+					"movableRows": false,
+					"showHeaders": false,
+					"selectionMode": "single",
+					"scrollbarHorizontal": "hidden",
+					"scrollbarVertical": "hidden",
+					"horizontalLineStroke": "transparent",
+					"verticalLineStroke": "transparent",
+					"fill": "transparent",
+					"fontFamily": "Arial",
+					"fontSize": 10,
+					"borderStyle": "sunken",
+					"events": [
+						"onClick",
+						"onDisplayDetail",
+						"onDataChange"
+					],
+					"columns": [
+						{
+							"name": "Rollbarer Bereich2_Column1",
+							"dataSource": "vs_rbInterviewer",
+							"width": 96,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"fontFamily": "Arial",
+							"fontSize": 10,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Kopf2",
+								"text": "Kopf2",
+								"fontFamily": "Arial",
+								"fontSize": 10
+							},
+							"footer": {
+								"name": "Fußteil2",
+								"timeFormat": "hh_mm_ss",
+								"fontFamily": "Arial",
+								"fontSize": 10
+							}
+						}
+					]
+				},
+				"Rollbarer Bereich3": {
+					"type": "listbox",
+					"top": 116,
+					"left": 275,
+					"width": 60,
+					"height": 432,
+					"sizingY": "grow",
+					"resizingMode": "legacy",
+					"focusable": false,
+					"movableRows": false,
+					"showHeaders": false,
+					"selectionMode": "single",
+					"scrollbarHorizontal": "hidden",
+					"scrollbarVertical": "hidden",
+					"horizontalLineStroke": "transparent",
+					"verticalLineStroke": "transparent",
+					"fill": "transparent",
+					"fontFamily": "Arial",
+					"fontSize": 10,
+					"borderStyle": "sunken",
+					"events": [
+						"onClick",
+						"onDisplayDetail",
+						"onDataChange"
+					],
+					"columns": [
+						{
+							"name": "Rollbarer Bereich3_Column1",
+							"dataSource": "vs_rbDatum",
+							"width": 60,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"textFormat": "Intern Kurz",
+							"numberFormat": "Intern Kurz",
+							"dateFormat": "short",
+							"timeFormat": "MM_SS",
+							"fontFamily": "Arial",
+							"fontSize": 10,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Kopf3",
+								"text": "Kopf3",
+								"fontFamily": "Arial",
+								"fontSize": 10
+							},
+							"footer": {
+								"name": "Fußteil3",
+								"timeFormat": "hh_mm_ss",
+								"fontFamily": "Arial",
+								"fontSize": 10
+							}
+						}
+					]
+				},
+				"Rollbarer Bereich4": {
+					"type": "listbox",
+					"top": 116,
+					"left": 337,
+					"width": 50,
+					"height": 432,
+					"sizingY": "grow",
+					"resizingMode": "legacy",
+					"focusable": false,
+					"movableRows": false,
+					"showHeaders": false,
+					"selectionMode": "single",
+					"scrollbarHorizontal": "hidden",
+					"scrollbarVertical": "hidden",
+					"horizontalLineStroke": "transparent",
+					"verticalLineStroke": "transparent",
+					"fill": "transparent",
+					"fontFamily": "Arial",
+					"fontSize": 10,
+					"borderStyle": "sunken",
+					"events": [
+						"onClick",
+						"onDisplayDetail",
+						"onDataChange"
+					],
+					"columns": [
+						{
+							"name": "Rollbarer Bereich4_Column1",
+							"dataSource": "as_rbZeit",
+							"dataSourceTypeHint": "time",
+							"width": 50,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"textFormat": "HH:MM:SS",
+							"timeFormat": "iso8601",
+							"fontFamily": "Arial",
+							"fontSize": 10,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Kopf4",
+								"text": "Kopf4",
+								"fontFamily": "Arial",
+								"fontSize": 10
+							},
+							"footer": {
+								"name": "Fußteil4",
+								"timeFormat": "hh_mm_ss",
+								"fontFamily": "Arial",
+								"fontSize": 10
+							}
+						}
+					]
+				},
+				"Rollbarer Bereich5": {
+					"type": "listbox",
+					"top": 116,
+					"left": 389,
+					"width": 42,
+					"height": 432,
+					"sizingY": "grow",
+					"resizingMode": "legacy",
+					"focusable": false,
+					"movableRows": false,
+					"showHeaders": false,
+					"selectionMode": "single",
+					"scrollbarHorizontal": "hidden",
+					"scrollbarVertical": "hidden",
+					"horizontalLineStroke": "transparent",
+					"verticalLineStroke": "transparent",
+					"fill": "transparent",
+					"fontFamily": "Arial",
+					"fontSize": 10,
+					"borderStyle": "sunken",
+					"events": [
+						"onClick",
+						"onDisplayDetail",
+						"onDataChange"
+					],
+					"columns": [
+						{
+							"name": "Rollbarer Bereich5_Column1",
+							"dataSource": "vs_rbFbNr",
+							"dataSourceTypeHint": "number",
+							"width": 42,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"textFormat": "Stunde:Minute:Sekunde",
+							"dateFormat": "systemLong",
+							"timeFormat": "HH_MM_SS",
+							"fontFamily": "Arial",
+							"fontSize": 10,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Kopf5",
+								"text": "Kopf5",
+								"fontFamily": "Arial",
+								"fontSize": 10
+							},
+							"footer": {
+								"name": "Fußteil5",
+								"timeFormat": "hh_mm_ss",
+								"fontFamily": "Arial",
+								"fontSize": 10
+							}
+						}
+					]
+				},
+				"Rollbarer Bereich6": {
+					"type": "listbox",
+					"top": 116,
+					"left": 433,
+					"width": 96,
+					"height": 432,
+					"sizingY": "grow",
+					"resizingMode": "legacy",
+					"focusable": false,
+					"movableRows": false,
+					"showHeaders": false,
+					"selectionMode": "single",
+					"scrollbarHorizontal": "hidden",
+					"scrollbarVertical": "hidden",
+					"horizontalLineStroke": "transparent",
+					"verticalLineStroke": "transparent",
+					"fill": "transparent",
+					"fontFamily": "Arial",
+					"fontSize": 10,
+					"borderStyle": "sunken",
+					"events": [
+						"onClick",
+						"onDisplayDetail",
+						"onDataChange"
+					],
+					"columns": [
+						{
+							"name": "Rollbarer Bereich6_Column1",
+							"dataSource": "vs_rbStatus",
+							"width": 96,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"fontFamily": "Arial",
+							"fontSize": 10,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Kopf6",
+								"text": "Kopf6",
+								"fontFamily": "Arial",
+								"fontSize": 10
+							},
+							"footer": {
+								"name": "Fußteil6",
+								"timeFormat": "hh_mm_ss",
+								"fontFamily": "Arial",
+								"fontSize": 10
+							}
+						}
+					]
+				},
+				"Rollbarer Bereich8": {
+					"type": "listbox",
+					"top": 116,
+					"left": 531,
+					"width": 130,
+					"height": 432,
+					"sizingY": "grow",
+					"resizingMode": "legacy",
+					"focusable": false,
+					"movableRows": false,
+					"showHeaders": false,
+					"selectionMode": "single",
+					"scrollbarHorizontal": "hidden",
+					"horizontalLineStroke": "transparent",
+					"verticalLineStroke": "transparent",
+					"fill": "transparent",
+					"fontFamily": "Arial",
+					"fontSize": 10,
+					"borderStyle": "sunken",
+					"events": [
+						"onClick",
+						"onDisplayDetail",
+						"onDataChange"
+					],
+					"columns": [
+						{
+							"name": "Rollbarer Bereich8_Column1",
+							"dataSource": "vs_rbStatusErklaerung",
+							"width": 115,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"fontFamily": "Arial",
+							"fontSize": 10,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Kopf7",
+								"text": "Kopf7",
+								"fontFamily": "Arial",
+								"fontSize": 10
+							},
+							"footer": {
+								"name": "Fußteil7",
+								"timeFormat": "hh_mm_ss",
+								"fontFamily": "Arial",
+								"fontSize": 10
+							}
+						}
+					]
+				},
+				"Schaltfläche1": {
+					"type": "button",
+					"top": 581,
+					"left": 77,
+					"width": 248,
+					"height": 47,
+					"sizingY": "move",
+					"dataSource": "Schaltfläche1",
+					"action": "cancel",
+					"text": "Beenden",
+					"class": "Standard",
+					"events": [
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"PopUp/Drop-down Liste1": {
+					"type": "dropdown",
+					"top": 89,
+					"left": 108,
+					"width": 173,
+					"height": 15,
+					"dataSource": "taUmfragen",
+					"class": "Standard",
+					"method": "ObjectMethods/PopUp%2FDrop-down Liste1.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"PopUp/Drop-down Liste2": {
+					"type": "dropdown",
+					"top": 89,
+					"left": 320,
+					"width": 173,
+					"height": 9,
+					"dataSource": "tsUserList",
+					"class": "Standard",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Schaltfläche2": {
+					"type": "button",
+					"top": 587,
+					"left": 543,
+					"width": 117,
+					"height": 34,
+					"sizingY": "move",
+					"dataSource": "Schaltfläche1",
+					"text": "Bericht",
+					"class": "Standard",
+					"method": "ObjectMethods/Schaltfläche2.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Schaltfläche3": {
+					"type": "button",
+					"top": 587,
+					"left": 369,
+					"width": 117,
+					"height": 34,
+					"sizingY": "move",
+					"dataSource": "Schaltfläche1",
+					"text": "Aktualisieren",
+					"class": "Standard",
+					"defaultButton": true,
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				}
+			}
+		}
+	]
+}

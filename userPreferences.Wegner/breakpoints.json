@@ -1,0 +1,23 @@
+[
+	{
+		"line": 4,
+		"method": {
+			"type": 1,
+			"methodName": "aaa"
+		}
+	},
+	{
+		"line": 4,
+		"method": {
+			"type": 1,
+			"methodName": "p_CheckSession"
+		}
+	},
+	{
+		"line": 10,
+		"method": {
+			"type": 5,
+			"databaseMethod": 6
+		}
+	}
+]

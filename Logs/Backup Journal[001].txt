@@ -1,0 +1,6 @@
+*** Full Backup aborted
+Error reported : Destination folder can not be created : Time Machine_Backup:Backup:CATI:
+Scheduled : 20.04.21 21:45
+Starting : 20.04.21 14:57
+Ending : 20.04.21 14:57
+

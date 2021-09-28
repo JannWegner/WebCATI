@@ -1,0 +1,591 @@
+﻿{
+	"destination": "listScreen",
+	"windowSizingX": "fixed",
+	"windowSizingY": "fixed",
+	"rightMargin": 0,
+	"bottomMargin": 0,
+	"markerHeader": 27,
+	"markerBody": 63,
+	"markerBreak": 63,
+	"markerFooter": 103,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onPrintingDetail",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke",
+		"onSelectionChange"
+	],
+	"pageFormat": {
+		"paperName": "DIN A4",
+		"paperWidth": "595pt",
+		"paperHeight": "842pt"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"S1_Text": {
+					"type": "text",
+					"top": 9,
+					"left": 24,
+					"width": 190,
+					"height": 12,
+					"stroke": "#000000",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 10,
+					"text": "DB-Nutzer/PC-Nutzer : "
+				},
+				"S3_Text": {
+					"type": "text",
+					"top": 9,
+					"left": 236,
+					"width": 189,
+					"height": 12,
+					"stroke": "#000000",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 10,
+					"text": "Station : "
+				},
+				"S4_Text": {
+					"type": "text",
+					"top": 9,
+					"left": 457,
+					"width": 82,
+					"height": 12,
+					"stroke": "#000000",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 10,
+					"text": "Start: "
+				},
+				"S6_Text": {
+					"type": "text",
+					"top": 9,
+					"left": 558,
+					"width": 82,
+					"height": 12,
+					"stroke": "#000000",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 10,
+					"text": "Aktualisierung: "
+				},
+				"S9_Text": {
+					"type": "text",
+					"top": 9,
+					"left": 653,
+					"width": 153,
+					"height": 12,
+					"stroke": "#000000",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 10,
+					"text": "Modul/Umfrage : "
+				},
+				"S10_Text": {
+					"type": "text",
+					"top": 9,
+					"left": 829,
+					"width": 64,
+					"height": 12,
+					"stroke": "#000000",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 10,
+					"text": "FbNr/Frage : "
+				},
+				"objHintergrund": {
+					"type": "rectangle",
+					"top": 27,
+					"left": 0,
+					"width": 1639,
+					"height": 33,
+					"sizingX": "grow",
+					"stroke": "#FFFFFF"
+				},
+				"S1_Feld": {
+					"type": "input",
+					"top": 31,
+					"left": 24,
+					"width": 189,
+					"height": 12,
+					"dataSource": "[LogDaten:1]DBNutzer:1",
+					"stroke": "#000000",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 10,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"S2_Feld": {
+					"type": "input",
+					"top": 45,
+					"left": 24,
+					"width": 189,
+					"height": 12,
+					"dataSource": "[LogDaten:1]PCNutzer:6",
+					"stroke": "#000000",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 10,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"method": "ObjectMethods/S2_Feld.4dm",
+					"events": [
+						"onDisplayDetail"
+					]
+				},
+				"S3_Feld": {
+					"type": "input",
+					"top": 31,
+					"left": 236,
+					"width": 189,
+					"height": 12,
+					"dataSource": "[LogDaten:1]Station:7",
+					"stroke": "#000000",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 10,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"S4_Feld": {
+					"type": "input",
+					"top": 31,
+					"left": 457,
+					"width": 82,
+					"height": 12,
+					"dataSource": "[LogDaten:1]Start Datum:2",
+					"dataSourceTypeHint": "date",
+					"stroke": "#000000",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 10,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"S5_Feld": {
+					"type": "input",
+					"top": 45,
+					"left": 457,
+					"width": 62,
+					"height": 12,
+					"dataSource": "[LogDaten:1]Start Zeit:3",
+					"dataSourceTypeHint": "time",
+					"stroke": "#000000",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 10,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"S6_Feld": {
+					"type": "input",
+					"top": 31,
+					"left": 558,
+					"width": 82,
+					"height": 12,
+					"dataSource": "[LogDaten:1]AktDatum:12",
+					"dataSourceTypeHint": "date",
+					"stroke": "#000000",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 10,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"S7_Feld": {
+					"type": "input",
+					"top": 45,
+					"left": 558,
+					"width": 62,
+					"height": 12,
+					"dataSource": "[LogDaten:1]AktZeit:13",
+					"dataSourceTypeHint": "time",
+					"stroke": "#000000",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 10,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"S8_Feld": {
+					"type": "input",
+					"top": 45,
+					"left": 653,
+					"width": 153,
+					"height": 12,
+					"dataSource": "[LogDaten:1]Umfrage:11",
+					"stroke": "#000000",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 10,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"S9_Feld": {
+					"type": "input",
+					"top": 31,
+					"left": 653,
+					"width": 153,
+					"height": 12,
+					"dataSource": "[LogDaten:1]Modul:8",
+					"stroke": "#000000",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 10,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"S10_Feld": {
+					"type": "input",
+					"top": 31,
+					"left": 829,
+					"width": 64,
+					"height": 12,
+					"dataSource": "[LogDaten:1]FbNr:9",
+					"dataSourceTypeHint": "integer",
+					"stroke": "#000000",
+					"textAlign": "left",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 10,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"S11_Feld": {
+					"type": "input",
+					"top": 45,
+					"left": 829,
+					"width": 126,
+					"height": 12,
+					"dataSource": "[LogDaten:1]Frage:10",
+					"stroke": "#000000",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 10,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Linie17": {
+					"type": "line",
+					"top": 74,
+					"left": 0,
+					"height": 47,
+					"stroke": "#A8A8A8"
+				},
+				"Linie18": {
+					"type": "line",
+					"top": 4,
+					"left": 1639,
+					"height": 47,
+					"stroke": "#A8A8A8"
+				},
+				"Linie24": {
+					"type": "line",
+					"top": 4,
+					"left": 819,
+					"height": 47,
+					"stroke": "#A8A8A8"
+				},
+				"Splitter7": {
+					"type": "button",
+					"top": 4,
+					"left": 818,
+					"width": 3,
+					"height": 47,
+					"dataSource": "Splitter7",
+					"action": "automaticSplitter",
+					"display": false,
+					"events": [
+						"onClick"
+					]
+				},
+				"Linie25": {
+					"type": "line",
+					"top": 4,
+					"left": 645,
+					"height": 47,
+					"stroke": "#A8A8A8"
+				},
+				"Splitter8": {
+					"type": "button",
+					"top": 4,
+					"left": 644,
+					"width": 3,
+					"height": 47,
+					"dataSource": "Splitter8",
+					"action": "automaticSplitter",
+					"display": false,
+					"events": [
+						"onClick"
+					]
+				},
+				"Linie26": {
+					"type": "line",
+					"top": 4,
+					"left": 551,
+					"height": 47,
+					"stroke": "#A8A8A8"
+				},
+				"Splitter9": {
+					"type": "button",
+					"top": 4,
+					"left": 550,
+					"width": 3,
+					"height": 47,
+					"dataSource": "Splitter9",
+					"action": "automaticSplitter",
+					"display": false,
+					"events": [
+						"onClick"
+					]
+				},
+				"Linie27": {
+					"type": "line",
+					"top": 4,
+					"left": 450,
+					"height": 47,
+					"stroke": "#A8A8A8"
+				},
+				"Splitter10": {
+					"type": "button",
+					"top": 4,
+					"left": 449,
+					"width": 3,
+					"height": 47,
+					"dataSource": "Splitter10",
+					"action": "automaticSplitter",
+					"display": false,
+					"events": [
+						"onClick"
+					]
+				},
+				"Linie28": {
+					"type": "line",
+					"top": 4,
+					"left": 229,
+					"height": 47,
+					"stroke": "#A8A8A8"
+				},
+				"Splitter11": {
+					"type": "button",
+					"top": 4,
+					"left": 228,
+					"width": 3,
+					"height": 47,
+					"dataSource": "Splitter11",
+					"action": "automaticSplitter",
+					"display": false,
+					"events": [
+						"onClick"
+					]
+				},
+				"Schaltfläche1": {
+					"type": "button",
+					"top": 74,
+					"left": 193,
+					"width": 127,
+					"height": 22,
+					"dataSource": "bEnde",
+					"action": "cancel",
+					"text": "Ende",
+					"class": "Standard",
+					"method": "ObjectMethods/Schaltfläche1.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Schaltfläche2": {
+					"type": "button",
+					"top": 75,
+					"left": 518,
+					"width": 127,
+					"height": 22,
+					"dataSource": "bAktualisieren",
+					"action": "cancel",
+					"text": "Aktualisieren",
+					"class": "Standard",
+					"defaultButton": true,
+					"method": "ObjectMethods/Schaltfläche2.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Splitter1": {
+					"type": "button",
+					"top": 4,
+					"left": 898,
+					"width": 3,
+					"height": 47,
+					"dataSource": "Splitter7",
+					"action": "automaticSplitter",
+					"display": false,
+					"events": [
+						"onClick"
+					]
+				},
+				"Linie1": {
+					"type": "line",
+					"top": 4,
+					"left": 899,
+					"height": 47,
+					"stroke": "#A8A8A8"
+				}
+			}
+		}
+	]
+}

@@ -1,0 +1,1074 @@
+﻿{
+	"messages": [
+		{
+			"message": "Compatibility setting 'Fields are enterable in dialog boxes' switched on.",
+			"severity": "warning"
+		},
+		{
+			"message": "Compatibility setting 'Prevent drop of data not coming from 4D' switched off.",
+			"severity": "warning"
+		},
+		{
+			"message": "Compatibility setting 'Reload form for each record during PRINT SELECTION' switched off.",
+			"severity": "warning"
+		},
+		{
+			"message": "Compatibility setting 'Use new architecture for application deployments' switched on.",
+			"severity": "warning"
+		},
+		{
+			"message": "Compatibility setting 'Do not use new context referencing mode' switched off.",
+			"severity": "warning"
+		},
+		{
+			"message": "Compatibility setting 'Web automatic variable assignment' switched off.",
+			"severity": "warning"
+		},
+		{
+			"message": "Compatibility setting 'Web remove / on unknown URLs' switched off.",
+			"severity": "warning"
+		},
+		{
+			"message": "Compatibility setting for Remote 'Web automatic variable assignment' switched off.",
+			"severity": "warning"
+		},
+		{
+			"message": "Compatibility setting for Remote 'Web remove / on unknown URLs' switched off.",
+			"severity": "warning"
+		},
+		{
+			"message": "Compatibility setting 'CPU priority' restored to factory settings.",
+			"severity": "warning"
+		},
+		{
+			"message": "Exporting picture id:1, name:Menüleiste 1, types:.jpg to Mac HD Wegner:Users:wegner:Documents:Datenbanken:CATI-Devel:V18R3_WebCATI:Resources:Images:library:Menüleiste 1.jpg",
+			"severity": "info"
+		},
+		{
+			"message": "Exporting picture id:2, name:Menüleiste 1, types:.jpg to Mac HD Wegner:Users:wegner:Documents:Datenbanken:CATI-Devel:V18R3_WebCATI:Resources:Images:library:Menüleiste 1 (2).jpg",
+			"severity": "info"
+		},
+		{
+			"table": 1,
+			"tableName": "LogDaten",
+			"form": "Export",
+			"message": "Compatibility settings 'Window size with constraints' and 'Form size dynamic adjustment' switched on.",
+			"severity": "warning"
+		},
+		{
+			"table": 1,
+			"tableName": "LogDaten",
+			"form": "d_IntStatus",
+			"message": "Compatibility settings 'Window size with constraints' and 'Form size dynamic adjustment' switched on.",
+			"severity": "warning"
+		},
+		{
+			"table": 2,
+			"tableName": "Interviewer",
+			"form": "Export",
+			"message": "Compatibility settings 'Window size with constraints' and 'Form size dynamic adjustment' switched on.",
+			"severity": "warning"
+		},
+		{
+			"table": 3,
+			"tableName": "Hilfslisten",
+			"form": "ImportExport",
+			"message": "Compatibility settings 'Window size with constraints' and 'Form size dynamic adjustment' switched on.",
+			"severity": "warning"
+		},
+		{
+			"table": 3,
+			"tableName": "Hilfslisten",
+			"form": "Import_Text",
+			"message": "Compatibility settings 'Window size with constraints' and 'Form size dynamic adjustment' switched on.",
+			"severity": "warning"
+		},
+		{
+			"table": 3,
+			"tableName": "Hilfslisten",
+			"form": "5225spez",
+			"message": "Compatibility settings 'Window size with constraints' and 'Form size dynamic adjustment' switched on.",
+			"severity": "warning"
+		},
+		{
+			"table": 4,
+			"tableName": "TelefonNummer",
+			"form": "Liste",
+			"message": "Compatibility settings 'Window size with constraints' and 'Form size dynamic adjustment' switched on.",
+			"severity": "warning"
+		},
+		{
+			"table": 4,
+			"tableName": "TelefonNummer",
+			"form": "Liste",
+			"object": "S4_Feld",
+			"message": "Field object whose field is associated in structure to a choice list, is converted using the same list in form object definition.",
+			"severity": "warning"
+		},
+		{
+			"table": 4,
+			"tableName": "TelefonNummer",
+			"form": "Liste",
+			"object": "S5_Feld",
+			"message": "Field object whose field is associated in structure to a choice list, is converted using the same list in form object definition.",
+			"severity": "warning"
+		},
+		{
+			"table": 4,
+			"tableName": "TelefonNummer",
+			"form": "Ausgabe_Reduziert",
+			"message": "Compatibility settings 'Window size with constraints' and 'Form size dynamic adjustment' switched on.",
+			"severity": "warning"
+		},
+		{
+			"table": 4,
+			"tableName": "TelefonNummer",
+			"form": "Ausgabe_Reduziert",
+			"object": "S7_Feld",
+			"message": "Field object whose field is associated in structure to a choice list, is converted using the same list in form object definition.",
+			"severity": "warning"
+		},
+		{
+			"table": 4,
+			"tableName": "TelefonNummer",
+			"form": "Ausgabe_Reduziert",
+			"object": "S8_Feld",
+			"message": "Field object whose field is associated in structure to a choice list, is converted using the same list in form object definition.",
+			"severity": "warning"
+		},
+		{
+			"table": 4,
+			"tableName": "TelefonNummer",
+			"form": "Eingabe_Reduziert",
+			"message": "Compatibility setting 'Form size dynamic adjustment' switched on.",
+			"severity": "warning"
+		},
+		{
+			"table": 4,
+			"tableName": "TelefonNummer",
+			"form": "Eingabe_Reduziert",
+			"object": "Status",
+			"message": "Field object whose field is associated in structure to a choice list, is converted using the same list in form object definition.",
+			"severity": "warning"
+		},
+		{
+			"table": 4,
+			"tableName": "TelefonNummer",
+			"form": "Eingabe_Reduziert",
+			"object": "StatusErklärung",
+			"message": "Field object whose field is associated in structure to a choice list, is converted using the same list in form object definition.",
+			"severity": "warning"
+		},
+		{
+			"table": 4,
+			"tableName": "TelefonNummer",
+			"form": "Abbruch",
+			"message": "Compatibility setting 'Form size dynamic adjustment' switched on.",
+			"severity": "warning"
+		},
+		{
+			"table": 4,
+			"tableName": "TelefonNummer",
+			"form": "Ausfall",
+			"message": "Compatibility setting 'Form size dynamic adjustment' switched on.",
+			"severity": "warning"
+		},
+		{
+			"table": 4,
+			"tableName": "TelefonNummer",
+			"form": "Ende",
+			"message": "Compatibility setting 'Form size dynamic adjustment' switched on.",
+			"severity": "warning"
+		},
+		{
+			"table": 4,
+			"tableName": "TelefonNummer",
+			"form": "Ende_Int",
+			"message": "Compatibility setting 'Form size dynamic adjustment' switched on.",
+			"severity": "warning"
+		},
+		{
+			"table": 4,
+			"tableName": "TelefonNummer",
+			"form": "Ende_Spez",
+			"message": "Compatibility setting 'Form size dynamic adjustment' switched on.",
+			"severity": "warning"
+		},
+		{
+			"table": 4,
+			"tableName": "TelefonNummer",
+			"form": "Ende_Wieder",
+			"message": "Compatibility setting 'Form size dynamic adjustment' switched on.",
+			"severity": "warning"
+		},
+		{
+			"table": 4,
+			"tableName": "TelefonNummer",
+			"form": "gen_1b7m8off9kka",
+			"message": "Compatibility setting 'Form size dynamic adjustment' switched on.",
+			"severity": "warning"
+		},
+		{
+			"table": 4,
+			"tableName": "TelefonNummer",
+			"form": "gen_1bXm8off",
+			"message": "Compatibility setting 'Form size dynamic adjustment' switched on.",
+			"severity": "warning"
+		},
+		{
+			"table": 4,
+			"tableName": "TelefonNummer",
+			"form": "gen_FA",
+			"message": "Compatibility setting 'Form size dynamic adjustment' switched on.",
+			"severity": "warning"
+		},
+		{
+			"table": 4,
+			"tableName": "TelefonNummer",
+			"form": "gen_gFkA",
+			"message": "Compatibility setting 'Form size dynamic adjustment' switched on.",
+			"severity": "warning"
+		},
+		{
+			"table": 4,
+			"tableName": "TelefonNummer",
+			"form": "gen_kFgA",
+			"message": "Compatibility setting 'Form size dynamic adjustment' switched on.",
+			"severity": "warning"
+		},
+		{
+			"table": 4,
+			"tableName": "TelefonNummer",
+			"form": "gen_OffenText",
+			"message": "Compatibility setting 'Form size dynamic adjustment' switched on.",
+			"severity": "warning"
+		},
+		{
+			"table": 4,
+			"tableName": "TelefonNummer",
+			"form": "gen_Spez",
+			"message": "Compatibility setting 'Form size dynamic adjustment' switched on.",
+			"severity": "warning"
+		},
+		{
+			"table": 4,
+			"tableName": "TelefonNummer",
+			"form": "gen_WoMoJa",
+			"message": "Compatibility setting 'Form size dynamic adjustment' switched on.",
+			"severity": "warning"
+		},
+		{
+			"table": 4,
+			"tableName": "TelefonNummer",
+			"form": "gen_Zahl",
+			"message": "Compatibility setting 'Form size dynamic adjustment' switched on.",
+			"severity": "warning"
+		},
+		{
+			"table": 4,
+			"tableName": "TelefonNummer",
+			"form": "int_bereit",
+			"message": "Compatibility setting 'Form size dynamic adjustment' switched on.",
+			"severity": "warning"
+		},
+		{
+			"table": 4,
+			"tableName": "TelefonNummer",
+			"form": "NächsteNummer",
+			"message": "Compatibility setting 'Form size dynamic adjustment' switched on.",
+			"severity": "warning"
+		},
+		{
+			"table": 4,
+			"tableName": "TelefonNummer",
+			"form": "Später",
+			"message": "Compatibility setting 'Form size dynamic adjustment' switched on.",
+			"severity": "warning"
+		},
+		{
+			"table": 4,
+			"tableName": "TelefonNummer",
+			"form": "Spezial-Druck",
+			"message": "Compatibility setting 'Form size dynamic adjustment' switched on.",
+			"severity": "warning"
+		},
+		{
+			"table": 4,
+			"tableName": "TelefonNummer",
+			"form": "Telefon",
+			"message": "Compatibility setting 'Form size dynamic adjustment' switched on.",
+			"severity": "warning"
+		},
+		{
+			"table": 4,
+			"tableName": "TelefonNummer",
+			"form": "Zitatenliste",
+			"message": "Compatibility settings 'Window size with constraints' and 'Form size dynamic adjustment' switched on.",
+			"severity": "warning"
+		},
+		{
+			"table": 4,
+			"tableName": "TelefonNummer",
+			"form": "AntwortAnsicht",
+			"message": "Compatibility setting 'Form size dynamic adjustment' switched on.",
+			"severity": "warning"
+		},
+		{
+			"table": 4,
+			"tableName": "TelefonNummer",
+			"form": "Import_Standard",
+			"message": "Compatibility setting 'Form size dynamic adjustment' switched on.",
+			"severity": "warning"
+		},
+		{
+			"table": 4,
+			"tableName": "TelefonNummer",
+			"form": "Import_Standard",
+			"object": "Status",
+			"message": "Field object whose field is associated in structure to a choice list, is converted using the same list in form object definition.",
+			"severity": "warning"
+		},
+		{
+			"table": 4,
+			"tableName": "TelefonNummer",
+			"form": "Import_Kontrolle",
+			"message": "Compatibility settings 'Window size with constraints' and 'Form size dynamic adjustment' switched on.",
+			"severity": "warning"
+		},
+		{
+			"table": 4,
+			"tableName": "TelefonNummer",
+			"form": "Import_Kontrolle",
+			"object": "S21_Feld",
+			"message": "Field object whose field is associated in structure to a choice list, is converted using the same list in form object definition.",
+			"severity": "warning"
+		},
+		{
+			"table": 4,
+			"tableName": "TelefonNummer",
+			"form": "Ende_AbbruchNichtGG",
+			"message": "Compatibility setting 'Form size dynamic adjustment' switched on.",
+			"severity": "warning"
+		},
+		{
+			"table": 4,
+			"tableName": "TelefonNummer",
+			"form": "GA",
+			"message": "Compatibility setting 'Form size dynamic adjustment' switched on.",
+			"severity": "warning"
+		},
+		{
+			"table": 4,
+			"tableName": "TelefonNummer",
+			"form": "d_Ausschoepfung",
+			"message": "Compatibility setting 'Form size dynamic adjustment' switched on.",
+			"severity": "warning"
+		},
+		{
+			"table": 4,
+			"tableName": "TelefonNummer",
+			"form": "gen_MoJa",
+			"message": "Compatibility setting 'Form size dynamic adjustment' switched on.",
+			"severity": "warning"
+		},
+		{
+			"table": 4,
+			"tableName": "TelefonNummer",
+			"form": "eingabe kompl",
+			"message": "Compatibility setting 'Form size dynamic adjustment' switched on.",
+			"severity": "warning"
+		},
+		{
+			"table": 4,
+			"tableName": "TelefonNummer",
+			"form": "eingabe kompl",
+			"object": "Status",
+			"message": "Field object whose field is associated in structure to a choice list, is converted using the same list in form object definition.",
+			"severity": "warning"
+		},
+		{
+			"table": 4,
+			"tableName": "TelefonNummer",
+			"form": "eingabe kompl",
+			"object": "StatusErklärung",
+			"message": "Field object whose field is associated in structure to a choice list, is converted using the same list in form object definition.",
+			"severity": "warning"
+		},
+		{
+			"table": 4,
+			"tableName": "TelefonNummer",
+			"form": "gen_HalbOffen",
+			"message": "Compatibility setting 'Form size dynamic adjustment' switched on.",
+			"severity": "warning"
+		},
+		{
+			"table": 4,
+			"tableName": "TelefonNummer",
+			"form": "ImportExport",
+			"message": "Compatibility settings 'Window size with constraints' and 'Form size dynamic adjustment' switched on.",
+			"severity": "warning"
+		},
+		{
+			"table": 4,
+			"tableName": "TelefonNummer",
+			"form": "ImportExport",
+			"object": "S38_Feld",
+			"message": "Field object whose field is associated in structure to a choice list, is converted using the same list in form object definition.",
+			"severity": "warning"
+		},
+		{
+			"table": 4,
+			"tableName": "TelefonNummer",
+			"form": "ImportExport",
+			"object": "S39_Feld",
+			"message": "Field object whose field is associated in structure to a choice list, is converted using the same list in form object definition.",
+			"severity": "warning"
+		},
+		{
+			"table": 4,
+			"tableName": "TelefonNummer",
+			"form": "gen_Dezimal",
+			"message": "Compatibility setting 'Form size dynamic adjustment' switched on.",
+			"severity": "warning"
+		},
+		{
+			"table": 4,
+			"tableName": "TelefonNummer",
+			"form": "FbNr_u_AntwASCII",
+			"message": "Compatibility settings 'Window size with constraints' and 'Form size dynamic adjustment' switched on.",
+			"severity": "warning"
+		},
+		{
+			"table": 4,
+			"tableName": "TelefonNummer",
+			"form": "gen_WoMo",
+			"message": "Compatibility setting 'Form size dynamic adjustment' switched on.",
+			"severity": "warning"
+		},
+		{
+			"table": 4,
+			"tableName": "TelefonNummer",
+			"form": "gen_Multi",
+			"message": "Compatibility setting 'Form size dynamic adjustment' switched on.",
+			"severity": "warning"
+		},
+		{
+			"table": 4,
+			"tableName": "TelefonNummer",
+			"form": "d_ZeitProFrage",
+			"message": "Compatibility setting 'Form size dynamic adjustment' switched on.",
+			"severity": "warning"
+		},
+		{
+			"table": 4,
+			"tableName": "TelefonNummer",
+			"form": "int_bereit_5225",
+			"message": "Compatibility setting 'Form size dynamic adjustment' switched on.",
+			"severity": "warning"
+		},
+		{
+			"table": 4,
+			"tableName": "TelefonNummer",
+			"form": "gen_gggFkA",
+			"message": "Compatibility setting 'Form size dynamic adjustment' switched on.",
+			"severity": "warning"
+		},
+		{
+			"table": 4,
+			"tableName": "TelefonNummer",
+			"form": "Telefon_5225",
+			"message": "Compatibility setting 'Form size dynamic adjustment' switched on.",
+			"severity": "warning"
+		},
+		{
+			"table": 4,
+			"tableName": "TelefonNummer",
+			"form": "Ausfall_5225",
+			"message": "Compatibility setting 'Form size dynamic adjustment' switched on.",
+			"severity": "warning"
+		},
+		{
+			"table": 4,
+			"tableName": "TelefonNummer",
+			"form": "5225_TelNr",
+			"message": "Compatibility setting 'Form size dynamic adjustment' switched on.",
+			"severity": "warning"
+		},
+		{
+			"table": 4,
+			"tableName": "TelefonNummer",
+			"form": "d_KommentarEingabe",
+			"message": "Compatibility setting 'Form size dynamic adjustment' switched on.",
+			"severity": "warning"
+		},
+		{
+			"table": 4,
+			"tableName": "TelefonNummer",
+			"form": "d_NurAntwASCII",
+			"message": "Compatibility setting 'Form size dynamic adjustment' switched on.",
+			"severity": "warning"
+		},
+		{
+			"table": 4,
+			"tableName": "TelefonNummer",
+			"form": "Ausgabe_Komplett",
+			"object": "S40_Feld",
+			"message": "Field object whose field is associated in structure to a choice list, is converted using the same list in form object definition.",
+			"severity": "warning"
+		},
+		{
+			"table": 4,
+			"tableName": "TelefonNummer",
+			"form": "Ausgabe_Komplett",
+			"object": "S41_Feld",
+			"message": "Field object whose field is associated in structure to a choice list, is converted using the same list in form object definition.",
+			"severity": "warning"
+		},
+		{
+			"table": 4,
+			"tableName": "TelefonNummer",
+			"form": "(test)",
+			"object": "Status",
+			"message": "Field object whose field is associated in structure to a choice list, is converted using the same list in form object definition.",
+			"severity": "warning"
+		},
+		{
+			"table": 4,
+			"tableName": "TelefonNummer",
+			"form": "(test)",
+			"object": "StatusErklärung",
+			"message": "Field object whose field is associated in structure to a choice list, is converted using the same list in form object definition.",
+			"severity": "warning"
+		},
+		{
+			"table": 5,
+			"tableName": "Variablen",
+			"form": "Statistik",
+			"message": "Compatibility setting 'Form size dynamic adjustment' switched on.",
+			"severity": "warning"
+		},
+		{
+			"table": 5,
+			"tableName": "Variablen",
+			"form": "Statistik",
+			"object": "Rollbarer Bereich1",
+			"message": "Listbox property 'Scrollable area compatibility mode' not supported.",
+			"severity": "error"
+		},
+		{
+			"table": 5,
+			"tableName": "Variablen",
+			"form": "Statistik",
+			"object": "Rollbarer Bereich2",
+			"message": "Listbox property 'Scrollable area compatibility mode' not supported.",
+			"severity": "error"
+		},
+		{
+			"table": 5,
+			"tableName": "Variablen",
+			"form": "Statistik",
+			"object": "Rollbarer Bereich3",
+			"message": "Listbox property 'Scrollable area compatibility mode' not supported.",
+			"severity": "error"
+		},
+		{
+			"table": 5,
+			"tableName": "Variablen",
+			"form": "Eingabe",
+			"message": "Compatibility setting 'Form size dynamic adjustment' switched on.",
+			"severity": "warning"
+		},
+		{
+			"table": 5,
+			"tableName": "Variablen",
+			"form": "d_StatistikMatrix",
+			"message": "Compatibility setting 'Form size dynamic adjustment' switched on.",
+			"severity": "warning"
+		},
+		{
+			"table": 5,
+			"tableName": "Variablen",
+			"form": "d_DatenLoeschen",
+			"message": "Compatibility setting 'Form size dynamic adjustment' switched on.",
+			"severity": "warning"
+		},
+		{
+			"table": 5,
+			"tableName": "Variablen",
+			"form": "d_UmfrageWaehlen",
+			"message": "Compatibility setting 'Form size dynamic adjustment' switched on.",
+			"severity": "warning"
+		},
+		{
+			"table": 5,
+			"tableName": "Variablen",
+			"form": "d_UmfrageWaehlen",
+			"object": "Rollbarer Bereich1",
+			"message": "Listbox property 'Scrollable area compatibility mode' not supported.",
+			"severity": "error"
+		},
+		{
+			"table": 5,
+			"tableName": "Variablen",
+			"form": "d_UmfrageWaehlen",
+			"object": "Rollbarer Bereich6",
+			"message": "Listbox property 'Scrollable area compatibility mode' not supported.",
+			"severity": "error"
+		},
+		{
+			"table": 5,
+			"tableName": "Variablen",
+			"form": "d_UmfrageWaehlen",
+			"object": "Rollbarer Bereich2",
+			"message": "Listbox property 'Scrollable area compatibility mode' not supported.",
+			"severity": "error"
+		},
+		{
+			"table": 5,
+			"tableName": "Variablen",
+			"form": "d_UmfrageWaehlen",
+			"object": "Rollbarer Bereich3",
+			"message": "Listbox property 'Scrollable area compatibility mode' not supported.",
+			"severity": "error"
+		},
+		{
+			"table": 5,
+			"tableName": "Variablen",
+			"form": "d_UmfrageWaehlen",
+			"object": "Rollbarer Bereich4",
+			"message": "Listbox property 'Scrollable area compatibility mode' not supported.",
+			"severity": "error"
+		},
+		{
+			"table": 5,
+			"tableName": "Variablen",
+			"form": "d_UmfrageWaehlen",
+			"object": "Rollbarer Bereich5",
+			"message": "Listbox property 'Scrollable area compatibility mode' not supported.",
+			"severity": "error"
+		},
+		{
+			"table": 5,
+			"tableName": "Variablen",
+			"form": "ImportExport",
+			"message": "Compatibility settings 'Window size with constraints' and 'Form size dynamic adjustment' switched on.",
+			"severity": "warning"
+		},
+		{
+			"table": 5,
+			"tableName": "Variablen",
+			"form": "d_Anonymisieren",
+			"message": "Compatibility setting 'Form size dynamic adjustment' switched on.",
+			"severity": "warning"
+		},
+		{
+			"table": 5,
+			"tableName": "Variablen",
+			"form": "d_AnonymDrucken",
+			"message": "Compatibility setting 'Form size dynamic adjustment' switched on.",
+			"severity": "warning"
+		},
+		{
+			"table": 5,
+			"tableName": "Variablen",
+			"form": "d_DateiWaehlen",
+			"message": "Compatibility setting 'Form size dynamic adjustment' switched on.",
+			"severity": "warning"
+		},
+		{
+			"table": 5,
+			"tableName": "Variablen",
+			"form": "d_DateiWaehlen",
+			"object": "Rollbarer Bereich1",
+			"message": "Listbox property 'Scrollable area compatibility mode' not supported.",
+			"severity": "error"
+		},
+		{
+			"table": 5,
+			"tableName": "Variablen",
+			"form": "d_Fernsteuern",
+			"message": "Compatibility setting 'Form size dynamic adjustment' switched on.",
+			"severity": "warning"
+		},
+		{
+			"table": 5,
+			"tableName": "Variablen",
+			"form": "d_MeldungSenden",
+			"message": "Compatibility setting 'Form size dynamic adjustment' switched on.",
+			"severity": "warning"
+		},
+		{
+			"table": 5,
+			"tableName": "Variablen",
+			"form": "d_MeldungSenden",
+			"object": "Rollbarer Bereich1",
+			"message": "Listbox property 'Scrollable area compatibility mode' not supported.",
+			"severity": "error"
+		},
+		{
+			"table": 6,
+			"tableName": "Bogen",
+			"form": "Eingabe",
+			"message": "Compatibility setting 'Form size dynamic adjustment' switched on.",
+			"severity": "warning"
+		},
+		{
+			"table": 6,
+			"tableName": "Bogen",
+			"form": "Kontrolle",
+			"message": "Compatibility settings 'Window size with constraints' and 'Form size dynamic adjustment' switched on.",
+			"severity": "warning"
+		},
+		{
+			"table": 6,
+			"tableName": "Bogen",
+			"form": "ImpExp_040914",
+			"message": "Compatibility settings 'Window size with constraints' and 'Form size dynamic adjustment' switched on.",
+			"severity": "warning"
+		},
+		{
+			"table": 6,
+			"tableName": "Bogen",
+			"form": "BogenDuplizieren",
+			"message": "Compatibility setting 'Form size dynamic adjustment' switched on.",
+			"severity": "warning"
+		},
+		{
+			"table": 6,
+			"tableName": "Bogen",
+			"form": "BogenDuplizieren",
+			"object": "rbBogenIDQuelle",
+			"message": "Listbox property 'Scrollable area compatibility mode' not supported.",
+			"severity": "error"
+		},
+		{
+			"table": 6,
+			"tableName": "Bogen",
+			"form": "BogenDuplizieren",
+			"object": "rbBogenIDQuelle",
+			"message": "Connecting listboxes is not supported.",
+			"severity": "error"
+		},
+		{
+			"table": 6,
+			"tableName": "Bogen",
+			"form": "BogenDuplizieren",
+			"object": "rbNextIDQuelle1",
+			"message": "Listbox property 'Scrollable area compatibility mode' not supported.",
+			"severity": "error"
+		},
+		{
+			"table": 6,
+			"tableName": "Bogen",
+			"form": "BogenDuplizieren",
+			"object": "rbNextIDQuelle1",
+			"message": "Connecting listboxes is not supported.",
+			"severity": "error"
+		},
+		{
+			"table": 6,
+			"tableName": "Bogen",
+			"form": "BogenDuplizieren",
+			"object": "rbSpalteQuelle",
+			"message": "Listbox property 'Scrollable area compatibility mode' not supported.",
+			"severity": "error"
+		},
+		{
+			"table": 6,
+			"tableName": "Bogen",
+			"form": "BogenDuplizieren",
+			"object": "rbSpalteQuelle",
+			"message": "Connecting listboxes is not supported.",
+			"severity": "error"
+		},
+		{
+			"table": 6,
+			"tableName": "Bogen",
+			"form": "BogenDuplizieren",
+			"object": "rbBogenIDZiel",
+			"message": "Listbox property 'Scrollable area compatibility mode' not supported.",
+			"severity": "error"
+		},
+		{
+			"table": 6,
+			"tableName": "Bogen",
+			"form": "BogenDuplizieren",
+			"object": "rbBogenIDZiel",
+			"message": "Connecting listboxes is not supported.",
+			"severity": "error"
+		},
+		{
+			"table": 6,
+			"tableName": "Bogen",
+			"form": "BogenDuplizieren",
+			"object": "rbNextIDZiel",
+			"message": "Listbox property 'Scrollable area compatibility mode' not supported.",
+			"severity": "error"
+		},
+		{
+			"table": 6,
+			"tableName": "Bogen",
+			"form": "BogenDuplizieren",
+			"object": "rbNextIDZiel",
+			"message": "Connecting listboxes is not supported.",
+			"severity": "error"
+		},
+		{
+			"table": 6,
+			"tableName": "Bogen",
+			"form": "BogenDuplizieren",
+			"object": "rbSpalteZiel",
+			"message": "Listbox property 'Scrollable area compatibility mode' not supported.",
+			"severity": "error"
+		},
+		{
+			"table": 6,
+			"tableName": "Bogen",
+			"form": "BogenDuplizieren",
+			"object": "rbSpalteZiel",
+			"message": "Connecting listboxes is not supported.",
+			"severity": "error"
+		},
+		{
+			"table": 6,
+			"tableName": "Bogen",
+			"form": "BogenDuplizieren",
+			"object": "rbFrageText",
+			"message": "Listbox property 'Scrollable area compatibility mode' not supported.",
+			"severity": "error"
+		},
+		{
+			"table": 6,
+			"tableName": "Bogen",
+			"form": "BogenDuplizieren",
+			"object": "rbFrageText",
+			"message": "Connecting listboxes is not supported.",
+			"severity": "error"
+		},
+		{
+			"table": 6,
+			"tableName": "Bogen",
+			"form": "d_Fehleranzeige",
+			"message": "Compatibility setting 'Form size dynamic adjustment' switched on.",
+			"severity": "warning"
+		},
+		{
+			"table": 6,
+			"tableName": "Bogen",
+			"form": "d_Hilfe",
+			"message": "Compatibility setting 'Form size dynamic adjustment' switched on.",
+			"severity": "warning"
+		},
+		{
+			"table": 6,
+			"tableName": "Bogen",
+			"form": "Drucken_komplett",
+			"message": "Compatibility setting 'Form size dynamic adjustment' switched on.",
+			"severity": "warning"
+		},
+		{
+			"table": 7,
+			"tableName": "Quoten",
+			"form": "Eingabe",
+			"message": "Compatibility setting 'Form size dynamic adjustment' switched on.",
+			"severity": "warning"
+		},
+		{
+			"table": 7,
+			"tableName": "Quoten",
+			"form": "QuotenAnsicht",
+			"message": "Compatibility setting 'Form size dynamic adjustment' switched on.",
+			"severity": "warning"
+		},
+		{
+			"table": 7,
+			"tableName": "Quoten",
+			"form": "ImpExp_040914",
+			"message": "Compatibility settings 'Window size with constraints' and 'Form size dynamic adjustment' switched on.",
+			"severity": "warning"
+		},
+		{
+			"table": 8,
+			"tableName": "AktivLog",
+			"form": "Eingabe",
+			"message": "Compatibility setting 'Form size dynamic adjustment' switched on.",
+			"severity": "warning"
+		},
+		{
+			"table": 8,
+			"tableName": "AktivLog",
+			"form": "ImportExport",
+			"message": "Compatibility settings 'Window size with constraints' and 'Form size dynamic adjustment' switched on.",
+			"severity": "warning"
+		},
+		{
+			"table": 8,
+			"tableName": "AktivLog",
+			"form": "d_Auswertung",
+			"message": "Compatibility setting 'Form size dynamic adjustment' switched on.",
+			"severity": "warning"
+		},
+		{
+			"table": 8,
+			"tableName": "AktivLog",
+			"form": "d_Auswertung",
+			"object": "Rollbarer Bereich1",
+			"message": "Listbox property 'Scrollable area compatibility mode' not supported.",
+			"severity": "error"
+		},
+		{
+			"table": 8,
+			"tableName": "AktivLog",
+			"form": "d_Auswertung",
+			"object": "Rollbarer Bereich1",
+			"message": "Connecting listboxes is not supported.",
+			"severity": "error"
+		},
+		{
+			"table": 8,
+			"tableName": "AktivLog",
+			"form": "d_Auswertung",
+			"object": "Rollbarer Bereich2",
+			"message": "Listbox property 'Scrollable area compatibility mode' not supported.",
+			"severity": "error"
+		},
+		{
+			"table": 8,
+			"tableName": "AktivLog",
+			"form": "d_Auswertung",
+			"object": "Rollbarer Bereich2",
+			"message": "Connecting listboxes is not supported.",
+			"severity": "error"
+		},
+		{
+			"table": 8,
+			"tableName": "AktivLog",
+			"form": "d_Auswertung",
+			"object": "Rollbarer Bereich3",
+			"message": "Listbox property 'Scrollable area compatibility mode' not supported.",
+			"severity": "error"
+		},
+		{
+			"table": 8,
+			"tableName": "AktivLog",
+			"form": "d_Auswertung",
+			"object": "Rollbarer Bereich3",
+			"message": "Connecting listboxes is not supported.",
+			"severity": "error"
+		},
+		{
+			"table": 8,
+			"tableName": "AktivLog",
+			"form": "d_Auswertung",
+			"object": "Rollbarer Bereich4",
+			"message": "Listbox property 'Scrollable area compatibility mode' not supported.",
+			"severity": "error"
+		},
+		{
+			"table": 8,
+			"tableName": "AktivLog",
+			"form": "d_Auswertung",
+			"object": "Rollbarer Bereich4",
+			"message": "Connecting listboxes is not supported.",
+			"severity": "error"
+		},
+		{
+			"table": 8,
+			"tableName": "AktivLog",
+			"form": "d_Auswertung",
+			"object": "Rollbarer Bereich5",
+			"message": "Listbox property 'Scrollable area compatibility mode' not supported.",
+			"severity": "error"
+		},
+		{
+			"table": 8,
+			"tableName": "AktivLog",
+			"form": "d_Auswertung",
+			"object": "Rollbarer Bereich5",
+			"message": "Connecting listboxes is not supported.",
+			"severity": "error"
+		},
+		{
+			"table": 8,
+			"tableName": "AktivLog",
+			"form": "d_Auswertung",
+			"object": "Rollbarer Bereich6",
+			"message": "Listbox property 'Scrollable area compatibility mode' not supported.",
+			"severity": "error"
+		},
+		{
+			"table": 8,
+			"tableName": "AktivLog",
+			"form": "d_Auswertung",
+			"object": "Rollbarer Bereich6",
+			"message": "Connecting listboxes is not supported.",
+			"severity": "error"
+		},
+		{
+			"table": 8,
+			"tableName": "AktivLog",
+			"form": "d_Auswertung",
+			"object": "Rollbarer Bereich8",
+			"message": "Listbox property 'Scrollable area compatibility mode' not supported.",
+			"severity": "error"
+		},
+		{
+			"table": 8,
+			"tableName": "AktivLog",
+			"form": "d_Auswertung",
+			"object": "Rollbarer Bereich8",
+			"message": "Connecting listboxes is not supported.",
+			"severity": "error"
+		},
+		{
+			"table": 9,
+			"tableName": "ADM_Log",
+			"form": "Eing_Kompl",
+			"message": "Compatibility setting 'Form size dynamic adjustment' switched on.",
+			"severity": "warning"
+		},
+		{
+			"table": 9,
+			"tableName": "ADM_Log",
+			"form": "Ausg_Kompl",
+			"message": "Compatibility settings 'Window size with constraints' and 'Form size dynamic adjustment' switched on.",
+			"severity": "warning"
+		},
+		{
+			"table": 9,
+			"tableName": "ADM_Log",
+			"form": "ListenAnsicht",
+			"message": "Compatibility settings 'Window size with constraints' and 'Form size dynamic adjustment' switched on.",
+			"severity": "warning"
+		},
+		{
+			"table": 10,
+			"tableName": "Mapping",
+			"form": "Details",
+			"message": "Compatibility setting 'Form size dynamic adjustment' switched on.",
+			"severity": "warning"
+		},
+		{
+			"table": 10,
+			"tableName": "Mapping",
+			"form": "Liste",
+			"message": "Compatibility settings 'Window size with constraints' and 'Form size dynamic adjustment' switched on.",
+			"severity": "warning"
+		},
+		{
+			"table": 11,
+			"tableName": "TMP",
+			"form": "Eingabe",
+			"message": "Compatibility setting 'Form size dynamic adjustment' switched on.",
+			"severity": "warning"
+		},
+		{
+			"table": 11,
+			"tableName": "TMP",
+			"form": "Ausgabe",
+			"message": "Compatibility settings 'Window size with constraints' and 'Form size dynamic adjustment' switched on.",
+			"severity": "warning"
+		}
+	],
+	"success": false
+}

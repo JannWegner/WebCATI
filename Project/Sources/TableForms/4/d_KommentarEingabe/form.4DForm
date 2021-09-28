@@ -1,0 +1,138 @@
+﻿{
+	"destination": "detailScreen",
+	"rightMargin": 19,
+	"bottomMargin": 20,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onPrintingDetail",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke",
+		"onSelectionChange"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "DIN A4",
+		"paperWidth": "595pt",
+		"paperHeight": "842pt"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"vt_AktuellerKommentar": {
+					"type": "input",
+					"top": 11,
+					"left": 19,
+					"width": 355,
+					"height": 150,
+					"dataSource": "vt_AktuellerKommentar",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"scrollbarVertical": "visible",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Schaltfläche1": {
+					"type": "button",
+					"top": 170,
+					"left": 21,
+					"width": 76,
+					"height": 22,
+					"dataSource": "b_Cancel",
+					"text": "Abbrechen",
+					"class": "Standard",
+					"method": "ObjectMethods/Schaltfläche1.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Schaltfläche2": {
+					"type": "button",
+					"top": 170,
+					"left": 299,
+					"width": 93,
+					"height": 22,
+					"dataSource": "Schaltfläche1",
+					"text": "Speichern",
+					"class": "Standard",
+					"defaultButton": true,
+					"method": "ObjectMethods/Schaltfläche2.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"b_editieren": {
+					"type": "button",
+					"top": 170,
+					"left": 104,
+					"width": 188,
+					"height": 22,
+					"dataSource": "b_editieren",
+					"text": "Letzten Kommentar editieren",
+					"class": "Standard",
+					"method": "ObjectMethods/b_editieren.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"t_Warntext": {
+					"type": "text",
+					"top": 201,
+					"left": 21,
+					"width": 369,
+					"height": 12,
+					"stroke": "#FF005E",
+					"class": "Standard",
+					"textAlign": "center",
+					"fontStyle": "italic",
+					"text": "Der letzte Kommentar ist nach 'Speichern' nicht mehr verfügbar!"
+				}
+			}
+		}
+	]
+}

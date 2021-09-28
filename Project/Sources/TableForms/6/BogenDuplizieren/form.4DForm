@@ -1,0 +1,748 @@
+﻿{
+	"destination": "detailScreen",
+	"rightMargin": 19,
+	"bottomMargin": 20,
+	"markerHeader": 17,
+	"markerBody": 242,
+	"markerBreak": 266,
+	"markerFooter": 290,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onPrintingDetail",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke",
+		"onSelectionChange"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "DIN A4",
+		"paperWidth": "595pt",
+		"paperHeight": "842pt"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"Viereck1": {
+					"type": "rectangle",
+					"top": 80,
+					"left": 22,
+					"width": 793,
+					"height": 336,
+					"fill": "transparent",
+					"strokeWidth": 2
+				},
+				"asQuellUmfrage": {
+					"type": "dropdown",
+					"top": 33,
+					"left": 255,
+					"width": 429,
+					"height": 27,
+					"dataSource": "asQuellUmfrage",
+					"fontFamily": "System Font Regular",
+					"fontSize": 12,
+					"method": "ObjectMethods/asQuellUmfrage.4dm",
+					"events": [
+						"onLoad",
+						"onClick"
+					]
+				},
+				"rbBogenIDQuelle": {
+					"type": "listbox",
+					"top": 134,
+					"left": 28,
+					"width": 111,
+					"height": 279,
+					"resizingMode": "legacy",
+					"focusable": false,
+					"movableRows": false,
+					"showHeaders": false,
+					"selectionMode": "single",
+					"scrollbarHorizontal": "hidden",
+					"scrollbarVertical": "hidden",
+					"horizontalLineStroke": "transparent",
+					"verticalLineStroke": "transparent",
+					"fill": "transparent",
+					"fontFamily": "System Font Regular",
+					"fontSize": 12,
+					"borderStyle": "none",
+					"method": "ObjectMethods/rbBogenIDQuelle.4dm",
+					"events": [
+						"onClick",
+						"onDataChange"
+					],
+					"columns": [
+						{
+							"name": "rbBogenIDQuelle_Column1",
+							"dataSource": "asBogenIDQuelle",
+							"width": 10,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"fontFamily": "System Font Regular",
+							"fontSize": 12,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Kopf1",
+								"text": "Kopf1",
+								"fontFamily": "System Font Regular",
+								"fontSize": 12
+							},
+							"footer": {
+								"name": "Fußteil1",
+								"timeFormat": "hh_mm_ss",
+								"fontFamily": "System Font Regular",
+								"fontSize": 12
+							}
+						}
+					]
+				},
+				"rbNextIDQuelle1": {
+					"type": "listbox",
+					"top": 134,
+					"left": 141,
+					"width": 113,
+					"height": 279,
+					"resizingMode": "legacy",
+					"focusable": false,
+					"movableRows": false,
+					"showHeaders": false,
+					"selectionMode": "single",
+					"scrollbarHorizontal": "hidden",
+					"scrollbarVertical": "hidden",
+					"horizontalLineStroke": "transparent",
+					"verticalLineStroke": "transparent",
+					"fill": "transparent",
+					"fontFamily": "System Font Regular",
+					"fontSize": 12,
+					"borderStyle": "none",
+					"method": "ObjectMethods/rbNextIDQuelle1.4dm",
+					"events": [
+						"onClick",
+						"onDataChange"
+					],
+					"columns": [
+						{
+							"name": "rbNextIDQuelle1_Column1",
+							"dataSource": "asNextIDQuelle",
+							"width": 10,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"fontFamily": "System Font Regular",
+							"fontSize": 12,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Kopf2",
+								"text": "Kopf2",
+								"fontFamily": "System Font Regular",
+								"fontSize": 12
+							},
+							"footer": {
+								"name": "Fußteil2",
+								"timeFormat": "hh_mm_ss",
+								"fontFamily": "System Font Regular",
+								"fontSize": 12
+							}
+						}
+					]
+				},
+				"rbSpalteQuelle": {
+					"type": "listbox",
+					"top": 134,
+					"left": 257,
+					"width": 64,
+					"height": 279,
+					"resizingMode": "legacy",
+					"focusable": false,
+					"movableRows": false,
+					"showHeaders": false,
+					"selectionMode": "single",
+					"scrollbarHorizontal": "hidden",
+					"scrollbarVertical": "hidden",
+					"horizontalLineStroke": "transparent",
+					"verticalLineStroke": "transparent",
+					"fill": "transparent",
+					"fontFamily": "System Font Regular",
+					"fontSize": 12,
+					"borderStyle": "none",
+					"method": "ObjectMethods/rbSpalteQuelle.4dm",
+					"events": [
+						"onClick",
+						"onDataChange"
+					],
+					"columns": [
+						{
+							"name": "rbSpalteQuelle_Column1",
+							"dataSource": "asSpalteQuelle",
+							"width": 10,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"fontFamily": "System Font Regular",
+							"fontSize": 12,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Kopf3",
+								"text": "Kopf3",
+								"fontFamily": "System Font Regular",
+								"fontSize": 12
+							},
+							"footer": {
+								"name": "Fußteil3",
+								"timeFormat": "hh_mm_ss",
+								"fontFamily": "System Font Regular",
+								"fontSize": 12
+							}
+						}
+					]
+				},
+				"rbBogenIDZiel": {
+					"type": "listbox",
+					"top": 134,
+					"left": 327,
+					"width": 111,
+					"height": 279,
+					"resizingMode": "legacy",
+					"focusable": false,
+					"movableRows": false,
+					"showHeaders": false,
+					"selectionMode": "single",
+					"scrollbarHorizontal": "hidden",
+					"scrollbarVertical": "hidden",
+					"horizontalLineStroke": "transparent",
+					"verticalLineStroke": "transparent",
+					"fill": "transparent",
+					"fontFamily": "System Font Regular",
+					"fontSize": 12,
+					"borderStyle": "none",
+					"method": "ObjectMethods/rbBogenIDZiel.4dm",
+					"events": [
+						"onClick",
+						"onDataChange"
+					],
+					"columns": [
+						{
+							"name": "rbBogenIDZiel_Column1",
+							"dataSource": "asBogenIDZiel",
+							"width": 10,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"fontFamily": "System Font Regular",
+							"fontSize": 12,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Kopf4",
+								"text": "Kopf4",
+								"fontFamily": "System Font Regular",
+								"fontSize": 12
+							},
+							"footer": {
+								"name": "Fußteil4",
+								"timeFormat": "hh_mm_ss",
+								"fontFamily": "System Font Regular",
+								"fontSize": 12
+							}
+						}
+					]
+				},
+				"rbNextIDZiel": {
+					"type": "listbox",
+					"top": 134,
+					"left": 440,
+					"width": 111,
+					"height": 279,
+					"resizingMode": "legacy",
+					"focusable": false,
+					"movableRows": false,
+					"showHeaders": false,
+					"selectionMode": "single",
+					"scrollbarHorizontal": "hidden",
+					"scrollbarVertical": "hidden",
+					"horizontalLineStroke": "transparent",
+					"verticalLineStroke": "transparent",
+					"fill": "transparent",
+					"fontFamily": "System Font Regular",
+					"fontSize": 12,
+					"borderStyle": "none",
+					"method": "ObjectMethods/rbNextIDZiel.4dm",
+					"events": [
+						"onClick",
+						"onDataChange"
+					],
+					"columns": [
+						{
+							"name": "rbNextIDZiel_Column1",
+							"dataSource": "asNextIDZiel",
+							"width": 10,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"fontFamily": "System Font Regular",
+							"fontSize": 12,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Kopf5",
+								"text": "Kopf5",
+								"fontFamily": "System Font Regular",
+								"fontSize": 12
+							},
+							"footer": {
+								"name": "Fußteil5",
+								"timeFormat": "hh_mm_ss",
+								"fontFamily": "System Font Regular",
+								"fontSize": 12
+							}
+						}
+					]
+				},
+				"rbSpalteZiel": {
+					"type": "listbox",
+					"top": 134,
+					"left": 554,
+					"width": 65,
+					"height": 279,
+					"resizingMode": "legacy",
+					"focusable": false,
+					"movableRows": false,
+					"showHeaders": false,
+					"selectionMode": "single",
+					"scrollbarHorizontal": "hidden",
+					"scrollbarVertical": "hidden",
+					"horizontalLineStroke": "transparent",
+					"verticalLineStroke": "transparent",
+					"fill": "transparent",
+					"fontFamily": "System Font Regular",
+					"fontSize": 12,
+					"borderStyle": "none",
+					"method": "ObjectMethods/rbSpalteZiel.4dm",
+					"events": [
+						"onClick",
+						"onDataChange"
+					],
+					"columns": [
+						{
+							"name": "rbSpalteZiel_Column1",
+							"dataSource": "asSpalteZiel",
+							"width": 10,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"fontFamily": "System Font Regular",
+							"fontSize": 12,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Kopf6",
+								"text": "Kopf6",
+								"fontFamily": "System Font Regular",
+								"fontSize": 12
+							},
+							"footer": {
+								"name": "Fußteil6",
+								"timeFormat": "hh_mm_ss",
+								"fontFamily": "System Font Regular",
+								"fontSize": 12
+							}
+						}
+					]
+				},
+				"rbFrageText": {
+					"type": "listbox",
+					"top": 134,
+					"left": 624,
+					"width": 186,
+					"height": 279,
+					"resizingMode": "legacy",
+					"focusable": false,
+					"movableRows": false,
+					"showHeaders": false,
+					"selectionMode": "single",
+					"scrollbarHorizontal": "hidden",
+					"horizontalLineStroke": "transparent",
+					"verticalLineStroke": "transparent",
+					"fill": "transparent",
+					"fontFamily": "System Font Regular",
+					"fontSize": 12,
+					"borderStyle": "none",
+					"method": "ObjectMethods/rbFrageText.4dm",
+					"events": [
+						"onClick",
+						"onDataChange"
+					],
+					"columns": [
+						{
+							"name": "rbFrageText_Column1",
+							"dataSource": "atFrageText",
+							"width": 10,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"fontFamily": "System Font Regular",
+							"fontSize": 12,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Kopf7",
+								"text": "Kopf7",
+								"fontFamily": "System Font Regular",
+								"fontSize": 12
+							},
+							"footer": {
+								"name": "Fußteil7",
+								"timeFormat": "hh_mm_ss",
+								"fontFamily": "System Font Regular",
+								"fontSize": 12
+							}
+						}
+					]
+				},
+				"Variable2": {
+					"type": "input",
+					"top": 424,
+					"left": 327,
+					"width": 105,
+					"height": 13,
+					"dataSource": "vsZielID",
+					"fontFamily": "System Font Regular",
+					"fontSize": 12,
+					"fill": "transparent",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"method": "ObjectMethods/Variable2.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Variable6": {
+					"type": "input",
+					"top": 424,
+					"left": 441,
+					"width": 105,
+					"height": 13,
+					"dataSource": "vsZielNextID",
+					"fontFamily": "System Font Regular",
+					"fontSize": 12,
+					"fill": "transparent",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"method": "ObjectMethods/Variable6.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Variable4": {
+					"type": "input",
+					"top": 424,
+					"left": 552,
+					"width": 67,
+					"height": 13,
+					"dataSource": "vsZielSpalte",
+					"fontFamily": "System Font Regular",
+					"fontSize": 12,
+					"fill": "transparent",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"method": "ObjectMethods/Variable4.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Schaltfläche1": {
+					"type": "button",
+					"top": 456,
+					"left": 22,
+					"width": 237,
+					"height": 44,
+					"dataSource": "bKopieren",
+					"text": "Kopieren",
+					"class": "Standard",
+					"method": "ObjectMethods/Schaltfläche1.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Schaltfläche2": {
+					"type": "button",
+					"top": 456,
+					"left": 524,
+					"width": 238,
+					"height": 44,
+					"dataSource": "bAbbrechen",
+					"action": "cancel",
+					"text": "Fenster schließen",
+					"class": "Standard",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Text1": {
+					"type": "text",
+					"top": 91,
+					"left": 29,
+					"width": 290,
+					"height": 21,
+					"textAlign": "center",
+					"fontFamily": "System Font Regular",
+					"fontSize": 14,
+					"text": "Quelle"
+				},
+				"Text2": {
+					"type": "text",
+					"top": 90,
+					"left": 328,
+					"width": 283,
+					"height": 21,
+					"textAlign": "center",
+					"fontFamily": "System Font Regular",
+					"fontSize": 14,
+					"text": "Ziel"
+				},
+				"Linie1": {
+					"type": "line",
+					"top": 80,
+					"left": 323,
+					"height": 336
+				},
+				"Linie2": {
+					"type": "line",
+					"top": 80,
+					"left": 621,
+					"height": 336
+				},
+				"Variable1": {
+					"type": "input",
+					"top": 424,
+					"left": 27,
+					"width": 103,
+					"height": 13,
+					"dataSource": "vsQuellID",
+					"fontFamily": "System Font Regular",
+					"fontSize": 12,
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "sunken",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Variable3": {
+					"type": "input",
+					"top": 424,
+					"left": 255,
+					"width": 64,
+					"height": 13,
+					"dataSource": "vsQuellSpalte",
+					"fontFamily": "System Font Regular",
+					"fontSize": 12,
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "sunken",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Text3": {
+					"type": "text",
+					"top": 41,
+					"left": 159,
+					"width": 88,
+					"height": 14,
+					"fontFamily": "System Font Regular",
+					"fontSize": 12,
+					"text": "Quell-Umfrage"
+				},
+				"Variable5": {
+					"type": "input",
+					"top": 424,
+					"left": 141,
+					"width": 105,
+					"height": 13,
+					"dataSource": "vsQuellNextID",
+					"fontFamily": "System Font Regular",
+					"fontSize": 12,
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "sunken",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Text4": {
+					"type": "text",
+					"top": 113,
+					"left": 28,
+					"width": 102,
+					"height": 13,
+					"fontFamily": "System Font Regular",
+					"fontSize": 12,
+					"text": "ID"
+				},
+				"Text5": {
+					"type": "text",
+					"top": 113,
+					"left": 146,
+					"width": 102,
+					"height": 13,
+					"fontFamily": "System Font Regular",
+					"fontSize": 12,
+					"text": "Next-ID"
+				},
+				"Text6": {
+					"type": "text",
+					"top": 113,
+					"left": 258,
+					"width": 59,
+					"height": 13,
+					"fontFamily": "System Font Regular",
+					"fontSize": 12,
+					"text": "Spalte"
+				},
+				"Text7": {
+					"type": "text",
+					"top": 113,
+					"left": 327,
+					"width": 103,
+					"height": 13,
+					"fontFamily": "System Font Regular",
+					"fontSize": 12,
+					"text": "ID"
+				},
+				"Text8": {
+					"type": "text",
+					"top": 113,
+					"left": 444,
+					"width": 103,
+					"height": 13,
+					"fontFamily": "System Font Regular",
+					"fontSize": 12,
+					"text": "Next-ID"
+				},
+				"Text9": {
+					"type": "text",
+					"top": 113,
+					"left": 557,
+					"width": 60,
+					"height": 13,
+					"fontFamily": "System Font Regular",
+					"fontSize": 12,
+					"text": "Spalte"
+				},
+				"Schaltfläche3": {
+					"type": "button",
+					"top": 466,
+					"left": 299,
+					"width": 185,
+					"height": 25,
+					"dataSource": "Schaltfläche3",
+					"text": "Vorgaben löschen",
+					"class": "Standard",
+					"method": "ObjectMethods/Schaltfläche3.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Linie3": {
+					"type": "line",
+					"top": 129,
+					"left": 22,
+					"width": 600
+				}
+			}
+		}
+	],
+	"editor": {
+		"groups": {
+			"Gruppe7": [
+				"rbBogenIDQuelle",
+				"rbNextIDQuelle1",
+				"rbSpalteQuelle",
+				"rbBogenIDZiel",
+				"rbNextIDZiel",
+				"rbSpalteZiel",
+				"rbFrageText"
+			]
+		}
+	}
+}

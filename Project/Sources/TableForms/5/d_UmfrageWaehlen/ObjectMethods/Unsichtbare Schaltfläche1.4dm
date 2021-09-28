@@ -1,0 +1,1 @@
+SORT ARRAY:C229(taUmfragenAnzeige;taUmfragen;tdEingerichtet;taAnonymDurch;tdAnonymAm;tiAnzahlAdr;tiAnzahlKomplett)

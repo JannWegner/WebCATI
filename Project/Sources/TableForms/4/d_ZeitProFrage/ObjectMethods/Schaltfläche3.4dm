@@ -1,0 +1,2 @@
+vi_ZeitProFrageAktSeite:=vi_ZeitProFrageAktSeite+1
+p_ZeitProFrage_Seitenanzeige (vi_ZeitProFrageAktSeite)
