@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE base SYSTEM "http://www.4d.com/dtd/2007/base.dtd" >
-<base name="V19R2_WebCATI" uuid="DA0ED94B7EF74975B7C931841D7BA282" collation_locale="de">
+<base name="WebCATI" uuid="DA0ED94B7EF74975B7C931841D7BA282" collation_locale="de">
 	<schema name="DEFAULT_SCHEMA"/>
 	<table name="LogDaten" uuid="6883E2456BC64D19AF2394A2DF6A0E61" id="1">
 		<field name="DBNutzer" uuid="379045C3CFCF41FC81F8344978CECC29" type="10" limiting_length="30" never_null="true" id="1">

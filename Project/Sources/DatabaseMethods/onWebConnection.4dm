@@ -8,10 +8,13 @@ $vt_URL:=$1
 $vt_NextURL:=""
 
 Case of 
-	: (Session:C1714.isGuest() & ($vt_URL#"InterviewerLogin"))
+	: (Session:C1714.isGuest() & ($vt_URL#"/InterviewerLogin"))
 		$vt_NextURL:="404"
 		
-	: (Session:C1714.isGuest() & ($vt_URL="InterviewerLogin"))
+	: (Session:C1714.isGuest() & ($vt_URL="/InterviewerLogin"))
+		
+	: (Not:C34(Session:C1714.isGuest()) & ($vt_URL="/Reset"))
+		Session:C1714.clearPrivileges()
 		
 		
 End case 
