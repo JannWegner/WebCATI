@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><preferences stamp="83">
+<?xml version="1.0" encoding="UTF-8"?><preferences stamp="84">
 	<com.4d>
 		<database>
 			<cache adaptative="true" flush_buffer_delay="2" size_fixed="976" size_maximum="3072" size_minimum="976" size_reserved="128"/>
@@ -24,7 +24,7 @@
 					<text_conversion standard_set="ISO-8859-1"/>
 					<cache cache_max_size="524288" use_4d_web_cache="true"/>
 					<web_passwords kind="0" with_4d_passwords="true"/>
-					<filters allow_4dsync_urls="false"/>
+					<filters allow_4dsync_urls="true"/>
 					<keep_alive requests_number="100"/>
 					<cors enabled="false"/>
 				</options>

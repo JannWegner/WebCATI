@@ -13,6 +13,14 @@
 		},
 		{
 			"type": "method",
+			"id": 2147483581,
+			"codeDescriptor": {
+				"type": 1,
+				"methodName": "web_OnWebConnection_Original"
+			}
+		},
+		{
+			"type": "method",
 			"id": 2147483474,
 			"codeDescriptor": {
 				"type": 1,
@@ -21,10 +29,10 @@
 		},
 		{
 			"type": "method",
-			"id": 2147483439,
+			"id": 2147483440,
 			"codeDescriptor": {
 				"type": 5,
-				"databaseMethod": 8
+				"databaseMethod": 1
 			}
 		}
 	]

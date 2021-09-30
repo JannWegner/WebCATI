@@ -1,11 +1,31 @@
 [
 	{
 		"type": 66,
-		"formula": "Session:C1714.isGuest()"
+		"formula": "$col_UpdateItems[$vi_ItemPos+1]"
 	},
 	{
 		"type": 66,
-		"formula": "$info"
+		"formula": "$col_UpdateItems[$vi_ItemPos]"
+	},
+	{
+		"type": 66,
+		"formula": "$col_UpdateItems"
+	},
+	{
+		"type": 66,
+		"formula": "at_FormVarNames"
+	},
+	{
+		"type": 66,
+		"formula": "$vt_NextURL"
+	},
+	{
+		"type": 66,
+		"formula": "$vo_Info"
+	},
+	{
+		"type": 66,
+		"formula": "Session:C1714.isGuest()"
 	},
 	{
 		"type": 66,
@@ -17,15 +37,12 @@
 	},
 	{
 		"type": 66,
-		"formula": "at_FormVarValues"
+		"formula": "at_FormVarValues",
+		"expanded": true
 	},
 	{
 		"type": 66,
 		"formula": "$1"
-	},
-	{
-		"type": 66,
-		"formula": "WEB Get current session ID:C1162"
 	},
 	{
 		"type": 66,
