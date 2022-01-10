@@ -623,6 +623,8 @@
 		<field name="Kontakte" uuid="6B0D6B834CF849B79F5BE009769BB59F" type="3" never_null="true" id="52"/>
 		<field name="PKID" uuid="F600814EFF6E457995F46CE15DF6CB41" type="10" unique="true" autogenerate="true" store_as_UUID="true" id="53"/>
 		<field name="RandomReihenfolge" uuid="5D7117F11CF748F28EE71DBDBC630BB6" type="10" never_null="true" id="54"/>
+		<field name="LetzteFrageWeb" uuid="6D9662E4473B44BBAE7F7C2E183C4DAB" type="10" limiting_length="255" never_null="true" id="55"/>
+		<field name="Feld_56" uuid="67C41B8368CA45A9B496851B53057649" type="10" limiting_length="255" never_null="true" id="56"/>
 		<primary_key field_name="PKID" field_uuid="F600814EFF6E457995F46CE15DF6CB41"/>
 		<table_extra input_form="eingabe kompl" output_form="Ausgabe_Komplett">
 			<editor_table_info displayable_fields_count="57">

@@ -2,7 +2,7 @@
 /*
 web_AdresseHolen
 Jann Wegner
-20210929-20210423
+20211001-20210929-20210423
 
 Holt für das Web-Interface eine Adresse
 
@@ -71,7 +71,7 @@ If ($vo_SessionObject.FbNr=0)  // Wir wählen eine zufällige Adrese aus
 			If ($es_NeueFreieAdressen.length#0)
 				$vl_Zufall:=Random:C100%$es_NeueFreieAdressen.length+1
 				$e_FreieAdresse:=$es_NeueFreieAdressen[$vl_Zufall-1]
-				web_SessionUpdate(New collection:C1472("FbNr"; $e_FreieAdresse.AdrFBNr; "AdrPKID"; $e_FreieAdresse.PKID))
+				web_SessionUpdate(New collection:C1472("FbNr"; $e_FreieAdresse.AdrFBNr; "AdrPKID"; $e_FreieAdresse.PKID; "LetzteFrage"; $e_FreieAdresse.LetzteFrageWeb; "Fassung"; $e_FreieAdresse.Fassung))
 			Else 
 				web_SessionUpdate(New collection:C1472("InfoText"; "Nix mehr zu tun - Feierabend!"))
 			End if 
@@ -82,21 +82,17 @@ Else
 	QUERY:C277([TelefonNummer:4];  & [TelefonNummer:4]AdrFBNr:20=$vo_SessionObject.FbNr)
 	Case of 
 		: (Records in selection:C76([TelefonNummer:4])=0)
-			web_SessionUpdate(New collection:C1472("InfoText"; "Nummer nicht gefunden!"))
+			web_SessionUpdate(New collection:C1472("InfoText"; "Nummer nicht gefunden!"); "FbNr"; 0)
 		: (Records in selection:C76([TelefonNummer:4])>1)
-			web_SessionUpdate(New collection:C1472("InfoText"; "Nummer mehrfach gefunden!"))
+			web_SessionUpdate(New collection:C1472("InfoText"; "Nummer mehrfach gefunden!"; "FbNr"; 0))
 		: ([TelefonNummer:4]Status:5#"Neu")
-			web_SessionUpdate(New collection:C1472("InfoText"; "Status ist nicht 'Neu'!"))
+			web_SessionUpdate(New collection:C1472("InfoText"; "Status ist nicht 'Neu'!"; "FbNr"; 0))
 		Else 
-			web_SessionUpdate(New collection:C1472("FbNr"; $vo_SessionObject.FbNr; AdrPKID; [TelefonNummer:4]PKID:53))
+			web_SessionUpdate(New collection:C1472("FbNr"; $vo_SessionObject.FbNr; "AdrPKID"; [TelefonNummer:4]PKID:53; "LetzteFrage"; [TelefonNummer:4]LetzteFrageWeb:55; "Fassung"; [TelefonNummer:4]Fassung:39))
+			[TelefonNummer:4]Status:5:="In Arbeit"
+			SAVE RECORD:C53([TelefonNummer:4])
 	End case 
 End if 
 
-// Adresse gefunden -> AdrStatus setzen
-QUERY:C277([TelefonNummer:4]; [TelefonNummer:4]PKID:53=$0.AdrPKID)
-If (Records in selection:C76([TelefonNummer:4])=1)
-	[TelefonNummer:4]Status:5:="In Arbeit"
-	SAVE RECORD:C53([TelefonNummer:4])
-End if 
 
 CLEAR SEMAPHORE:C144("sema_HoleAdresse")

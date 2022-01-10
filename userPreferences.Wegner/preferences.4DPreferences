@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><preferences stamp="73">
+<?xml version="1.0" encoding="UTF-8"?><preferences stamp="75">
 	<com.4d>
 		<database>
 			<data_storage data_path="Data/WebCATI.4DD"/>
@@ -10,8 +10,8 @@
 	</com.4d>
 	<internal_prefs_4d>
 		<windows>
-			<window name="main" left="186" top="560" width="1112" height="807"/>
+			<window name="main" left="240" top="824" width="1112" height="494"/>
 		</windows>
-		<explorer default_page="3"/>
+		<explorer default_page="2"/>
 	</internal_prefs_4d>
 </preferences>

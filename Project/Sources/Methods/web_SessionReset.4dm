@@ -10,4 +10,8 @@ Use (Session:C1714.storage)
 End use 
 Session:C1714.clearPrivileges()
 WEB SEND TEXT:C677("CLEARED "+Timestamp:C1445)
+Use (Session:C1714.storage)
+	Session:C1714.storage.Info:=New shared object:C1526("LetzteURL"; "")
+End use 
+
 

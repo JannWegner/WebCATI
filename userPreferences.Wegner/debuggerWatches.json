@@ -1,23 +1,20 @@
 [
 	{
 		"type": 66,
-		"formula": "$col_UpdateItems[$vi_ItemPos+1]"
+		"formula": "$e_TelNr"
 	},
 	{
 		"type": 66,
-		"formula": "$col_UpdateItems[$vi_ItemPos]"
+		"formula": "$e_Variable"
 	},
 	{
 		"type": 66,
-		"formula": "$col_UpdateItems"
+		"formula": "$e_Variable[\"AdrFeld\"+String:C10($vi_Lauf; \"00\")]"
 	},
 	{
 		"type": 66,
-		"formula": "at_FormVarNames"
-	},
-	{
-		"type": 66,
-		"formula": "$vt_NextURL"
+		"formula": "at_FormVarNames",
+		"expanded": true
 	},
 	{
 		"type": 66,
