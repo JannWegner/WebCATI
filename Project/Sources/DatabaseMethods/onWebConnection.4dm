@@ -28,16 +28,25 @@ Case of
 		
 	: (Not:C34(Session:C1714.isGuest()))  // Wir haben eine laufende Sitzung mit gültigem Nutzer!
 		Case of 
+			: (Session:C1714.storage.Info.LetzteURL="Telefon")  // Kommt er von der Telefon-Seite ?
+				var $vl_TelefonPos; $vl_SendenPos; $vl_NeuKommTextPos : Integer
+				$vl_TelefonPos:=Find in array:C230(at_FormVarNames; "Telefon")
+				$vl_SendenPos:=Find in array:C230(at_FormVarNames; "Senden")
+				$vl_NeuKommTextPos:=Find in array:C230(at_FormVarNames; "NeuKommText")
+				Case of 
+					: (($vl_SendenPos#-1) & ($vl_TelefonPos=-1))  // Keine Eingabe
+						web_SessionUpdate(New collection:C1472("InfoText"; "Keine Auswahl getroffen"))
+					: (($vl_SendenPos#-1) & ($vl_TelefonPos#-1))  // Es gibt eine Eingabe
+						web_FormWeiterMit("Telefon"; at_FormVarValues{$vl_TelefonPos})
+				End case 
 			: (Session:C1714.storage.Info.LetzteURL="Adresse")  // Kommt er von der Adresswahlseite ?
 				Case of 
 					: ((at_FormVarNames{1}="Aktion") & (at_FormVarValues{1}="Ende"))  // Abbruch angefordert
 						web_SessionReset
-						
 					Else   // Will Adresse haben
 						Case of 
 							: ((at_FormVarNames{1}="Aktion") & (at_FormVarValues{1}="Zufall"))  // Zufallsadresse angefordert
 								web_SessionUpdate(New collection:C1472("FbNr"; 0))
-								
 							: ((at_FormVarNames{1}="FbNr") & (at_FormVarValues{1}#"0") & (at_FormVarNames{2}="Aktion") & (at_FormVarValues{2}="Nummer"))  // Konkrete Adresse angefordert
 								web_SessionUpdate(New collection:C1472("FbNr"; Num:C11(at_FormVarValues{1})))
 							Else 
@@ -89,4 +98,5 @@ End case
 
 If (Session:C1714.storage.Info.LetzteURL#"")
 	WEB SEND FILE:C619(Session:C1714.storage.Info.LetzteURL+".shtml")
+	web_SessionUpdate(New collection:C1472("InfoText"; ""))
 End if 

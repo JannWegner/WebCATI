@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><preferences stamp="84">
+<?xml version="1.0" encoding="UTF-8"?><preferences stamp="85">
 	<com.4d>
 		<database>
 			<cache adaptative="true" flush_buffer_delay="2" size_fixed="976" size_maximum="3072" size_minimum="976" size_reserved="128"/>
@@ -54,7 +54,7 @@
 		<server>
 			<misc/>
 			<network>
-				<options publication_name="CATI_Abach" publication_port="22237" use_legacy_network_layer="false"/>
+				<options publication_name="CATI_Abach" publication_port="22247" use_legacy_network_layer="false"/>
 				<client_server use_encryption="false"/>
 			</network>
 		</server>

@@ -17,7 +17,7 @@ C_BLOB:C604($vblob_QuotenIDs)
 C_OBJECT:C1216($0; $1; $es_NeueFreieAdressen; $e_FreieAdresse; $vo_SessionObject)
 ARRAY LONGINT:C221($al_FreieToepfe; 0)
 
-$0:=New object:C1471("AdrFbNr"; 0; "AdrPKID"; ""; "Text"; "")
+// $0:=New object("AdrFbNr"; 0; "AdrPKID"; ""; "Text"; "") // 20220113: Obsolet??
 
 $vo_SessionObject:=$1
 
@@ -82,7 +82,7 @@ Else
 	QUERY:C277([TelefonNummer:4];  & [TelefonNummer:4]AdrFBNr:20=$vo_SessionObject.FbNr)
 	Case of 
 		: (Records in selection:C76([TelefonNummer:4])=0)
-			web_SessionUpdate(New collection:C1472("InfoText"; "Nummer nicht gefunden!"); "FbNr"; 0)
+			web_SessionUpdate(New collection:C1472("InfoText"; "Nummer nicht gefunden!"; "FbNr"; 0))
 		: (Records in selection:C76([TelefonNummer:4])>1)
 			web_SessionUpdate(New collection:C1472("InfoText"; "Nummer mehrfach gefunden!"; "FbNr"; 0))
 		: ([TelefonNummer:4]Status:5#"Neu")

@@ -626,7 +626,7 @@
 		<field name="LetzteFrageWeb" uuid="6D9662E4473B44BBAE7F7C2E183C4DAB" type="10" limiting_length="255" never_null="true" id="55"/>
 		<field name="Feld_56" uuid="67C41B8368CA45A9B496851B53057649" type="10" limiting_length="255" never_null="true" id="56"/>
 		<primary_key field_name="PKID" field_uuid="F600814EFF6E457995F46CE15DF6CB41"/>
-		<table_extra input_form="eingabe kompl" output_form="Ausgabe_Komplett">
+		<table_extra input_form="Eingabe_Reduziert" output_form="Ausgabe_Komplett">
 			<editor_table_info displayable_fields_count="57">
 				<color red="0" green="0" blue="0" alpha="0"/>
 				<coordinates left="231" top="20" width="138" height="1251"/>
@@ -681,7 +681,7 @@
 		<field name="PKID" uuid="7FDCE9746336448EA3F0401C0E37D59D" type="10" unique="true" autogenerate="true" store_as_UUID="true" id="45"/>
 		<field name="ErsteFrageWartung" uuid="71BB076AE41A47B9BC8ECBCEA16623BC" type="10" limiting_length="255" never_null="true" id="46"/>
 		<primary_key field_name="PKID" field_uuid="7FDCE9746336448EA3F0401C0E37D59D"/>
-		<table_extra input_form="Eingabe_Komplett" output_form="Ausgabe_Komplett">
+		<table_extra input_form="Eingabe" output_form="Ausgabe_Komplett">
 			<editor_table_info displayable_fields_count="48">
 				<color red="0" green="0" blue="0" alpha="0"/>
 				<coordinates left="654" top="36" width="151" height="1067"/>

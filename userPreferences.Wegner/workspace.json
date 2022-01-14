@@ -2,7 +2,34 @@
 	"editors": [
 		{
 			"type": "method",
-			"id": 2147483441,
+			"id": 2147482958,
+			"codeDescriptor": {
+				"type": 1,
+				"methodName": "web_FormWeiterMit"
+			}
+		},
+		{
+			"type": "method",
+			"id": 2147483453,
+			"codeDescriptor": {
+				"type": 1,
+				"methodName": "p_CreateWebUser"
+			}
+		},
+		{
+			"type": "method",
+			"id": 2147483005,
+			"codeDescriptor": {
+				"type": 2,
+				"table": 4,
+				"formName": "Telefon",
+				"objectName": "Weiter",
+				"methodPath": "/SOURCES/TableForms/4/Telefon/ObjectMethods/Weiter.4dm"
+			}
+		},
+		{
+			"type": "method",
+			"id": 2147483428,
 			"codeDescriptor": {
 				"type": 5,
 				"databaseMethod": 6
@@ -10,52 +37,20 @@
 		},
 		{
 			"type": "method",
-			"id": 2147482960,
+			"id": 2147483604,
 			"codeDescriptor": {
 				"type": 1,
 				"methodName": "web_Interview"
 			}
 		},
 		{
+			"type": "explorer"
+		},
+		{
 			"type": "form",
 			"id": 263,
 			"table": 4,
 			"formName": "Telefon"
-		},
-		{
-			"type": "method",
-			"id": 2147483550,
-			"codeDescriptor": {
-				"type": 1,
-				"methodName": "web_AdresseHolen"
-			}
-		},
-		{
-			"type": "explorer"
-		},
-		{
-			"type": "method",
-			"id": 2147483535,
-			"codeDescriptor": {
-				"type": 1,
-				"methodName": "p_Infofeld_Bauen"
-			}
-		},
-		{
-			"type": "method",
-			"id": 2147483568,
-			"codeDescriptor": {
-				"type": 1,
-				"methodName": "p_ListenfelderRechnen"
-			}
-		},
-		{
-			"type": "method",
-			"id": 2147483528,
-			"codeDescriptor": {
-				"type": 1,
-				"methodName": "m_interviewen"
-			}
 		}
 	]
 }

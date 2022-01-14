@@ -1,24 +1,12 @@
 [
 	{
 		"type": 66,
-		"formula": "$e_TelNr"
-	},
-	{
-		"type": 66,
-		"formula": "$e_Variable"
-	},
-	{
-		"type": 66,
-		"formula": "$e_Variable[\"AdrFeld\"+String:C10($vi_Lauf; \"00\")]"
+		"formula": "Session:C1714.storage.Info.LetzteURL"
 	},
 	{
 		"type": 66,
 		"formula": "at_FormVarNames",
 		"expanded": true
-	},
-	{
-		"type": 66,
-		"formula": "$vo_Info"
 	},
 	{
 		"type": 66,
