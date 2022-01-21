@@ -72,6 +72,8 @@ If ($vo_SessionObject.FbNr=0)  // Wir wählen eine zufällige Adrese aus
 				$vl_Zufall:=Random:C100%$es_NeueFreieAdressen.length+1
 				$e_FreieAdresse:=$es_NeueFreieAdressen[$vl_Zufall-1]
 				web_SessionUpdate(New collection:C1472("FbNr"; $e_FreieAdresse.AdrFBNr; "AdrPKID"; $e_FreieAdresse.PKID; "LetzteFrage"; $e_FreieAdresse.LetzteFrageWeb; "Fassung"; $e_FreieAdresse.Fassung))
+				$e_FreieAdresse.Status:="In Arbeit"
+				$e_FreieAdresse.save()
 			Else 
 				web_SessionUpdate(New collection:C1472("InfoText"; "Nix mehr zu tun - Feierabend!"))
 			End if 

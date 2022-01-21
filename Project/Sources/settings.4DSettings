@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><preferences stamp="85">
+<?xml version="1.0" encoding="UTF-8"?><preferences stamp="86">
 	<com.4d>
 		<database>
 			<cache adaptative="true" flush_buffer_delay="2" size_fixed="976" size_maximum="3072" size_minimum="976" size_reserved="128"/>
@@ -13,7 +13,7 @@
 		<general startup_environnement="0"/>
 		<web>
 			<standalone_server>
-				<configuration allowHttp="true" allow_ssl="true" automatic_session_management="true" https_port_number="450" port_number="8001" publish_at_startup="false" reuse_context="true" session_mode="1">
+				<configuration allowHttp="true" allow_ssl="true" automatic_session_management="true" https_port_number="450" port_number="8001" publish_at_startup="true" reuse_context="true" session_mode="1">
 					<hosts>
 						<host home_page="index_IfD.shtml" html_root="/Users/wegner/Documents/Datenbanken/CATI-Devel/WebCATI_HTML_Root/" id="0" name="default"/>
 					</hosts>

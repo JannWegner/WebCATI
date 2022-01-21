@@ -1,16 +1,28 @@
 [
 	{
 		"type": 66,
+		"formula": "e_AktTelefonNummer"
+	},
+	{
+		"type": 66,
+		"formula": "Session:C1714.storage.History"
+	},
+	{
+		"type": 66,
 		"formula": "Session:C1714.storage.Info.LetzteURL"
+	},
+	{
+		"type": 66,
+		"formula": "at_FormVarValues{$vl_ZeitPos}"
+	},
+	{
+		"type": 66,
+		"formula": "at_FormVarValues{$vl_DatPos}"
 	},
 	{
 		"type": 66,
 		"formula": "at_FormVarNames",
 		"expanded": true
-	},
-	{
-		"type": 66,
-		"formula": "Session:C1714.isGuest()"
 	},
 	{
 		"type": 66,
@@ -24,10 +36,6 @@
 		"type": 66,
 		"formula": "at_FormVarValues",
 		"expanded": true
-	},
-	{
-		"type": 66,
-		"formula": "$1"
 	},
 	{
 		"type": 66,

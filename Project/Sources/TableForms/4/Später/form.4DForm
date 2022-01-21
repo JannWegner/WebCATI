@@ -1,4 +1,4 @@
-﻿{
+{
 	"destination": "detailScreen",
 	"rightMargin": 19,
 	"bottomMargin": 20,
@@ -452,5 +452,9 @@
 				"Feld1"
 			]
 		}
+	},
+	"$4d": {
+		"version": "1",
+		"kind": "form"
 	}
 }
