@@ -103,6 +103,7 @@ Case of
 						web_SessionUpdate(New collection:C1472("Umfrage"; at_FormVarValues{1}; "UmfragePKID"; ds:C1482.Variablen.query("UmfrageAnzeigeName = :1"; at_FormVarValues{1}).first().PKID; "LetzteURL"; "Adresse"))
 					Else   // Nochmal Umfrage wählen
 						ALL RECORDS:C47([Variablen:5])
+						QUERY:C277([Variablen:5]; [Variablen:5]FuerAlleOffen:30=True:C214)
 						ORDER BY:C49([Variablen:5]; [Variablen:5]EingerichtetAm:40; <)
 						web_SessionUpdate(New collection:C1472("LetzteURL"; "Umfrage"))
 						vt_WebZusatzText:="Bitte Umfrage wählen!"
@@ -117,6 +118,7 @@ Case of
 				Session:C1714.setPrivileges($vo_info)
 				web_SessionUpdate(New collection:C1472("LetzteURL"; "Umfrage"; "InfoText"; ""))
 				ALL RECORDS:C47([Variablen:5])
+				QUERY:C277([Variablen:5]; [Variablen:5]FuerAlleOffen:30=True:C214)
 				ORDER BY:C49([Variablen:5]; [Variablen:5]EingerichtetAm:40; <)
 			Else   // Ungültige Zugangsdaten
 				web_SessionUpdate(New collection:C1472("LetzteURL"; "Login"))
