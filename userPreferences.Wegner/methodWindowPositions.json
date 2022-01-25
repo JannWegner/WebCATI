@@ -966,8 +966,8 @@
 		"height": 400
 	},
 	"Sources/DatabaseMethods/onWebConnection.4dm": {
-		"left": 983,
-		"top": 117,
+		"left": 1162,
+		"top": 152,
 		"width": 1310,
 		"height": 1323
 	},
@@ -1116,10 +1116,10 @@
 		"height": 400
 	},
 	"Sources/Methods/web_AdresseHolen.4dm": {
-		"left": 2610,
-		"top": 214,
+		"left": 352,
+		"top": 282,
 		"width": 1539,
-		"height": 1374
+		"height": 1102
 	},
 	"Sources/Methods/web_Error.4dm": {
 		"left": 74,

@@ -5,7 +5,7 @@
 var $1; $vt_URL : Text
 var vt_WebZusatzText : Text
 var e_AktTelefonNummer : Object
-var $vl_DatPos; $vl_ZeitPos; $vl_SendenPos; $vl_AbbruchPos; $vl_NummerPos; $vl_APPos; $vl_NeuKommTextPos; $vl_TelefonPos : Integer
+var $vl_DatPos; $vl_ZeitPos; $vl_SendenPos; $vl_AbbruchPos; $vl_NummerPos; $vl_APPos; $vl_NeuKommTextPos; $vl_TelefonPos; $vl_EndePos : Integer
 
 $vt_URL:=$1
 vt_WebZusatzText:=""
@@ -27,6 +27,7 @@ $vl_NummerPos:=Find in array:C230(at_FormVarNames; "NeueTelNummer")
 $vl_APPos:=Find in array:C230(at_FormVarNames; "NeuerAP")
 $vl_NeuKommTextPos:=Find in array:C230(at_FormVarNames; "NeuKommText")
 $vl_TelefonPos:=Find in array:C230(at_FormVarNames; "Telefon")
+$vl_EndePos:=Find in array:C230(at_FormVarNames; "Ende")
 
 Case of 
 	: ($vt_URL="/favicon.ico")  // Einfach ignorieren (wird von Chrome angesprochen)
@@ -61,6 +62,9 @@ Case of
 				Case of 
 					: (($vl_SendenPos#-1) & ($vl_TelefonPos#-1))  // Es gibt eine Eingabe
 						web_FormWeiterMit("Telefon"; at_FormVarValues{$vl_TelefonPos}; $vl_NeuKommTextPos)
+					: (($vl_EndePos#-1) & ($vl_TelefonPos#-1))  // Sitzungsende
+						web_SessionReset
+						web_SessionUpdate(New collection:C1472("LetzteURL"; "Ende"))
 					Else 
 						ALERT:C41("Undefinierter Zustand!")
 				End case 
@@ -138,5 +142,5 @@ If (Session:C1714.storage.Info.LetzteURL#"")
 	WEB SEND FILE:C619(Session:C1714.storage.Info.LetzteURL+".shtml")
 	web_SessionUpdate(New collection:C1472("InfoText"; ""))
 	
-	DELAY PROCESS:C323(Current process:C322; 30)
+	//DELAY PROCESS(Current process; 30)
 End if 

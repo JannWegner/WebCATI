@@ -1,15 +1,15 @@
 [
 	{
 		"type": 66,
+		"formula": "[TelefonNummer:4]"
+	},
+	{
+		"type": 66,
 		"formula": "e_AktTelefonNummer"
 	},
 	{
 		"type": 66,
-		"formula": "Session:C1714.storage.History"
-	},
-	{
-		"type": 66,
-		"formula": "Session:C1714.storage.Info.LetzteURL"
+		"formula": "Session:C1714.storage.Info"
 	},
 	{
 		"type": 66,

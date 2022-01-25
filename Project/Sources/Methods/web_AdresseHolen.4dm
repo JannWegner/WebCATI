@@ -2,7 +2,7 @@
 /*
 web_AdresseHolen
 Jann Wegner
-20211001-20210929-20210423
+20220124-20211001-20210929-20210423
 
 Holt für das Web-Interface eine Adresse
 
@@ -11,10 +11,10 @@ Sonst: Adresse prüfen und vorbereiten
 */
 
 C_LONGINT:C283($vl_Zufall; $vl_Lauf)
-C_BOOLEAN:C305($vb_AdressOK)
+C_BOOLEAN:C305($vb_AdressOK; $vb_TerminHolen)
 C_TIME:C306($vz_Suchzeit)
 C_BLOB:C604($vblob_QuotenIDs)
-C_OBJECT:C1216($0; $1; $es_NeueFreieAdressen; $e_FreieAdresse; $vo_SessionObject)
+C_OBJECT:C1216($0; $1; $es_NeueFreieAdressen; $e_FreieAdresse; $vo_SessionObject; $es_TerminAdressen; $e_TerminAdresse)
 ARRAY LONGINT:C221($al_FreieToepfe; 0)
 
 // $0:=New object("AdrFbNr"; 0; "AdrPKID"; ""; "Text"; "") // 20220113: Obsolet??
@@ -22,6 +22,7 @@ ARRAY LONGINT:C221($al_FreieToepfe; 0)
 $vo_SessionObject:=$1
 
 $vb_AdressOK:=False:C215
+$vb_TerminHolen:=False:C215
 
 While (Semaphore:C143("sema_HoleAdresse"; 600)
 	IDLE:C311
@@ -77,7 +78,11 @@ If ($vo_SessionObject.FbNr=0)  // Wir wählen eine zufällige Adrese aus
 			Else 
 				web_SessionUpdate(New collection:C1472("InfoText"; "Nix mehr zu tun - Feierabend!"))
 			End if 
+		Else 
+			$vb_TerminHolen:=True:C214
 		End if 
+	Else 
+		$vb_TerminHolen:=True:C214
 	End if 
 Else 
 	QUERY:C277([TelefonNummer:4]; [TelefonNummer:4]Umfrage:30=$vo_SessionObject.Umfrage; *)
@@ -87,13 +92,20 @@ Else
 			web_SessionUpdate(New collection:C1472("InfoText"; "Nummer nicht gefunden!"; "FbNr"; 0))
 		: (Records in selection:C76([TelefonNummer:4])>1)
 			web_SessionUpdate(New collection:C1472("InfoText"; "Nummer mehrfach gefunden!"; "FbNr"; 0))
-		: ([TelefonNummer:4]Status:5#"Neu")
-			web_SessionUpdate(New collection:C1472("InfoText"; "Status ist nicht 'Neu'!"; "FbNr"; 0))
+		: (([TelefonNummer:4]Status:5#"Neu") & ([TelefonNummer:4]Status:5#"Wiedervorlage"))
+			web_SessionUpdate(New collection:C1472("InfoText"; "Status ist nicht 'Neu' odere 'Wiedervorlage'!"; "FbNr"; 0))
 		Else 
 			web_SessionUpdate(New collection:C1472("FbNr"; $vo_SessionObject.FbNr; "AdrPKID"; [TelefonNummer:4]PKID:53; "LetzteFrage"; [TelefonNummer:4]LetzteFrageWeb:55; "Fassung"; [TelefonNummer:4]Fassung:39))
 			[TelefonNummer:4]Status:5:="In Arbeit"
 			SAVE RECORD:C53([TelefonNummer:4])
 	End case 
+End if 
+
+If ($vb_TerminHolen)
+	ORDER BY:C49([TelefonNummer:4]; [TelefonNummer:4]WiederAm:2; [TelefonNummer:4]WiederUm:3)
+	$es_TerminAdressen:=Create entity selection:C1512([TelefonNummer:4])
+	$e_TerminAdresse:=$es_TerminAdressen[0]
+	web_SessionUpdate(New collection:C1472("FbNr"; $e_TerminAdresse.AdrFBNr; "AdrPKID"; $e_TerminAdresse.PKID; "LetzteFrage"; $e_TerminAdresse.LetzteFrageWeb; "Fassung"; $e_TerminAdresse.Fassung))
 End if 
 
 
