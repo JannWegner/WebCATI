@@ -68,7 +68,7 @@ Case of
 						web_SessionReset
 						web_SessionUpdate(New collection:C1472("LetzteURL"; "Ende"))
 					Else 
-						web_NewLog("Undefined"; Current user:C182; "")
+						web_NewLog("Undefined"; Session:C1714.userName; "")
 						ALERT:C41("Undefinierter Zustand!")
 				End case 
 			: (Session:C1714.storage.Info.LetzteURL="Adresse")  // Kommt er von der Adresswahlseite ?
