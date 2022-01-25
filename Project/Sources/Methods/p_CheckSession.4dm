@@ -47,7 +47,7 @@ Case of
 		// Wir machen hier nix - das Interview geht weiter ...
 		
 	: ((<>ao_SessionObject{$vl_AktSessionNr}.State="Login") & (Find in array:C230(at_FormVarNames; "Name")=1) & (Find in array:C230(at_FormVarNames; "Kennwort")=2))  // Es war der Login-Dialog
-		<>ao_SessionObject{$vl_AktSessionNr}.State:=Choose:C955(p_Authenticate(at_FormVarValues{1}; at_FormVarValues{2}); "Umfragewahl"; "Login")
+		<>ao_SessionObject{$vl_AktSessionNr}.State:=Choose:C955(web_Authenticate(at_FormVarValues{1}; at_FormVarValues{2}); "Umfragewahl"; "Login")
 		If (<>ao_SessionObject{$vl_AktSessionNr}.State="Login")  // Falsche Anmeldedaten -> nocheinmal
 			<>ao_SessionObject{$vl_AktSessionNr}.StateAdd:="Mit diesem Nutzernamen/Kennwort ist leider keine Anmeldung möglich!"
 		Else 

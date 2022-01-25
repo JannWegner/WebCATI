@@ -835,9 +835,52 @@
 			</editor_table_info>
 		</table_extra>
 	</table>
+	<table name="WebLog" uuid="ED830FD644DE44DF9C9697B982CCB0A1" id="13">
+		<field name="PKID" uuid="DA04FFE766E742C5B4AA4393316B5D41" type="10" unique="true" autogenerate="true" store_as_UUID="true" not_null="true" id="1"/>
+		<field name="MessageType" uuid="BDCFB18A4EB5454481EF0B3E35617A75" type="10" limiting_length="255" never_null="true" id="2"/>
+		<field name="TS" uuid="4540CC341460477F8C121CBDEC675F66" type="10" limiting_length="255" never_null="true" id="3"/>
+		<field name="IP" uuid="BD840807722448B39FC762374003A996" type="10" limiting_length="255" never_null="true" id="4"/>
+		<field name="URL" uuid="2C9EFFF1C01349969378859A629074BA" type="10" limiting_length="255" never_null="true" id="5"/>
+		<field name="User" uuid="F7DFC93CE9E949DCAB94266DB241FB22" type="10" limiting_length="255" never_null="true" id="6"/>
+		<field name="PW" uuid="F72F7F639D504448A3614CF431FB9646" type="10" limiting_length="255" never_null="true" id="7"/>
+		<primary_key field_name="PKID" field_uuid="DA04FFE766E742C5B4AA4393316B5D41"/>
+		<table_extra output_form="A_K" input_form="E_K">
+			<editor_table_info displayable_fields_count="7">
+				<color red="255" green="255" blue="255" alpha="0"/>
+				<coordinates left="20.34375" top="838.8515625" width="152.07421875" height="198.5234375"/>
+			</editor_table_info>
+		</table_extra>
+	</table>
+	<table name="WebBlock" uuid="49BE51F1D191447E87C5273AA76873CA" id="14">
+		<field name="PKID" uuid="AD375C9724504258AA9AE21B7E9853DB" type="10" unique="true" autogenerate="true" store_as_UUID="true" not_null="true" id="1"/>
+		<field name="IP" uuid="E6E54622565640AB9D1100DA68742170" type="10" limiting_length="255" never_null="true" id="2"/>
+		<field name="ErsterBlock" uuid="C858B91C01E344C2824D1A156F3C0019" type="10" limiting_length="255" never_null="true" id="3"/>
+		<field name="Versuche" uuid="69142D0C395841D293AAD8CAC0229C74" type="4" never_null="true" id="4"/>
+		<field name="Aktiv" uuid="C44D5191D17A4E12A0A41EF389801679" type="1" never_null="true" id="5"/>
+		<field name="LetzterBlock" uuid="38D5795EBFA549E38FA703B4E159B097" type="10" limiting_length="255" never_null="true" id="6"/>
+		<field name="FreiAb" uuid="1E4C39CEF1BE4DFEA012AB4D70B252AA" type="10" limiting_length="255" never_null="true" id="7"/>
+		<field name="weg" uuid="31C707FADC2444C1BA3680E9481ACD4B" type="10" limiting_length="255" never_null="true" id="8"/>
+		<primary_key field_name="PKID" field_uuid="AD375C9724504258AA9AE21B7E9853DB"/>
+		<table_extra output_form="A_K">
+			<editor_table_info displayable_fields_count="7">
+				<color red="255" green="255" blue="255" alpha="0"/>
+				<coordinates left="58.68359375" top="1057.6171875" width="121.875" height="199.26953125"/>
+			</editor_table_info>
+		</table_extra>
+	</table>
 	<index kind="regular" unique_keys="true" name="pk_index_6" uuid="11F67793F6E24568AAC763446D078E0C" type="7">
 		<field_ref uuid="C75119205522483F8D3D60F976AADC9C" name="PKID">
 			<table_ref uuid="F49ABEEAAD484BCDBF27F6708BA96FEF" name="Bogen"/>
+		</field_ref>
+	</index>
+	<index kind="regular" unique_keys="true" uuid="2444055E1CA74C1B87B6D6061DEBADF4" type="7">
+		<field_ref uuid="DA04FFE766E742C5B4AA4393316B5D41" name="PKID">
+			<table_ref uuid="ED830FD644DE44DF9C9697B982CCB0A1" name="WebLog"/>
+		</field_ref>
+	</index>
+	<index kind="regular" unique_keys="true" uuid="2A571D225A5B46E4945365ED5CA70938" type="7">
+		<field_ref uuid="AD375C9724504258AA9AE21B7E9853DB" name="PKID">
+			<table_ref uuid="49BE51F1D191447E87C5273AA76873CA" name="WebBlock"/>
 		</field_ref>
 	</index>
 	<index kind="regular" unique_keys="true" name="pk_index_10" uuid="353C46C5D441415CA8075FA32A6DB143" type="7">

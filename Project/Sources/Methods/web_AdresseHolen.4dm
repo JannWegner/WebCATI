@@ -24,7 +24,7 @@ $vo_SessionObject:=$1
 $vb_AdressOK:=False:C215
 $vb_TerminHolen:=False:C215
 
-While (Semaphore:C143("sema_HoleAdresse"; 600)
+While (Semaphore:C143("sema_HoleAdresse"; 600))
 	IDLE:C311
 End while 
 
@@ -60,7 +60,7 @@ If ($vo_SessionObject.FbNr=0)  // Wir wählen eine zufällige Adrese aus
 		If (Records in selection:C76([TelefonNummer:4])=0)
 			// Neue Teilnehmer
 			QUERY:C277([Quoten:7]; [Quoten:7]Umfrage:1=$vo_SessionObject.Umfrage)
-			For ($vl_Lauf; 1; Length:C16([Quoten:7]FreigabeString:11)
+			For ($vl_Lauf; 1; Length:C16([Quoten:7]FreigabeString:11))
 				If ([Quoten:7]FreigabeString:11[[$vl_Lauf]]="1")
 					APPEND TO ARRAY:C911($al_FreieToepfe; $vl_Lauf)
 				End if 

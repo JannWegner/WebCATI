@@ -1,13 +1,14 @@
 // On Web Connection
 // Jann Wegner
-// 20210928
+// 20220125-20210928
 
-var $1; $vt_URL : Text
+var $1; $3; vt_URL; vt_IP : Text
 var vt_WebZusatzText : Text
 var e_AktTelefonNummer : Object
 var $vl_DatPos; $vl_ZeitPos; $vl_SendenPos; $vl_AbbruchPos; $vl_NummerPos; $vl_APPos; $vl_NeuKommTextPos; $vl_TelefonPos; $vl_EndePos : Integer
 
-$vt_URL:=$1
+vt_URL:=$1
+vt_IP:=$3
 vt_WebZusatzText:=""
 
 ARRAY TEXT:C222(at_FormVarNames; 0)
@@ -30,15 +31,16 @@ $vl_TelefonPos:=Find in array:C230(at_FormVarNames; "Telefon")
 $vl_EndePos:=Find in array:C230(at_FormVarNames; "Ende")
 
 Case of 
-	: ($vt_URL="/favicon.ico")  // Einfach ignorieren (wird von Chrome angesprochen)
+	: (vt_URL="/favicon.ico")  // Einfach ignorieren (wird von Chrome angesprochen)
 		//
 		
-	: ($vt_URL="/Reset")  // Reset angefordert
+	: (vt_URL="/Reset")  // Reset angefordert
 		web_SessionReset
 		
-	: (Session:C1714.isGuest() & ($vt_URL#"/InterviewerLogin"))  // Keine gültige Anforderung
+	: (Session:C1714.isGuest() & (vt_URL#"/InterviewerLogin"))  // Keine gültige Anforderung
 		Use (Session:C1714.storage)
 			Session:C1714.storage.Info:=New shared object:C1526("LetzteURL"; "404")
+			web_NewLog("404")
 		End use 
 		
 	: (Not:C34(Session:C1714.isGuest()))  // Wir haben eine laufende Sitzung mit gültigem Nutzer!
@@ -66,6 +68,7 @@ Case of
 						web_SessionReset
 						web_SessionUpdate(New collection:C1472("LetzteURL"; "Ende"))
 					Else 
+						web_NewLog("Undefined"; Current user:C182; "")
 						ALERT:C41("Undefinierter Zustand!")
 				End case 
 			: (Session:C1714.storage.Info.LetzteURL="Adresse")  // Kommt er von der Adresswahlseite ?
@@ -106,9 +109,9 @@ Case of
 				End case 
 		End case 
 		
-	: (Session:C1714.isGuest() & ($vt_URL="/InterviewerLogin") & (Size of array:C274(at_FormVarNames)=2))  // LoginFormular wurde ausgefüllt
+	: (Session:C1714.isGuest() & (vt_URL="/InterviewerLogin") & (Size of array:C274(at_FormVarNames)=2))  // LoginFormular wurde ausgefüllt
 		If ((at_FormVarNames{1}="Name") & (at_FormVarNames{2}="Kennwort") & (at_FormVarValues{1}#"") & (at_FormVarValues{2}#""))
-			If (p_Authenticate(at_FormVarValues{1}; at_FormVarValues{2}))  // Es ist ein gültiger Nutzer
+			If (web_Authenticate(at_FormVarValues{1}; at_FormVarValues{2}))  // Es ist ein gültiger Nutzer
 				var $vo_info : Object
 				$vo_info:=New object:C1471("userName"; at_FormVarValues{1})
 				Session:C1714.setPrivileges($vo_info)
@@ -117,13 +120,13 @@ Case of
 				ORDER BY:C49([Variablen:5]; [Variablen:5]EingerichtetAm:40; <)
 			Else   // Ungültige Zugangsdaten
 				web_SessionUpdate(New collection:C1472("LetzteURL"; "Login"))
-				vt_WebZusatzText:="    !! Ungültige Zugangsdaten !!"
+				vt_WebZusatzText:="    !! Ungültige Zugangsdaten - ab drei Fehlversuchen wird die Wartezeit verlängert!!"
 			End if 
 		Else   // Ungültige Parameter von Login-Seite
 			WEB SEND TEXT:C677("falsche Param")
 		End if 
 		
-	: (Session:C1714.isGuest() & ($vt_URL="/InterviewerLogin"))  // Login-Seite wurde korrekt angefordert
+	: (Session:C1714.isGuest() & (vt_URL="/InterviewerLogin"))  // Login-Seite wurde korrekt angefordert
 		Use (Session:C1714.storage)
 			Session:C1714.storage.Info:=New shared object:C1526("LetzteURL"; "Login"; "InfoText"; "")
 			Session:C1714.storage.History:=New shared collection:C1527("Login")
