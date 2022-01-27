@@ -61,6 +61,11 @@ CLOSE DOCUMENT:C267($vl_AdrTel)
 $vl_Flag:=Create document:C266($vs_ADMPfad+"SkriptStart.txt"; "TEXT")
 CLOSE DOCUMENT:C267($vl_Flag)
 
+// Eigentlichen ADM-Abgleich starten
+LAUNCH EXTERNAL PROCESS:C811("/usr/local/bin/adm.sh")
+$vl_Flag:=Create document:C266($vs_ADMPfad+"gleichdanach.txt"; "TEXT")
+CLOSE DOCUMENT:C267($vl_Flag)
+
 //Warten auf Beendigung des ADM-Abgleichs ...
 While (Test path name:C476($vs_ADMPfad+"SkriptStop.txt")#Is a document:K24:1)
 	DELAY PROCESS:C323(Current process:C322; (900))
