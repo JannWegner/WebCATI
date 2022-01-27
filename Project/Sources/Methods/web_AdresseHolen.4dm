@@ -2,7 +2,7 @@
 /*
 web_AdresseHolen
 Jann Wegner
-20220124-20211001-20210929-20210423
+20220127-20220124-20211001-20210929-20210423
 
 Holt für das Web-Interface eine Adresse
 
@@ -105,6 +105,8 @@ If ($vb_TerminHolen)
 	ORDER BY:C49([TelefonNummer:4]; [TelefonNummer:4]WiederAm:2; [TelefonNummer:4]WiederUm:3)
 	$es_TerminAdressen:=Create entity selection:C1512([TelefonNummer:4])
 	$e_TerminAdresse:=$es_TerminAdressen[0]
+	$e_TerminAdresse.Status:="In Arbeit"
+	$e_TerminAdresse.save()
 	web_SessionUpdate(New collection:C1472("FbNr"; $e_TerminAdresse.AdrFBNr; "AdrPKID"; $e_TerminAdresse.PKID; "LetzteFrage"; $e_TerminAdresse.LetzteFrageWeb; "Fassung"; $e_TerminAdresse.Fassung))
 End if 
 
