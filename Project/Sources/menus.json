@@ -1,9 +1,8 @@
-﻿{
+{
 	"bars": [
 		{
 			"id": 1,
 			"name": "Menüleiste Nr. 1",
-			"picture": "pictlib:2",
 			"items": [
 				{
 					"link": 31042
@@ -290,6 +289,10 @@
 				{
 					"title": "Mapping temp. löschen",
 					"method": "p_Map_TempReset"
+				},
+				{
+					"title": "Trace",
+					"method": "m_Trace"
 				}
 			]
 		},

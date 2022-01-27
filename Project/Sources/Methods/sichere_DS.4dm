@@ -2,8 +2,8 @@
 C_LONGINT:C283($1)
 $gesichert:=False:C215
 Repeat 
-	LOCKED BY:C353(Table:C252($1)->;$Prozessnr;$Anwender;$Arbeitsstation;$Prozessname)
-	If (($Prozessnr=0) | ($Prozessnr=ProzNr))
+	LOCKED BY:C353(Table:C252($1)->; $Prozessnr; $Anwender; $Arbeitsstation; $Prozessname)
+	If (($Prozessnr=0) | ($Prozessnr=1))
 		SAVE RECORD:C53(Table:C252($1)->)
 		LOAD RECORD:C52(Table:C252($1)->)
 		$gesichert:=True:C214
@@ -20,7 +20,7 @@ Repeat
 			End if 
 		End if 
 		MESSAGE:C88("DS von: "+Table name:C256($1)+" wird gesichert - bitte kurz warten...")
-		For ($i;1;50000)
+		For ($i; 1; 50000)
 		End for 
 	End if 
 Until ($gesichert)
