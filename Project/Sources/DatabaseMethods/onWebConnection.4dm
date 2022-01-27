@@ -1,11 +1,11 @@
 // On Web Connection
 // Jann Wegner
-// 20220125-20210928
+// 20220127-20220125-20210928
 
 var $1; $3; vt_URL; vt_IP : Text
 var vt_WebZusatzText : Text
 var e_AktTelefonNummer : Object
-var $vl_DatPos; $vl_ZeitPos; $vl_SendenPos; $vl_AbbruchPos; $vl_NummerPos; $vl_APPos; $vl_NeuKommTextPos; $vl_TelefonPos; $vl_EndePos : Integer
+var $vl_DatPos; $vl_ZeitPos; $vl_SendenPos; $vl_AbbruchPos; $vl_NummerPos; $vl_APPos; $vl_NeuKommTextPos; $vl_TelefonPos; $vl_EndePos; $vl_FixterminPos; $vl_AktionPos : Integer
 
 vt_URL:=$1
 vt_IP:=$3
@@ -29,6 +29,8 @@ $vl_APPos:=Find in array:C230(at_FormVarNames; "NeuerAP")
 $vl_NeuKommTextPos:=Find in array:C230(at_FormVarNames; "NeuKommText")
 $vl_TelefonPos:=Find in array:C230(at_FormVarNames; "Telefon")
 $vl_EndePos:=Find in array:C230(at_FormVarNames; "Ende")
+$vl_FixterminPos:=Find in array:C230(at_FormVarNames; "Fixtermin")
+$vl_AktionPos:=Find in array:C230(at_FormVarNames; "Aktion")
 
 Case of 
 	: (vt_URL="/favicon.ico")  // Einfach ignorieren (wird von Chrome angesprochen)
@@ -58,7 +60,7 @@ Case of
 				web_FormWeiterMit("TerminEnde"; $vl_NeuKommTextPos)
 				
 			: (Session:C1714.storage.Info.LetzteURL="Termin")  // Kommt er von der Termin-Seite ?
-				web_FormWeiterMit("Termin"; web_Webdate2Date(at_FormVarValues{$vl_DatPos}); web_WebTime2Time(at_FormVarValues{$vl_ZeitPos}); $vl_NummerPos; $vl_APPos; $vl_NeuKommTextPos)
+				web_FormWeiterMit("Termin"; web_Webdate2Date(at_FormVarValues{$vl_DatPos}); web_WebTime2Time(at_FormVarValues{$vl_ZeitPos}); $vl_NummerPos; $vl_APPos; $vl_NeuKommTextPos; $vl_FixterminPos#-1)
 				
 			: (Session:C1714.storage.Info.LetzteURL="Telefon")  // Kommt er von der Telefon-Seite ?
 				Case of 
@@ -73,12 +75,12 @@ Case of
 				End case 
 			: (Session:C1714.storage.Info.LetzteURL="Adresse")  // Kommt er von der Adresswahlseite ?
 				Case of 
-					: ((at_FormVarNames{1}="Aktion") & (at_FormVarValues{1}="Ende"))  // Abbruch angefordert
+					: (at_FormVarValues{$vl_AktionPos}="Ende")  // Abbruch angefordert
 						web_SessionReset
 						web_SessionUpdate(New collection:C1472("LetzteURL"; "Ende"))
 					Else   // Will Adresse haben
 						Case of 
-							: ((at_FormVarNames{1}="Aktion") & (at_FormVarValues{1}="Zufall"))  // Zufallsadresse angefordert
+							: (at_FormVarValues{$vl_AktionPos}="Zufall")  // Zufallsadresse angefordert
 								web_SessionUpdate(New collection:C1472("FbNr"; 0))
 							: ((at_FormVarNames{1}="FbNr") & (at_FormVarValues{1}#"0") & (at_FormVarNames{2}="Aktion") & (at_FormVarValues{2}="Nummer"))  // Konkrete Adresse angefordert
 								web_SessionUpdate(New collection:C1472("FbNr"; Num:C11(at_FormVarValues{1})))

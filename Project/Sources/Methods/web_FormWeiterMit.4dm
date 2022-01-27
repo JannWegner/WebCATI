@@ -64,12 +64,19 @@ Case of
 	: ($vt_Formular="Termin")
 		var $vd_Datum : Date
 		var $vz_Zeit : Time
+		var $vb_Fix : Boolean
 		
 		$vd_Datum:=$2
 		$vz_Zeit:=$3
 		$vl_NummerPos:=$4
 		$vl_APPos:=$5
 		$vl_NeuKommTextPos:=$6
+		$vb_Fix:=$7
+		
+		If ($vb_Fix)
+			e_AktTelefonNummer.FixTermin:=True:C214
+			e_AktTelefonNummer.Historie:=Replace string:C233(e_AktTelefonNummer.Historie; "Wiedervorlage/Termin"; "Wiedervorlage/FIX-Termin"; 1)
+		End if 
 		
 		Case of 
 			: ($vd_Datum=Date:C102("31.12.2999"))

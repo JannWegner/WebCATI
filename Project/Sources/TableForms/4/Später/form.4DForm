@@ -456,5 +456,6 @@
 	"$4d": {
 		"version": "1",
 		"kind": "form"
-	}
+	},
+	"method": "method.4dm"
 }
