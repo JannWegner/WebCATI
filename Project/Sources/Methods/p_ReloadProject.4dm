@@ -3,7 +3,7 @@
 // Jann Wegner
 // 20220127
 
-If (Current user:C182#"Wegner Jann")
+If (Current user:C182="Wegner Jann")
 	CONFIRM:C162("Reload Project"; "Server"; "Lokal")
 	If (OK=1)
 		RELOAD PROJECT:C1739

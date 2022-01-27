@@ -293,6 +293,10 @@
 				{
 					"title": "Trace",
 					"method": "m_Trace"
+				},
+				{
+					"title": "Reload",
+					"method": "p_ReloadProject"
 				}
 			]
 		},
