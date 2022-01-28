@@ -1,10 +1,10 @@
 // On Web Connection
 // Jann Wegner
-// 20220127-20220125-20210928
+// 20220128-20220127-20220125-20210928
 
 var $1; $3; vt_URL; vt_IP : Text
 var vt_WebZusatzText : Text
-var e_AktTelefonNummer : Object
+var e_AktTelefonNummer; es_LogFile : Object
 var $vl_DatPos; $vl_ZeitPos; $vl_SendenPos; $vl_AbbruchPos; $vl_NummerPos; $vl_APPos; $vl_NeuKommTextPos; $vl_TelefonPos; $vl_EndePos; $vl_FixterminPos; $vl_AktionPos : Integer
 
 vt_URL:=$1
@@ -47,6 +47,10 @@ Case of
 		
 	: (Not:C34(Session:C1714.isGuest()))  // Wir haben eine laufende Sitzung mit gültigem Nutzer!
 		Case of 
+			: ((vt_URL="/status") & (Session:C1714.userName="Wegner Jann"))
+				WEB SEND FILE:C619("Status.shtml")
+				web_SessionUpdate(New collection:C1472("LetzteURL"; ""))
+				
 			: (Session:C1714.storage.Info.LetzteURL="Interview")  // Kommt er von der Interview-Seite ?
 				web_FormWeiterMit("Interview"; Choose:C955($vl_SendenPos#-1; "OK"; "Abbruch"); $vl_NeuKommTextPos)
 				
